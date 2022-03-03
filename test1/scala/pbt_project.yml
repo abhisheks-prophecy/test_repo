@@ -1,0 +1,82 @@
+name: gameday_abhishek_project
+description: User fork
+version: '1.0'
+author: abhisheks@simpledatalabs.com
+workflows:
+  workflows/abhi_test_wf1:
+    name: abhi_test_wf1
+    description: Test workflow 1
+    author: abhisheks@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-03-03 11:38:07'
+    datasets:
+      inputs:
+      - 222/datasets/abhi_test_parquet
+      outputs:
+      - 222/datasets/abhi_out_csv_2
+      - 222/datasets/abhi_out_3
+    dependencies: {}
+datasets:
+  datasets/abhi_out_csv_2:
+    name: abhi_out_csv_2
+    description: ''
+    author: abhisheks@simpledatalabs.com
+    createdAt: '2022-03-03 11:43:45'
+    physicalDatasets:
+      AbhishekSharedFabric:
+        fabricId: 29
+        datasetType: File
+        description: ''
+        author: abhisheks@simpledatalabs.com
+        createdAt: '2022-03-03 11:43:45'
+  datasets/abhi_test_csv:
+    name: abhi_test_csv
+    description: ''
+    author: abhisheks@simpledatalabs.com
+    createdAt: '2022-03-03 11:39:36'
+    physicalDatasets:
+      AbhishekSharedFabric:
+        fabricId: 29
+        datasetType: File
+        description: ''
+        author: abhisheks@simpledatalabs.com
+        createdAt: '2022-03-03 11:39:36'
+  datasets/abhi_out_3:
+    name: abhi_out_3
+    description: ''
+    author: abhisheks@simpledatalabs.com
+    createdAt: '2022-03-03 11:45:25'
+    physicalDatasets:
+      AbhishekSharedFabric:
+        fabricId: 29
+        datasetType: File
+        description: ''
+        author: abhisheks@simpledatalabs.com
+        createdAt: '2022-03-03 11:45:25'
+  datasets/abhi_test_parquet:
+    name: abhi_test_parquet
+    description: ''
+    author: abhisheks@simpledatalabs.com
+    createdAt: '2022-03-03 11:40:28'
+    physicalDatasets:
+      AbhishekSharedFabric:
+        fabricId: 29
+        datasetType: File
+        description: ''
+        author: abhisheks@simpledatalabs.com
+        createdAt: '2022-03-03 11:40:28'
+  datasets/abhiout_csv:
+    name: abhiout_csv
+    description: ''
+    author: abhisheks@simpledatalabs.com
+    createdAt: '2022-03-03 11:41:03'
+    physicalDatasets:
+      AbhishekSharedFabric:
+        fabricId: 29
+        datasetType: File
+        description: ''
+        author: abhisheks@simpledatalabs.com
+        createdAt: '2022-03-03 11:41:03'
+schedules: {}
+libraries: []
