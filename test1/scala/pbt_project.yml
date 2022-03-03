@@ -1,6 +1,6 @@
 name: gameday_abhishek_project
 description: User fork
-version: '1.0'
+version: gameday_abhishek_project/1.0-SNAPSHOT
 author: abhisheks@simpledatalabs.com
 workflows:
   workflows/abhi_test_wf1:
