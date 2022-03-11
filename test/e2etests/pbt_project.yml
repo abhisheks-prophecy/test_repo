@@ -63,6 +63,19 @@ workflows:
       - 355/datasets/datasetout4
       - 355/datasets/dataout5
     dependencies: {}
+  workflows/Workflow-Automated-GITHUB-1647019074915:
+    name: Workflow-Automated-GITHUB-1647019074915
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-03-11 17:18:10'
+    datasets:
+      inputs:
+      - 448/datasets/dataset_cust_in
+      outputs:
+      - 448/datasets/dataset_out_90445
+    dependencies: {}
   workflows/Workflow-Automated-GITHUB-1646935229992:
     name: Workflow-Automated-GITHUB-1646935229992
     description: automation workflow
@@ -251,18 +264,6 @@ datasets:
         description: ''
         author: abhisheks+e2etests@simpledatalabs.com
         createdAt: '2022-03-09 21:25:53'
-  datasets/DATASET_3_PARTITION:
-    name: DATASET_3_PARTITION
-    description: ''
-    author: abhisheks+e2etests@simpledatalabs.com
-    createdAt: '2022-03-11 06:56:16'
-    physicalDatasets:
-      dev:
-        fabricId: 28
-        datasetType: File
-        description: ''
-        author: abhisheks+e2etests@simpledatalabs.com
-        createdAt: '2022-03-11 06:56:16'
   datasets/dataset_out_9066:
     name: dataset_out_9066
     description: ''
@@ -383,6 +384,30 @@ datasets:
         description: ''
         author: abhisheks+e2etests@simpledatalabs.com
         createdAt: '2022-03-11 07:48:21'
+  datasets/DATASET_3_PARTITION:
+    name: DATASET_3_PARTITION
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-03-11 06:56:16'
+    physicalDatasets:
+      dev:
+        fabricId: 28
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-03-11 06:56:16'
+  datasets/dataset_out_90445:
+    name: dataset_out_90445
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-03-11 17:23:47'
+    physicalDatasets:
+      dev:
+        fabricId: 28
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-03-11 17:23:47'
   datasets/dataout3_parq:
     name: dataout3_parq
     description: ''
