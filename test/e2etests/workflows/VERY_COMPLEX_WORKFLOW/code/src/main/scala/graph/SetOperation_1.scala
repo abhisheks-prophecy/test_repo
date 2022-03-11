@@ -9,9 +9,9 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object Filter_1_1_1 {
+object SetOperation_1 {
 
-  def apply(spark: SparkSession, in: DataFrame): DataFrame =
-    in.filter(!col("firstname").like("%G%"))
+  def apply(spark: SparkSession, in0: DataFrame, in1: DataFrame): DataFrame =
+    in0.intersectAll(in1)
 
 }

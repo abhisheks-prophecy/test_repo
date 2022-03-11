@@ -12,9 +12,6 @@ import udfs._
 object Filter_1_1_1_1_1 {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
-    in.filter(
-      (col("cmls_acct_cobrnd_bus_id_drvd") > lit(0))
-        .and(col("cmls_acct_cobrnd_bus_id_drvd") < lit(100))
-    )
+    in.filter(col("cmls_acct_cobrnd_bus_id_drvd") > lit(0))
 
 }

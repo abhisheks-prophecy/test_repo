@@ -9,9 +9,12 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object Filter_1_1_1 {
+object Filter_1_1_1_1_1_1 {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
-    in.filter(!col("firstname").like("%G%"))
+    in.filter(
+      (col("cmls_acct_cobrnd_bus_id_drvd") > lit(0))
+        .and(col("cmls_acct_fundg_srce_cd") =!= lit("D"))
+    )
 
 }

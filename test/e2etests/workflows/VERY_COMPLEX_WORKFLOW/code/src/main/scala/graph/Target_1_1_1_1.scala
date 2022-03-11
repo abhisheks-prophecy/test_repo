@@ -15,7 +15,7 @@ object Target_1_1_1_1 {
         in.write
           .format("parquet")
           .mode("overwrite")
-          .save("dbfs:tmp/e2e/parquet/out3")
+          .save("dbfs:/tmp/e2e/parquet/out3")
       case _ =>
         throw new Exception("No valid dataset present to read fabric")
     }

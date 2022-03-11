@@ -9,9 +9,9 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object Filter_1_1_1 {
+object OrderBy_1 {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
-    in.filter(!col("firstname").like("%G%"))
+    in.orderBy(col("customer_id").asc)
 
 }
