@@ -1,0 +1,20 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: cmls_3ds_authntn_mthd
+    type: string
+    nullable: true
+    metadata: {}
+  - name: cmls_acct_cobrnd_bus_id_drvd
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: cmls_acct_usage_cd
+    type: string
+    nullable: true
+    metadata: {}
+  - name: cmls_acct_usr_bus_id_ctry_cd_drvd
+    type: string
+    nullable: true
+    metadata: {}

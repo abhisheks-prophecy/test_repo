@@ -12,6 +12,6 @@ import udfs._
 object Filter_1 {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
-    in.filter((col("customer_id") > lit(10)).and(col("first_name").like("%G%")))
+    in.filter(col("customer_id") > lit(5))
 
 }

@@ -1,0 +1,12 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: first-name
+    type: boolean
+    nullable: false
+    metadata: {}
+  - name: middle+name
+    type: boolean
+    nullable: false
+    metadata: {}

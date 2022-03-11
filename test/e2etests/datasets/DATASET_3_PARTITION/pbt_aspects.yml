@@ -1,0 +1,48 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: firstname
+    type: string
+    nullable: true
+    metadata: {}
+  - name: middlename
+    type: string
+    nullable: true
+    metadata: {}
+  - name: lastname
+    type: string
+    nullable: true
+    metadata: {}
+  - name: id
+    type: long
+    nullable: true
+    metadata: {}
+  - name: salary
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: processed
+    type: boolean
+    nullable: true
+    metadata: {}
+  - name: dob
+    type: date
+    nullable: true
+    metadata: {}
+  - name: weight
+    type: double
+    nullable: true
+    metadata: {}
+  - name: state
+    type: string
+    nullable: true
+    metadata: {}
+  - name: city
+    type: string
+    nullable: true
+    metadata: {}
+  - name: gender
+    type: string
+    nullable: true
+    metadata: {}

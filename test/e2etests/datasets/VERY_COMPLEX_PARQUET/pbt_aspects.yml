@@ -1,0 +1,781 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: c_int
+    type: integer
+    nullable: true
+    metadata: {}
+  - name: c_boolean
+    type: boolean
+    nullable: true
+    metadata: {}
+  - name: c_double
+    type: double
+    nullable: true
+    metadata: {}
+  - name: c_string
+    type: string
+    nullable: true
+    metadata: {}
+  - name: c_char
+    type: string
+    nullable: true
+    metadata: {}
+  - name: c_time
+    type: date
+    nullable: true
+    metadata: {}
+  - name: c_timestamp
+    type: date
+    nullable: true
+    metadata: {}
+  - name: c_array
+    type:
+      type: array
+      elementType: integer
+      containsNull: true
+    nullable: true
+    metadata: {}
+  - name: c_struct
+    type:
+      type: struct
+      fields:
+      - name: col-1
+        type: integer
+        nullable: true
+        metadata: {}
+      - name: col-2
+        type: string
+        nullable: true
+        metadata: {}
+      - name: col-3
+        type: double
+        nullable: true
+        metadata: {}
+      - name: c_struct
+        type: boolean
+        nullable: true
+        metadata: {}
+    nullable: true
+    metadata: {}
+  - name: c_complex-array
+    type:
+      type: array
+      elementType:
+        type: struct
+        fields:
+        - name: Diabetes
+          type:
+            type: array
+            elementType:
+              type: struct
+              fields:
+              - name: medications
+                type:
+                  type: array
+                  elementType:
+                    type: struct
+                    fields:
+                    - name: medicationsClasses
+                      type:
+                        type: array
+                        elementType:
+                          type: struct
+                          fields:
+                          - name: className_1
+                            type:
+                              type: array
+                              elementType:
+                                type: struct
+                                fields:
+                                - name: associated-Drug
+                                  type:
+                                    type: array
+                                    elementType:
+                                      type: struct
+                                      fields:
+                                      - name: name
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                      - name: dose
+                                        type: integer
+                                        nullable: true
+                                        metadata: {}
+                                      - name: cf-use
+                                        type: double
+                                        nullable: true
+                                        metadata: {}
+                                      - name: take-it_on
+                                        type: boolean
+                                        nullable: true
+                                        metadata: {}
+                                      - name: strength
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                    containsNull: true
+                                  nullable: true
+                                  metadata: {}
+                                - name: associated-Drug#2
+                                  type:
+                                    type: array
+                                    elementType:
+                                      type: struct
+                                      fields:
+                                      - name: name
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                      - name: dose
+                                        type: integer
+                                        nullable: true
+                                        metadata: {}
+                                      - name: cf-use
+                                        type: double
+                                        nullable: true
+                                        metadata: {}
+                                      - name: take-it_on
+                                        type: boolean
+                                        nullable: true
+                                        metadata: {}
+                                      - name: strength
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                    containsNull: true
+                                  nullable: true
+                                  metadata: {}
+                              containsNull: true
+                            nullable: true
+                            metadata: {}
+                          - name: className_2
+                            type:
+                              type: array
+                              elementType:
+                                type: struct
+                                fields:
+                                - name: associated-Drug
+                                  type:
+                                    type: array
+                                    elementType:
+                                      type: struct
+                                      fields:
+                                      - name: name
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                      - name: dose
+                                        type: integer
+                                        nullable: true
+                                        metadata: {}
+                                      - name: cf-use
+                                        type: double
+                                        nullable: true
+                                        metadata: {}
+                                      - name: take-it_on
+                                        type: boolean
+                                        nullable: true
+                                        metadata: {}
+                                      - name: strength
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                    containsNull: true
+                                  nullable: true
+                                  metadata: {}
+                                - name: associated-Drug#2
+                                  type:
+                                    type: array
+                                    elementType:
+                                      type: struct
+                                      fields:
+                                      - name: name
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                      - name: dose
+                                        type: integer
+                                        nullable: true
+                                        metadata: {}
+                                      - name: cf-use
+                                        type: double
+                                        nullable: true
+                                        metadata: {}
+                                      - name: take-it_on
+                                        type: boolean
+                                        nullable: true
+                                        metadata: {}
+                                      - name: strength
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                    containsNull: true
+                                  nullable: true
+                                  metadata: {}
+                              containsNull: true
+                            nullable: true
+                            metadata: {}
+                        containsNull: true
+                      nullable: true
+                      metadata: {}
+                  containsNull: true
+                nullable: true
+                metadata: {}
+              - name: labs
+                type:
+                  type: array
+                  elementType:
+                    type: struct
+                    fields:
+                    - name: missing_field
+                      type: string
+                      nullable: true
+                      metadata: {}
+                  containsNull: true
+                nullable: true
+                metadata: {}
+            containsNull: true
+          nullable: true
+          metadata: {}
+        - name: Asthma
+          type:
+            type: array
+            elementType:
+              type: struct
+              fields:
+              - name: medications
+                type:
+                  type: array
+                  elementType:
+                    type: struct
+                    fields:
+                    - name: medicationsClasses
+                      type:
+                        type: array
+                        elementType:
+                          type: struct
+                          fields:
+                          - name: className_1
+                            type:
+                              type: array
+                              elementType:
+                                type: struct
+                                fields:
+                                - name: associated-Drug
+                                  type:
+                                    type: array
+                                    elementType:
+                                      type: struct
+                                      fields:
+                                      - name: name
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                      - name: dose
+                                        type: integer
+                                        nullable: true
+                                        metadata: {}
+                                      - name: cf-use
+                                        type: double
+                                        nullable: true
+                                        metadata: {}
+                                      - name: take-it_on
+                                        type: boolean
+                                        nullable: true
+                                        metadata: {}
+                                      - name: strength
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                    containsNull: true
+                                  nullable: true
+                                  metadata: {}
+                                - name: associated-Drug#2
+                                  type:
+                                    type: array
+                                    elementType:
+                                      type: struct
+                                      fields:
+                                      - name: name
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                      - name: dose
+                                        type: integer
+                                        nullable: true
+                                        metadata: {}
+                                      - name: cf-use
+                                        type: double
+                                        nullable: true
+                                        metadata: {}
+                                      - name: take-it_on
+                                        type: boolean
+                                        nullable: true
+                                        metadata: {}
+                                      - name: strength
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                    containsNull: true
+                                  nullable: true
+                                  metadata: {}
+                              containsNull: true
+                            nullable: true
+                            metadata: {}
+                          - name: className_2
+                            type:
+                              type: array
+                              elementType:
+                                type: struct
+                                fields:
+                                - name: associated-Drug
+                                  type:
+                                    type: array
+                                    elementType:
+                                      type: struct
+                                      fields:
+                                      - name: name
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                      - name: dose
+                                        type: integer
+                                        nullable: true
+                                        metadata: {}
+                                      - name: cf-use
+                                        type: double
+                                        nullable: true
+                                        metadata: {}
+                                      - name: take-it_on
+                                        type: boolean
+                                        nullable: true
+                                        metadata: {}
+                                      - name: strength
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                    containsNull: true
+                                  nullable: true
+                                  metadata: {}
+                                - name: associated-Drug#2
+                                  type:
+                                    type: array
+                                    elementType:
+                                      type: struct
+                                      fields:
+                                      - name: name
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                      - name: dose
+                                        type: integer
+                                        nullable: true
+                                        metadata: {}
+                                      - name: cf-use
+                                        type: double
+                                        nullable: true
+                                        metadata: {}
+                                      - name: take-it_on
+                                        type: boolean
+                                        nullable: true
+                                        metadata: {}
+                                      - name: strength
+                                        type: string
+                                        nullable: true
+                                        metadata: {}
+                                    containsNull: true
+                                  nullable: true
+                                  metadata: {}
+                              containsNull: true
+                            nullable: true
+                            metadata: {}
+                        containsNull: true
+                      nullable: true
+                      metadata: {}
+                  containsNull: true
+                nullable: true
+                metadata: {}
+              - name: labs
+                type:
+                  type: array
+                  elementType:
+                    type: struct
+                    fields:
+                    - name: missing_field
+                      type: string
+                      nullable: true
+                      metadata: {}
+                  containsNull: true
+                nullable: true
+                metadata: {}
+            containsNull: true
+          nullable: true
+          metadata: {}
+      containsNull: true
+    nullable: true
+    metadata: {}
+  - name: c_complex-struct
+    type:
+      type: struct
+      fields:
+      - name: problems
+        type:
+          type: array
+          elementType:
+            type: struct
+            fields:
+            - name: Diabetes
+              type:
+                type: array
+                elementType:
+                  type: struct
+                  fields:
+                  - name: medications
+                    type:
+                      type: array
+                      elementType:
+                        type: struct
+                        fields:
+                        - name: medicationsClasses
+                          type:
+                            type: array
+                            elementType:
+                              type: struct
+                              fields:
+                              - name: className_1
+                                type:
+                                  type: array
+                                  elementType:
+                                    type: struct
+                                    fields:
+                                    - name: associated-Drug
+                                      type:
+                                        type: array
+                                        elementType:
+                                          type: struct
+                                          fields:
+                                          - name: name
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                          - name: dose
+                                            type: integer
+                                            nullable: true
+                                            metadata: {}
+                                          - name: cf-use
+                                            type: double
+                                            nullable: true
+                                            metadata: {}
+                                          - name: take-it_on
+                                            type: boolean
+                                            nullable: true
+                                            metadata: {}
+                                          - name: strength
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                        containsNull: true
+                                      nullable: true
+                                      metadata: {}
+                                    - name: associated-Drug#2
+                                      type:
+                                        type: array
+                                        elementType:
+                                          type: struct
+                                          fields:
+                                          - name: name
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                          - name: dose
+                                            type: integer
+                                            nullable: true
+                                            metadata: {}
+                                          - name: cf-use
+                                            type: double
+                                            nullable: true
+                                            metadata: {}
+                                          - name: take-it_on
+                                            type: boolean
+                                            nullable: true
+                                            metadata: {}
+                                          - name: strength
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                        containsNull: true
+                                      nullable: true
+                                      metadata: {}
+                                  containsNull: true
+                                nullable: true
+                                metadata: {}
+                              - name: className_2
+                                type:
+                                  type: array
+                                  elementType:
+                                    type: struct
+                                    fields:
+                                    - name: associated-Drug
+                                      type:
+                                        type: array
+                                        elementType:
+                                          type: struct
+                                          fields:
+                                          - name: name
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                          - name: dose
+                                            type: integer
+                                            nullable: true
+                                            metadata: {}
+                                          - name: cf-use
+                                            type: double
+                                            nullable: true
+                                            metadata: {}
+                                          - name: take-it_on
+                                            type: boolean
+                                            nullable: true
+                                            metadata: {}
+                                          - name: strength
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                        containsNull: true
+                                      nullable: true
+                                      metadata: {}
+                                    - name: associated-Drug#2
+                                      type:
+                                        type: array
+                                        elementType:
+                                          type: struct
+                                          fields:
+                                          - name: name
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                          - name: dose
+                                            type: integer
+                                            nullable: true
+                                            metadata: {}
+                                          - name: cf-use
+                                            type: double
+                                            nullable: true
+                                            metadata: {}
+                                          - name: take-it_on
+                                            type: boolean
+                                            nullable: true
+                                            metadata: {}
+                                          - name: strength
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                        containsNull: true
+                                      nullable: true
+                                      metadata: {}
+                                  containsNull: true
+                                nullable: true
+                                metadata: {}
+                            containsNull: true
+                          nullable: true
+                          metadata: {}
+                      containsNull: true
+                    nullable: true
+                    metadata: {}
+                  - name: labs
+                    type:
+                      type: array
+                      elementType:
+                        type: struct
+                        fields:
+                        - name: missing_field
+                          type: string
+                          nullable: true
+                          metadata: {}
+                      containsNull: true
+                    nullable: true
+                    metadata: {}
+                containsNull: true
+              nullable: true
+              metadata: {}
+            - name: Asthma
+              type:
+                type: array
+                elementType:
+                  type: struct
+                  fields:
+                  - name: medications
+                    type:
+                      type: array
+                      elementType:
+                        type: struct
+                        fields:
+                        - name: medicationsClasses
+                          type:
+                            type: array
+                            elementType:
+                              type: struct
+                              fields:
+                              - name: className_1
+                                type:
+                                  type: array
+                                  elementType:
+                                    type: struct
+                                    fields:
+                                    - name: associated-Drug
+                                      type:
+                                        type: array
+                                        elementType:
+                                          type: struct
+                                          fields:
+                                          - name: name
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                          - name: dose
+                                            type: integer
+                                            nullable: true
+                                            metadata: {}
+                                          - name: cf-use
+                                            type: double
+                                            nullable: true
+                                            metadata: {}
+                                          - name: take-it_on
+                                            type: boolean
+                                            nullable: true
+                                            metadata: {}
+                                          - name: strength
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                        containsNull: true
+                                      nullable: true
+                                      metadata: {}
+                                    - name: associated-Drug#2
+                                      type:
+                                        type: array
+                                        elementType:
+                                          type: struct
+                                          fields:
+                                          - name: name
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                          - name: dose
+                                            type: integer
+                                            nullable: true
+                                            metadata: {}
+                                          - name: cf-use
+                                            type: double
+                                            nullable: true
+                                            metadata: {}
+                                          - name: take-it_on
+                                            type: boolean
+                                            nullable: true
+                                            metadata: {}
+                                          - name: strength
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                        containsNull: true
+                                      nullable: true
+                                      metadata: {}
+                                  containsNull: true
+                                nullable: true
+                                metadata: {}
+                              - name: className_2
+                                type:
+                                  type: array
+                                  elementType:
+                                    type: struct
+                                    fields:
+                                    - name: associated-Drug
+                                      type:
+                                        type: array
+                                        elementType:
+                                          type: struct
+                                          fields:
+                                          - name: name
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                          - name: dose
+                                            type: integer
+                                            nullable: true
+                                            metadata: {}
+                                          - name: cf-use
+                                            type: double
+                                            nullable: true
+                                            metadata: {}
+                                          - name: take-it_on
+                                            type: boolean
+                                            nullable: true
+                                            metadata: {}
+                                          - name: strength
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                        containsNull: true
+                                      nullable: true
+                                      metadata: {}
+                                    - name: associated-Drug#2
+                                      type:
+                                        type: array
+                                        elementType:
+                                          type: struct
+                                          fields:
+                                          - name: name
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                          - name: dose
+                                            type: integer
+                                            nullable: true
+                                            metadata: {}
+                                          - name: cf-use
+                                            type: double
+                                            nullable: true
+                                            metadata: {}
+                                          - name: take-it_on
+                                            type: boolean
+                                            nullable: true
+                                            metadata: {}
+                                          - name: strength
+                                            type: string
+                                            nullable: true
+                                            metadata: {}
+                                        containsNull: true
+                                      nullable: true
+                                      metadata: {}
+                                  containsNull: true
+                                nullable: true
+                                metadata: {}
+                            containsNull: true
+                          nullable: true
+                          metadata: {}
+                      containsNull: true
+                    nullable: true
+                    metadata: {}
+                  - name: labs
+                    type:
+                      type: array
+                      elementType:
+                        type: struct
+                        fields:
+                        - name: missing_field
+                          type: string
+                          nullable: true
+                          metadata: {}
+                      containsNull: true
+                    nullable: true
+                    metadata: {}
+                containsNull: true
+              nullable: true
+              metadata: {}
+          containsNull: true
+        nullable: true
+        metadata: {}
+    nullable: true
+    metadata: {}
