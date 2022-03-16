@@ -12,8 +12,6 @@ object Main {
 
   def apply(spark: SparkSession): Unit = {
     val df_Source_0 = Source_0(spark)
-    val df_Filter_1 = Filter_1(spark, df_Source_0)
-    Target_1(spark, df_Filter_1)
   }
 
   def main(args: Array[String]): Unit = {

@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>Workflow-Automated-GITHUB-1647391484943</groupId>
-    <artifactId>Workflow-Automated-GITHUB-1647391484943_2.12</artifactId>
+    <groupId>TEST_GIT_OPERATIONS</groupId>
+    <artifactId>TEST_GIT_OPERATIONS_2.12</artifactId>
     <packaging>jar</packaging>
-    <description>Workflow-Automated-GITHUB-1647391484943</description>
+    <description>TEST_GIT_OPERATIONS</description>
     <version>1.0</version>
-    <name>Workflow-Automated-GITHUB-1647391484943</name>
+    <name>TEST_GIT_OPERATIONS</name>
     <organization>
-        <name>Workflow-Automated-GITHUB-1647391484943</name>
+        <name>TEST_GIT_OPERATIONS</name>
     </organization>
     <properties>
         <scalaBaseVersion>2.12</scalaBaseVersion>

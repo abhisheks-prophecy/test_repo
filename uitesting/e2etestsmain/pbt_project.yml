@@ -16,18 +16,17 @@ workflows:
       outputs:
       - 119/datasets/dataset_out_28899
     dependencies: {}
-  workflows/Workflow-Automated-GITHUB-1647391484943:
-    name: Workflow-Automated-GITHUB-1647391484943
-    description: automation workflow
+  workflows/TEST_GIT_OPERATIONS:
+    name: TEST_GIT_OPERATIONS
+    description: TEST_GIT_OPERATIONS
     author: abhisheks+e2etests@simpledatalabs.com
     mode: batch
     language: scala
-    createdAt: '2022-03-16 00:44:56'
+    createdAt: '2022-03-16 07:27:49'
     datasets:
       inputs:
-      - 171/datasets/dataset_cust_in
-      outputs:
-      - 171/datasets/dataset_out_30012
+      - 171/datasets/500orc
+      outputs: []
     dependencies: {}
 datasets:
   datasets/dataset_cust_in:
@@ -66,5 +65,17 @@ datasets:
         description: ''
         author: abhisheks+e2etests@simpledatalabs.com
         createdAt: '2022-03-16 00:49:37'
+  datasets/500orc:
+    name: 500orc
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-03-16 08:42:26'
+    physicalDatasets:
+      dev:
+        fabricId: 1
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-03-16 08:42:26'
 schedules: {}
 libraries: []
