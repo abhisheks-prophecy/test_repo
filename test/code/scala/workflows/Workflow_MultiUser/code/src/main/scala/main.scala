@@ -12,6 +12,7 @@ object Main {
 
   def apply(spark: SparkSession): Unit = {
     val df_Source_2 = Source_2(spark)
+    val df_Source_3 = Source_3(spark)
     val df_Source_1 = Source_1(spark)
     val df_Limit_1  = Limit_1(spark, df_Source_1)
   }

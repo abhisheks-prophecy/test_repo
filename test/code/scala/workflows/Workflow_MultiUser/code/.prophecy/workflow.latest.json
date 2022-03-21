@@ -68,6 +68,31 @@
         "datasetId" : "1398/datasets/json_data"
       }
     },
+    "E_yOdIF0lTaJeAuwwqWdS" : {
+      "id" : "E_yOdIF0lTaJeAuwwqWdS",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_3",
+        "slug" : "Source_3",
+        "x" : 501.5,
+        "y" : -107.25,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : true,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "6eb87wHN0QWJL_fKJgA8M",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "1398/datasets/dataset_cust_in"
+      }
+    },
     "0p-pzLnawXsEdndonysUF" : {
       "id" : "0p-pzLnawXsEdndonysUF",
       "component" : "Limit",
