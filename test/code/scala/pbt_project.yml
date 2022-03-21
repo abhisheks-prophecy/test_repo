@@ -1,0 +1,32 @@
+name: TEST_GIT_MULTIUSER
+description: User fork
+version: 0.0.1-SNAPSHOT
+author: abhisheks+test@simpledatalabs.com
+workflows:
+  workflows/Workflow_MultiUser:
+    name: Workflow_MultiUser
+    description: Workflow_MultiUser
+    author: abhisheks+test@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-03-21 04:49:51'
+    datasets:
+      inputs:
+      - 1398/datasets/dataset_cust_in
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/dataset_cust_in:
+    name: dataset_cust_in
+    description: ''
+    author: abhisheks+test@simpledatalabs.com
+    createdAt: '2022-03-21 04:50:34'
+    physicalDatasets:
+      dev:
+        fabricId: 49
+        datasetType: File
+        description: ''
+        author: abhisheks+test@simpledatalabs.com
+        createdAt: '2022-03-21 04:50:34'
+schedules: {}
+libraries: []
