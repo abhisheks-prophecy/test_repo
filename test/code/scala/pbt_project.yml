@@ -13,6 +13,7 @@ workflows:
     datasets:
       inputs:
       - 1398/datasets/dataset_cust_in
+      - 1398/datasets/json_data
       outputs: []
     dependencies: {}
 datasets:
@@ -28,5 +29,17 @@ datasets:
         description: ''
         author: abhisheks+test@simpledatalabs.com
         createdAt: '2022-03-21 04:50:34'
+  datasets/json_data:
+    name: json_data
+    description: ''
+    author: abhisheks+test@simpledatalabs.com
+    createdAt: '2022-03-21 06:54:15'
+    physicalDatasets:
+      dev:
+        fabricId: 49
+        datasetType: File
+        description: ''
+        author: abhisheks+test@simpledatalabs.com
+        createdAt: '2022-03-21 06:54:15'
 schedules: {}
 libraries: []

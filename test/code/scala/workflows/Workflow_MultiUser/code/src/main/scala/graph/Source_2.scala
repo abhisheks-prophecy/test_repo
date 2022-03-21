@@ -13,24 +13,22 @@ object Source_2 {
     Config.fabricName match {
       case "dev" =>
         spark.read
-          .format("csv")
-          .option("header", true)
-          .option("sep",    ",")
+          .format("json")
           .schema(
             StructType(
               Array(
-                StructField("customer_id",       IntegerType,   true),
-                StructField("first_name",        StringType,    true),
-                StructField("last_name",         StringType,    true),
-                StructField("phone",             StringType,    true),
-                StructField("email",             StringType,    true),
-                StructField("country_code",      StringType,    true),
-                StructField("account_open_date", TimestampType, true),
-                StructField("account_flags",     StringType,    true)
+                StructField("account_flags",     StringType, true),
+                StructField("account_open_date", StringType, true),
+                StructField("country_code",      StringType, true),
+                StructField("customer_id",       StringType, true),
+                StructField("email",             StringType, true),
+                StructField("first_name",        StringType, true),
+                StructField("last_name",         StringType, true),
+                StructField("phone",             StringType, true)
               )
             )
           )
-          .load("dbfs:/Prophecy/abhishek@prophecy.io/CustomersDatasetInput.csv")
+          .load("dbfs:/Prophecy/qa_data/json/CustomersDatasetInput.json")
           .cache()
       case _ =>
         throw new Exception("No valid dataset present to read fabric")
