@@ -9,6 +9,6 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object Limit_1 {
+object Limit_2 {
   def apply(spark: SparkSession, in: DataFrame): DataFrame = in.limit(10)
 }
