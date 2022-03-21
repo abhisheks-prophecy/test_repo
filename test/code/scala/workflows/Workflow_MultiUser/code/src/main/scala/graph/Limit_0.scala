@@ -9,10 +9,6 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object Script_1 {
-  def apply(spark: SparkSession, in0: DataFrame): DataFrame = {
-    var out0=in0
-    out0
-  }
-
+object Limit_0 {
+  def apply(spark: SparkSession, in: DataFrame): DataFrame = in.limit(20)
 }

@@ -39,24 +39,24 @@
     "id" : "edge0",
     "source" : "RJbRkJZ3niFdQ3eIja4ch",
     "sourcePort" : "je0ocwu7GBw_PDPg4kXsh",
-    "target" : "TjV_A-Pm1f1vSkKorFUUf",
-    "targetPort" : "-w3BWxfg9qtQ6T005Z8pa"
-  }, {
-    "id" : "edge1",
-    "source" : "TjV_A-Pm1f1vSkKorFUUf",
-    "sourcePort" : "78xOuHzozxuamjaMPIKAU",
     "target" : "WllQytIGvVvjRPXVTB9j2",
     "targetPort" : "fDdK6bvE8rySW2JKeT2Bo"
+  }, {
+    "id" : "edge1",
+    "source" : "RJbRkJZ3niFdQ3eIja4ch",
+    "sourcePort" : "je0ocwu7GBw_PDPg4kXsh",
+    "target" : "n6F6xVgrS-S8YQffNmELA",
+    "targetPort" : "sLqCRG5G1aShSaVTClQoV"
   } ],
   "processes" : {
-    "TjV_A-Pm1f1vSkKorFUUf" : {
-      "id" : "TjV_A-Pm1f1vSkKorFUUf",
-      "component" : "Script",
+    "n6F6xVgrS-S8YQffNmELA" : {
+      "id" : "n6F6xVgrS-S8YQffNmELA",
+      "component" : "Limit",
       "metadata" : {
-        "label" : "Script_1",
-        "slug" : "Script_1",
-        "x" : 619,
-        "y" : 107,
+        "label" : "Limit_0",
+        "slug" : "Limit_0",
+        "x" : 893,
+        "y" : 268,
         "language" : "scala",
         "phase" : 0,
         "cache" : false,
@@ -64,20 +64,17 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "-w3BWxfg9qtQ6T005Z8pa",
-          "slug" : "in0"
+          "id" : "sLqCRG5G1aShSaVTClQoV",
+          "slug" : "in"
         } ],
         "outputs" : [ {
-          "id" : "78xOuHzozxuamjaMPIKAU",
-          "slug" : "out0"
+          "id" : "Ac6hhxz1k7l0RNc7YSpm4",
+          "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "script" : "var out0=in0",
-        "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame) : Script = {",
-        "scriptMethodFooter" : "out0",
-        "outputPortNames" : [ "out0" ]
+        "limit" : "20"
       }
     },
     "WllQytIGvVvjRPXVTB9j2" : {
@@ -105,7 +102,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "limit" : "10"
+        "limit" : "20"
       }
     },
     "RJbRkJZ3niFdQ3eIja4ch" : {
@@ -114,8 +111,8 @@
       "metadata" : {
         "label" : "Source_2",
         "slug" : "Source_2",
-        "x" : 410,
-        "y" : 102,
+        "x" : 529,
+        "y" : 140,
         "language" : "scala",
         "phase" : 0,
         "cache" : true,

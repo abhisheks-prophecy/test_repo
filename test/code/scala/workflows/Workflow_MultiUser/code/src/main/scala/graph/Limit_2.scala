@@ -10,5 +10,5 @@ import udfs.UDFs._
 import udfs._
 
 object Limit_2 {
-  def apply(spark: SparkSession, in: DataFrame): DataFrame = in.limit(10)
+  def apply(spark: SparkSession, in: DataFrame): DataFrame = in.limit(20)
 }
