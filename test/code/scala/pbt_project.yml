@@ -13,7 +13,6 @@ workflows:
     datasets:
       inputs:
       - 1398/datasets/dataset_cust_in
-      - 1398/datasets/json_data
       outputs: []
     dependencies: {}
 datasets:
