@@ -35,8 +35,99 @@
     "codeMode" : "sparse",
     "buildSystem" : "maven"
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "edge0",
+    "source" : "FJqjsaSIER_qFcikhmTP6",
+    "sourcePort" : "VjEQpxBZhtt6BM6uZ_T1N",
+    "target" : "3StZEK3MNUEvJsbChkJ3Q",
+    "targetPort" : "_EwBmOmF1Rih8onJe0jij"
+  } ],
   "processes" : {
+    "3StZEK3MNUEvJsbChkJ3Q" : {
+      "id" : "3StZEK3MNUEvJsbChkJ3Q",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 524.5,
+        "y" : -8.25,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "_EwBmOmF1Rih8onJe0jij",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "nkwu2-L5zXISV7kDpf0O9",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "_EwBmOmF1Rih8onJe0jij##customer_id", "_EwBmOmF1Rih8onJe0jij##first_name", "_EwBmOmF1Rih8onJe0jij##last_name", "_EwBmOmF1Rih8onJe0jij##phone", "_EwBmOmF1Rih8onJe0jij##email", "_EwBmOmF1Rih8onJe0jij##country_code", "_EwBmOmF1Rih8onJe0jij##account_open_date", "_EwBmOmF1Rih8onJe0jij##account_flags" ],
+        "expressions" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "first_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first_name"
+          },
+          "description" : ""
+        }, {
+          "target" : "last_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "last_name"
+          },
+          "description" : ""
+        }, {
+          "target" : "phone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "phone"
+          },
+          "description" : ""
+        }, {
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "description" : ""
+        }, {
+          "target" : "country_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "country_code"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_open_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_open_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_flags",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_flags"
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "FJqjsaSIER_qFcikhmTP6" : {
       "id" : "FJqjsaSIER_qFcikhmTP6",
       "component" : "Source",
