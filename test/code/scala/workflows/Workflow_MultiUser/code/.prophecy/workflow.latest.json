@@ -41,8 +41,46 @@
     "sourcePort" : "VjEQpxBZhtt6BM6uZ_T1N",
     "target" : "3StZEK3MNUEvJsbChkJ3Q",
     "targetPort" : "_EwBmOmF1Rih8onJe0jij"
+  }, {
+    "id" : "edge1",
+    "source" : "E_eJ637-JFF9q7GIcEFz_",
+    "sourcePort" : "X5MP9X4kAuLB9QmkqWscJ",
+    "target" : "6N9R6mj7iwW7_QkjATNd5",
+    "targetPort" : "4wdRHNu5TBFS7qOldjDWo"
   } ],
   "processes" : {
+    "6N9R6mj7iwW7_QkjATNd5" : {
+      "id" : "6N9R6mj7iwW7_QkjATNd5",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : 483.5,
+        "y" : 202.5445556640625,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "4wdRHNu5TBFS7qOldjDWo",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "-VAVmbWV3M23zotB4wqb4",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "4wdRHNu5TBFS7qOldjDWo##customer_id" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "customer_id > 10"
+        }
+      }
+    },
     "3StZEK3MNUEvJsbChkJ3Q" : {
       "id" : "3StZEK3MNUEvJsbChkJ3Q",
       "component" : "Reformat",
@@ -145,6 +183,31 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "VjEQpxBZhtt6BM6uZ_T1N",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "1398/datasets/dataset_cust_in"
+      }
+    },
+    "E_eJ637-JFF9q7GIcEFz_" : {
+      "id" : "E_eJ637-JFF9q7GIcEFz_",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : 200.5,
+        "y" : 203.5445556640625,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : true,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "X5MP9X4kAuLB9QmkqWscJ",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
