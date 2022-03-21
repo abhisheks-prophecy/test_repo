@@ -43,6 +43,31 @@
     "targetPort" : "datjD4Ig01pqM2XrW17Ao"
   } ],
   "processes" : {
+    "G00xTNGaghrSbLTTlNjOs" : {
+      "id" : "G00xTNGaghrSbLTTlNjOs",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_2",
+        "slug" : "Source_2",
+        "x" : -359.75,
+        "y" : -207.92636108398438,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : true,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "O2O3_t_ZIqTnI4eS4z2AQ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "1398/datasets/dataset_cust_in"
+      }
+    },
     "yA8s3_injKnDVbQGADphT" : {
       "id" : "yA8s3_injKnDVbQGADphT",
       "component" : "Source",
