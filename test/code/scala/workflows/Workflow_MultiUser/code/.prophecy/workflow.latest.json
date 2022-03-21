@@ -36,17 +36,17 @@
     "buildSystem" : "maven"
   },
   "connections" : [ {
-    "id" : "edge0",
-    "source" : "RJbRkJZ3niFdQ3eIja4ch",
-    "sourcePort" : "je0ocwu7GBw_PDPg4kXsh",
-    "target" : "WllQytIGvVvjRPXVTB9j2",
-    "targetPort" : "fDdK6bvE8rySW2JKeT2Bo"
-  }, {
     "id" : "edge1",
     "source" : "RJbRkJZ3niFdQ3eIja4ch",
     "sourcePort" : "je0ocwu7GBw_PDPg4kXsh",
     "target" : "n6F6xVgrS-S8YQffNmELA",
     "targetPort" : "sLqCRG5G1aShSaVTClQoV"
+  }, {
+    "id" : "edge0",
+    "source" : "RJbRkJZ3niFdQ3eIja4ch",
+    "sourcePort" : "je0ocwu7GBw_PDPg4kXsh",
+    "target" : "WllQytIGvVvjRPXVTB9j2",
+    "targetPort" : "fDdK6bvE8rySW2JKeT2Bo"
   } ],
   "processes" : {
     "n6F6xVgrS-S8YQffNmELA" : {
