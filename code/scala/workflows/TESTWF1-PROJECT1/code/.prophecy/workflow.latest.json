@@ -37,29 +37,6 @@
   },
   "connections" : [ ],
   "processes" : {
-    "PLwfrHpoeXVW7ga4K4Npm" : {
-      "id" : "PLwfrHpoeXVW7ga4K4Npm",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_0",
-        "slug" : "Source_0",
-        "x" : 274,
-        "y" : 68,
-        "language" : "scala",
-        "phase" : 0,
-        "cache" : true,
-        "detailedStats" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "PlAMGkBMvXajpYYmblgKY",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : { }
-    },
     "WoqlZmWlmOI5dakbyegil" : {
       "id" : "WoqlZmWlmOI5dakbyegil",
       "component" : "Source",
@@ -77,6 +54,29 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "v3vzwETd6KgL4-6ybYJBo",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : { }
+    },
+    "PLwfrHpoeXVW7ga4K4Npm" : {
+      "id" : "PLwfrHpoeXVW7ga4K4Npm",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_0",
+        "slug" : "Source_0",
+        "x" : 274,
+        "y" : 68,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : true,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "PlAMGkBMvXajpYYmblgKY",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ]
@@ -136,6 +136,37 @@
         "selectedInputFields" : [ ]
       },
       "properties" : { }
+    },
+    "-4CyRwFBMk-_WvA6LxsHM" : {
+      "id" : "-4CyRwFBMk-_WvA6LxsHM",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_2",
+        "slug" : "Script_2",
+        "x" : -973.75,
+        "y" : -409.75,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "eKFzWy9f567vAUAWLIEPd",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "Jnzkf1_o4C3Kpn-kWk8hI",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "",
+        "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame) : Script = {",
+        "scriptMethodFooter" : "out0",
+        "outputPortNames" : [ "out0" ]
+      }
     }
   },
   "ports" : {
