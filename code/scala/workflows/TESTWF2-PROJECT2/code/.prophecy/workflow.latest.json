@@ -37,6 +37,40 @@
   },
   "connections" : [ ],
   "processes" : {
+    "JAJL6gML1Ka5MFI6ucNIq" : {
+      "id" : "JAJL6gML1Ka5MFI6ucNIq",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "SQLStatement_1",
+        "slug" : "SQLStatement_1",
+        "x" : -476,
+        "y" : -254.5,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "m0jYKiLOSHr7hsrebG-tt",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "fUNPxDClIPzA2bw_y-cBH",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : ""
+        } ],
+        "inputPortNames" : [ "in0" ]
+      }
+    },
     "FLf7R67Kavr7C6oYuZriy" : {
       "id" : "FLf7R67Kavr7C6oYuZriy",
       "component" : "Source",
