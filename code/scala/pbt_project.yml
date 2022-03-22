@@ -14,6 +14,17 @@ workflows:
       inputs: []
       outputs: []
     dependencies: {}
+  workflows/TESTWF2-PROJECT2:
+    name: TESTWF2-PROJECT2
+    description: TESTWF2-PROJECT2
+    author: abhisheks+test@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-03-22 06:28:04'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets: {}
 schedules: {}
 libraries: []
