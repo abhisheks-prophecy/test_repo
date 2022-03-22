@@ -1,0 +1,19 @@
+name: GITHUB-PROJECT1
+description: ''
+version: 0.0.1
+author: abhisheks+test@simpledatalabs.com
+workflows:
+  workflows/TESTWF1-PROJECT1:
+    name: TESTWF1-PROJECT1
+    description: TESTWF1-PROJECT1
+    author: abhisheks+test@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-03-22 06:22:30'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
+datasets: {}
+schedules: {}
+libraries: []
