@@ -59,6 +59,40 @@
         "selectedInputFields" : [ ]
       },
       "properties" : { }
+    },
+    "Pce59szRq4D9pDors1ZWl" : {
+      "id" : "Pce59szRq4D9pDors1ZWl",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "SQLStatement_1",
+        "slug" : "SQLStatement_1",
+        "x" : 320,
+        "y" : 20,
+        "language" : "scala",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "0JVR9BGx152giAwX_WT7H",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "TCDyib4Bz58Xzt0q7A_Lx",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : ""
+        } ],
+        "inputPortNames" : [ "in0" ]
+      }
     }
   },
   "ports" : {
