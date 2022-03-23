@@ -29,6 +29,19 @@ workflows:
       outputs:
       - 1322/datasets/dataset_out_11641
     dependencies: {}
+  workflows/Workflow-Automated-GITHUB-1648011326661:
+    name: Workflow-Automated-GITHUB-1648011326661
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-03-23 04:56:27'
+    datasets:
+      inputs:
+      - 1630/datasets/dataset_cust_in
+      outputs:
+      - 1630/datasets/dataset_out_9088
+    dependencies: {}
   workflows/Workflow-Automated-GITHUB-1647552233295:
     name: Workflow-Automated-GITHUB-1647552233295
     description: automation workflow
@@ -130,18 +143,6 @@ datasets:
         description: ''
         author: abhisheks+e2etests@simpledatalabs.com
         createdAt: '2022-03-17 21:24:35'
-  datasets/dataset_out_8889:
-    name: dataset_out_8889
-    description: ''
-    author: abhisheks+e2etests@simpledatalabs.com
-    createdAt: '2022-03-19 06:27:36'
-    physicalDatasets:
-      dev:
-        fabricId: 28
-        datasetType: File
-        description: ''
-        author: abhisheks+e2etests@simpledatalabs.com
-        createdAt: '2022-03-19 06:27:36'
   datasets/dataset_out_11641:
     name: dataset_out_11641
     description: ''
@@ -166,5 +167,29 @@ datasets:
         description: ''
         author: abhisheks+e2etests@simpledatalabs.com
         createdAt: '2022-03-20 21:30:23'
+  datasets/dataset_out_9088:
+    name: dataset_out_9088
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-03-23 04:56:59'
+    physicalDatasets:
+      dev:
+        fabricId: 28
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-03-23 04:56:59'
+  datasets/dataset_out_8889:
+    name: dataset_out_8889
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-03-19 06:27:36'
+    physicalDatasets:
+      dev:
+        fabricId: 28
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-03-19 06:27:36'
 schedules: {}
 libraries: []
