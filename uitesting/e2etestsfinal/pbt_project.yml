@@ -16,6 +16,32 @@ workflows:
       outputs:
       - 737/datasets/dataset_out_4396
     dependencies: {}
+  workflows/Workflow-Automated-GITHUB-1648336793093:
+    name: Workflow-Automated-GITHUB-1648336793093
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-03-26 23:20:04'
+    datasets:
+      inputs:
+      - 793/datasets/dataset_cust_in
+      outputs:
+      - 793/datasets/dataset_out_61540
+    dependencies: {}
+  workflows/Workflow-Automated-GITHUB-1648251114433:
+    name: Workflow-Automated-GITHUB-1648251114433
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-03-25 23:32:06'
+    datasets:
+      inputs:
+      - 785/datasets/dataset_cust_in
+      outputs:
+      - 785/datasets/dataset_out_88342
+    dependencies: {}
   workflows/Workflow-Automated-GITHUB-1648077640874:
     name: Workflow-Automated-GITHUB-1648077640874
     description: automation workflow
@@ -42,19 +68,6 @@ workflows:
       outputs:
       - 774/datasets/dataset_out_35864
     dependencies: {}
-  workflows/Workflow-Automated-GITHUB-1648251114433:
-    name: Workflow-Automated-GITHUB-1648251114433
-    description: automation workflow
-    author: abhisheks+e2etests@simpledatalabs.com
-    mode: batch
-    language: scala
-    createdAt: '2022-03-25 23:32:06'
-    datasets:
-      inputs:
-      - 785/datasets/dataset_cust_in
-      outputs:
-      - 785/datasets/dataset_out_88342
-    dependencies: {}
 datasets:
   datasets/dataset_out_78307:
     name: dataset_out_78307
@@ -80,6 +93,18 @@ datasets:
         description: ''
         author: abhisheks+e2etests@simpledatalabs.com
         createdAt: '2022-03-23 06:45:04'
+  datasets/dataset_out_61540:
+    name: dataset_out_61540
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-03-26 23:23:23'
+    physicalDatasets:
+      dev:
+        fabricId: 169
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-03-26 23:23:23'
   datasets/dataset_out_88342:
     name: dataset_out_88342
     description: ''
