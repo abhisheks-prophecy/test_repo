@@ -29,19 +29,6 @@ workflows:
       outputs:
       - 919/datasets/dataset_out_70638
     dependencies: {}
-  workflows/Workflow-Automated-GITHUB-1648650357164:
-    name: Workflow-Automated-GITHUB-1648650357164
-    description: automation workflow
-    author: abhisheks+e2etests@simpledatalabs.com
-    mode: batch
-    language: scala
-    createdAt: '2022-03-30 14:26:09'
-    datasets:
-      inputs:
-      - 1030/datasets/dataset_cust_in
-      outputs:
-      - 1030/datasets/dataset_out_81599
-    dependencies: {}
   workflows/Workflow-Automated-GITHUB-1648658184665:
     name: Workflow-Automated-GITHUB-1648658184665
     description: automation workflow
@@ -55,7 +42,45 @@ workflows:
       outputs:
       - 1096/datasets/dataset_out_85920
     dependencies: {}
+  workflows/Workflow-Automated-GITHUB-1648858266049:
+    name: Workflow-Automated-GITHUB-1648858266049
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-02 00:11:23'
+    datasets:
+      inputs:
+      - 1253/datasets/dataset_cust_in
+      outputs:
+      - 1253/datasets/dataset_out_65632
+    dependencies: {}
+  workflows/Workflow-Automated-GITHUB-1648650357164:
+    name: Workflow-Automated-GITHUB-1648650357164
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-03-30 14:26:09'
+    datasets:
+      inputs:
+      - 1030/datasets/dataset_cust_in
+      outputs:
+      - 1030/datasets/dataset_out_81599
+    dependencies: {}
 datasets:
+  datasets/dataset_out_65632:
+    name: dataset_out_65632
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-02 00:11:53'
+    physicalDatasets:
+      dev:
+        fabricId: 169
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-02 00:11:53'
   datasets/dataset_out_90444:
     name: dataset_out_90444
     description: ''
