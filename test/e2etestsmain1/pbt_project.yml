@@ -55,6 +55,19 @@ pipelines:
       outputs:
       - 2456/datasets/dataset_out_67334
     dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649279880521:
+    name: Workflow-Automated-GITHUB-1649279880521
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-06 21:18:13'
+    datasets:
+      inputs:
+      - 2533/datasets/dataset_cust_in
+      outputs:
+      - 2533/datasets/dataset_out_29774
+    dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1649539038832:
     name: Workflow-Automated-GITHUB-1649539038832
     description: automation workflow
@@ -68,18 +81,18 @@ pipelines:
       outputs:
       - 2747/datasets/dataset_out_80368
     dependencies: {}
-  pipelines/Workflow-Automated-GITHUB-1649279880521:
-    name: Workflow-Automated-GITHUB-1649279880521
+  pipelines/Workflow-Automated-GITHUB-1649626359266:
+    name: Workflow-Automated-GITHUB-1649626359266
     description: automation workflow
     author: abhisheks+e2etests@simpledatalabs.com
     mode: batch
     language: scala
-    createdAt: '2022-04-06 21:18:13'
+    createdAt: '2022-04-10 21:32:52'
     datasets:
       inputs:
-      - 2533/datasets/dataset_cust_in
+      - 2798/datasets/dataset_cust_in
       outputs:
-      - 2533/datasets/dataset_out_29774
+      - 2798/datasets/dataset_out_8004
     dependencies: {}
 datasets:
   datasets/dataset_out_67334:
@@ -94,6 +107,18 @@ datasets:
         description: ''
         author: abhisheks+e2etests@simpledatalabs.com
         createdAt: '2022-04-05 21:11:49'
+  datasets/dataset_out_8004:
+    name: dataset_out_8004
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-10 21:33:22'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-10 21:33:22'
   datasets/dataset_out_98394:
     name: dataset_out_98394
     description: ''
