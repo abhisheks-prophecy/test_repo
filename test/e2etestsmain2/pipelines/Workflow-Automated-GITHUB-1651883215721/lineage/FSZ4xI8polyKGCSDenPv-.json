@@ -1,0 +1,93 @@
+{
+  "name" : "FSZ4xI8polyKGCSDenPv-",
+  "component" : "Target",
+  "transformations" : [ {
+    "sources" : [ {
+      "port" : "spypI9rnFHgXZ-rqsHYgb",
+      "name" : "customer_id",
+      "exprId" : 1736
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "customer_id",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "spypI9rnFHgXZ-rqsHYgb",
+      "name" : "first_name",
+      "exprId" : 1737
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "first_name",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "spypI9rnFHgXZ-rqsHYgb",
+      "name" : "last_name",
+      "exprId" : 1738
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "last_name",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "spypI9rnFHgXZ-rqsHYgb",
+      "name" : "phone",
+      "exprId" : 1739
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "phone",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "spypI9rnFHgXZ-rqsHYgb",
+      "name" : "email",
+      "exprId" : 1740
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "email",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "spypI9rnFHgXZ-rqsHYgb",
+      "name" : "country_code",
+      "exprId" : 1741
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "country_code",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "spypI9rnFHgXZ-rqsHYgb",
+      "name" : "account_open_date",
+      "exprId" : 1742
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "account_open_date",
+      "exprId" : -1
+    }
+  }, {
+    "sources" : [ {
+      "port" : "spypI9rnFHgXZ-rqsHYgb",
+      "name" : "account_flags",
+      "exprId" : 1743
+    } ],
+    "destination" : {
+      "port" : "",
+      "name" : "account_flags",
+      "exprId" : -1
+    }
+  } ]
+}
