@@ -1,0 +1,11 @@
+name: GIT_EXTERNAL_PROJECT
+description: ''
+version: 0.0.1
+author: abhisheks+test@simpledatalabs.com
+pipelines: {}
+datasets: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: '[]'
+template: '[]'
