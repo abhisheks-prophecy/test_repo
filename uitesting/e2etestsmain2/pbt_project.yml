@@ -17,6 +17,19 @@ pipelines:
       outputs:
       - 4655/datasets/dataset_out_86683
     dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1654085986222:
+    name: Workflow-Automated-GITHUB-1654085986222
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-06-01 12:20:15'
+    datasets:
+      inputs:
+      - 4656/datasets/dataset_cust_in
+      outputs:
+      - 4656/datasets/dataset_out_17027
+    dependencies: {}
 datasets:
   datasets/dataset_cust_in:
     name: dataset_cust_in
@@ -42,6 +55,18 @@ datasets:
         description: ''
         author: abhisheks+e2etests@simpledatalabs.com
         createdAt: '2022-06-01 12:15:01'
+  datasets/dataset_out_17027:
+    name: dataset_out_17027
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-06-01 12:20:44'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-06-01 12:20:44'
 jobs: {}
 libraries: []
 subgraphs: {}
