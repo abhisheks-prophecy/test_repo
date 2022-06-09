@@ -4,6 +4,19 @@ version: 0.0.1
 author: abhisheks+e2etests@simpledatalabs.com
 language: python
 pipelines:
+  pipelines/Workflow-Automated-GITHUB-1654754401860:
+    name: Workflow-Automated-GITHUB-1654754401860
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-06-09 06:00:34'
+    datasets:
+      inputs:
+      - 5356/datasets/dataset_cust_in
+      outputs:
+      - 5356/datasets/dataset_out_9562
+    dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1654120946996:
     name: Workflow-Automated-GITHUB-1654120946996
     description: automation workflow
@@ -108,18 +121,6 @@ datasets:
         description: ''
         author: abhisheks+e2etests@simpledatalabs.com
         createdAt: '2022-06-01 12:15:01'
-  datasets/dataset_out_51291:
-    name: dataset_out_51291
-    description: ''
-    author: abhisheks+e2etests@simpledatalabs.com
-    createdAt: '2022-06-02 21:55:31'
-    physicalDatasets:
-      dev:
-        fabricId: 299
-        datasetType: File
-        description: ''
-        author: abhisheks+e2etests@simpledatalabs.com
-        createdAt: '2022-06-02 21:55:31'
   datasets/dataset_out_99755:
     name: dataset_out_99755
     description: ''
@@ -192,6 +193,30 @@ datasets:
         description: ''
         author: abhisheks+e2etests@simpledatalabs.com
         createdAt: '2022-06-09 05:36:31'
+  datasets/dataset_out_51291:
+    name: dataset_out_51291
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-06-02 21:55:31'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-06-02 21:55:31'
+  datasets/dataset_out_9562:
+    name: dataset_out_9562
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-06-09 06:01:05'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-06-09 06:01:05'
 jobs: {}
 libraries: []
 subgraphs: {}
