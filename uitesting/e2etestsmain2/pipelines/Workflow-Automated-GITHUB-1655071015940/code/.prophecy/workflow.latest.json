@@ -1,0 +1,149 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "299",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "interimMode" : "Full",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : {
+        "dev" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "trynew" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "ebs_ssd" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "jobSize-databricksBasic.New" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      }
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ]
+  },
+  "connections" : [ {
+    "id" : "G-WDMf_1QEyD1MbOJ1o5U",
+    "source" : "xV9Din3AVH20-T-0L8Jqj$$rJUalNZZMmFq1w4Sxgzar",
+    "sourcePort" : "aBs1u0ItSvO50OBC2Zj46$$_wqmohwI6Xcon3xLrvvEb",
+    "target" : "dbhMcrf1zEyynIyv1BUKq$$XPuJozO9wIL4-OsFD0Hrr",
+    "targetPort" : "Fy4mmT4KYDIfvH67v2IYA$$O5RCPjkf0FYSKften1yQN"
+  }, {
+    "id" : "YkoJrM2X3SznQwAwadYpo",
+    "source" : "dbhMcrf1zEyynIyv1BUKq$$XPuJozO9wIL4-OsFD0Hrr",
+    "sourcePort" : "6t-9CQBubO9nHOaya3_Ss$$hfQE0GQyhK3Y0WLVRSECt",
+    "target" : "AbvsFvk4sefexbtlXomFi$$5B8X2loVNoSNASeJ34YSQ",
+    "targetPort" : "cbc3AAkMZOm4OhiZtcS_-$$u7HSBVsE3Rv79yhKaRgjd"
+  } ],
+  "processes" : {
+    "AbvsFvk4sefexbtlXomFi$$5B8X2loVNoSNASeJ34YSQ" : {
+      "id" : "AbvsFvk4sefexbtlXomFi$$5B8X2loVNoSNASeJ34YSQ",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : 420,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "cbc3AAkMZOm4OhiZtcS_-$$u7HSBVsE3Rv79yhKaRgjd",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "5669/datasets/dataset_out_52690"
+      }
+    },
+    "xV9Din3AVH20-T-0L8Jqj$$rJUalNZZMmFq1w4Sxgzar" : {
+      "id" : "xV9Din3AVH20-T-0L8Jqj$$rJUalNZZMmFq1w4Sxgzar",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_0",
+        "slug" : "Source_0",
+        "x" : 140,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "aBs1u0ItSvO50OBC2Zj46$$_wqmohwI6Xcon3xLrvvEb",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "5669/datasets/dataset_cust_in"
+      }
+    },
+    "dbhMcrf1zEyynIyv1BUKq$$XPuJozO9wIL4-OsFD0Hrr" : {
+      "id" : "dbhMcrf1zEyynIyv1BUKq$$XPuJozO9wIL4-OsFD0Hrr",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : 280,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Fy4mmT4KYDIfvH67v2IYA$$O5RCPjkf0FYSKften1yQN",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "6t-9CQBubO9nHOaya3_Ss$$hfQE0GQyhK3Y0WLVRSECt",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "Fy4mmT4KYDIfvH67v2IYA$$O5RCPjkf0FYSKften1yQN##customer_id", "Fy4mmT4KYDIfvH67v2IYA$$O5RCPjkf0FYSKften1yQN##first_name" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "customer_id>10 and first_name like '%G%'"
+        }
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ]
+  }
+}
