@@ -105,6 +105,26 @@ pipelines:
         version: ScalaMainProject/1.5
         author: null
         createdAt: '2022-06-28 18:20:18'
+  pipelines/Workflow-Automated-GITHUB-1656698992762:
+    name: Workflow-Automated-GITHUB-1656698992762
+    description: automation workflow
+    author: abhisheks+e2etests1@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-07-01 18:10:16'
+    datasets:
+      inputs:
+      - 5689/datasets/dataset_cust_in
+      outputs:
+      - 8424/datasets/dataset_out_5733
+    dependencies:
+      project/5689:
+        name: project/5689
+        projectUID: 5689
+        projectName: scala_project
+        version: scala_project/0.1.1
+        author: null
+        createdAt: '2022-07-01 18:10:58'
   pipelines/Workflow-Automated-GITHUB-1656265925102:
     name: Workflow-Automated-GITHUB-1656265925102
     description: automation workflow
@@ -182,18 +202,6 @@ datasets:
         description: ''
         author: abhisheks+e2etests1@simpledatalabs.com
         createdAt: '2022-06-28 18:20:34'
-  datasets/dataset_out_8773:
-    name: dataset_out_8773
-    description: ''
-    author: abhisheks+e2etests1@simpledatalabs.com
-    createdAt: '2022-06-29 17:54:02'
-    physicalDatasets:
-      dev:
-        fabricId: 674
-        datasetType: File
-        description: ''
-        author: abhisheks+e2etests1@simpledatalabs.com
-        createdAt: '2022-06-29 17:54:02'
   datasets/dataset_out_74252:
     name: dataset_out_74252
     description: ''
@@ -230,6 +238,30 @@ datasets:
         description: ''
         author: abhisheks+e2etests1@simpledatalabs.com
         createdAt: '2022-06-30 18:16:03'
+  datasets/dataset_out_8773:
+    name: dataset_out_8773
+    description: ''
+    author: abhisheks+e2etests1@simpledatalabs.com
+    createdAt: '2022-06-29 17:54:02'
+    physicalDatasets:
+      dev:
+        fabricId: 674
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests1@simpledatalabs.com
+        createdAt: '2022-06-29 17:54:02'
+  datasets/dataset_out_5733:
+    name: dataset_out_5733
+    description: ''
+    author: abhisheks+e2etests1@simpledatalabs.com
+    createdAt: '2022-07-01 18:11:14'
+    physicalDatasets:
+      dev:
+        fabricId: 674
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests1@simpledatalabs.com
+        createdAt: '2022-07-01 18:11:14'
 templates: {}
 jobs: {}
 libraries: []
