@@ -125,26 +125,6 @@ pipelines:
         version: ScalaMainProject/1.5
         author: null
         createdAt: '2022-06-29 17:53:45'
-  pipelines/Workflow-Automated-GITHUB-1658145819235:
-    name: Workflow-Automated-GITHUB-1658145819235
-    description: automation workflow
-    author: abhisheks+e2etests1@simpledatalabs.com
-    mode: batch
-    language: python
-    createdAt: '2022-07-18 12:04:25'
-    datasets:
-      inputs:
-      - 5689/datasets/dataset_cust_in
-      outputs:
-      - 9797/datasets/dataset_out_17139
-    dependencies:
-      project/5689:
-        name: project/5689
-        projectUID: 5689
-        projectName: scala_project
-        version: scala_project/0.1.3
-        author: null
-        createdAt: '2022-07-18 12:07:53'
   pipelines/Workflow-Automated-GITHUB-1656440365076:
     name: Workflow-Automated-GITHUB-1656440365076
     description: automation workflow
@@ -365,6 +345,46 @@ pipelines:
         version: ScalaMainProject/1.5
         author: null
         createdAt: '2022-06-21 17:22:52'
+  pipelines/Workflow-Automated-GITHUB-1658308539069:
+    name: Workflow-Automated-GITHUB-1658308539069
+    description: automation workflow
+    author: abhisheks+e2etests1@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-07-20 09:16:11'
+    datasets:
+      inputs:
+      - 5689/datasets/dataset_cust_in
+      outputs:
+      - 10089/datasets/dataset_out_37439
+    dependencies:
+      project/5689:
+        name: project/5689
+        projectUID: 5689
+        projectName: scala_project
+        version: scala_project/0.1.3
+        author: null
+        createdAt: '2022-07-20 09:16:55'
+  pipelines/Workflow-Automated-GITHUB-1658145819235:
+    name: Workflow-Automated-GITHUB-1658145819235
+    description: automation workflow
+    author: abhisheks+e2etests1@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-07-18 12:04:25'
+    datasets:
+      inputs:
+      - 5689/datasets/dataset_cust_in
+      outputs:
+      - 9797/datasets/dataset_out_17139
+    dependencies:
+      project/5689:
+        name: project/5689
+        projectUID: 5689
+        projectName: scala_project
+        version: scala_project/0.1.3
+        author: null
+        createdAt: '2022-07-18 12:07:53'
   pipelines/Workflow-Automated-GITHUB-1658308306141:
     name: Workflow-Automated-GITHUB-1658308306141
     description: automation workflow
@@ -450,6 +470,18 @@ datasets:
         description: ''
         author: abhisheks+e2etests1@simpledatalabs.com
         createdAt: '2022-07-11 17:44:21'
+  datasets/dataset_out_37439:
+    name: dataset_out_37439
+    description: ''
+    author: abhisheks+e2etests1@simpledatalabs.com
+    createdAt: '2022-07-20 09:17:13'
+    physicalDatasets:
+      dev:
+        fabricId: 674
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests1@simpledatalabs.com
+        createdAt: '2022-07-20 09:17:13'
   datasets/dataset_out_45537:
     name: dataset_out_45537
     description: ''
