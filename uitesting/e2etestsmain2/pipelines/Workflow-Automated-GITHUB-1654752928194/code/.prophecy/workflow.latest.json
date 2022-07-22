@@ -1,0 +1,145 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "299",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "interimMode" : "Full",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : {
+        "dev" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "trynew" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "ebs_ssd" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      }
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ]
+  },
+  "connections" : [ {
+    "id" : "XcFS2mGAJIVvTviZ2chmq",
+    "source" : "CtvgnRt6dV_L_95GlJwMV$$S1xgMgnPivFp5CrExbCQB",
+    "sourcePort" : "TS3fQKe9WdltIzJhZ81z5$$vQLpo5layjrKQzqYjfzWj",
+    "target" : "BMgKqvDJ7_mf5Acc3V-F2$$dA3SwGiD9oEsrIAGniSrk",
+    "targetPort" : "zQYMYsB6e4XC6YABgSF7J$$L4wyQTMe3TQhlk9_FZgnV"
+  }, {
+    "id" : "0Hhzaq7z13_FZE7HC0eLH",
+    "source" : "BMgKqvDJ7_mf5Acc3V-F2$$dA3SwGiD9oEsrIAGniSrk",
+    "sourcePort" : "cACXr7aJ9riMYxAbKnUJZ$$roqDI2KghkFVLj7XYJT9x",
+    "target" : "b1tV58YLNcZI-Vkc6n6JC$$_tbf2GpryzcI4dnbTx1-s",
+    "targetPort" : "ERVVgLY_skI2cQdY2IX6Y$$STPZR1PeySIRU2K8_MXJu"
+  } ],
+  "processes" : {
+    "b1tV58YLNcZI-Vkc6n6JC$$_tbf2GpryzcI4dnbTx1-s" : {
+      "id" : "b1tV58YLNcZI-Vkc6n6JC$$_tbf2GpryzcI4dnbTx1-s",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : 420,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ERVVgLY_skI2cQdY2IX6Y$$STPZR1PeySIRU2K8_MXJu",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "5354/datasets/dataset_out_27564"
+      }
+    },
+    "BMgKqvDJ7_mf5Acc3V-F2$$dA3SwGiD9oEsrIAGniSrk" : {
+      "id" : "BMgKqvDJ7_mf5Acc3V-F2$$dA3SwGiD9oEsrIAGniSrk",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : 280,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "zQYMYsB6e4XC6YABgSF7J$$L4wyQTMe3TQhlk9_FZgnV",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "cACXr7aJ9riMYxAbKnUJZ$$roqDI2KghkFVLj7XYJT9x",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "zQYMYsB6e4XC6YABgSF7J$$L4wyQTMe3TQhlk9_FZgnV##first_name", "zQYMYsB6e4XC6YABgSF7J$$L4wyQTMe3TQhlk9_FZgnV##customer_id" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "customer_id>10 and first_name like '%G%'"
+        }
+      }
+    },
+    "CtvgnRt6dV_L_95GlJwMV$$S1xgMgnPivFp5CrExbCQB" : {
+      "id" : "CtvgnRt6dV_L_95GlJwMV$$S1xgMgnPivFp5CrExbCQB",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_0",
+        "slug" : "Source_0",
+        "x" : 140,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "TS3fQKe9WdltIzJhZ81z5$$vQLpo5layjrKQzqYjfzWj",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "5354/datasets/dataset_cust_in"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ]
+  }
+}
