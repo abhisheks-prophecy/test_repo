@@ -16,6 +16,17 @@ pipelines:
       inputs: []
       outputs: []
     dependencies: {}
+  pipelines/haresh_test_pipeline:
+    name: haresh_test_pipeline
+    description: ''
+    author: abhisheks+uitesting@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-07-22 09:27:14'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
