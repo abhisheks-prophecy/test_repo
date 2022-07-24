@@ -69,6 +69,37 @@
   },
   "connections" : [ ],
   "processes" : {
+    "ny_6z1rlUvcqZcX7uPGIj$$hm-kWuuTrCQOb22u3Wo6f" : {
+      "id" : "ny_6z1rlUvcqZcX7uPGIj$$hm-kWuuTrCQOb22u3Wo6f",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -472,
+        "y" : -85.19999999999996,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ladnyNI47gFqwTJtHZEVs$$-AJm7Z1uhCkVgqz70bmk9",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "CqQtgLv-pFy7Z2_UdINN2$$JEs2dMXKG5AUSg89v84n4",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      }
+    },
     "2z-M9KuIxYbMwWYLuVlxh$$-P9cvrafROPsy_RoFBwlk" : {
       "id" : "2z-M9KuIxYbMwWYLuVlxh$$-P9cvrafROPsy_RoFBwlk",
       "component" : "Script",
