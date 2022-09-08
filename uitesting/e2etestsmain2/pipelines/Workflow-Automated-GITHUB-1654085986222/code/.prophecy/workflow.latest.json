@@ -1,0 +1,145 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "299",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "interimMode" : "Full",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : {
+        "dev" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "trynew" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "abcdef" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      }
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ]
+  },
+  "connections" : [ {
+    "id" : "b-pYgLxqeGzFA8M2lfgMO",
+    "source" : "GgFldD7XSfKGo43xAqeGU$$hYG4UI9kkHZF6zIA0rOxq",
+    "sourcePort" : "VMGNJkaCnJRbm0lAhWuAp$$t-nuQUp_ZUU3-lSGzErym",
+    "target" : "Lhm3aQ3Gi_GSuPCj71TEm$$oBEnNJf2MmgcOVkKqqkPV",
+    "targetPort" : "c6NkLhPDYdXsGFH886M4k$$ydgOagOHsi1Un__CiZHfo"
+  }, {
+    "id" : "Llw660Gvtg6l8QD-BSudf",
+    "source" : "Lhm3aQ3Gi_GSuPCj71TEm$$oBEnNJf2MmgcOVkKqqkPV",
+    "sourcePort" : "EoLNYkuXchTEECiiCSAj4$$E5p4P0j7Co3l21tvqEmgz",
+    "target" : "EXvZWSvgd8UNKNboylcbc$$md5f7naLU18-_0q1euibJ",
+    "targetPort" : "tidUliVlblwV0nm_Cnt_w$$O2S95qE5WhDV52MJF5KCY"
+  } ],
+  "processes" : {
+    "EXvZWSvgd8UNKNboylcbc$$md5f7naLU18-_0q1euibJ" : {
+      "id" : "EXvZWSvgd8UNKNboylcbc$$md5f7naLU18-_0q1euibJ",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : 420,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "tidUliVlblwV0nm_Cnt_w$$O2S95qE5WhDV52MJF5KCY",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4656/datasets/dataset_out_17027"
+      }
+    },
+    "GgFldD7XSfKGo43xAqeGU$$hYG4UI9kkHZF6zIA0rOxq" : {
+      "id" : "GgFldD7XSfKGo43xAqeGU$$hYG4UI9kkHZF6zIA0rOxq",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_0",
+        "slug" : "Source_0",
+        "x" : 140,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "VMGNJkaCnJRbm0lAhWuAp$$t-nuQUp_ZUU3-lSGzErym",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "datasetId" : "4656/datasets/dataset_cust_in"
+      }
+    },
+    "Lhm3aQ3Gi_GSuPCj71TEm$$oBEnNJf2MmgcOVkKqqkPV" : {
+      "id" : "Lhm3aQ3Gi_GSuPCj71TEm$$oBEnNJf2MmgcOVkKqqkPV",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : 280,
+        "y" : 160,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "c6NkLhPDYdXsGFH886M4k$$ydgOagOHsi1Un__CiZHfo",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "EoLNYkuXchTEECiiCSAj4$$E5p4P0j7Co3l21tvqEmgz",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "c6NkLhPDYdXsGFH886M4k$$ydgOagOHsi1Un__CiZHfo##first_name", "c6NkLhPDYdXsGFH886M4k$$ydgOagOHsi1Un__CiZHfo##customer_id" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "customer_id>10 and first_name like '%G%'"
+        }
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ]
+  }
+}
