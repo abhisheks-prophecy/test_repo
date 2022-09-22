@@ -16,6 +16,17 @@ pipelines:
       inputs: []
       outputs: []
     dependencies: {}
+  pipelines/Automated-Github-UpdateToken-Pipeline:
+    name: Automated-Github-UpdateToken-Pipeline
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-09-22 13:12:28'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
