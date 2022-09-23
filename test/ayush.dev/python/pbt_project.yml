@@ -30,7 +30,7 @@ pipelines:
         projectUID: 452
         projectName: HelloWorld
         version: HelloWorld/1.0
-        author: null
+        author: ''
         repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
         createdAt: '2022-09-23 09:10:46'
   pipelines/pipeline_dataset_different_account_teams:
@@ -50,9 +50,21 @@ pipelines:
         projectUID: 452
         projectName: HelloWorld
         version: HelloWorld/1.0
-        author: null
+        author: ''
         repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
         createdAt: '2022-09-23 09:19:13'
+  pipelines/livy_python:
+    name: livy_python
+    description: livy_python
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-09-23 09:42:32'
+    datasets:
+      inputs:
+      - datasets/src_livy
+      outputs: []
+    dependencies: {}
 datasets:
   datasets/src_avro:
     name: src_avro
@@ -102,6 +114,18 @@ datasets:
         description: ''
         author: abhisheks+e2etests@prophecy.io
         createdAt: '2022-09-23 07:15:39'
+  datasets/src_livy:
+    name: src_livy
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-09-23 09:43:24'
+    physicalDatasets:
+      dev_livy:
+        fabricId: 221
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-09-23 09:43:24'
   datasets/src_json:
     name: src_json
     description: ''
