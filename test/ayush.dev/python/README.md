@@ -1,1 +1,0 @@
-# ScalaExternalProject Repository
