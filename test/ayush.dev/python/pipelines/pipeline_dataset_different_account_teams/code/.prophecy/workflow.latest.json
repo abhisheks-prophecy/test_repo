@@ -50,8 +50,40 @@
     "sourcePort" : "kr6uNJqcg3M66BJLo9QdD$$WnwRD_wbkOz2vthXFCYR3",
     "target" : "GneqZKzbzh01l9j85aAvH$$_KDT2hEcn742282Uef2s-",
     "targetPort" : "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9"
+  }, {
+    "id" : "lb4_l-u2b9yB6XbjTqj14",
+    "source" : "w2hnQTN9e9QnErXKWrUka$$itgCqH4AC0CbJwhZLHbMw",
+    "sourcePort" : "HrWt4akglF9DqkyhfN05o$$A1sTo4aaUhl6gd-21YZGo",
+    "target" : "PQFHOSuncad5wPvzhu1Dz$$_df5mFdnL9QYyIHkU16AG",
+    "targetPort" : "D8G6I1Ou_5A0YMt8woOYR$$zJRDNyQAj6tv8RsQ-j11-"
   } ],
   "processes" : {
+    "w2hnQTN9e9QnErXKWrUka$$itgCqH4AC0CbJwhZLHbMw" : {
+      "id" : "w2hnQTN9e9QnErXKWrUka$$itgCqH4AC0CbJwhZLHbMw",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customers_orders",
+        "slug" : "customers_orders",
+        "x" : 141.19999999999993,
+        "y" : -38.799999999999955,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "HrWt4akglF9DqkyhfN05o$$A1sTo4aaUhl6gd-21YZGo",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers_orders"
+      }
+    },
     "3DQmBgIZDbIjoZo3l4RO5$$7K25VwWdhMSkdujLEwUs-" : {
       "id" : "3DQmBgIZDbIjoZo3l4RO5$$7K25VwWdhMSkdujLEwUs-",
       "component" : "Source",
@@ -76,6 +108,64 @@
       },
       "properties" : {
         "datasetId" : "http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers"
+      }
+    },
+    "PQFHOSuncad5wPvzhu1Dz$$_df5mFdnL9QYyIHkU16AG" : {
+      "id" : "PQFHOSuncad5wPvzhu1Dz$$_df5mFdnL9QYyIHkU16AG",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_2",
+        "slug" : "Reformat_2",
+        "x" : 684.8,
+        "y" : -24.400000000000006,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "D8G6I1Ou_5A0YMt8woOYR$$zJRDNyQAj6tv8RsQ-j11-",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "kWilmz5n8vGtFcKuxNSaN$$CyXNTi7sOzbpLDI3jqxhX",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "D8G6I1Ou_5A0YMt8woOYR$$zJRDNyQAj6tv8RsQ-j11-##orders", "D8G6I1Ou_5A0YMt8woOYR$$zJRDNyQAj6tv8RsQ-j11-##account_length_days", "D8G6I1Ou_5A0YMt8woOYR$$zJRDNyQAj6tv8RsQ-j11-##customer_id", "D8G6I1Ou_5A0YMt8woOYR$$zJRDNyQAj6tv8RsQ-j11-##amounts" ],
+        "expressions" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "orders",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "orders"
+          },
+          "description" : ""
+        }, {
+          "target" : "amounts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "amounts"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_length_days",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_length_days"
+          },
+          "description" : ""
+        } ]
       }
     },
     "GneqZKzbzh01l9j85aAvH$$_KDT2hEcn742282Uef2s-" : {
