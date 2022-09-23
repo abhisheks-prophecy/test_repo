@@ -1,0 +1,163 @@
+name: PythonExternalGit
+description: ''
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/python_external_git_pipeline:
+    name: python_external_git_pipeline
+    description: python_external_git_pipeline
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-09-22 13:14:27'
+    datasets:
+      inputs:
+      - datasets/src_parquet
+      - datasets/src_orc
+      - datasets/src_parquet_complex
+      - datasets/src_avro
+      - datasets/src_json
+      - datasets/src_csv
+      - datasets/src_catalog
+      - datasets/src_jdbc
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/src_avro:
+    name: src_avro
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-09-23 07:14:17'
+    physicalDatasets:
+      dev_fabric1:
+        fabricId: 217
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-09-23 07:14:17'
+  datasets/src_parquet:
+    name: src_parquet
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-09-23 07:08:31'
+    physicalDatasets:
+      dev_fabric1:
+        fabricId: 217
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-09-23 07:08:31'
+  datasets/src_orc:
+    name: src_orc
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-09-23 07:11:56'
+    physicalDatasets:
+      dev_fabric1:
+        fabricId: 217
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-09-23 07:11:56'
+  datasets/src_csv:
+    name: src_csv
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-09-23 07:15:39'
+    physicalDatasets:
+      dev_fabric1:
+        fabricId: 217
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-09-23 07:15:39'
+  datasets/src_json:
+    name: src_json
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-09-23 07:15:07'
+    physicalDatasets:
+      dev_fabric1:
+        fabricId: 217
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-09-23 07:15:07'
+  datasets/src_catalog:
+    name: src_catalog
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-09-23 07:17:21'
+    physicalDatasets:
+      dev_fabric1:
+        fabricId: 217
+        datasetType: Database
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-09-23 07:17:21'
+  datasets/src_jdbc:
+    name: src_jdbc
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-09-23 07:22:34'
+    physicalDatasets:
+      dev_fabric1:
+        fabricId: 217
+        datasetType: Warehouse
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-09-23 07:22:34'
+  datasets/src_parquet_complex:
+    name: src_parquet_complex
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-09-23 07:13:34'
+    physicalDatasets:
+      dev_fabric1:
+        fabricId: 217
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-09-23 07:13:34'
+templates: {}
+jobs:
+  jobs/python_external_git_pipeline_job:
+    name: python_external_git_pipeline_job
+    description: ''
+    fabricUID: 218
+    scheduler:
+      Databricks: {}
+    jobSize: small
+    scheduleCron: 0 0 0 * * ? 2090
+    timeout: null
+    alerting:
+      emails: abhisheks@prophecy.io
+      onStart: false
+      onSuccess: true
+      onFailure: false
+    pipelines:
+    - pipelines/python_external_git_pipeline
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2022-09-23 07:45:33'
+    author: abhisheks+e2etests@prophecy.io
+libraries: []
+subgraphs:
+  subgraphs/test_subgraph:
+    name: test_subgraph
+    description: test_subgraph
+    author: abhisheks+e2etests@prophecy.io
+    language: python
+    createdAt: '2022-09-23 07:36:31'
+dependencies:
+- coordinates: mysql:mysql-connector-java:8.0.29
+  name: mysql
+  exclusions: []
+  id: 7y8xO
+  type: coordinates
+  enabled: false
