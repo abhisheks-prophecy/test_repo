@@ -30,7 +30,7 @@ pipelines:
         projectUID: 452
         projectName: HelloWorld
         version: HelloWorld/1.0
-        author: null
+        author: ''
         repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
         createdAt: '2022-09-23 09:10:46'
   pipelines/pipeline_dataset_different_account_teams:
@@ -43,6 +43,7 @@ pipelines:
     datasets:
       inputs:
       - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers
+      - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers_orders
       outputs: []
     dependencies:
       project/452:
@@ -50,7 +51,7 @@ pipelines:
         projectUID: 452
         projectName: HelloWorld
         version: HelloWorld/1.0
-        author: null
+        author: ''
         repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
         createdAt: '2022-09-23 09:19:13'
 datasets:

@@ -7,7 +7,9 @@ from prophecy.utils import *
 from pipeline_dataset_different_account_teams.graph import *
 
 def pipeline(spark: SparkSession) -> None:
+    df_customers_orders = customers_orders(spark)
     df_customers = customers(spark)
+    df_Reformat_2 = Reformat_2(spark, df_customers_orders)
     df_Reformat_1 = Reformat_1(spark, df_customers)
 
 def main():
