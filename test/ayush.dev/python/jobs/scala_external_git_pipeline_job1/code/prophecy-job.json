@@ -1,0 +1,124 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "217",
+    "jobId" : "646/jobs/scala_external_git_pipeline_job1",
+    "name" : "scala_external_git_pipeline_job1",
+    "schedule" : "0 0 0 * * ? 2090",
+    "enabled" : true,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "217",
+      "name" : "dev_fabric1",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "218",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "oaqrLMsqUjzfQ4jV-4iPR" : {
+      "id" : "oaqrLMsqUjzfQ4jV-4iPR",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline_0",
+        "x" : -237.1999969482422,
+        "y" : -198.8000030517578
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "out"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/scala_external_git_pipeline",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "value"
+            }
+          } ],
+          "instances" : [ "default" ],
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    },
+    "CFbLMhe-BKHPlvF51ykl-$$-eAMVAFUtVoTm_p0AS0tl" : {
+      "id" : "CFbLMhe-BKHPlvF51ykl-$$-eAMVAFUtVoTm_p0AS0tl",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 398.5666809082031,
+        "y" : -32.93333435058594
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "IEctxqv9HrmEoEeqzLloz$$C6MYypiRJ9xYCcSM3c0XQ"
+        } ],
+        "outputs" : [ {
+          "id" : "Px8uHQxdCjeZeKEhjbz1p$$DIyj10KQofkICmvoODqDq"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : "print(\"hello\")"
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "40WJ9vZsbB3qEOascTbUn",
+    "source" : "oaqrLMsqUjzfQ4jV-4iPR",
+    "target" : "CFbLMhe-BKHPlvF51ykl-$$-eAMVAFUtVoTm_p0AS0tl",
+    "sourcePort" : "out",
+    "targetPort" : "IEctxqv9HrmEoEeqzLloz$$C6MYypiRJ9xYCcSM3c0XQ"
+  } ]
+}

@@ -1,0 +1,6 @@
+version: 1
+dependencies:
+- name: mysql
+  id: 4Z206
+  type: workflow
+  enabled: true
