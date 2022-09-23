@@ -23,6 +23,27 @@ pipelines:
       - datasets/src_csv
       - datasets/src_json
       - datasets/src_catalog
+      - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers_orders
+      outputs: []
+    dependencies:
+      project/452:
+        name: project/452
+        projectUID: 452
+        projectName: HelloWorld
+        version: HelloWorld/1.0
+        author: ''
+        repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
+        createdAt: '2022-09-23 09:10:27'
+  pipelines/livy_scala:
+    name: livy_scala
+    description: livy_scala
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-09-23 09:46:11'
+    datasets:
+      inputs:
+      - datasets/src_livy
       outputs: []
     dependencies: {}
 datasets:
@@ -86,6 +107,18 @@ datasets:
         description: ''
         author: abhisheks+e2etests@prophecy.io
         createdAt: '2022-09-23 08:53:56'
+  datasets/src_livy:
+    name: src_livy
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-09-23 09:46:57'
+    physicalDatasets:
+      dev_livy:
+        fabricId: 221
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-09-23 09:46:57'
   datasets/src_json:
     name: src_json
     description: ''
