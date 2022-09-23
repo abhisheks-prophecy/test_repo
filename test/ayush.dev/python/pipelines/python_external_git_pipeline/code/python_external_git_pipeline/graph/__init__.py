@@ -1,3 +1,4 @@
+from .customers import *
 from .test_subgraph_1 import *
 from .src_avro import *
 from .Reformat_1 import *
@@ -8,6 +9,7 @@ from .Join_1 import *
 from .OrderBy_1 import *
 from .src_orc import *
 from .src_parquet import *
+from .Reformat_3 import *
 from .Filter_1 import *
 from .src_jdbc import *
 from .src_csv import *

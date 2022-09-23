@@ -1,0 +1,174 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "219",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default"
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ {
+      "coordinates" : "mysql:mysql-connector-java:8.0.29",
+      "name" : "mysql",
+      "exclusions" : [ ],
+      "id" : "7y8xO",
+      "type" : "coordinates",
+      "enabled" : false
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "pipeline_dataset_different_account_teams"
+  },
+  "connections" : [ {
+    "id" : "yoUUM3Cq0NEOReKBvAnnW",
+    "source" : "3DQmBgIZDbIjoZo3l4RO5$$7K25VwWdhMSkdujLEwUs-",
+    "sourcePort" : "kr6uNJqcg3M66BJLo9QdD$$WnwRD_wbkOz2vthXFCYR3",
+    "target" : "GneqZKzbzh01l9j85aAvH$$_KDT2hEcn742282Uef2s-",
+    "targetPort" : "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9"
+  } ],
+  "processes" : {
+    "3DQmBgIZDbIjoZo3l4RO5$$7K25VwWdhMSkdujLEwUs-" : {
+      "id" : "3DQmBgIZDbIjoZo3l4RO5$$7K25VwWdhMSkdujLEwUs-",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : 140,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "kr6uNJqcg3M66BJLo9QdD$$WnwRD_wbkOz2vthXFCYR3",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers"
+      }
+    },
+    "GneqZKzbzh01l9j85aAvH$$_KDT2hEcn742282Uef2s-" : {
+      "id" : "GneqZKzbzh01l9j85aAvH$$_KDT2hEcn742282Uef2s-",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 760.3999999999999,
+        "y" : 165.2,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "4-WBI6TgrYa9M2YnFvPm_$$AWqUAbGTroT23im4Ahzpr",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9##customer_id", "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9##first_name", "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9##phone", "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9##country_code", "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9##last_name", "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9##account_flags", "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9##email", "LGGUAIn4OzGs4rFUI_QSg$$XQQ-mqW2ICWBU59WFkJl9##account_open_date" ],
+        "expressions" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "first_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first_name"
+          },
+          "description" : ""
+        }, {
+          "target" : "last_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "last_name"
+          },
+          "description" : ""
+        }, {
+          "target" : "phone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "phone"
+          },
+          "description" : ""
+        }, {
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "description" : ""
+        }, {
+          "target" : "country_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "country_code"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_open_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_open_date"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_flags",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_flags"
+          },
+          "description" : ""
+        } ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}
