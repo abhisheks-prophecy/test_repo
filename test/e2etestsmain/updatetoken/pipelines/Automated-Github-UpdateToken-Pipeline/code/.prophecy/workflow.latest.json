@@ -1,0 +1,80 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "674",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default"
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "automatedgithubupdatetokenpipeline"
+  },
+  "connections" : [ ],
+  "processes" : {
+    "kM4_vCLfAFG9QyDnPVtB8$$p7ffI8WmHgzLuf7Cs9SGU" : {
+      "id" : "kM4_vCLfAFG9QyDnPVtB8$$p7ffI8WmHgzLuf7Cs9SGU",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_0",
+        "slug" : "Script_0",
+        "x" : 140,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qdxWQB4qJfyDuHxG68ftY$$bkTBeT7-tugw7X199738C",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "TdvthSc99hveDamOUV8Rc$$88QjguVI1RbqI6RuALz9-",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "script" : "",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in: DataFrame) -> Script:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}
