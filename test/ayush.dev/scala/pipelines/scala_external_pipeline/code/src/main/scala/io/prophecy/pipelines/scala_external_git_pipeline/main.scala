@@ -12,6 +12,7 @@ import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
+import org.apache.spark.sql.expressions._
 import java.time._
 
 object Main {
@@ -26,6 +27,8 @@ object Main {
     val df_src_parquet         = src_parquet(spark)
     val df_src_jdbc            = src_jdbc(spark)
     val df_Join_1              = Join_1(spark,                df_src_jdbc, df_src_jdbc)
+    val df_customers_orders    = customers_orders(spark)
+    val df_Reformat_3          = Reformat_3(spark,            df_customers_orders)
     val df_Filter_1            = Filter_1(spark,              df_src_parquet)
     val df_test_subgraph_1     = test_subgraph_1.apply(spark, df_Filter_1)
     val df_src_catalog         = src_catalog(spark)

@@ -140,6 +140,12 @@
     "sourcePort" : "zY32RuuxEGbJuumSvJUDL$$nGmitOVk1R5iOM8GPTTH8",
     "target" : "hOk8FJNfGcNhDJl8iCJM4$$HkaX6j8AhD7JldC9NkL5C",
     "targetPort" : "eTCR-mJcji14a-K0cBJ7P$$yh6Ab9Ew8jYmBdbWKx12v"
+  }, {
+    "id" : "VOjnAg8KVCiFPRZZMGRkS",
+    "source" : "dAzLxGvjE0_vcsW6k89ba$$hd0YOU_Uk2sWHnY5pSJ1-",
+    "sourcePort" : "zaiqOlJqkm6ODAbS41qU8$$kqL6YAO_SdMcNp4jk3QhU",
+    "target" : "bNKjddBsN__xwaCDbr4Xq$$LHcEi6UEbOSsLokiNjdG5",
+    "targetPort" : "KgoHLmbFgnsrcsAIng7nA$$H8M4-xgRpDiFYGeja5I57"
   } ],
   "processes" : {
     "gECb7uktK3UAkEc8Hhx0K$$LXn40p531xM2fvn9QlJvC" : {
@@ -419,6 +425,64 @@
         "columnsSelector" : [ "3rmGBWEVLAovN_YyP1bhq$$MYdvN7up5CK3BLWKH_ht6##a", "SxICt5xNgBp_Y0yBYKytX$$1-f5HmooheFeQNt-T9SMH##a", "3rmGBWEVLAovN_YyP1bhq$$MYdvN7up5CK3BLWKH_ht6##a" ],
         "whereClause" : null,
         "headAlias" : "in0"
+      }
+    },
+    "bNKjddBsN__xwaCDbr4Xq$$LHcEi6UEbOSsLokiNjdG5" : {
+      "id" : "bNKjddBsN__xwaCDbr4Xq$$LHcEi6UEbOSsLokiNjdG5",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_3",
+        "slug" : "Reformat_3",
+        "x" : 1700.6999999999998,
+        "y" : 61.866666666666674,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KgoHLmbFgnsrcsAIng7nA$$H8M4-xgRpDiFYGeja5I57",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "emIudp-hA3W59735CYhO7$$e9y4VAXWbs6_5xaKkgPzS",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "KgoHLmbFgnsrcsAIng7nA$$H8M4-xgRpDiFYGeja5I57##customer_id", "KgoHLmbFgnsrcsAIng7nA$$H8M4-xgRpDiFYGeja5I57##orders", "KgoHLmbFgnsrcsAIng7nA$$H8M4-xgRpDiFYGeja5I57##amounts", "KgoHLmbFgnsrcsAIng7nA$$H8M4-xgRpDiFYGeja5I57##account_length_days" ],
+        "expressions" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "orders",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "orders"
+          },
+          "description" : ""
+        }, {
+          "target" : "amounts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "amounts"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_length_days",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_length_days"
+          },
+          "description" : ""
+        } ]
       }
     },
     "VllbK_lFYU0Prah5mfGyr$$rah1LPZr5fBRNjIHfsDU3" : {
@@ -962,6 +1026,32 @@
         "columnsSelector" : [ "reHiGv0_GcapdKr-VyCiC$$Xpm-glN1GDaxSLt_cGFtC##c_array-string  _ string", "reHiGv0_GcapdKr-VyCiC$$Xpm-glN1GDaxSLt_cGFtC##c_array--long", "reHiGv0_GcapdKr-VyCiC$$Xpm-glN1GDaxSLt_cGFtC##c_struct -- _  ", "reHiGv0_GcapdKr-VyCiC$$Xpm-glN1GDaxSLt_cGFtC##c_struct -- _  .c_short - of a struct", "reHiGv0_GcapdKr-VyCiC$$Xpm-glN1GDaxSLt_cGFtC##c_struct -- _  .c_array_int - of a struct " ],
         "explodeColumns" : [ "c_array-string  _ string", "c_array--long", "c_struct -- _  .c_array_int - of a struct " ],
         "delimiter" : "-"
+      }
+    },
+    "dAzLxGvjE0_vcsW6k89ba$$hd0YOU_Uk2sWHnY5pSJ1-" : {
+      "id" : "dAzLxGvjE0_vcsW6k89ba$$hd0YOU_Uk2sWHnY5pSJ1-",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customers_orders",
+        "slug" : "customers_orders",
+        "x" : 1440.3,
+        "y" : 48.666666666666686,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "zaiqOlJqkm6ODAbS41qU8$$kqL6YAO_SdMcNp4jk3QhU",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers_orders"
       }
     },
     "vd97Xpi5uJWR4ulG58z5S$$n8fUHiEBnYO7K5h3-NZX8" : {

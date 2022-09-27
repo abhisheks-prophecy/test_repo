@@ -6,9 +6,25 @@ schema:
     type: short
     nullable: true
     metadata:
-      description: ''
-      mappings: []
-      tags: []
+      description: c short one son
+      mappings:
+      - columnName: p_short
+        type: foreign
+        datasetName: src_delta
+        datasetId: datasets/src_delta
+      - columnName: c_short
+        type: foreign
+        datasetName: src_orc
+        datasetId: datasets/src_orc
+      tags:
+      - type: user
+        name: tag1
+      - type: user
+        name: tag2
+      - type: user
+        name: short
+      - type: user
+        name: optional
   - name: c_int
     type: integer
     nullable: true
@@ -27,9 +43,17 @@ schema:
     type: decimal(10,0)
     nullable: true
     metadata:
-      description: ''
-      mappings: []
-      tags: []
+      description: this is decimal son
+      mappings:
+      - columnName: p_decimal
+        type: foreign
+        datasetName: src_delta
+        datasetId: datasets/src_delta
+      tags:
+      - type: user
+        name: decimal
+      - type: user
+        name: optional
   - name: c_float
     type: float
     nullable: true
