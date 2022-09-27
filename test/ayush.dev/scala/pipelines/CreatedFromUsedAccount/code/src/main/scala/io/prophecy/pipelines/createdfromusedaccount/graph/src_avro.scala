@@ -1,7 +1,7 @@
-package io.prophecy.pipelines.scala_external_git_pipeline.graph
+package io.prophecy.pipelines.createdfromusedaccount.graph
 
 import io.prophecy.libs._
-import io.prophecy.pipelines.scala_external_git_pipeline.config.ConfigStore._
+import io.prophecy.pipelines.createdfromusedaccount.config.ConfigStore._
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._

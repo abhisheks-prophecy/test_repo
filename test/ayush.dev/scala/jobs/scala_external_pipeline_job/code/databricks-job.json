@@ -1,24 +1,33 @@
 {
+  "fabricId" : "217",
+  "components" : [ {
+    "PipelineComponent" : {
+      "id" : "pipelines/scala_external_pipeline",
+      "nodeName" : "Pipeline_0",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/dev/ayush/pipelines/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/__PROJECT_ID_PLACEHOLDER__/scala_external_pipeline.jar",
+      "language" : "scala"
+    }
+  }, {
+    "PipelineComponent" : {
+      "id" : "pipelines/scala_external_pipeline",
+      "nodeName" : "Pipeline_1",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/dev/ayush/pipelines/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/__PROJECT_ID_PLACEHOLDER__/scala_external_pipeline.jar",
+      "language" : "scala"
+    }
+  }, {
+    "ScriptComponent" : {
+      "path" : "dbfs:/FileStore/prophecy/artifacts/dev/ayush/scripts/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/__PROJECT_ID_PLACEHOLDER__/scala_external_pipeline_job/Script_1--342935075.py",
+      "nodeName" : "Script_1",
+      "id" : "ZaZAVEsb8dfX9vq75dEe6$$wOLI4OVuYe41e4mv8KM29",
+      "language" : "python",
+      "content" : "print(\"hello\")"
+    }
+  } ],
   "request" : {
     "CreateNewJobRequest" : {
       "format" : "MULTI_TASK",
       "name" : "scala_external_pipeline_job",
-      "job_clusters" : [ {
-        "job_cluster_key" : "small-109548807",
-        "new_cluster" : {
-          "spark_version" : "10.4.x-scala2.12",
-          "node_type_id" : "i3.xlarge",
-          "spark_conf" : {
-            "prophecy.metadata.job.uri" : "_/_/P/R/O/J/E/C/T/_/I/D/_/P/L/A/C/E/H/O/L/D/E/R/_/_/jobs/scala_external_pipeline_job",
-            "prophecy.metadata.fabric.id" : "217",
-            "prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
-            "prophecy.execution.service.url" : "wss://execution.dp1.ayush.dev.cloud.prophecy.io/eventws",
-            "prophecy.metadata.is.interactive.run" : "false"
-          },
-          "num_workers" : 1,
-          "driver_node_type_id" : "i3.xlarge"
-        }
-      } ],
+      "job_clusters" : [ ],
       "email_notifications" : {
         "on_success" : [ "abhisheks@prophecy.io" ]
       },
@@ -87,31 +96,6 @@
       }
     }
   },
-  "clusterConfig" : "{\"spark_version\":\"10.4.x-scala2.12\",\"node_type_id\":\"i3.xlarge\",\"spark_conf\":{\"prophecy.metadata.job.uri\":\"_/_/P/R/O/J/E/C/T/_/I/D/_/P/L/A/C/E/H/O/L/D/E/R/_/_/jobs/scala_external_pipeline_job\",\"prophecy.metadata.fabric.id\":\"217\",\"prophecy.project.id\":\"__PROJECT_ID_PLACEHOLDER__\",\"prophecy.execution.service.url\":\"wss://execution.dp1.ayush.dev.cloud.prophecy.io/eventws\",\"prophecy.metadata.is.interactive.run\":\"false\"},\"num_workers\":1,\"driver_node_type_id\":\"i3.xlarge\"}",
-  "fabricId" : "217",
-  "components" : [ {
-    "PipelineComponent" : {
-      "id" : "pipelines/scala_external_pipeline",
-      "nodeName" : "Pipeline_0",
-      "path" : "dbfs:/FileStore/prophecy/artifacts/dev/ayush/pipelines/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/__PROJECT_ID_PLACEHOLDER__/scala_external_pipeline.jar",
-      "language" : "scala"
-    }
-  }, {
-    "PipelineComponent" : {
-      "id" : "pipelines/scala_external_pipeline",
-      "nodeName" : "Pipeline_1",
-      "path" : "dbfs:/FileStore/prophecy/artifacts/dev/ayush/pipelines/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/__PROJECT_ID_PLACEHOLDER__/scala_external_pipeline.jar",
-      "language" : "scala"
-    }
-  }, {
-    "ScriptComponent" : {
-      "path" : "dbfs:/FileStore/prophecy/artifacts/dev/ayush/scripts/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/__PROJECT_ID_PLACEHOLDER__/scala_external_pipeline_job/Script_1--342935075.py",
-      "nodeName" : "Script_1",
-      "id" : "ZaZAVEsb8dfX9vq75dEe6$$wOLI4OVuYe41e4mv8KM29",
-      "language" : "python",
-      "content" : "print(\"hello\")"
-    }
-  } ],
   "clusterMode" : {
     "clusterMode" : "Single"
   }
