@@ -199,13 +199,13 @@
         "name" : "test_subgraph"
       },
       "connections" : [ {
-        "id" : "LI0yqr1oKsMUar0-3twP5",
+        "id" : "52vCaKDbWuP_3eurX-q7x",
         "source" : "RpkYqvUKIK-VMVuoGZK9G$$CylLDvVHX5XAh5XlSYPfk",
         "sourcePort" : "s21_2jP4uDWG6U47o_gso$$aMV4iAu2foKOH_Hwgmj4L",
         "target" : "UCxN_opj7-nneeShvmDmE$$CvI89dX72SOR0N7_euPBI",
         "targetPort" : "MRUwctu7Df9nIryTKQhfX$$Tnh_UR7scQBa8eXZZi-Yg"
       }, {
-        "id" : "FLMacjiUA8ZY1-HfNWFiS",
+        "id" : "2himIHfY762hPV_HwajYF",
         "source" : "UCxN_opj7-nneeShvmDmE$$CvI89dX72SOR0N7_euPBI",
         "sourcePort" : "PnWI2iMTNb84JfgMlpI0h$$0fPHWWnIsSaq0uXxYFhLV",
         "target" : "RpkYqvUKIK-VMVuoGZK9G$$CylLDvVHX5XAh5XlSYPfk",
@@ -218,8 +218,8 @@
           "metadata" : {
             "label" : "Reformat_2",
             "slug" : "Reformat_2",
-            "x" : 160,
-            "y" : 180,
+            "x" : 180,
+            "y" : 200,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -433,13 +433,13 @@
         "name" : "test_subgraph"
       },
       "connections" : [ {
-        "id" : "LI0yqr1oKsMUar0-3twP5",
+        "id" : "52vCaKDbWuP_3eurX-q7x",
         "source" : "RpkYqvUKIK-VMVuoGZK9G$$uhG2lxS8vjNsyU1nf1ilL",
         "sourcePort" : "s21_2jP4uDWG6U47o_gso$$7EbVYBCyIsvXbKV0haQxh",
         "target" : "UCxN_opj7-nneeShvmDmE$$moD10NwpJBJincCXfqgWo",
         "targetPort" : "MRUwctu7Df9nIryTKQhfX$$zPfeke5PI9Ba61_PLTUov"
       }, {
-        "id" : "FLMacjiUA8ZY1-HfNWFiS",
+        "id" : "2himIHfY762hPV_HwajYF",
         "source" : "UCxN_opj7-nneeShvmDmE$$moD10NwpJBJincCXfqgWo",
         "sourcePort" : "PnWI2iMTNb84JfgMlpI0h$$Tw91RW8wb24T6hg000OP-",
         "target" : "RpkYqvUKIK-VMVuoGZK9G$$uhG2lxS8vjNsyU1nf1ilL",
@@ -452,8 +452,8 @@
           "metadata" : {
             "label" : "Reformat_2",
             "slug" : "Reformat_2",
-            "x" : 160,
-            "y" : 180,
+            "x" : 180,
+            "y" : 200,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,

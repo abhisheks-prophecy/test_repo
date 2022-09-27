@@ -5,6 +5,18 @@ author: abhisheks+e2etests@prophecy.io
 language: python
 buildSystem: wheel
 pipelines:
+  pipelines/livy_python:
+    name: livy_python
+    description: livy_python
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-09-23 09:42:32'
+    datasets:
+      inputs:
+      - datasets/src_livy
+      outputs: []
+    dependencies: {}
   pipelines/python_external_git_pipeline:
     name: python_external_git_pipeline
     description: python_external_git_pipeline
@@ -33,6 +45,33 @@ pipelines:
         author: ''
         repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
         createdAt: '2022-09-23 09:10:46'
+  pipelines/PythonLivy:
+    name: PythonLivy
+    description: PythonLivy
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-09-27 06:12:09'
+    datasets:
+      inputs:
+      - datasets/src_livy
+      outputs: []
+    dependencies: {}
+  pipelines/PythonInsideProjectDatasetsOnly:
+    name: PythonInsideProjectDatasetsOnly
+    description: PythonInsideProjectDatasetsOnly
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-09-27 05:48:55'
+    datasets:
+      inputs:
+      - datasets/src_avro
+      - datasets/src_json
+      - datasets/src_catalog
+      - datasets/src_orc
+      outputs: []
+    dependencies: {}
   pipelines/pipeline_dataset_different_account_teams:
     name: pipeline_dataset_different_account_teams
     description: pipeline_dataset_different_account_teams
@@ -54,18 +93,6 @@ pipelines:
         author: ''
         repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
         createdAt: '2022-09-23 09:19:13'
-  pipelines/livy_python:
-    name: livy_python
-    description: livy_python
-    author: abhisheks+e2etests@prophecy.io
-    mode: batch
-    language: python
-    createdAt: '2022-09-23 09:42:32'
-    datasets:
-      inputs:
-      - datasets/src_livy
-      outputs: []
-    dependencies: {}
 datasets:
   datasets/src_avro:
     name: src_avro
@@ -183,6 +210,7 @@ jobs:
     fabricUID: 218
     scheduler:
       Databricks: {}
+    cloudProvider: null
     jobSize: small
     scheduleCron: 0 0 0 * * ? 2090
     timeout: null
@@ -200,6 +228,31 @@ jobs:
     enabled: null
     createdAt: '2022-09-23 07:45:33'
     author: abhisheks+e2etests@prophecy.io
+  jobs/EXTERNAL_PY_JOB:
+    name: EXTERNAL_PY_JOB
+    description: ''
+    fabricUID: 217
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 * * ? 2090
+    timeout: 3600
+    alerting:
+      emails: abhisheks@prophecy.io
+      onStart: false
+      onSuccess: false
+      onFailure: true
+    pipelines:
+    - pipelines/PythonInsideProjectDatasetsOnly
+    - pipelines/PythonInsideProjectDatasetsOnly
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2022-09-27 06:16:52'
+    author: abhisheks+e2etests@prophecy.io
 libraries: []
 subgraphs:
   subgraphs/test_subgraph:
@@ -208,6 +261,20 @@ subgraphs:
     author: abhisheks+e2etests@prophecy.io
     language: python
     createdAt: '2022-09-23 07:36:31'
+  subgraphs/PythonSG:
+    name: PythonSG
+    description: python subgraph
+    author: abhisheks+e2etests@prophecy.io
+    language: python
+    createdAt: '2022-09-27 05:51:11'
+  subgraphs/SG_LIVY:
+    name: SG_LIVY
+    description: org.python.SG_LIVY
+    author: abhisheks+e2etests@prophecy.io
+    language: python
+    createdAt: '2022-09-27 06:13:47'
+sqlModels: {}
+sqlPipeline: null
 dependencies:
 - coordinates: mysql:mysql-connector-java:8.0.29
   name: mysql
