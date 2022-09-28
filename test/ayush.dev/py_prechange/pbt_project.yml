@@ -25,6 +25,26 @@ pipelines:
       - 10738/datasets/dest_delta
       - 10738/datasets/dest_warehouse
     dependencies: {}
+  pipelines/PyPipSharedDataset:
+    name: PyPipSharedDataset
+    description: PyPipSharedDataset
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-09-28 07:53:11'
+    datasets:
+      inputs:
+      - 1359/datasets/customers
+      - 10738/datasets/src_delta
+      outputs: []
+    dependencies:
+      project/1359:
+        name: project/1359
+        projectUID: 1359
+        projectName: HelloWorld
+        version: HelloWorld/1.2
+        author: null
+        createdAt: '2022-09-28 07:53:31'
 datasets:
   datasets/src_delta:
     name: src_delta
