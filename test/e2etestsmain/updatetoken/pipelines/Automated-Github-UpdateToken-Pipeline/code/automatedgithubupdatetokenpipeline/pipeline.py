@@ -18,8 +18,8 @@ def main():
                 .getOrCreate()\
                 .newSession()
     Utils.initializeFromArgs(spark, parse_args())
-    spark.conf.set("prophecy.metadata.pipeline.uri", "14059/pipelines/Automated-Github-UpdateToken-Pipeline")
-    MetricsCollector.start(spark = spark, pipelineId = "14059/pipelines/Automated-Github-UpdateToken-Pipeline")
+    spark.conf.set("prophecy.metadata.pipeline.uri", "14162/pipelines/Automated-Github-UpdateToken-Pipeline")
+    MetricsCollector.start(spark = spark, pipelineId = "14162/pipelines/Automated-Github-UpdateToken-Pipeline")
     pipeline(spark)
     MetricsCollector.end(spark)
 
