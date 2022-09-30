@@ -16,6 +16,7 @@ pipelines:
       inputs:
       - 688/datasets/src_sharedproject
       - 693/datasets/src_this_project
+      - 687/datasets/customers_orders
       outputs: []
     dependencies:
       project/688:
@@ -25,6 +26,13 @@ pipelines:
         version: Team-Project/1.0
         author: null
         createdAt: '2022-09-30 09:59:32'
+      project/687:
+        name: project/687
+        projectUID: 687
+        projectName: HelloWorld
+        version: HelloWorld/1.0
+        author: null
+        createdAt: '2022-09-30 10:12:47'
 datasets:
   datasets/src_this_project:
     name: src_this_project

@@ -1,6 +1,1 @@
 version: 1
-dependencies:
-- name: mysql
-  id: jKtPk
-  type: workflow
-  enabled: true

@@ -75,6 +75,12 @@
     "sourcePort" : "3MCx3gPmQf0VsrdFeLiDp$$hi7Oy77vY8hlD6xb6l8o-",
     "target" : "tKTRmt4J5OAI3wr0CqwFn$$_QBQzGmrQV41YV9-Na8k6",
     "targetPort" : "yxc1GhptFcCxMNOq6Qm7d$$EjG8XxkBClvdNLqwi5MKF"
+  }, {
+    "id" : "2RoHpbec8mWAFflhZ_wNt",
+    "source" : "xI0NcFCtxxI4oHlDBTj0D$$v9xZ_h6Iq-azS_sGR2Qdi",
+    "sourcePort" : "FYIs4KbO_qZlvPGoCI_L5$$zRR-zajAwmw_NnRvDC1-N",
+    "target" : "C9-ZNB4XctR9tx0xqJoV2$$MlbywpEVNgRcoo66Mh8Q3",
+    "targetPort" : "Q1LE7pvQz4PbIzVPIXmYW$$DqiROxBjdNpmRmu1ociH6"
   } ],
   "processes" : {
     "y_fCMoURsy3B-VV5-IDZn$$-jx3oSPPLO0Zfj87Mh5mU" : {
@@ -231,6 +237,32 @@
         }
       }
     },
+    "xI0NcFCtxxI4oHlDBTj0D$$v9xZ_h6Iq-azS_sGR2Qdi" : {
+      "id" : "xI0NcFCtxxI4oHlDBTj0D$$v9xZ_h6Iq-azS_sGR2Qdi",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customers_orders",
+        "slug" : "customers_orders",
+        "x" : -262.4000000000001,
+        "y" : 196.19999999999996,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "FYIs4KbO_qZlvPGoCI_L5$$zRR-zajAwmw_NnRvDC1-N",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "687/datasets/customers_orders"
+      }
+    },
     "tKTRmt4J5OAI3wr0CqwFn$$_QBQzGmrQV41YV9-Na8k6" : {
       "id" : "tKTRmt4J5OAI3wr0CqwFn$$_QBQzGmrQV41YV9-Na8k6",
       "component" : "Reformat",
@@ -333,6 +365,64 @@
           "expression" : {
             "format" : "sql",
             "expression" : "concat(c_timestamp, '$c_string')"
+          },
+          "description" : ""
+        } ]
+      }
+    },
+    "C9-ZNB4XctR9tx0xqJoV2$$MlbywpEVNgRcoo66Mh8Q3" : {
+      "id" : "C9-ZNB4XctR9tx0xqJoV2$$MlbywpEVNgRcoo66Mh8Q3",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_5",
+        "slug" : "Reformat_5",
+        "x" : -30.000000000000057,
+        "y" : 294.5999999999999,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Q1LE7pvQz4PbIzVPIXmYW$$DqiROxBjdNpmRmu1ociH6",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "-e8u4uCGVeiOnCmrtGwzz$$MwzAsBz3Yeyz9ZZN7H1lu",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "Q1LE7pvQz4PbIzVPIXmYW$$DqiROxBjdNpmRmu1ociH6##customer_id", "Q1LE7pvQz4PbIzVPIXmYW$$DqiROxBjdNpmRmu1ociH6##orders", "Q1LE7pvQz4PbIzVPIXmYW$$DqiROxBjdNpmRmu1ociH6##amounts", "Q1LE7pvQz4PbIzVPIXmYW$$DqiROxBjdNpmRmu1ociH6##account_length_days" ],
+        "expressions" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "orders",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "orders"
+          },
+          "description" : ""
+        }, {
+          "target" : "amounts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "amounts"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_length_days",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_length_days"
           },
           "description" : ""
         } ]

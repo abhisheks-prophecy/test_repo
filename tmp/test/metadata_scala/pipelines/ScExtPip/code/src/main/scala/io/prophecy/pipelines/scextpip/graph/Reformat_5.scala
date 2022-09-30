@@ -1,4 +1,4 @@
-package org.testsg.pipelines.scextpip.graph.testsg_1.Subgraph_2
+package io.prophecy.pipelines.scextpip.graph
 
 import io.prophecy.libs._
 import io.prophecy.pipelines.scextpip.config.ConfigStore._
@@ -11,6 +11,13 @@ import org.apache.spark.sql.types._
 import org.apache.spark.sql.expressions._
 import java.time._
 
-object Reformat_3 {
-  def apply(spark: SparkSession, in: DataFrame): DataFrame = in
+object Reformat_5 {
+
+  def apply(spark: SparkSession, in: DataFrame): DataFrame =
+    in.select(col("customer_id"),
+              col("orders"),
+              col("amounts"),
+              col("account_length_days")
+    )
+
 }

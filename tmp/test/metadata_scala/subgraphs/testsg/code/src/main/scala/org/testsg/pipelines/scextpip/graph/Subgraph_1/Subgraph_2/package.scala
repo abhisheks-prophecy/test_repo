@@ -1,4 +1,4 @@
-package org.testsg.pipelines.scextpip.graph.testsg_1
+package org.testsg.pipelines.scextpip.graph.Subgraph_1
 
 import io.prophecy.libs._
 import org.apache.spark._
