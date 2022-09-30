@@ -1,14 +1,14 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "217",
+    "fabricId" : "222",
     "jobId" : "jobs/EXTERNAL_SC_JOB",
     "name" : "EXTERNAL_SC_JOB",
     "schedule" : "0 0 0 * * ? 2090",
     "jobClusterMode" : {
       "clusterMode" : "Single"
     },
-    "enabled" : false,
+    "enabled" : true,
     "defaultClusterSize" : "small",
     "alerting" : {
       "emails" : "abhisheks@prophecy.io",
@@ -29,25 +29,18 @@
       }
     },
     "availableFabrics" : [ {
-      "id" : "217",
-      "name" : "dev_fabric1",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
-      }
-    }, {
-      "id" : "218",
+      "id" : "222",
       "name" : "dev",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
       }
     }, {
-      "id" : "219",
-      "name" : "dev_shared",
+      "id" : "225",
+      "name" : "managed",
       "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
       }
     } ]
   },
@@ -147,10 +140,38 @@
         }
       },
       "properties" : {
-        "pipelineId" : "652/pipelines/ScalaInsideProjectDatasetsOnly",
+        "pipelineId" : "pipelines/ScalaInsideProjectDatasetsOnly",
         "configurations" : {
-          "schema" : [ ],
-          "instances" : [ "default" ],
+          "schema" : [ {
+            "name" : "c_config_str",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "test value"
+            }
+          }, {
+            "name" : "c_config_boolean",
+            "optional" : false,
+            "kind" : {
+              "type" : "boolean",
+              "value" : "true"
+            }
+          }, {
+            "name" : "c_config_float",
+            "optional" : false,
+            "kind" : {
+              "type" : "float",
+              "value" : "10.2"
+            }
+          }, {
+            "name" : "c_config_int",
+            "optional" : false,
+            "kind" : {
+              "type" : "int",
+              "value" : "12"
+            }
+          } ],
+          "instances" : [ "test1", "default" ],
           "overrides" : { },
           "selectedInstance" : "default"
         }

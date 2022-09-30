@@ -1,8 +1,8 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "217",
-    "jobId" : "652/jobs/scala_external_pipeline_job",
+    "fabricId" : "222",
+    "jobId" : "jobs/scala_external_pipeline_job",
     "name" : "scala_external_pipeline_job",
     "schedule" : "0 0 0 * * ? 2090",
     "jobClusterMode" : {
@@ -27,18 +27,18 @@
       }
     },
     "availableFabrics" : [ {
-      "id" : "217",
-      "name" : "dev_fabric1",
+      "id" : "222",
+      "name" : "dev",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
       }
     }, {
-      "id" : "218",
-      "name" : "dev",
+      "id" : "225",
+      "name" : "managed",
       "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
       }
     } ]
   },

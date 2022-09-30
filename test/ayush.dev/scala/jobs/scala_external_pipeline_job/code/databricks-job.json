@@ -9,8 +9,8 @@
           "spark_version" : "10.4.x-scala2.12",
           "node_type_id" : "i3.xlarge",
           "spark_conf" : {
-            "prophecy.metadata.job.uri" : "_/_/P/R/O/J/E/C/T/_/I/D/_/P/L/A/C/E/H/O/L/D/E/R/_/_/jobs/scala_external_pipeline_job",
-            "prophecy.metadata.fabric.id" : "217",
+            "prophecy.metadata.job.uri" : "__PROJECT_ID_PLACEHOLDER__/jobs/scala_external_pipeline_job",
+            "prophecy.metadata.fabric.id" : "222",
             "prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
             "prophecy.execution.service.url" : "wss://execution.dp1.ayush.dev.cloud.prophecy.io/eventws",
             "prophecy.metadata.is.interactive.run" : "false"
@@ -87,8 +87,8 @@
       }
     }
   },
-  "clusterConfig" : "{\"spark_version\":\"10.4.x-scala2.12\",\"node_type_id\":\"i3.xlarge\",\"spark_conf\":{\"prophecy.metadata.job.uri\":\"_/_/P/R/O/J/E/C/T/_/I/D/_/P/L/A/C/E/H/O/L/D/E/R/_/_/jobs/scala_external_pipeline_job\",\"prophecy.metadata.fabric.id\":\"217\",\"prophecy.project.id\":\"__PROJECT_ID_PLACEHOLDER__\",\"prophecy.execution.service.url\":\"wss://execution.dp1.ayush.dev.cloud.prophecy.io/eventws\",\"prophecy.metadata.is.interactive.run\":\"false\"},\"num_workers\":1,\"driver_node_type_id\":\"i3.xlarge\"}",
-  "fabricId" : "217",
+  "clusterConfig" : "{\"spark_version\":\"10.4.x-scala2.12\",\"node_type_id\":\"i3.xlarge\",\"spark_conf\":{\"prophecy.metadata.job.uri\":\"__PROJECT_ID_PLACEHOLDER__/jobs/scala_external_pipeline_job\",\"prophecy.metadata.fabric.id\":\"222\",\"prophecy.project.id\":\"__PROJECT_ID_PLACEHOLDER__\",\"prophecy.execution.service.url\":\"wss://execution.dp1.ayush.dev.cloud.prophecy.io/eventws\",\"prophecy.metadata.is.interactive.run\":\"false\"},\"num_workers\":1,\"driver_node_type_id\":\"i3.xlarge\"}",
+  "fabricId" : "222",
   "components" : [ {
     "PipelineComponent" : {
       "id" : "pipelines/scala_external_pipeline",
