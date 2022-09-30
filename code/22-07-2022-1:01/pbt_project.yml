@@ -1,0 +1,24 @@
+name: gitexternal_project
+description: ''
+version: 0.0.1
+author: abhisheks+uitesting@simpledatalabs.com
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/gitexternal_project_pip1:
+    name: gitexternal_project_pip1
+    description: gitexternal_project_pip1
+    author: abhisheks+uitesting@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-07-22 09:21:31'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: '[]'
