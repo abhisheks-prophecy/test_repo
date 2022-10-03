@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "scala",
-    "fabricId" : "217",
+    "fabricId" : "222",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -1777,13 +1777,6 @@
           "expression" : {
             "format" : "sql",
             "expression" : "c_timestamp"
-          },
-          "description" : ""
-        }, {
-          "target" : "c_struct",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "c_struct"
           },
           "description" : ""
         }, {

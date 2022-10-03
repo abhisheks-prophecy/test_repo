@@ -44,7 +44,7 @@
       "exclusions" : [ ],
       "id" : "4Z206",
       "type" : "coordinates",
-      "enabled" : true
+      "enabled" : false
     } ],
     "isImported" : false,
     "interimMode" : "Full",
