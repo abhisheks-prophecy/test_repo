@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "217",
+    "fabricId" : "222",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -44,7 +44,13 @@
       "exclusions" : [ ],
       "id" : "7y8xO",
       "type" : "coordinates",
-      "enabled" : false
+      "enabled" : true
+    }, {
+      "package" : "matplotlib==3.5.2",
+      "name" : "matplotlib",
+      "id" : "YlVYn",
+      "type" : "pypi",
+      "enabled" : true
     } ],
     "isImported" : false,
     "interimMode" : "Full",
@@ -768,8 +774,8 @@
       "metadata" : {
         "label" : "FlattenSchema_1",
         "slug" : "FlattenSchema_1",
-        "x" : 355.2,
-        "y" : -31.600000000000023,
+        "x" : 398.40000000000003,
+        "y" : -81.99999999999999,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -838,7 +844,7 @@
           "targetTokens" : [ "c_struct -- _  ", "c_timestamp - of a struct-" ],
           "target" : "c_struct -- _  -c_timestamp - of a struct-"
         } ],
-        "columnsSelector" : [ "ptCpu80GV_sOpH3RQAPz3$$2mgIj3ZouhdhglN1TO6Bz##c_struct -- _  .c_array_int - of a struct ", "ptCpu80GV_sOpH3RQAPz3$$2mgIj3ZouhdhglN1TO6Bz##c_struct -- _  ", "ptCpu80GV_sOpH3RQAPz3$$2mgIj3ZouhdhglN1TO6Bz##c_array -- float", "ptCpu80GV_sOpH3RQAPz3$$2mgIj3ZouhdhglN1TO6Bz##c_array -- decimal", "ptCpu80GV_sOpH3RQAPz3$$2mgIj3ZouhdhglN1TO6Bz##c_struct -- _  .c_timestamp - of a struct-" ],
+        "columnsSelector" : [ "ptCpu80GV_sOpH3RQAPz3$$2mgIj3ZouhdhglN1TO6Bz##c_array -- float", "ptCpu80GV_sOpH3RQAPz3$$2mgIj3ZouhdhglN1TO6Bz##c_struct -- _  .c_array_int - of a struct ", "ptCpu80GV_sOpH3RQAPz3$$2mgIj3ZouhdhglN1TO6Bz##c_struct -- _  .c_timestamp - of a struct-", "ptCpu80GV_sOpH3RQAPz3$$2mgIj3ZouhdhglN1TO6Bz##c_array -- decimal", "ptCpu80GV_sOpH3RQAPz3$$2mgIj3ZouhdhglN1TO6Bz##c_struct -- _  " ],
         "explodeColumns" : [ "c_array -- decimal", "c_array -- float", "c_struct -- _  .c_array_int - of a struct " ],
         "delimiter" : "-"
       }
@@ -895,7 +901,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "N9TksnM0HNx_LGrCbbs50$$ofeSR8eqpXGLS3yw60dbS##c- short", "N9TksnM0HNx_LGrCbbs50$$ofeSR8eqpXGLS3yw60dbS##c  - int" ],
+        "columnsSelector" : [ "N9TksnM0HNx_LGrCbbs50$$ofeSR8eqpXGLS3yw60dbS##c  - int", "N9TksnM0HNx_LGrCbbs50$$ofeSR8eqpXGLS3yw60dbS##c- short" ],
         "orders" : [ {
           "expression" : {
             "format" : "sql",

@@ -52,3 +52,11 @@ class Reformat_1Test(BaseTestCase):
             self.spark,
             Namespace(file = f"configs/resources/config/{fabricName}.json", config = None)
         )
+        dfgraph_Lookup_1 = createDfFromResourceFiles(
+            self.spark,
+            'test/resources/data/pythoninsideprojectdatasetsonly/graph/Lookup_1/schema.json',
+            'test/resources/data/pythoninsideprojectdatasetsonly/graph/Lookup_1/data.json',
+            "in0"
+        )
+        from pythoninsideprojectdatasetsonly.graph.Lookup_1 import Lookup_1
+        Lookup_1(self.spark, dfgraph_Lookup_1)

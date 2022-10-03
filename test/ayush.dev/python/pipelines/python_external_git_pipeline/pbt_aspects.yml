@@ -1,1 +1,10 @@
 version: 1
+dependencies:
+- name: mysql
+  id: 7y8xO
+  type: workflow
+  enabled: true
+- name: matplotlib
+  id: YlVYn
+  type: workflow
+  enabled: true

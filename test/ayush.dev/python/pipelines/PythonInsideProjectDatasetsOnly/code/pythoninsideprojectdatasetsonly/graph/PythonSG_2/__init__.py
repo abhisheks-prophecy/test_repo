@@ -1,3 +1,3 @@
 from .Reformat_2 import *
 from .Subgraph_2 import *
-from .PythonSG_1 import PythonSG_1
+from .PythonSG_2 import PythonSG_2

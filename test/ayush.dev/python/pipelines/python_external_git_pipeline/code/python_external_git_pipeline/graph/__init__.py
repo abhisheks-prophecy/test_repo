@@ -1,4 +1,3 @@
-from .customers import *
 from .test_subgraph_1 import *
 from .src_avro import *
 from .Reformat_1 import *
