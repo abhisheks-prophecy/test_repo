@@ -14,7 +14,6 @@ def pipeline(spark: SparkSession) -> None:
     df_SQLStatement_1 = SQLStatement_1(spark, df_Script_1)
     df_RowDistributor_1_out0, df_RowDistributor_1_out1 = RowDistributor_1(spark, df_SQLStatement_1)
     df_Join_1 = Join_1(spark, df_RowDistributor_1_out0, df_RowDistributor_1_out1)
-    df_src_avro_1 = src_avro_1(spark)
     df_src_json = src_json(spark)
     df_Filter_1 = Filter_1(spark, df_src_json)
     df_SetOperation_1 = SetOperation_1(spark, df_Filter_1, df_Filter_1)
@@ -29,9 +28,6 @@ def pipeline(spark: SparkSession) -> None:
     df_src_orc = src_orc(spark)
     df_Subgraph_1 = Subgraph_1(spark, df_src_catalog)
     df_PythonSG_1 = PythonSG_1(spark, df_Subgraph_1)
-    df_PythonSG_2 = PythonSG_2(spark, df_PythonSG_1)
-    df_PythonSG_3 = PythonSG_3(spark, df_PythonSG_2)
-    df_src_parquet_1 = src_parquet_1(spark)
     df_FlattenSchema_1 = FlattenSchema_1(spark, df_src_orc)
 
 def main():

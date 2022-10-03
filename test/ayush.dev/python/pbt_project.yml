@@ -70,7 +70,6 @@ pipelines:
       - datasets/src_json
       - datasets/src_catalog
       - datasets/src_orc
-      - datasets/src_parquet
       outputs: []
     dependencies: {}
   pipelines/pipeline_dataset_different_account_teams:
