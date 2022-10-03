@@ -1,0 +1,213 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "1901",
+    "jobId" : "10738/jobs/JobPyPrePipeline",
+    "name" : "JobPyPrePipeline",
+    "schedule" : "0 0 0 * * ? 2090",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "newjobsize-1.1",
+    "alerting" : {
+      "emails" : "abhisheks@prophecy.io",
+      "onStart" : false,
+      "onSuccess" : true,
+      "onFailure" : true
+    },
+    "timeoutSeconds" : 3600,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "timeoutSeconds" : 3600,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "2175",
+      "name" : "test_job_lost",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "2287",
+      "name" : "JobFabricMain_1",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "adv-json1", "adv-json2" ]
+      }
+    }, {
+      "id" : "2274",
+      "name" : "FabricAutomatedADVJobSize",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "small2", "small3", "adv-json1", "adv-json2" ]
+      }
+    }, {
+      "id" : "917",
+      "name" : "ebs_ssd",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "new-job.size" ]
+      }
+    }, {
+      "id" : "2135",
+      "name" : "dev_azure",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "medium" ]
+      }
+    }, {
+      "id" : "1901",
+      "name" : "newfabric",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "newjobsize-1.1" ]
+      }
+    }, {
+      "id" : "2268",
+      "name" : "FabricAutomatedEBS",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "small2", "small3" ]
+      }
+    }, {
+      "id" : "2279",
+      "name" : "TEST-Automated_Databricks1",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "adv-json1", "adv-json2", "small2" ]
+      }
+    }, {
+      "id" : "2080",
+      "name" : "dev_gcp",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "medium" ]
+      }
+    }, {
+      "id" : "2271",
+      "name" : "GCP-TEST_Automated",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "adv-json1" ]
+      }
+    }, {
+      "id" : "1962",
+      "name" : "dev_11rt",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "adv-json1" ]
+      }
+    }, {
+      "id" : "2264",
+      "name" : "SingleCluster_1",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "adv-json1", "adv-json2" ]
+      }
+    }, {
+      "id" : "299",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "medium", "adv-json1", "adv-json2" ]
+      }
+    }, {
+      "id" : "1770",
+      "name" : "dev1",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
+      }
+    }, {
+      "id" : "2068",
+      "name" : "dev_shared",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "medium-1" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "ieaJ_4VaZdnlabF7LmthK" : {
+      "id" : "ieaJ_4VaZdnlabF7LmthK",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "PyPrePipeline",
+        "slug" : "PyPrePipeline",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "out"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "10738/pipelines/PyPrePipeline",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : [ "default" ],
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    },
+    "ackyn7fqA2CWS0-NGNvg-$$FNGmSl9bRiCbSuDU7ThRr" : {
+      "id" : "ackyn7fqA2CWS0-NGNvg-$$FNGmSl9bRiCbSuDU7ThRr",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 386.20001220703125,
+        "y" : 123
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "lwNOJoPO7YcsgFuC82nvv$$kAFGbyhD0vJK9jsqmBmGz"
+        } ],
+        "outputs" : [ {
+          "id" : "PKII3f_XZuQyTyugWukpP$$ExnBIKkNFozk6ayh-AABQ"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : "print(\"hello\")"
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "DtO_eAWSOCHadUInou-5B",
+    "source" : "ieaJ_4VaZdnlabF7LmthK",
+    "target" : "ackyn7fqA2CWS0-NGNvg-$$FNGmSl9bRiCbSuDU7ThRr",
+    "sourcePort" : "out",
+    "targetPort" : "lwNOJoPO7YcsgFuC82nvv$$kAFGbyhD0vJK9jsqmBmGz"
+  } ]
+}

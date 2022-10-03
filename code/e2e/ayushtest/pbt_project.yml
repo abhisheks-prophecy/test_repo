@@ -1,0 +1,23 @@
+name: gitenternal
+description: ''
+version: 0.0.1
+author: abhisheks+test@simpledatalabs.com
+language: python
+pipelines:
+  pipelines/gitexternal_pipeline:
+    name: gitexternal_pipeline
+    description: gitexternal_pipeline
+    author: abhisheks+test@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-06-08 10:59:59'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
+datasets: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: '[]'
+template: '[]'
