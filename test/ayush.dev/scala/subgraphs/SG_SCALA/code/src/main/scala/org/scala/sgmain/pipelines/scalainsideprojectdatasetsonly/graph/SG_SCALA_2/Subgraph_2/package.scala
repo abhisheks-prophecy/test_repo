@@ -1,7 +1,7 @@
-package org.scala.sgmain.pipelines.scalainsideprojectdatasetsonly.graph.SG_SCALA_1
+package org.scala.sgmain.pipelines.scalainsideprojectdatasetsonly.graph.SG_SCALA_2
 
 import io.prophecy.libs._
-import io.prophecy.pipelines.scalainsideprojectdatasetsonly.graph.SG_SCALA_1.Subgraph_2.Subgraph_3
+import io.prophecy.pipelines.scalainsideprojectdatasetsonly.graph.SG_SCALA_2.Subgraph_2.Subgraph_3
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._

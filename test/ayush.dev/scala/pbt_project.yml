@@ -29,20 +29,6 @@ pipelines:
       - datasets/src_livy
       outputs: []
     dependencies: {}
-  pipelines/ScalaInsideProjectDatasetsOnly:
-    name: ScalaInsideProjectDatasetsOnly
-    description: ScalaInsideProjectDatasetsOnly
-    author: abhisheks+e2etests@prophecy.io
-    mode: batch
-    language: scala
-    createdAt: '2022-09-26 13:06:11'
-    datasets:
-      inputs:
-      - datasets/src_parquet
-      - datasets/src_delta
-      outputs:
-      - datasets/dest_scala
-    dependencies: {}
   pipelines/scala_external_pipeline:
     name: scala_external_pipeline
     description: ''
@@ -72,6 +58,20 @@ pipelines:
         author: ''
         repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
         createdAt: '2022-09-23 09:10:27'
+  pipelines/ScalaInsideProjectDatasetsOnly:
+    name: ScalaInsideProjectDatasetsOnly
+    description: ScalaInsideProjectDatasetsOnly
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-09-26 13:06:11'
+    datasets:
+      inputs:
+      - datasets/src_parquet
+      - datasets/src_delta
+      outputs:
+      - datasets/dest_scala
+    dependencies: {}
 datasets:
   datasets/src_delta:
     name: src_delta
@@ -207,30 +207,6 @@ datasets:
         createdAt: '2022-09-23 08:50:58'
 templates: {}
 jobs:
-  jobs/scala_external_pipeline_job:
-    name: scala_external_pipeline_job
-    description: ''
-    fabricUID: 222
-    scheduler:
-      Databricks: {}
-    cloudProvider: null
-    jobSize: small
-    scheduleCron: 0 0 0 * * ? 2090
-    timeout: null
-    alerting:
-      emails: abhisheks@prophecy.io
-      onStart: false
-      onSuccess: true
-      onFailure: false
-    pipelines:
-    - pipelines/scala_external_pipeline
-    jobClusterMode:
-      clusterMode:
-        Single: {}
-      clusterId: null
-    enabled: true
-    createdAt: '2022-09-23 09:06:05'
-    author: abhisheks+e2etests@prophecy.io
   jobs/EXTERNAL_SC_JOB:
     name: EXTERNAL_SC_JOB
     description: ''
@@ -255,6 +231,30 @@ jobs:
       clusterId: null
     enabled: true
     createdAt: '2022-09-27 06:17:14'
+    author: abhisheks+e2etests@prophecy.io
+  jobs/scala_external_pipeline_job:
+    name: scala_external_pipeline_job
+    description: ''
+    fabricUID: 222
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 * * ? 2090
+    timeout: null
+    alerting:
+      emails: abhisheks@prophecy.io
+      onStart: false
+      onSuccess: true
+      onFailure: false
+    pipelines:
+    - pipelines/scala_external_pipeline
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2022-09-23 09:06:05'
     author: abhisheks+e2etests@prophecy.io
 libraries: []
 subgraphs:
