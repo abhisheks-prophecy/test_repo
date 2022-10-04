@@ -204,30 +204,6 @@ datasets:
         createdAt: '2022-09-23 07:13:34'
 templates: {}
 jobs:
-  jobs/python_external_git_pipeline_job:
-    name: python_external_git_pipeline_job
-    description: ''
-    fabricUID: 218
-    scheduler:
-      Databricks: {}
-    cloudProvider: null
-    jobSize: small
-    scheduleCron: 0 0 0 * * ? 2090
-    timeout: null
-    alerting:
-      emails: abhisheks@prophecy.io
-      onStart: false
-      onSuccess: true
-      onFailure: false
-    pipelines:
-    - pipelines/python_external_git_pipeline
-    jobClusterMode:
-      clusterMode:
-        Multi: {}
-      clusterId: null
-    enabled: null
-    createdAt: '2022-09-23 07:45:33'
-    author: abhisheks+e2etests@prophecy.io
   jobs/EXTERNAL_PY_JOB:
     name: EXTERNAL_PY_JOB
     description: ''
@@ -252,6 +228,30 @@ jobs:
       clusterId: null
     enabled: false
     createdAt: '2022-09-27 06:16:52'
+    author: abhisheks+e2etests@prophecy.io
+  jobs/python_external_git_pipeline_job:
+    name: python_external_git_pipeline_job
+    description: ''
+    fabricUID: 218
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 * * ? 2090
+    timeout: null
+    alerting:
+      emails: abhisheks@prophecy.io
+      onStart: false
+      onSuccess: true
+      onFailure: false
+    pipelines:
+    - pipelines/python_external_git_pipeline
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2022-09-23 07:45:33'
     author: abhisheks+e2etests@prophecy.io
 libraries: []
 subgraphs:

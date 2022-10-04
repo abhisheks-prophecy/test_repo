@@ -2,7 +2,7 @@
   "metainfo" : {
     "type" : "Databricks",
     "fabricId" : "218",
-    "jobId" : "645/jobs/python_external_git_pipeline_job",
+    "jobId" : "jobs/python_external_git_pipeline_job",
     "name" : "python_external_git_pipeline_job",
     "schedule" : "0 0 0 * * ? 2090",
     "enabled" : true,
@@ -33,6 +33,13 @@
     }, {
       "id" : "218",
       "name" : "dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "219",
+      "name" : "dev_shared",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
