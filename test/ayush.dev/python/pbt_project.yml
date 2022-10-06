@@ -36,7 +36,7 @@ pipelines:
         projectUID: 452
         projectName: HelloWorld
         version: HelloWorld/1.0
-        author: null
+        author: ''
         repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
         createdAt: '2022-10-06 07:45:26'
       project/734:
@@ -44,9 +44,30 @@ pipelines:
         projectUID: 734
         projectName: ExtNEWProjectDiffTeam
         version: ExtNEWProjectDiffTeam/1.0
-        author: null
+        author: ''
         repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/randompathfortest
         createdAt: '2022-10-06 07:45:47'
+  pipelines/TestRevokedAccess:
+    name: TestRevokedAccess
+    description: TestRevokedAccess
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-10-06 17:39:45'
+    datasets:
+      inputs:
+      - datasets/src_avro
+      - https://github.com/MetadataGitTesting/DecouplingTesting.git//tmp/test@TestAyushProject/1.0/748/datasets/TEST_REVOKE_ACCESS
+      outputs: []
+    dependencies:
+      project/748:
+        name: project/748
+        projectUID: 748
+        projectName: TestAyushProject
+        version: TestAyushProject/1.0
+        author: null
+        repositoryPath: https://github.com/MetadataGitTesting/DecouplingTesting.git//tmp/test
+        createdAt: '2022-10-06 17:40:21'
   pipelines/python_external_git_pipeline:
     name: python_external_git_pipeline
     description: python_external_git_pipeline
