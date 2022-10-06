@@ -1,0 +1,23 @@
+name: gitone
+description: ''
+version: 0.0.1
+author: abhisheks+test@simpledatalabs.com
+language: python
+pipelines:
+  pipelines/gitone_pipeline:
+    name: gitone_pipeline
+    description: gitone_pipeline
+    author: abhisheks+test@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-06-08 11:10:06'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
+datasets: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: '[]'
+template: '[]'

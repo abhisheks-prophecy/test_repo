@@ -1,13 +1,10 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "222",
+    "fabricId" : "218",
     "jobId" : "jobs/python_external_git_pipeline_job",
     "name" : "python_external_git_pipeline_job",
     "schedule" : "0 0 0 * * ? 2090",
-    "jobClusterMode" : {
-      "clusterMode" : "Single"
-    },
     "enabled" : true,
     "defaultClusterSize" : "small",
     "alerting" : {
@@ -27,22 +24,22 @@
       }
     },
     "availableFabrics" : [ {
-      "id" : "222",
+      "id" : "217",
+      "name" : "dev_fabric1",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "218",
       "name" : "dev",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
       }
     }, {
-      "id" : "225",
-      "name" : "managed",
-      "clusterSizes" : {
-        "default" : "Small",
-        "availableClusterSizes" : [ "Small" ]
-      }
-    }, {
-      "id" : "227",
-      "name" : "dev_otherteam",
+      "id" : "219",
+      "name" : "dev_shared",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
@@ -88,63 +85,6 @@
             }
           } ],
           "instances" : [ "default" ],
-          "overrides" : { },
-          "selectedInstance" : "default"
-        }
-      }
-    },
-    "Bprjq9zsjO2zhgVm5GW-G$$vbN2exaj8vQ6VmFo6tMt1" : {
-      "id" : "Bprjq9zsjO2zhgVm5GW-G$$vbN2exaj8vQ6VmFo6tMt1",
-      "component" : "Pipeline",
-      "metadata" : {
-        "label" : "PythonInsideProjectDatasetsOnly_1",
-        "slug" : "PythonInsideProjectDatasetsOnly",
-        "x" : -525.2000122070312,
-        "y" : -70.80000305175781
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "Ex5RuH--2c7MStApWAe7g$$hJl3-Ys8ErHiWag2ZhduL"
-        } ],
-        "outputs" : [ {
-          "id" : "sv4driPKHitH6mpVeXP9s$$KE__-6IFpvajrQCLOL8xc"
-        } ]
-      },
-      "settings" : {
-        "type" : "Inherited",
-        "alerting" : {
-          "emails" : "",
-          "onStart" : false,
-          "onSuccess" : false,
-          "onFailure" : false
-        }
-      },
-      "properties" : {
-        "pipelineId" : "pipelines/PythonInsideProjectDatasetsOnly",
-        "configurations" : {
-          "schema" : [ {
-            "name" : "c_string",
-            "optional" : false,
-            "kind" : {
-              "type" : "string",
-              "value" : "string value"
-            }
-          }, {
-            "name" : "c_int",
-            "optional" : false,
-            "kind" : {
-              "type" : "int",
-              "value" : "10"
-            }
-          }, {
-            "name" : "c_long",
-            "optional" : false,
-            "kind" : {
-              "type" : "long",
-              "value" : "13213213"
-            }
-          } ],
-          "instances" : [ "default", "test1" ],
           "overrides" : { },
           "selectedInstance" : "default"
         }

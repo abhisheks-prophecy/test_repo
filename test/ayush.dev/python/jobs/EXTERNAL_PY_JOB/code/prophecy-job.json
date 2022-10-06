@@ -1,14 +1,14 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "222",
+    "fabricId" : "217",
     "jobId" : "jobs/EXTERNAL_PY_JOB",
     "name" : "EXTERNAL_PY_JOB",
     "schedule" : "0 0 0 * * ? 2090",
     "jobClusterMode" : {
       "clusterMode" : "Single"
     },
-    "enabled" : true,
+    "enabled" : false,
     "defaultClusterSize" : "small",
     "alerting" : {
       "emails" : "abhisheks@prophecy.io",
@@ -29,22 +29,22 @@
       }
     },
     "availableFabrics" : [ {
-      "id" : "222",
+      "id" : "217",
+      "name" : "dev_fabric1",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "218",
       "name" : "dev",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
       }
     }, {
-      "id" : "225",
-      "name" : "managed",
-      "clusterSizes" : {
-        "default" : "Small",
-        "availableClusterSizes" : [ "Small" ]
-      }
-    }, {
-      "id" : "227",
-      "name" : "dev_otherteam",
+      "id" : "219",
+      "name" : "dev_shared",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
@@ -170,31 +170,10 @@
         }
       },
       "properties" : {
-        "pipelineId" : "pipelines/PythonInsideProjectDatasetsOnly",
+        "pipelineId" : "645/pipelines/PythonInsideProjectDatasetsOnly",
         "configurations" : {
-          "schema" : [ {
-            "name" : "c_string",
-            "optional" : false,
-            "kind" : {
-              "type" : "string",
-              "value" : "string value"
-            }
-          }, {
-            "name" : "c_int",
-            "optional" : false,
-            "kind" : {
-              "type" : "int",
-              "value" : "10"
-            }
-          }, {
-            "name" : "c_long",
-            "optional" : false,
-            "kind" : {
-              "type" : "long",
-              "value" : "13213213"
-            }
-          } ],
-          "instances" : [ "default", "test1" ],
+          "schema" : [ ],
+          "instances" : [ "default" ],
           "overrides" : { },
           "selectedInstance" : "default"
         }

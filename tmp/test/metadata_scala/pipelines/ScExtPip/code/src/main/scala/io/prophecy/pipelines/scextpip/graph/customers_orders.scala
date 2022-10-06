@@ -1,7 +1,7 @@
-package io.prophecy.pipelines.scala_external_git_pipeline.graph
+package io.prophecy.pipelines.scextpip.graph
 
 import io.prophecy.libs._
-import io.prophecy.pipelines.scala_external_git_pipeline.config.ConfigStore._
+import io.prophecy.pipelines.scextpip.config.ConfigStore._
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._
@@ -28,6 +28,8 @@ object customers_orders {
           )
         )
       )
-      .load("dbfs:/Prophecy/abhisheks+e2etests@prophecy.io/CustomersOrders.csv")
+      .load(
+        "dbfs:/Prophecy/abhisheks+e2etests1@prophecy.io/CustomersOrders.csv"
+      )
 
 }

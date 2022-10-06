@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "scala",
-    "fabricId" : "217",
+    "fabricId" : "222",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -913,19 +913,19 @@
         "name" : "SG_SCALA"
       },
       "connections" : [ {
-        "id" : "c36DBV178XOYb6HXZjrk5",
+        "id" : "JLadnmVzUeR6SrhFFhrEZ",
         "source" : "z1jivtsSa-CH8K7X-wHkY$$_I2xoDGGZAdPIlxL5cFrm",
         "sourcePort" : "roeqYJR6CR8mC16Pf8afb$$HXZz_-8eHg-ZH3AeivqGX",
         "target" : "Owtnd41GlUB27n-Qv_8fP$$Wl4rBAzvQha60a94EBtDX",
         "targetPort" : "JJ2c0CJLZrhlrk4zs45IF$$rjrxuC6ihbtg8TNAP7oPJ"
       }, {
-        "id" : "qmni1CLTV9DCxNE8jxDPL",
+        "id" : "JcyUDuD3Vsmp8HVb2zftq",
         "source" : "Owtnd41GlUB27n-Qv_8fP$$Wl4rBAzvQha60a94EBtDX",
         "sourcePort" : "GnGIi1_rMZMPLduE_q-LY$$iC_lBtbJvqeqqcNSi0eGz",
         "target" : "UpaxhsF4g1Ls1G4TEJWYJ$$dtBfF6RAWoRDvAF_dmzFe",
         "targetPort" : "qRSJeIN92XIR34cTQYWtS$$tUk-cj177anap9VGhQtXc"
       }, {
-        "id" : "ELAvvbg_R77REH3iVSpkS",
+        "id" : "A4FD90bCfg7zakptgXiS5",
         "source" : "UpaxhsF4g1Ls1G4TEJWYJ$$dtBfF6RAWoRDvAF_dmzFe",
         "sourcePort" : "Nz1XFguSy5cCRVdGaBPex$$GfczbaASR-iNpzb2B_l7v",
         "target" : "z1jivtsSa-CH8K7X-wHkY$$_I2xoDGGZAdPIlxL5cFrm",
@@ -938,8 +938,8 @@
           "metadata" : {
             "label" : "Subgraph_2",
             "slug" : "Subgraph_2",
-            "x" : 919.5999999999999,
-            "y" : 222,
+            "x" : 939.5999999999999,
+            "y" : 242,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -959,19 +959,19 @@
           },
           "properties" : { },
           "connections" : [ {
-            "id" : "nMcPr1WwVYm-f7lemA3i0",
+            "id" : "PAIzRvSh5RFuowggm4Fd1",
             "source" : "UpaxhsF4g1Ls1G4TEJWYJ$$dtBfF6RAWoRDvAF_dmzFe",
             "sourcePort" : "qRSJeIN92XIR34cTQYWtS$$tUk-cj177anap9VGhQtXc",
             "target" : "exr2BpbPhnRXVcDMMApOj$$8FPcYdrWH-gP3PsqPAv7m",
             "targetPort" : "op7zUmnLqVh6ZDFsskniq$$omgzK0qRfbKALe7rVoKj4"
           }, {
-            "id" : "FWtp_L0qowA2jEu2TB9en",
+            "id" : "ym6yA0AmGcW6UNSraFudD",
             "source" : "exr2BpbPhnRXVcDMMApOj$$8FPcYdrWH-gP3PsqPAv7m",
             "sourcePort" : "ltmzhQd1JXnhfPyuGqUN_$$Ta5ysilwITMjXAczddlWR",
             "target" : "kVN_90f_ZRy6VpVrkgDT1$$UyCM11B7GKrIs0HLXFulV",
             "targetPort" : "Zf30EQNjbSLOPbfmplJP7$$wcjYwUP7bcD9Ber2T-uzg"
           }, {
-            "id" : "qnu2OWbbVaM745vhT-e_W",
+            "id" : "3VCsGQFULxk48T8YUOulc",
             "source" : "kVN_90f_ZRy6VpVrkgDT1$$UyCM11B7GKrIs0HLXFulV",
             "sourcePort" : "fWSzz1Z2wMz3_FEV-NAky$$JX4H9PyNYwVvF9yrmrKkh",
             "target" : "UpaxhsF4g1Ls1G4TEJWYJ$$dtBfF6RAWoRDvAF_dmzFe",
@@ -984,8 +984,8 @@
               "metadata" : {
                 "label" : "Reformat_6",
                 "slug" : "Reformat_6",
-                "x" : 160,
-                "y" : 180,
+                "x" : 180,
+                "y" : 200,
                 "phase" : 0,
                 "cache" : false,
                 "detailedStats" : false,
@@ -1014,8 +1014,8 @@
               "metadata" : {
                 "label" : "Subgraph_3",
                 "slug" : "Subgraph_3",
-                "x" : 300,
-                "y" : 180,
+                "x" : 320,
+                "y" : 200,
                 "phase" : 0,
                 "cache" : false,
                 "detailedStats" : false,
@@ -1035,13 +1035,13 @@
               },
               "properties" : { },
               "connections" : [ {
-                "id" : "9IccY7Vo4VFcOpj-0nT5U",
+                "id" : "ymcu94W9aFXMDXdFXYMTD",
                 "source" : "kVN_90f_ZRy6VpVrkgDT1$$UyCM11B7GKrIs0HLXFulV",
                 "sourcePort" : "Zf30EQNjbSLOPbfmplJP7$$wcjYwUP7bcD9Ber2T-uzg",
                 "target" : "Ry-w5-cYGe2idNVAoHcnc$$1DtPqFjFg3vsWAu24g6cO",
                 "targetPort" : "0uPEEb0ckdla5NSaFP_ws$$Uy_rRq8f7tvHwYGlG0JSw"
               }, {
-                "id" : "dxwp4R9LaHZiOlVnKNPPD",
+                "id" : "BYWW2STWc6-ccQwoBVTWw",
                 "source" : "Ry-w5-cYGe2idNVAoHcnc$$1DtPqFjFg3vsWAu24g6cO",
                 "sourcePort" : "KiErvqavhN4W8nXgO3ipo$$ra5dVTiIfz7_anWYlMuLb",
                 "target" : "kVN_90f_ZRy6VpVrkgDT1$$UyCM11B7GKrIs0HLXFulV",
@@ -1054,8 +1054,8 @@
                   "metadata" : {
                     "label" : "Filter_2",
                     "slug" : "Filter_2",
-                    "x" : 160,
-                    "y" : 180,
+                    "x" : 180,
+                    "y" : 200,
                     "phase" : 0,
                     "cache" : false,
                     "detailedStats" : false,
@@ -1091,8 +1091,8 @@
           "metadata" : {
             "label" : "Reformat_5",
             "slug" : "Reformat_5",
-            "x" : 490,
-            "y" : 258,
+            "x" : 510,
+            "y" : 278,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -1786,13 +1786,6 @@
             "expression" : "c_struct"
           },
           "description" : ""
-        }, {
-          "target" : "c_struct",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "c_struct"
-          },
-          "description" : ""
         } ]
       }
     },
@@ -1853,19 +1846,19 @@
         "name" : "SG_SCALA"
       },
       "connections" : [ {
-        "id" : "c36DBV178XOYb6HXZjrk5",
+        "id" : "JLadnmVzUeR6SrhFFhrEZ",
         "source" : "z1jivtsSa-CH8K7X-wHkY$$ID_Kdb8POeeUVk7w5fwQQ",
         "sourcePort" : "roeqYJR6CR8mC16Pf8afb$$J5wLH7zVfGsshUv6pWhXW",
         "target" : "Owtnd41GlUB27n-Qv_8fP$$QJe8Q4WQAbLWqp5mU2vA7",
         "targetPort" : "JJ2c0CJLZrhlrk4zs45IF$$8tOQElaMHFMNAngEYytNF"
       }, {
-        "id" : "qmni1CLTV9DCxNE8jxDPL",
+        "id" : "JcyUDuD3Vsmp8HVb2zftq",
         "source" : "Owtnd41GlUB27n-Qv_8fP$$QJe8Q4WQAbLWqp5mU2vA7",
         "sourcePort" : "GnGIi1_rMZMPLduE_q-LY$$EbcVmK4vc4YYcJ5Vm9AuX",
         "target" : "UpaxhsF4g1Ls1G4TEJWYJ$$S28tLqf91WbOF_o3afmzz",
         "targetPort" : "qRSJeIN92XIR34cTQYWtS$$31rTELYMUvtwqB4mWLwvv"
       }, {
-        "id" : "ELAvvbg_R77REH3iVSpkS",
+        "id" : "A4FD90bCfg7zakptgXiS5",
         "source" : "UpaxhsF4g1Ls1G4TEJWYJ$$S28tLqf91WbOF_o3afmzz",
         "sourcePort" : "Nz1XFguSy5cCRVdGaBPex$$5mgbyVrQEPEjSKUmdqInu",
         "target" : "z1jivtsSa-CH8K7X-wHkY$$ID_Kdb8POeeUVk7w5fwQQ",
@@ -1878,8 +1871,8 @@
           "metadata" : {
             "label" : "Subgraph_2",
             "slug" : "Subgraph_2",
-            "x" : 919.5999999999999,
-            "y" : 222,
+            "x" : 939.5999999999999,
+            "y" : 242,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -1899,19 +1892,19 @@
           },
           "properties" : { },
           "connections" : [ {
-            "id" : "nMcPr1WwVYm-f7lemA3i0",
+            "id" : "PAIzRvSh5RFuowggm4Fd1",
             "source" : "UpaxhsF4g1Ls1G4TEJWYJ$$S28tLqf91WbOF_o3afmzz",
             "sourcePort" : "qRSJeIN92XIR34cTQYWtS$$31rTELYMUvtwqB4mWLwvv",
             "target" : "exr2BpbPhnRXVcDMMApOj$$mGGcKaKtGxfUPl5SjZFMM",
             "targetPort" : "op7zUmnLqVh6ZDFsskniq$$3UE3uI-r45RpLJ4ZYaSog"
           }, {
-            "id" : "FWtp_L0qowA2jEu2TB9en",
+            "id" : "ym6yA0AmGcW6UNSraFudD",
             "source" : "exr2BpbPhnRXVcDMMApOj$$mGGcKaKtGxfUPl5SjZFMM",
             "sourcePort" : "ltmzhQd1JXnhfPyuGqUN_$$U_-68me1RQlhFyOdaFK76",
             "target" : "kVN_90f_ZRy6VpVrkgDT1$$pkPW0CE_p0pylup5V-WIN",
             "targetPort" : "Zf30EQNjbSLOPbfmplJP7$$2As6SdHSYDrExE_Z8P-q7"
           }, {
-            "id" : "qnu2OWbbVaM745vhT-e_W",
+            "id" : "3VCsGQFULxk48T8YUOulc",
             "source" : "kVN_90f_ZRy6VpVrkgDT1$$pkPW0CE_p0pylup5V-WIN",
             "sourcePort" : "fWSzz1Z2wMz3_FEV-NAky$$gQ-XeZYOofvCyIBmiYA4b",
             "target" : "UpaxhsF4g1Ls1G4TEJWYJ$$S28tLqf91WbOF_o3afmzz",
@@ -1924,8 +1917,8 @@
               "metadata" : {
                 "label" : "Reformat_6",
                 "slug" : "Reformat_6",
-                "x" : 160,
-                "y" : 180,
+                "x" : 180,
+                "y" : 200,
                 "phase" : 0,
                 "cache" : false,
                 "detailedStats" : false,
@@ -1954,8 +1947,8 @@
               "metadata" : {
                 "label" : "Subgraph_3",
                 "slug" : "Subgraph_3",
-                "x" : 300,
-                "y" : 180,
+                "x" : 320,
+                "y" : 200,
                 "phase" : 0,
                 "cache" : false,
                 "detailedStats" : false,
@@ -1975,13 +1968,13 @@
               },
               "properties" : { },
               "connections" : [ {
-                "id" : "9IccY7Vo4VFcOpj-0nT5U",
+                "id" : "ymcu94W9aFXMDXdFXYMTD",
                 "source" : "kVN_90f_ZRy6VpVrkgDT1$$pkPW0CE_p0pylup5V-WIN",
                 "sourcePort" : "Zf30EQNjbSLOPbfmplJP7$$2As6SdHSYDrExE_Z8P-q7",
                 "target" : "Ry-w5-cYGe2idNVAoHcnc$$D7BiAbWGmJrCIbaXPeVp1",
                 "targetPort" : "0uPEEb0ckdla5NSaFP_ws$$mBnJnMFmZFLWCbAHWqlBt"
               }, {
-                "id" : "dxwp4R9LaHZiOlVnKNPPD",
+                "id" : "BYWW2STWc6-ccQwoBVTWw",
                 "source" : "Ry-w5-cYGe2idNVAoHcnc$$D7BiAbWGmJrCIbaXPeVp1",
                 "sourcePort" : "KiErvqavhN4W8nXgO3ipo$$C4ZccTM4RqipUJLdxtl2S",
                 "target" : "kVN_90f_ZRy6VpVrkgDT1$$pkPW0CE_p0pylup5V-WIN",
@@ -1994,8 +1987,8 @@
                   "metadata" : {
                     "label" : "Filter_2",
                     "slug" : "Filter_2",
-                    "x" : 160,
-                    "y" : 180,
+                    "x" : 180,
+                    "y" : 200,
                     "phase" : 0,
                     "cache" : false,
                     "detailedStats" : false,
@@ -2031,8 +2024,8 @@
           "metadata" : {
             "label" : "Reformat_5",
             "slug" : "Reformat_5",
-            "x" : 490,
-            "y" : 258,
+            "x" : 510,
+            "y" : 278,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,

@@ -7,7 +7,7 @@ setup(
     package_data = {'prophecy_config_instances' : ['*.json', '*.py']},
     description = 'workflow',
     install_requires = [
-'matplotlib==3.5.2', 'prophecy-libs==1.3.6'],
+'prophecy-libs==1.3.6'],
     entry_points = {
 'console_scripts' : [
 'main = python_external_git_pipeline.pipeline:main', ], },
