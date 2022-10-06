@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "221",
+    "fabricId" : "222",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -32,6 +32,12 @@
       "exclusions" : [ ],
       "id" : "7y8xO",
       "type" : "coordinates",
+      "enabled" : false
+    }, {
+      "package" : "matplotlib==3.5.2",
+      "name" : "matplotlib",
+      "id" : "YlVYn",
+      "type" : "pypi",
       "enabled" : false
     } ],
     "isImported" : false,

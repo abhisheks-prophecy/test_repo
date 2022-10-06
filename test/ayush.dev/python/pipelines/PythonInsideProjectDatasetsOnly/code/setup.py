@@ -10,7 +10,8 @@ setup(
 'prophecy-libs==1.3.6'],
     entry_points = {
 'console_scripts' : [
-'main = pythoninsideprojectdatasetsonly.pipeline:main', ], },
+'main = pythoninsideprojectdatasetsonly.pipeline:main'], },
+    data_files = [(".prophecy", [".prophecy/workflow.latest.json"])],
     extras_require = {
 'test' : ['pytest', 'pytest-html'], }
 )

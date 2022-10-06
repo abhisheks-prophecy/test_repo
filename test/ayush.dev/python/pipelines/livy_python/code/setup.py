@@ -7,10 +7,11 @@ setup(
     package_data = {'prophecy_config_instances' : ['*.json', '*.py']},
     description = 'workflow',
     install_requires = [
-'prophecy-libs==1.3.5'],
+'prophecy-libs==1.3.6'],
     entry_points = {
 'console_scripts' : [
-'main = livy_python.pipeline:main', ], },
+'main = livy_python.pipeline:main'], },
+    data_files = [(".prophecy", [".prophecy/workflow.latest.json"])],
     extras_require = {
 'test' : ['pytest', 'pytest-html'], }
 )
