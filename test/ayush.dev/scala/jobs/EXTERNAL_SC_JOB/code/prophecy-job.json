@@ -42,6 +42,13 @@
         "default" : "Small",
         "availableClusterSizes" : [ "Small" ]
       }
+    }, {
+      "id" : "227",
+      "name" : "dev_otherteam",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
     } ]
   },
   "processes" : {

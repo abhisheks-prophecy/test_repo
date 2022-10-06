@@ -40,52 +40,16 @@
         "default" : "Small",
         "availableClusterSizes" : [ "Small" ]
       }
+    }, {
+      "id" : "227",
+      "name" : "dev_otherteam",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
     } ]
   },
   "processes" : {
-    "wtxBmX3RH7fScM0b6lNhp" : {
-      "id" : "wtxBmX3RH7fScM0b6lNhp",
-      "component" : "Pipeline",
-      "metadata" : {
-        "label" : "Pipeline_0",
-        "slug" : "Pipeline_0",
-        "x" : 100,
-        "y" : 100
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "out"
-        } ]
-      },
-      "settings" : {
-        "type" : "Inherited",
-        "alerting" : {
-          "emails" : "",
-          "onStart" : false,
-          "onSuccess" : false,
-          "onFailure" : false
-        }
-      },
-      "properties" : {
-        "pipelineId" : "pipelines/scala_external_pipeline",
-        "configurations" : {
-          "schema" : [ {
-            "name" : "c_string",
-            "optional" : false,
-            "kind" : {
-              "type" : "string",
-              "value" : "value"
-            }
-          } ],
-          "instances" : [ "default" ],
-          "overrides" : { },
-          "selectedInstance" : "default"
-        }
-      }
-    },
     "VkintsxVRZO8sGet5KtP1$$C6EXXXLdpWMOlRPiY_PF-" : {
       "id" : "VkintsxVRZO8sGet5KtP1$$C6EXXXLdpWMOlRPiY_PF-",
       "component" : "Pipeline",
@@ -157,6 +121,49 @@
       },
       "properties" : {
         "code" : "print(\"hello\")"
+      }
+    },
+    "wtxBmX3RH7fScM0b6lNhp" : {
+      "id" : "wtxBmX3RH7fScM0b6lNhp",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline_0",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "out"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/scala_external_pipeline",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "value"
+            }
+          } ],
+          "instances" : [ "default" ],
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
       }
     }
   },
