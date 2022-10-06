@@ -25,7 +25,6 @@ def pipeline(spark: SparkSession) -> None:
     df_OrderBy_1 = OrderBy_1(spark, df_src_parquet_complex)
     df_src_orc = src_orc(spark)
     df_src_csv = src_csv(spark)
-    df_Reformat_3 = Reformat_3(spark, df_customers)
     df_RowDistributor_1_out0, df_RowDistributor_1_out1 = RowDistributor_1(spark, df_src_orc)
     df_src_avro_1 = src_avro_1(spark)
     df_SchemaTransform_1 = SchemaTransform_1(spark, df_src_csv)
