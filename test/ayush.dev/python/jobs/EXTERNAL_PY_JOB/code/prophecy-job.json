@@ -1,7 +1,7 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "217",
+    "fabricId" : "222",
     "jobId" : "jobs/EXTERNAL_PY_JOB",
     "name" : "EXTERNAL_PY_JOB",
     "schedule" : "0 0 0 * * ? 2090",
@@ -29,25 +29,18 @@
       }
     },
     "availableFabrics" : [ {
-      "id" : "217",
-      "name" : "dev_fabric1",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
-      }
-    }, {
-      "id" : "218",
+      "id" : "222",
       "name" : "dev",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
       }
     }, {
-      "id" : "219",
-      "name" : "dev_shared",
+      "id" : "225",
+      "name" : "managed",
       "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
       }
     } ]
   },
@@ -170,10 +163,31 @@
         }
       },
       "properties" : {
-        "pipelineId" : "645/pipelines/PythonInsideProjectDatasetsOnly",
+        "pipelineId" : "pipelines/PythonInsideProjectDatasetsOnly",
         "configurations" : {
-          "schema" : [ ],
-          "instances" : [ "default" ],
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "string value"
+            }
+          }, {
+            "name" : "c_int",
+            "optional" : false,
+            "kind" : {
+              "type" : "int",
+              "value" : "10"
+            }
+          }, {
+            "name" : "c_long",
+            "optional" : false,
+            "kind" : {
+              "type" : "long",
+              "value" : "13213213"
+            }
+          } ],
+          "instances" : [ "default", "test1" ],
           "overrides" : { },
           "selectedInstance" : "default"
         }
