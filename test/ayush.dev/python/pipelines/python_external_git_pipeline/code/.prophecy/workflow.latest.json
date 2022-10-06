@@ -546,8 +546,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : 1019.2,
-        "y" : -1.6000000000000796,
+        "x" : 1010.8,
+        "y" : -25.60000000000008,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -566,7 +566,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_smallint", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_tinyint", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_int", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_double", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_float", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_string", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_struct", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_boolean", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_bigint", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_array" ],
+        "columnsSelector" : [ "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_bigint", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_string", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_tinyint", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_float", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_struct", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_int", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_smallint", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_array", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_double", "f1YguM-lR7VFgLIjVvCMT$$05auGXtsotCgjOWZKTQ9d##c_boolean" ],
         "expressions" : [ {
           "target" : "c_tinyint",
           "expression" : {
@@ -1203,6 +1203,32 @@
             "expression" : "c_short > 5"
           }
         } ]
+      }
+    },
+    "UGojz77kYZ9ICVSUfexTP$$vovJUozCaHKBoAqbn5Jec" : {
+      "id" : "UGojz77kYZ9ICVSUfexTP$$vovJUozCaHKBoAqbn5Jec",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "src_avro_1",
+        "slug" : "src_avro_1",
+        "x" : -97.7999999999999,
+        "y" : 140.7999999999999,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "3IJxDuWlm7AShWSiG9seF$$K7ggpBhyPrhA17SZGjEvI",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/src_avro"
       }
     },
     "Vb0NYEwtYYDi0vvl5PJrv$$bVsaGHtyQZ78J6WjPyqwc" : {

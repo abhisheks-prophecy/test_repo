@@ -1,4 +1,5 @@
 from .test_subgraph_1 import *
+from .src_avro_1 import *
 from .src_avro import *
 from .Reformat_1 import *
 from .SetOperation_1 import *
