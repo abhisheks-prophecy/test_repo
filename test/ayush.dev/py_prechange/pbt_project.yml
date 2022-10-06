@@ -1,0 +1,190 @@
+name: PyPreDecouplingProject
+description: ''
+version: 0.0.1
+author: abhisheks+e2etests@simpledatalabs.com
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/PyPrePipeline:
+    name: PyPrePipeline
+    description: PyPrePipeline
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-09-28 07:01:53'
+    datasets:
+      inputs:
+      - 10738/datasets/src_parquet_complex
+      - 10738/datasets/src_delta
+      - 10738/datasets/src_csv
+      - 10738/datasets/src_warehouse
+      - 10738/datasets/src_catalog
+      outputs:
+      - 10738/datasets/dest_parquet
+      - 10738/datasets/dest_csv
+      - 10738/datasets/dest_delta
+      - 10738/datasets/dest_warehouse
+    dependencies: {}
+  pipelines/PyPipSharedDataset:
+    name: PyPipSharedDataset
+    description: PyPipSharedDataset
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: python
+    createdAt: '2022-09-28 07:53:11'
+    datasets:
+      inputs:
+      - 1359/datasets/customers
+      - 10738/datasets/src_delta
+      outputs: []
+    dependencies:
+      project/1359:
+        name: project/1359
+        projectUID: 1359
+        projectName: HelloWorld
+        version: HelloWorld/1.2
+        author: null
+        createdAt: '2022-09-28 07:53:31'
+datasets:
+  datasets/src_delta:
+    name: src_delta
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-09-28 07:04:01'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-09-28 07:04:01'
+  datasets/dest_csv:
+    name: dest_csv
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-09-28 07:30:44'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-09-28 07:30:44'
+  datasets/src_warehouse:
+    name: src_warehouse
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-09-28 07:27:38'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: Warehouse
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-09-28 07:27:38'
+  datasets/dest_warehouse:
+    name: dest_warehouse
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-09-28 07:37:10'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: Warehouse
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-09-28 07:37:10'
+  datasets/src_parquet_complex:
+    name: src_parquet_complex
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-09-28 07:03:16'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-09-28 07:03:16'
+  datasets/dest_delta:
+    name: dest_delta
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-09-28 07:31:23'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-09-28 07:31:23'
+  datasets/src_csv:
+    name: src_csv
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-09-28 07:04:40'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-09-28 07:04:40'
+  datasets/dest_parquet:
+    name: dest_parquet
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-09-28 07:29:31'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-09-28 07:29:31'
+  datasets/src_catalog:
+    name: src_catalog
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-09-28 07:37:42'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: Database
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-09-28 07:37:42'
+templates: {}
+jobs:
+  jobs/JobPyPrePipeline:
+    name: JobPyPrePipeline
+    description: ''
+    fabricUID: 1901
+    scheduler:
+      Databricks: {}
+    jobSize: newjobsize-1.1
+    scheduleCron: 0 0 0 * * ? 2090
+    timeout: 3600
+    alerting:
+      emails: abhisheks@prophecy.io
+      onStart: false
+      onSuccess: true
+      onFailure: true
+    pipelines:
+    - 10738/pipelines/PyPrePipeline
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2022-09-28 07:44:46'
+    author: abhisheks+e2etests@simpledatalabs.com
+libraries: []
+subgraphs:
+  subgraphs/testSG-main1:
+    name: testSG-main1
+    description: testSG-main1
+    author: abhisheks+e2etests@simpledatalabs.com
+    language: python
+    createdAt: '2022-09-28 07:39:51'
+dependencies: '[]'

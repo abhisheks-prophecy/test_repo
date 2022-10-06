@@ -1,0 +1,138 @@
+{
+  "id" : "RpkYqvUKIK-VMVuoGZK9G",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "s21_2jP4uDWG6U47o_gso",
+      "slug" : "in0"
+    } ],
+    "outputs" : [ {
+      "id" : "mi6vhE4SOshxa30cuDcDr",
+      "slug" : "out0"
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  },
+  "properties" : {
+    "packageName" : "org.sg1"
+  },
+  "connections" : [ {
+    "id" : "52vCaKDbWuP_3eurX-q7x",
+    "source" : "RpkYqvUKIK-VMVuoGZK9G",
+    "sourcePort" : "s21_2jP4uDWG6U47o_gso",
+    "target" : "UCxN_opj7-nneeShvmDmE",
+    "targetPort" : "MRUwctu7Df9nIryTKQhfX"
+  }, {
+    "id" : "2himIHfY762hPV_HwajYF",
+    "source" : "UCxN_opj7-nneeShvmDmE",
+    "sourcePort" : "PnWI2iMTNb84JfgMlpI0h",
+    "target" : "RpkYqvUKIK-VMVuoGZK9G",
+    "targetPort" : "mi6vhE4SOshxa30cuDcDr"
+  } ],
+  "processes" : {
+    "UCxN_opj7-nneeShvmDmE" : {
+      "id" : "UCxN_opj7-nneeShvmDmE",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_2",
+        "slug" : "Reformat_2",
+        "x" : 180,
+        "y" : 200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "MRUwctu7Df9nIryTKQhfX",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "PnWI2iMTNb84JfgMlpI0h",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "MRUwctu7Df9nIryTKQhfX$$zPfeke5PI9Ba61_PLTUov##customer_id", "MRUwctu7Df9nIryTKQhfX$$zPfeke5PI9Ba61_PLTUov##account_flags", "MRUwctu7Df9nIryTKQhfX$$zPfeke5PI9Ba61_PLTUov##account_open_date", "MRUwctu7Df9nIryTKQhfX$$zPfeke5PI9Ba61_PLTUov##first_name", "MRUwctu7Df9nIryTKQhfX$$zPfeke5PI9Ba61_PLTUov##country_code", "MRUwctu7Df9nIryTKQhfX$$zPfeke5PI9Ba61_PLTUov##phone", "MRUwctu7Df9nIryTKQhfX$$zPfeke5PI9Ba61_PLTUov##last_name", "MRUwctu7Df9nIryTKQhfX$$zPfeke5PI9Ba61_PLTUov##email" ],
+        "expressions" : [ {
+          "target" : "account_flags",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_flags"
+          },
+          "description" : "",
+          "_row_id" : "6017614488114545736"
+        }, {
+          "target" : "account_open_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_open_date"
+          },
+          "description" : "",
+          "_row_id" : "5148778665888157143"
+        }, {
+          "target" : "country_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "country_code"
+          },
+          "description" : "",
+          "_row_id" : "9069988141098930611"
+        }, {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : "",
+          "_row_id" : "1539244337641597433"
+        }, {
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "description" : "",
+          "_row_id" : "7131796471248643432"
+        }, {
+          "target" : "first_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first_name"
+          },
+          "description" : "",
+          "_row_id" : "7516816444513129838"
+        }, {
+          "target" : "last_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "last_name"
+          },
+          "description" : "",
+          "_row_id" : "4858316575477896153"
+        }, {
+          "target" : "phone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "phone"
+          },
+          "description" : "",
+          "_row_id" : "7507350371166432500"
+        } ]
+      }
+    }
+  }
+}

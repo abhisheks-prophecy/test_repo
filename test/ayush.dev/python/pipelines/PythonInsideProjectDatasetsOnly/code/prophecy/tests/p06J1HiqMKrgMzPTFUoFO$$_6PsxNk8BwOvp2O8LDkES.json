@@ -1,0 +1,89 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "7qgPcSCJiq0Z6FzpXP2aS$$w1spByUn-X-hAKER-liKZ" : {
+        "values" : [ [ "Ades", "Baryram", "null" ], [ "Alston", "Violet", "null" ], [ "Amies", "Barrett", "null" ], [ "Armer", "Mariana", "null" ], [ "Basire", "Queenie", "null" ], [ "Beach", "Alina", "null" ], [ "Bickmore", "Tony", "null" ], [ "Bigly", "Jonis", "null" ], [ "Bilsford", "Jamaal", "null" ], [ "Birdsall", "Balduin", "null" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "last_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "firstname",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id_account_flags",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "-0M6uLxlqim6uHTkyX2D3$$KaYldtki0vvCfpdKFNiVu" : {
+        "values" : [ [ "Ades", "Baryram", "1", "1" ], [ "Alston", "Violet", "1", "1" ], [ "Amies", "Barrett", "1", "1" ], [ "Armer", "Mariana", "1", "1" ], [ "Basire", "Queenie", "1", "1" ], [ "Beach", "Alina", "1", "1" ], [ "Bickmore", "Tony", "1", "1" ], [ "Bigly", "Jonis", "1", "1" ], [ "Bilsford", "Jamaal", "1", "1" ], [ "Birdsall", "Balduin", "1", "1" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "last_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "firstname",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id_account_flags",
+            "type" : "integer",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id_account_open_date",
+            "type" : "integer",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 0",
+    "testType" : "outputRow",
+    "language" : "python"
+  } ],
+  "language" : "python"
+}

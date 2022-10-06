@@ -1,0 +1,285 @@
+{
+  "id" : "48LUhv1rttFkfMfTcSj0x",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "ahuB8hlPhviGbGlFKpZxM",
+      "slug" : "in0"
+    }, {
+      "id" : "yC3rXXrtTUb84N_xCKq5U",
+      "slug" : "in1"
+    } ],
+    "outputs" : [ {
+      "id" : "tRLAa5yLuLmusa1FI_KQj",
+      "slug" : "out0"
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  },
+  "properties" : {
+    "packageName" : "org.main.test-project_SG1"
+  },
+  "connections" : [ {
+    "id" : "eVPNZbzXaDRJWLy0SkZcJ",
+    "source" : "aqikwOWEyilDTTmMWZ7ru",
+    "sourcePort" : "pS9ouK-K5VR1-sOtnlfCG",
+    "target" : "8-Cbg1-h_i9KxDxngGyEf",
+    "targetPort" : "SpGfvzeC3ZoZbaSj-Njoh"
+  }, {
+    "id" : "mjNaijlTWVAo1fXcsCbPW",
+    "source" : "8-Cbg1-h_i9KxDxngGyEf",
+    "sourcePort" : "13H3SMgvQ6eAta-B8cQEU",
+    "target" : "MlAL7RJ3mIm09sazeG9Nr",
+    "targetPort" : "obTAHLAs1i63o_hmw6g8O"
+  }, {
+    "id" : "WRRlVl1t-frElkzpDq6et",
+    "source" : "48LUhv1rttFkfMfTcSj0x",
+    "sourcePort" : "ahuB8hlPhviGbGlFKpZxM",
+    "target" : "aqikwOWEyilDTTmMWZ7ru",
+    "targetPort" : "HamrBkAC3OMHxTM1TFBEH"
+  }, {
+    "id" : "qXvXbEhkwjUrW1dnAvSnV",
+    "source" : "48LUhv1rttFkfMfTcSj0x",
+    "sourcePort" : "yC3rXXrtTUb84N_xCKq5U",
+    "target" : "aqikwOWEyilDTTmMWZ7ru",
+    "targetPort" : "rWZBbCa71TuIHNTJXOjG5"
+  }, {
+    "id" : "BraGqTRaZ0zmijWt_ckIW",
+    "source" : "MlAL7RJ3mIm09sazeG9Nr",
+    "sourcePort" : "y-0QQHC2br9wDEJwGdE9n",
+    "target" : "48LUhv1rttFkfMfTcSj0x",
+    "targetPort" : "tRLAa5yLuLmusa1FI_KQj"
+  } ],
+  "processes" : {
+    "aqikwOWEyilDTTmMWZ7ru" : {
+      "id" : "aqikwOWEyilDTTmMWZ7ru",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "By CustomerId_1",
+        "slug" : "By_CustomerId_1",
+        "x" : 345,
+        "y" : 252.5,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "HamrBkAC3OMHxTM1TFBEH",
+          "slug" : "in0"
+        }, {
+          "id" : "rWZBbCa71TuIHNTJXOjG5",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "pS9ouK-K5VR1-sOtnlfCG",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.customer_id = in1.customer_id"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "account_open_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.account_open_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "order_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.order_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.customer_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.amount"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "first_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.first_name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "last_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.last_name"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "47810##customer_id", "2322##customer_id", "2322##account_open_date", "47810##order_id", "47810##customer_id", "47810##amount", "2322##first_name", "2322##last_name" ],
+        "whereClause" : null,
+        "headAlias" : "in0"
+      }
+    },
+    "8-Cbg1-h_i9KxDxngGyEf" : {
+      "id" : "8-Cbg1-h_i9KxDxngGyEf",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Cleanup_1",
+        "slug" : "Cleanup_1",
+        "x" : 530.0000025792598,
+        "y" : 252.5,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "SpGfvzeC3ZoZbaSj-Njoh",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "13H3SMgvQ6eAta-B8cQEU",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "94427##account_open_date", "94427##order_id", "94427##customer_id", "94427##amount" ],
+        "expressions" : [ {
+          "target" : "account_length_days",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "datediff(current_date(), account_open_date)"
+          },
+          "description" : "",
+          "_row_id" : "2012515696"
+        }, {
+          "target" : "order_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "order_id"
+          },
+          "description" : "",
+          "_row_id" : "264896791"
+        }, {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : "",
+          "_row_id" : "323909105"
+        }, {
+          "target" : "amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "amount"
+          },
+          "description" : "",
+          "_row_id" : "1544585029"
+        } ]
+      }
+    },
+    "MlAL7RJ3mIm09sazeG9Nr" : {
+      "id" : "MlAL7RJ3mIm09sazeG9Nr",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Sum Amounts_1",
+        "slug" : "Sum_Amounts_1",
+        "x" : 715.0001168802635,
+        "y" : 252.5,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "obTAHLAs1i63o_hmw6g8O",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "y-0QQHC2br9wDEJwGdE9n",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "orders",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "count(order_id)"
+          },
+          "description" : ""
+        }, {
+          "target" : "amounts",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(amount)"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_length_days",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(account_length_days)"
+          },
+          "description" : ""
+        } ],
+        "pivotColumn" : {
+          "format" : "sql",
+          "expression" : "col_name"
+        },
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "42999##customer_id", "42999##order_id", "42999##amount", "42999##account_length_days" ],
+        "groupBy" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        } ]
+      }
+    }
+  }
+}
