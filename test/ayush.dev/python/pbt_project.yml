@@ -17,6 +17,36 @@ pipelines:
       - datasets/src_livy
       outputs: []
     dependencies: {}
+  pipelines/TestNew1:
+    name: TestNew1
+    description: TestNew1
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-10-06 07:45:00'
+    datasets:
+      inputs:
+      - datasets/src_avro
+      - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers_orders
+      - https://github.com/abhisheks-prophecy/test_repo.git//test/randompathfortest@ExtNEWProjectDiffTeam/1.0/734/datasets/TEST_SCNEARIO1
+      outputs: []
+    dependencies:
+      project/452:
+        name: project/452
+        projectUID: 452
+        projectName: HelloWorld
+        version: HelloWorld/1.0
+        author: null
+        repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
+        createdAt: '2022-10-06 07:45:26'
+      project/734:
+        name: project/734
+        projectUID: 734
+        projectName: ExtNEWProjectDiffTeam
+        version: ExtNEWProjectDiffTeam/1.0
+        author: null
+        repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/randompathfortest
+        createdAt: '2022-10-06 07:45:47'
   pipelines/python_external_git_pipeline:
     name: python_external_git_pipeline
     description: python_external_git_pipeline
@@ -51,7 +81,7 @@ pipelines:
         projectUID: 733
         projectName: HelloWorld_CloneTest
         version: HelloWorld_CloneTest/1.0
-        author: null
+        author: ''
         repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/helloworldtest
         createdAt: '2022-10-06 07:07:21'
   pipelines/PythonLivy:
