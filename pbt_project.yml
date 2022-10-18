@@ -1,0 +1,23 @@
+name: PY_DEL_GIT_PROJ
+description: ''
+version: 0.0.1-SNAPSHOT
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: wheel
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies:
+  '6154':
+    projectUID: 6154
+    projectName: PythonMainProject
+    repositoryPath: http://gitserver:3000/Z9fNRzJ4_team_1793/4huAEWx3_project_6154.git/
+    version: PythonMainProject/1.1665768126954
+    author: null
+    createdAt: '2022-10-18 05:01:01'

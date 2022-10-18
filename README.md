@@ -1,2 +1,1 @@
-# test_repo
-test repo
+# PY_DEL_GIT_PROJ Repository
