@@ -11,3 +11,7 @@ Changes
 *** Release notes for version: 2.01 ***
 
 Changes
+
+*** Release notes for version: 2.02 ***
+
+Changes
