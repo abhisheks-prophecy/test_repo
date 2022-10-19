@@ -8,10 +8,10 @@ pipelines:
   pipelines/Automated-Github-UpdateToken-Pipeline:
     name: Automated-Github-UpdateToken-Pipeline
     description: automation workflow
-    author: abhisheks+e2etests1@simpledatalabs.com
+    author: abhisheks+e2etests@prophecy.io
     mode: batch
     language: scala
-    createdAt: '2022-10-14 16:20:04'
+    createdAt: '2022-10-19 10:36:34'
     datasets:
       inputs: []
       outputs: []
@@ -24,3 +24,4 @@ subgraphs: {}
 sqlModels: {}
 sqlPipeline: null
 dependencies: '[]'
+projectDependencies: {}
