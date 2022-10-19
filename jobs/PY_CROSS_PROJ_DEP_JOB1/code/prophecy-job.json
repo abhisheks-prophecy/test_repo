@@ -131,72 +131,6 @@
     } ]
   },
   "processes" : {
-    "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P" : {
-      "id" : "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P",
-      "component" : "Script",
-      "metadata" : {
-        "label" : "Script_1",
-        "slug" : "Script_1",
-        "x" : 274.6000061035156,
-        "y" : -139.1999969482422
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "Gc37xnZxJM9oPZI6lGAs_$$7divy0sh9j2tsFgwvfqz2"
-        } ],
-        "outputs" : [ {
-          "id" : "UeVPUPPGu2lZvlSRh1ITO$$lOc8FtvSy-GhYa_NugmZF"
-        } ]
-      },
-      "settings" : {
-        "type" : "Inherited",
-        "alerting" : {
-          "emails" : "",
-          "onStart" : false,
-          "onSuccess" : false,
-          "onFailure" : false
-        }
-      },
-      "properties" : {
-        "code" : "print(\"hello\")"
-      }
-    },
-    "RaoXBZLbxGu4LI4RPpCvX" : {
-      "id" : "RaoXBZLbxGu4LI4RPpCvX",
-      "component" : "Pipeline",
-      "metadata" : {
-        "label" : "Pipeline_0",
-        "slug" : "Pipeline_0",
-        "x" : 20.799999237060547,
-        "y" : 131.1999969482422
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "out"
-        } ]
-      },
-      "settings" : {
-        "type" : "Inherited",
-        "alerting" : {
-          "emails" : "",
-          "onStart" : false,
-          "onSuccess" : false,
-          "onFailure" : false
-        }
-      },
-      "properties" : {
-        "pipelineId" : "pipelines/PY_DEL_GIT_PIPELINE1",
-        "configurations" : {
-          "schema" : [ ],
-          "instances" : [ "default" ],
-          "overrides" : { },
-          "selectedInstance" : "default"
-        }
-      }
-    },
     "qsLbz1RYz0G4EkQQZShHn$$RWCvhm3WibR6r-Rg0aAVO" : {
       "id" : "qsLbz1RYz0G4EkQQZShHn$$RWCvhm3WibR6r-Rg0aAVO",
       "component" : "Pipeline",
@@ -357,6 +291,36 @@
           "overrides" : { },
           "selectedInstance" : "test-instance1"
         }
+      }
+    },
+    "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P" : {
+      "id" : "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 274.6000061035156,
+        "y" : -139.1999969482422
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Gc37xnZxJM9oPZI6lGAs_$$7divy0sh9j2tsFgwvfqz2"
+        } ],
+        "outputs" : [ {
+          "id" : "UeVPUPPGu2lZvlSRh1ITO$$lOc8FtvSy-GhYa_NugmZF"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : "print(\"hello\")"
       }
     }
   },

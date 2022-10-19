@@ -37,7 +37,6 @@ jobs:
       onSuccess: false
       onFailure: false
     pipelines:
-    - pipelines/PY_DEL_GIT_PIPELINE1
     - pipelines/PYTHON_DEP_MANAGEMENT_ALL
     jobClusterMode:
       clusterMode:
