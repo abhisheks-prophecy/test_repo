@@ -1,0 +1,107 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "v4MbxhuFCMuTtlHSMZ-xd$$zIfp3eHrXjdsqvCkRinxP" : {
+        "values" : [ [ "E", "2019-07-20", "Griz", "Roubeix", "E2019-07-20" ], [ "E", "2019-10-21", "Carleen", "Eles", "E2019-10-21" ], [ "E", "2019-05-04", "Marjy", "Della", "E2019-05-04" ], [ "C", "2019-10-19", "Osborne", "MacAdam", "C2019-10-19" ], [ "E", "2020-02-19", "Roselia", "Trethewey", "E2020-02-19" ], [ "E", "2019-04-20", "Cassy", "Gainsford", "E2019-04-20" ], [ "E", "2020-01-14", "Robers", "Scala", "E2020-01-14" ], [ "E", "2019-03-25", "Sibley", "Reasun", "E2019-03-25" ], [ "A", "2019-07-19", "Natka", "Birdsey", "A2019-07-19" ], [ "D", "2019-05-15", "Jonis", "Bigly", "D2019-05-15" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "account_flags",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "account_open_date",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "firstname",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "last_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c_concat",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "lqISFsRia4B9DiPe7qnv0$$M-VhXVslC6wiqEHVpf-cJ" : {
+        "values" : [ [ "Bigly", "Jonis", "None", "None" ], [ "Birdsey", "Natka", "None", "None" ], [ "Della", "Marjy", "None", "None" ], [ "Eles", "Carleen", "None", "None" ], [ "Gainsford", "Cassy", "None", "None" ], [ "MacAdam", "Osborne", "None", "None" ], [ "Reasun", "Sibley", "None", "None" ], [ "Roubeix", "Griz", "None", "None" ], [ "Scala", "Robers", "None", "None" ], [ "Trethewey", "Roselia", "None", "None" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "last_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "firstname",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id_account_flags",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id_account_open_date",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 0",
+    "testType" : "outputRow",
+    "language" : "python"
+  } ],
+  "language" : "python"
+}

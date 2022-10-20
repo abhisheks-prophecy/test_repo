@@ -1,0 +1,6 @@
+version: 1
+dependencies:
+- name: pyhocon
+  id: GVwSz
+  type: workflow
+  enabled: true

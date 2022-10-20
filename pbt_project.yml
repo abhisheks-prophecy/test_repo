@@ -1,0 +1,79 @@
+name: PY_DEL_GIT_PROJ
+description: ''
+version: '2.04'
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/PY_DEL_GIT_PIPELINE1:
+    name: PY_DEP_PIPELINE1
+    description: PY_DEP_PIPELINE1
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-10-18 05:59:00'
+    datasets:
+      inputs:
+      - http://gitserver:3000/Z9fNRzJ4_team_1793/4huAEWx3_project_6154.git/@PythonMainProject/1.1665768126954/6154/datasets/src_json_input_custs
+      - http://gitserver:3000/Z9fNRzJ4_team_1793/lFGcnlOe_project_5690.git/@python_project/1.0/5690/datasets/ALL_TYPE_CSV
+      outputs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs:
+  jobs/PY_CROSS_PROJ_DEP_JOB1:
+    name: PY_CROSS_PROJ_DEP_JOB1
+    description: ''
+    fabricUID: 674
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 * * ? 2090
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - pipelines/PYTHON_DEP_MANAGEMENT_ALL
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2022-10-18 12:35:34'
+    author: abhisheks+e2etests@prophecy.io
+libraries: []
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies:
+- package: pyhocon==0.3.59
+  name: pyhocon
+  id: GVwSz
+  type: pypi
+  enabled: false
+projectDependencies:
+  '6154':
+    projectUID: 6154
+    projectName: PythonMainProject
+    repositoryPath: http://gitserver:3000/Z9fNRzJ4_team_1793/4huAEWx3_project_6154.git/
+    version: PythonMainProject/1.1665768126954
+    author: null
+    createdAt: '2022-10-18 05:01:01'
+  '9890':
+    projectUID: 9890
+    projectName: ConflictProject
+    repositoryPath: http://gitserver:3000/Z9fNRzJ4_team_1793/cQhq54Wz_project_9890.git/
+    version: ConflictProject/1.2
+    author: null
+    createdAt: '2022-10-18 06:28:16'
+  '5690':
+    projectUID: 5690
+    projectName: python_project
+    repositoryPath: http://gitserver:3000/Z9fNRzJ4_team_1793/lFGcnlOe_project_5690.git/
+    version: python_project/1.0
+    author: null
+    createdAt: '2022-10-18 06:28:17'

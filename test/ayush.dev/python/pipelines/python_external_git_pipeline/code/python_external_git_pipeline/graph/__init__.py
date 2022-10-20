@@ -3,10 +3,12 @@ from .test_subgraph_1 import *
 from .src_avro import *
 from .Reformat_1 import *
 from .SetOperation_1 import *
+from .Reformat_4 import *
 from .Subgraph_1 import *
 from .RowDistributor_1 import *
 from .Join_1 import *
 from .OrderBy_1 import *
+from .customers_orders import *
 from .src_orc import *
 from .src_parquet import *
 from .Reformat_3 import *
