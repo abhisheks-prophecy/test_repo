@@ -25,15 +25,7 @@ pipelines:
       - datasets/src_catalog
       - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers_orders
       outputs: []
-    dependencies:
-      project/452:
-        name: project/452
-        projectUID: 452
-        projectName: HelloWorld
-        version: HelloWorld/1.0
-        author: ''
-        repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
-        createdAt: '2022-09-23 09:10:27'
+    dependencies: {}
   pipelines/livy_scala:
     name: livy_scala
     description: livy_scala
@@ -279,3 +271,11 @@ dependencies:
   id: 4Z206
   type: coordinates
   enabled: false
+projectDependencies:
+  '452':
+    projectUID: 452
+    projectName: HelloWorld
+    repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
+    version: HelloWorld/1.0
+    author: ''
+    createdAt: '2022-10-19 07:15:09'
