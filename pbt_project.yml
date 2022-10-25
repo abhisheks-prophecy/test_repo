@@ -38,6 +38,7 @@ jobs:
       onFailure: false
     pipelines:
     - pipelines/PYTHON_DEP_MANAGEMENT_ALL
+    - pipelines/python_pipeline
     jobClusterMode:
       clusterMode:
         Multi: {}
