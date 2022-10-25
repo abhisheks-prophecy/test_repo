@@ -1,6 +1,6 @@
 name: ScalaExternalProject
 description: ''
-version: '1.0'
+version: 1.0-SNAPSHOT
 author: abhisheks+e2etests@prophecy.io
 language: scala
 buildSystem: maven
@@ -271,3 +271,4 @@ dependencies:
   id: 4Z206
   type: coordinates
   enabled: false
+projectDependencies: {}
