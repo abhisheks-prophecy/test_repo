@@ -24,13 +24,6 @@
       }
     },
     "availableFabrics" : [ {
-      "id" : "2521",
-      "name" : "JobFabricMain_1",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small", "adv-json1", "adv-json2" ]
-      }
-    }, {
       "id" : "2071",
       "name" : "dev_shared",
       "clusterSizes" : {
@@ -38,32 +31,25 @@
         "availableClusterSizes" : [ "small", "medium-1" ]
       }
     }, {
-      "id" : "2534",
-      "name" : "TEST-Automated_Databricks1",
+      "id" : "2559",
+      "name" : "Livypython-TEST_Automated",
       "clusterSizes" : {
         "default" : "small",
-        "availableClusterSizes" : [ "small", "adv-json1", "adv-json2", "small2" ]
+        "availableClusterSizes" : [ "small", "small2", "small3" ]
       }
     }, {
       "id" : "674",
       "name" : "dev",
       "clusterSizes" : {
         "default" : "small",
-        "availableClusterSizes" : [ "small", "adv1", "adv2", "adv-hc-10_4" ]
+        "availableClusterSizes" : [ "small" ]
       }
     }, {
-      "id" : "2531",
+      "id" : "2556",
       "name" : "Livyscala-TEST_Automated",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small", "small2", "small3" ]
-      }
-    }, {
-      "id" : "2548",
-      "name" : "TEST-Automated_Livy1",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small", "small2", "small3", "small_new" ]
       }
     }, {
       "id" : "2247",
@@ -73,32 +59,11 @@
         "availableClusterSizes" : [ "small", "adv-json1", "adv-json2" ]
       }
     }, {
-      "id" : "2528",
-      "name" : "FabricAutomatedEBS",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small", "small2", "small3" ]
-      }
-    }, {
-      "id" : "2533",
-      "name" : "FabricAutomatedADVJobSize",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small", "small2", "small3", "adv-json1", "adv-json2" ]
-      }
-    }, {
       "id" : "1580",
       "name" : "captain_livy",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small", "medium" ]
-      }
-    }, {
-      "id" : "2547",
-      "name" : "GCP-TEST_Automated",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small", "adv-json1" ]
       }
     }, {
       "id" : "2016",
@@ -108,44 +73,37 @@
         "availableClusterSizes" : [ "small", "medium", "adv-json1" ]
       }
     }, {
+      "id" : "2560",
+      "name" : "TEST-Automated_Livy1",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small", "small2", "small3", "small_new" ]
+      }
+    }, {
       "id" : "1770",
       "name" : "devnew",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
       }
-    }, {
-      "id" : "2524",
-      "name" : "SingleCluster_1",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small", "adv-json1", "adv-json2" ]
-      }
-    }, {
-      "id" : "2546",
-      "name" : "Livypython-TEST_Automated",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small", "small2", "small3" ]
-      }
     } ]
   },
   "processes" : {
-    "qsLbz1RYz0G4EkQQZShHn$$RWCvhm3WibR6r-Rg0aAVO" : {
-      "id" : "qsLbz1RYz0G4EkQQZShHn$$RWCvhm3WibR6r-Rg0aAVO",
-      "component" : "Pipeline",
+    "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P" : {
+      "id" : "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P",
+      "component" : "Script",
       "metadata" : {
-        "label" : "Pipeline_1",
-        "slug" : "Pipeline_1",
-        "x" : -62.599998474121094,
-        "y" : -111.5999984741211
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 274.6000061035156,
+        "y" : -139.1999969482422
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "xd79r55y3iqkn-MSzsSwO$$shrLhoNidQ1-ZjB-NrgZp"
+          "id" : "Gc37xnZxJM9oPZI6lGAs_$$7divy0sh9j2tsFgwvfqz2"
         } ],
         "outputs" : [ {
-          "id" : "2NNxlBEgNOlZTEkjjx3fJ$$nlyWqTvhqtckBg6x-HAMR"
+          "id" : "UeVPUPPGu2lZvlSRh1ITO$$lOc8FtvSy-GhYa_NugmZF"
         } ]
       },
       "settings" : {
@@ -158,7 +116,37 @@
         }
       },
       "properties" : {
-        "pipelineId" : "http://gitserver:3000/Z9fNRzJ4_team_1793/4huAEWx3_project_6154.git/@PythonMainProject/1.1665768126954/6154/pipelines/PYTHON_DEP_MANAGEMENT_ALL",
+        "code" : "print(\"hello\")"
+      }
+    },
+    "jqhb-GKSy4qNz9xaX20fg$$3OG4xQqGMD6LJ3yAIQSS1" : {
+      "id" : "jqhb-GKSy4qNz9xaX20fg$$3OG4xQqGMD6LJ3yAIQSS1",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "PYTHON_DEP_MANAGEMENT_ALL_1",
+        "slug" : "PYTHON_DEP_MANAGEMENT_ALL",
+        "x" : 36.0848503112793,
+        "y" : 75.66059875488281
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ipYcQ9z_Z-YS3tqgqv1wt$$7V5kdMZfgLpA0RxjqCGXO"
+        } ],
+        "outputs" : [ {
+          "id" : "rxvfB8R8_1oRBMxcsnGWs$$A6jj5W7eMqyvDOGyw646N"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "http://gitserver:3000/Z9fNRzJ4_team_1793/4huAEWx3_project_6154.git/@PythonMainProject/1.1666178404102/6154/pipelines/PYTHON_DEP_MANAGEMENT_ALL",
         "configurations" : {
           "schema" : [ {
             "name" : "JDBC_URL",
@@ -179,7 +167,7 @@
             "optional" : false,
             "kind" : {
               "type" : "boolean",
-              "value" : "false"
+              "value" : "true"
             }
           }, {
             "name" : "CONFIG_DOUBLE",
@@ -221,7 +209,7 @@
             "optional" : true,
             "kind" : {
               "type" : "string",
-              "value" : "jdbc_url-${JDBC_URL}"
+              "value" : "jdbc_url-jdbc:mysql://18.144.156.219:3306/test_database"
             }
           }, {
             "name" : "c_0",
@@ -289,25 +277,25 @@
           } ],
           "instances" : [ "default", "test-instance1", "test-instance2", "dev", "captain_livy", "TEST-Automated_Livy.1", "devnew", "dev_gcp" ],
           "overrides" : { },
-          "selectedInstance" : "test-instance1"
+          "selectedInstance" : "default"
         }
       }
     },
-    "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P" : {
-      "id" : "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P",
-      "component" : "Script",
+    "qsLbz1RYz0G4EkQQZShHn$$RWCvhm3WibR6r-Rg0aAVO" : {
+      "id" : "qsLbz1RYz0G4EkQQZShHn$$RWCvhm3WibR6r-Rg0aAVO",
+      "component" : "Pipeline",
       "metadata" : {
-        "label" : "Script_1",
-        "slug" : "Script_1",
-        "x" : 274.6000061035156,
-        "y" : -139.1999969482422
+        "label" : "Pipeline_1",
+        "slug" : "Pipeline_1",
+        "x" : -62.599998474121094,
+        "y" : -111.5999984741211
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "Gc37xnZxJM9oPZI6lGAs_$$7divy0sh9j2tsFgwvfqz2"
+          "id" : "xd79r55y3iqkn-MSzsSwO$$shrLhoNidQ1-ZjB-NrgZp"
         } ],
         "outputs" : [ {
-          "id" : "UeVPUPPGu2lZvlSRh1ITO$$lOc8FtvSy-GhYa_NugmZF"
+          "id" : "2NNxlBEgNOlZTEkjjx3fJ$$nlyWqTvhqtckBg6x-HAMR"
         } ]
       },
       "settings" : {
@@ -320,7 +308,13 @@
         }
       },
       "properties" : {
-        "code" : "print(\"hello\")"
+        "pipelineId" : "http://gitserver:3000/Z9fNRzJ4_team_1793/lFGcnlOe_project_5690.git/@python_project/1.0/5690/pipelines/python_pipeline",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : [ "zzrandom", "default", "crandom", "dev1", "dev" ],
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
       }
     }
   },
