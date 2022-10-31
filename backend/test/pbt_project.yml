@@ -1,0 +1,16 @@
+name: EXTERNAL_GIT
+description: ''
+version: 0.0.1-SNAPSHOT
+author: abhisheks+backend@simpledatalabs.com
+language: scala
+buildSystem: maven
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies: {}
