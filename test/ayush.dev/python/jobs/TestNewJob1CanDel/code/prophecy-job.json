@@ -1,16 +1,16 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "218",
-    "jobId" : "jobs/python_external_git_pipeline_job",
-    "name" : "python_external_git_pipeline_job",
+    "fabricId" : "222",
+    "jobId" : "jobs/TestNewJob1CanDel",
+    "name" : "TestNewJob1CanDel",
     "schedule" : "0 0 0 * * ? 2090",
     "enabled" : true,
     "defaultClusterSize" : "small",
     "alerting" : {
-      "emails" : "abhisheks@prophecy.io",
+      "emails" : "",
       "onStart" : false,
-      "onSuccess" : true,
+      "onSuccess" : false,
       "onFailure" : false
     },
     "processDefaultSettings" : {
@@ -24,35 +24,28 @@
       }
     },
     "availableFabrics" : [ {
-      "id" : "217",
-      "name" : "dev_fabric1",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
-      }
-    }, {
-      "id" : "218",
+      "id" : "222",
       "name" : "dev",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
       }
     }, {
-      "id" : "219",
-      "name" : "dev_shared",
+      "id" : "225",
+      "name" : "managed",
       "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
       }
     } ]
   },
   "processes" : {
-    "TX3OX_IrDE8wjcTSERk0y" : {
-      "id" : "TX3OX_IrDE8wjcTSERk0y",
+    "CWmb-RuUGYoYJ-QeYUH8I" : {
+      "id" : "CWmb-RuUGYoYJ-QeYUH8I",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "Pipeline_0",
-        "slug" : "Pipeline_0",
+        "label" : "TestNew1",
+        "slug" : "TestNew1",
         "x" : 100,
         "y" : 100
       },
@@ -74,16 +67,9 @@
         }
       },
       "properties" : {
-        "pipelineId" : "pipelines/python_external_git_pipeline",
+        "pipelineId" : "pipelines/TestNew1",
         "configurations" : {
-          "schema" : [ {
-            "name" : "c_config1",
-            "optional" : false,
-            "kind" : {
-              "type" : "string",
-              "value" : "main"
-            }
-          } ],
+          "schema" : [ ],
           "instances" : [ "default" ],
           "overrides" : { },
           "selectedInstance" : "default"
