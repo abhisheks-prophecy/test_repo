@@ -53,16 +53,16 @@ pipelines:
     createdAt: '2022-09-22 13:14:27'
     datasets:
       inputs:
+      - datasets/src_avro
       - datasets/src_parquet
       - datasets/src_orc
-      - datasets/src_parquet_complex
-      - datasets/src_avro
-      - datasets/src_json
       - datasets/src_csv
+      - https://github.com/abhisheks-prophecy/test_repo.git//test/helloworldtest@HelloWorld_CloneTest/1.0/733/datasets/customers_orders
+      - datasets/src_json
       - datasets/src_catalog
       - datasets/src_jdbc
-      - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers
-      - https://github.com/abhisheks-prophecy/test_repo.git//test/helloworldtest@HelloWorld_CloneTest/1.0/733/datasets/customers_orders
+      - datasets/src_parquet_complex
+      - gitUri=http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git&subPath=&tag=HelloWorld/1.0&projectSubscriptionProjectId=452&path=datasets/customers
       outputs: []
     dependencies: {}
   pipelines/PythonLivy:
@@ -303,28 +303,7 @@ projectDependencies:
   '452':
     projectUID: 452
     projectName: HelloWorld
-    repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
+    repositoryPath: gitUri=http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git&subPath=
     version: HelloWorld/1.0
     author: ''
-    createdAt: '2022-10-19 07:15:08'
-  '734':
-    projectUID: 734
-    projectName: ExtNEWProjectDiffTeam
-    repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/randompathfortest
-    version: ExtNEWProjectDiffTeam/1.0
-    author: ''
-    createdAt: '2022-10-19 07:15:08'
-  '748':
-    projectUID: 748
-    projectName: TestAyushProject
-    repositoryPath: https://github.com/MetadataGitTesting/DecouplingTesting.git//tmp/test
-    version: TestAyushProject/1.0
-    author: ''
-    createdAt: '2022-10-19 07:15:08'
-  '733':
-    projectUID: 733
-    projectName: HelloWorld_CloneTest
-    repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/helloworldtest
-    version: HelloWorld_CloneTest/1.0
-    author: ''
-    createdAt: '2022-10-19 07:15:08'
+    createdAt: '2022-11-01 05:45:34'

@@ -8,7 +8,6 @@ from .Subgraph_1 import *
 from .RowDistributor_1 import *
 from .Join_1 import *
 from .OrderBy_1 import *
-from .customers_orders import *
 from .src_orc import *
 from .src_parquet import *
 from .Reformat_3 import *
