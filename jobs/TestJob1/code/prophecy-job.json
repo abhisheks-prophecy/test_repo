@@ -2,9 +2,9 @@
   "metainfo" : {
     "type" : "Databricks",
     "fabricId" : "674",
-    "jobId" : "jobs/PY_CROSS_PROJ_DEP_JOB1",
-    "name" : "PY_CROSS_PROJ_DEP_JOB1",
-    "schedule" : "0 0 0 * * ? 2090",
+    "jobId" : "jobs/TestJob1",
+    "name" : "TestJob1",
+    "schedule" : "0 0 0 1/1 * ? *",
     "jobClusterMode" : {
       "clusterMode" : "Single"
     },
@@ -16,6 +16,7 @@
       "onSuccess" : false,
       "onFailure" : false
     },
+    "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
       "type" : "Inherited",
       "retries" : 0,
@@ -148,21 +149,21 @@
     } ]
   },
   "processes" : {
-    "Wo65GrzaGRmWzgK0xOVCi$$feZ9nwddOTc-oV6hucAcY" : {
-      "id" : "Wo65GrzaGRmWzgK0xOVCi$$feZ9nwddOTc-oV6hucAcY",
+    "xuA5jlQB7pAKsNpI_HDK9$$pgEZMDYs9WhNJj3ICLCUP" : {
+      "id" : "xuA5jlQB7pAKsNpI_HDK9$$pgEZMDYs9WhNJj3ICLCUP",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "PYTHON_DEP_MANAGEMENT_ALL_2",
-        "slug" : "PYTHON_DEP_MANAGEMENT_ALL",
-        "x" : -527.7999877929688,
-        "y" : -161.5697021484375
+        "label" : "Pipeline_1",
+        "slug" : "Pipeline_1",
+        "x" : 374.79998779296875,
+        "y" : 200.8000030517578
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "NOAD3lqzSs3b8rO4anZRX$$A7zD3rjJx3OyALEPm_ejg"
+          "id" : "Kgmo3LUMBQUd5w-AzyVaj$$Xihw4XEgwscNsmuhRGLFg"
         } ],
         "outputs" : [ {
-          "id" : "78EkAU_M3EdiFeR8EHbFl$$6wqqTbHd0za6hHw0a8uJP"
+          "id" : "ROFAQ7iwZUnTXWHLKx7xz$$FslvscvTHWnt87cbefWsV"
         } ]
       },
       "settings" : {
@@ -310,51 +311,21 @@
         }
       }
     },
-    "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P" : {
-      "id" : "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P",
-      "component" : "Script",
-      "metadata" : {
-        "label" : "Script_1",
-        "slug" : "Script_1",
-        "x" : 274.6000061035156,
-        "y" : -139.1999969482422
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "Gc37xnZxJM9oPZI6lGAs_$$7divy0sh9j2tsFgwvfqz2"
-        } ],
-        "outputs" : [ {
-          "id" : "UeVPUPPGu2lZvlSRh1ITO$$lOc8FtvSy-GhYa_NugmZF"
-        } ]
-      },
-      "settings" : {
-        "type" : "Inherited",
-        "alerting" : {
-          "emails" : "",
-          "onStart" : false,
-          "onSuccess" : false,
-          "onFailure" : false
-        }
-      },
-      "properties" : {
-        "code" : "print(\"hello\")"
-      }
-    },
-    "jqhb-GKSy4qNz9xaX20fg$$3OG4xQqGMD6LJ3yAIQSS1" : {
-      "id" : "jqhb-GKSy4qNz9xaX20fg$$3OG4xQqGMD6LJ3yAIQSS1",
+    "ABoBkdS7nMsGcH4y0JwxB$$xSOxoe0sO_j_cdHcJ5ssA" : {
+      "id" : "ABoBkdS7nMsGcH4y0JwxB$$xSOxoe0sO_j_cdHcJ5ssA",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "PYTHON_DEP_MANAGEMENT_ALL_1",
-        "slug" : "PYTHON_DEP_MANAGEMENT_ALL",
-        "x" : 36.0848503112793,
-        "y" : 75.66059875488281
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline_0",
+        "x" : 140,
+        "y" : 160
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "ipYcQ9z_Z-YS3tqgqv1wt$$7V5kdMZfgLpA0RxjqCGXO"
+          "id" : "1KRA78tW0p97FuYRo4BE2$$Y82ae_KoaiGzwnyxapcnz"
         } ],
         "outputs" : [ {
-          "id" : "rxvfB8R8_1oRBMxcsnGWs$$A6jj5W7eMqyvDOGyw646N"
+          "id" : "2WI1oaQlZJCary_6mQpzx$$WT8OMY4MyFHVmUuXXOsR8"
         } ]
       },
       "settings" : {
@@ -367,43 +338,7 @@
         }
       },
       "properties" : {
-        "pipelineId" : "http://gitserver:3000/Z9fNRzJ4_team_1793/4huAEWx3_project_6154.git/@PythonMainProject/1.1666178404102/6154/pipelines/PYTHON_DEP_MANAGEMENT_ALL",
-        "configurations" : {
-          "schema" : [ ],
-          "instances" : [ "default" ],
-          "overrides" : { },
-          "selectedInstance" : "default"
-        }
-      }
-    },
-    "qsLbz1RYz0G4EkQQZShHn$$RWCvhm3WibR6r-Rg0aAVO" : {
-      "id" : "qsLbz1RYz0G4EkQQZShHn$$RWCvhm3WibR6r-Rg0aAVO",
-      "component" : "Pipeline",
-      "metadata" : {
-        "label" : "Pipeline_1",
-        "slug" : "Pipeline_1",
-        "x" : -203,
-        "y" : -109.19999694824219
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "xd79r55y3iqkn-MSzsSwO$$shrLhoNidQ1-ZjB-NrgZp"
-        } ],
-        "outputs" : [ {
-          "id" : "2NNxlBEgNOlZTEkjjx3fJ$$nlyWqTvhqtckBg6x-HAMR"
-        } ]
-      },
-      "settings" : {
-        "type" : "Inherited",
-        "alerting" : {
-          "emails" : "",
-          "onStart" : false,
-          "onSuccess" : false,
-          "onFailure" : false
-        }
-      },
-      "properties" : {
-        "pipelineId" : "http://gitserver:3000/Z9fNRzJ4_team_1793/lFGcnlOe_project_5690.git/@python_project/1.0/5690/pipelines/python_pipeline",
+        "pipelineId" : "pipelines/PY_DEL_GIT_PIPELINE1",
         "configurations" : {
           "schema" : [ ],
           "instances" : [ "default" ],
@@ -414,10 +349,10 @@
     }
   },
   "connections" : [ {
-    "id" : "qD0QqOLgDABfzo8Xgek6N",
-    "source" : "qsLbz1RYz0G4EkQQZShHn$$RWCvhm3WibR6r-Rg0aAVO",
-    "target" : "wz4agUHp3xWI6h4cHD0H-$$l8bR8UpxnJd3rMWJ7kR-P",
-    "sourcePort" : "2NNxlBEgNOlZTEkjjx3fJ$$nlyWqTvhqtckBg6x-HAMR",
-    "targetPort" : "Gc37xnZxJM9oPZI6lGAs_$$7divy0sh9j2tsFgwvfqz2"
+    "id" : "8Vqhvz-HLhEWdDzYiEx0G",
+    "source" : "ABoBkdS7nMsGcH4y0JwxB$$xSOxoe0sO_j_cdHcJ5ssA",
+    "target" : "xuA5jlQB7pAKsNpI_HDK9$$pgEZMDYs9WhNJj3ICLCUP",
+    "sourcePort" : "2WI1oaQlZJCary_6mQpzx$$WT8OMY4MyFHVmUuXXOsR8",
+    "targetPort" : "Kgmo3LUMBQUd5w-AzyVaj$$Xihw4XEgwscNsmuhRGLFg"
   } ]
 }

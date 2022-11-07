@@ -208,7 +208,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "http://gitserver:3000/Z9fNRzJ4_team_1793/lFGcnlOe_project_5690.git/@python_project/1.0/5690/datasets/ALL_TYPE_CSV"
+        "datasetId" : "gitUri=http://gitserver:3000/Z9fNRzJ4_team_1793/lFGcnlOe_project_5690.git&subPath=&tag=python_project/1.3&projectSubscriptionProjectId=5690&path=datasets/ALL_TYPE_CSV"
       }
     },
     "pAJI9MG6zBTucQQCnpo-h$$pHUSQiOAQM9bisNNYiBDE" : {
@@ -234,7 +234,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "http://gitserver:3000/Z9fNRzJ4_team_1793/4huAEWx3_project_6154.git/@PythonMainProject/1.1665768126954/6154/datasets/src_json_input_custs"
+        "datasetId" : "gitUri=http://gitserver:3000/Z9fNRzJ4_team_1793/4huAEWx3_project_6154.git&subPath=&tag=PythonMainProject/1.1666726972889&projectSubscriptionProjectId=6154&path=datasets/src_json_input_custs"
       }
     },
     "BDukPoUyhW_dJLehUe971$$Rfs8KFE_MtJz8K3jcUGyE" : {
