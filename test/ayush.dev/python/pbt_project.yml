@@ -1,6 +1,6 @@
 name: PythonExternalGit
 description: ''
-version: '1.1'
+version: 2.05-SNAPSHOT
 author: abhisheks+e2etests@prophecy.io
 language: python
 buildSystem: wheel
@@ -30,23 +30,7 @@ pipelines:
       - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers_orders
       - https://github.com/abhisheks-prophecy/test_repo.git//test/randompathfortest@ExtNEWProjectDiffTeam/1.0/734/datasets/TEST_SCNEARIO1
       outputs: []
-    dependencies:
-      project/452:
-        name: project/452
-        projectUID: 452
-        projectName: HelloWorld
-        version: HelloWorld/1.0
-        author: ''
-        repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
-        createdAt: '2022-10-06 07:45:26'
-      project/734:
-        name: project/734
-        projectUID: 734
-        projectName: ExtNEWProjectDiffTeam
-        version: ExtNEWProjectDiffTeam/1.0
-        author: ''
-        repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/randompathfortest
-        createdAt: '2022-10-06 07:45:47'
+    dependencies: {}
   pipelines/TestRevokedAccess:
     name: TestRevokedAccess
     description: TestRevokedAccess
@@ -59,15 +43,7 @@ pipelines:
       - datasets/src_avro
       - https://github.com/MetadataGitTesting/DecouplingTesting.git//tmp/test@TestAyushProject/1.0/748/datasets/TEST_REVOKE_ACCESS
       outputs: []
-    dependencies:
-      project/748:
-        name: project/748
-        projectUID: 748
-        projectName: TestAyushProject
-        version: TestAyushProject/1.0
-        author: null
-        repositoryPath: https://github.com/MetadataGitTesting/DecouplingTesting.git//tmp/test
-        createdAt: '2022-10-06 17:40:21'
+    dependencies: {}
   pipelines/python_external_git_pipeline:
     name: python_external_git_pipeline
     description: python_external_git_pipeline
@@ -88,23 +64,7 @@ pipelines:
       - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers
       - https://github.com/abhisheks-prophecy/test_repo.git//test/helloworldtest@HelloWorld_CloneTest/1.0/733/datasets/customers_orders
       outputs: []
-    dependencies:
-      project/452:
-        name: project/452
-        projectUID: 452
-        projectName: HelloWorld
-        version: HelloWorld/1.0
-        author: ''
-        repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
-        createdAt: '2022-09-23 09:10:46'
-      project/733:
-        name: project/733
-        projectUID: 733
-        projectName: HelloWorld_CloneTest
-        version: HelloWorld_CloneTest/1.0
-        author: ''
-        repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/helloworldtest
-        createdAt: '2022-10-06 07:07:21'
+    dependencies: {}
   pipelines/PythonLivy:
     name: PythonLivy
     description: PythonLivy
@@ -144,15 +104,7 @@ pipelines:
       - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers
       - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers_orders
       outputs: []
-    dependencies:
-      project/452:
-        name: project/452
-        projectUID: 452
-        projectName: HelloWorld
-        version: HelloWorld/1.0
-        author: ''
-        repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
-        createdAt: '2022-09-23 09:19:13'
+    dependencies: {}
 datasets:
   datasets/src_avro:
     name: src_avro
@@ -347,3 +299,32 @@ dependencies:
   id: YlVYn
   type: pypi
   enabled: false
+projectDependencies:
+  '452':
+    projectUID: 452
+    projectName: HelloWorld
+    repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
+    version: HelloWorld/1.0
+    author: ''
+    createdAt: '2022-10-19 07:24:02'
+  '734':
+    projectUID: 734
+    projectName: ExtNEWProjectDiffTeam
+    repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/randompathfortest
+    version: ExtNEWProjectDiffTeam/1.0
+    author: ''
+    createdAt: '2022-10-19 07:24:02'
+  '748':
+    projectUID: 748
+    projectName: TestAyushProject
+    repositoryPath: https://github.com/MetadataGitTesting/DecouplingTesting.git//tmp/test
+    version: TestAyushProject/1.0
+    author: ''
+    createdAt: '2022-10-19 07:24:02'
+  '733':
+    projectUID: 733
+    projectName: HelloWorld_CloneTest
+    repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/helloworldtest
+    version: HelloWorld_CloneTest/1.0
+    author: ''
+    createdAt: '2022-10-19 07:24:02'

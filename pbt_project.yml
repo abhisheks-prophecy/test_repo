@@ -1,6 +1,6 @@
 name: PY_DEL_GIT_PROJ
 description: ''
-version: '2.03'
+version: 2.04-SNAPSHOT
 author: abhisheks+e2etests@prophecy.io
 language: python
 buildSystem: wheel
