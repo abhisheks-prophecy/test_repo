@@ -18,7 +18,70 @@ pipelines:
       outputs:
       - datasets/dataset_out_20965
     dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1666723325715:
+    name: Workflow-Automated-GITHUB-1666723325715
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-10-25 18:42:41'
+    datasets:
+      inputs:
+      - datasets/dataset_cust_in
+      outputs:
+      - datasets/dataset_out_40812
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1667202923869:
+    name: Workflow-Automated-GITHUB-1667202923869
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-10-31 07:55:54'
+    datasets:
+      inputs:
+      - datasets/dataset_cust_in
+      outputs:
+      - datasets/dataset_out_39452
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1667324546128:
+    name: Workflow-Automated-GITHUB-1667324546128
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-11-01 17:42:55'
+    datasets:
+      inputs:
+      - datasets/dataset_cust_in
+      outputs:
+      - datasets/dataset_out_1498
+    dependencies: {}
 datasets:
+  datasets/dataset_out_40812:
+    name: dataset_out_40812
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-10-25 18:43:54'
+    physicalDatasets:
+      dev:
+        fabricId: 674
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-10-25 18:43:54'
+  datasets/dataset_out_1498:
+    name: dataset_out_1498
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-11-01 17:49:21'
+    physicalDatasets:
+      dev:
+        fabricId: 674
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-11-01 17:49:21'
   datasets/dataset_cust_in:
     name: dataset_cust_in
     description: ''
@@ -31,6 +94,18 @@ datasets:
         description: ''
         author: abhisheks+e2etests@prophecy.io
         createdAt: '2022-10-19 10:29:53'
+  datasets/dataset_out_39452:
+    name: dataset_out_39452
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-10-31 07:57:11'
+    physicalDatasets:
+      dev:
+        fabricId: 674
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-10-31 07:57:11'
   datasets/dataset_out_20965:
     name: dataset_out_20965
     description: ''
