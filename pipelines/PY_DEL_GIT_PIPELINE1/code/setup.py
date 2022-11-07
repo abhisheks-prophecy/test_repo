@@ -7,7 +7,7 @@ setup(
     package_data = {'prophecy_config_instances' : ['*.json', '*.py']},
     description = 'workflow',
     install_requires = [
-'pyhocon==0.3.59', 'prophecy-libs==1.3.8'],
+'pyhocon==0.3.59', 'prophecy-libs==1.3.11'],
     entry_points = {
 'console_scripts' : [
 'main = py_del_git_pipeline1.pipeline:main'], },
