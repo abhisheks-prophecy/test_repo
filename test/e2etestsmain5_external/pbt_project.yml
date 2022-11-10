@@ -42,19 +42,6 @@ pipelines:
       outputs:
       - datasets/dataset_out_39452
     dependencies: {}
-  pipelines/Workflow-Automated-GITHUB-1666723325715:
-    name: Workflow-Automated-GITHUB-1666723325715
-    description: automation workflow
-    author: abhisheks+e2etests@prophecy.io
-    mode: batch
-    language: scala
-    createdAt: '2022-10-25 18:42:41'
-    datasets:
-      inputs:
-      - datasets/dataset_cust_in
-      outputs:
-      - datasets/dataset_out_40812
-    dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1668073258841:
     name: Workflow-Automated-GITHUB-1668073258841
     description: automation workflow
@@ -89,6 +76,30 @@ pipelines:
       - datasets/dataset_cust_in
       outputs:
       - datasets/dataset_out_1498
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1666723325715:
+    name: Workflow-Automated-GITHUB-1666723325715
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-10-25 18:42:41'
+    datasets:
+      inputs:
+      - datasets/dataset_cust_in
+      outputs:
+      - datasets/dataset_out_40812
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1668074409149:
+    name: Workflow-Automated-GITHUB-1668074409149
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-11-10 10:00:58'
+    datasets:
+      inputs: []
+      outputs: []
     dependencies: {}
 datasets:
   datasets/dataset_out_40812:
