@@ -1,0 +1,196 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "217",
+    "jobId" : "jobs/EXTERNAL_PY_JOB",
+    "name" : "EXTERNAL_PY_JOB",
+    "schedule" : "0 0 0 * * ? 2090",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "abhisheks@prophecy.io",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : true
+    },
+    "timeoutSeconds" : 3600,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "timeoutSeconds" : 3600,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "217",
+      "name" : "dev_fabric1",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "218",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "219",
+      "name" : "dev_shared",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "X7jpgiPw4UkkwUWBeEazT$$LjJX2baGhb9yRTRKp4Nlq" : {
+      "id" : "X7jpgiPw4UkkwUWBeEazT$$LjJX2baGhb9yRTRKp4Nlq",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 304.9666748046875,
+        "y" : 25.366666793823242
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2FrX5nSX79rann9LpSq7A$$vY14FlKbwwHDnwcXlPYWv"
+        } ],
+        "outputs" : [ {
+          "id" : "LkHRcMVjQ3OIDhvTGA5gR$$qjtCdIlqG4lRHPHcMx6L8"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : "print(\"hello\")"
+      }
+    },
+    "efq_fR0hm8W4pVStRNtM-$$RJy2UJjlQ_RFkgF7_sjNR" : {
+      "id" : "efq_fR0hm8W4pVStRNtM-$$RJy2UJjlQ_RFkgF7_sjNR",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_1",
+        "slug" : "Pipeline_1",
+        "x" : 364.9666748046875,
+        "y" : 210.1666717529297
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "raaXQCVbkNjQYpiunkm1o$$MV2KPzgSWgwyMLS_0RGkw"
+        } ],
+        "outputs" : [ {
+          "id" : "AElR0fo8z9ghnC_X6gPHV$$qODdf5pLoSKDc1s-aIVKS"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/PythonInsideProjectDatasetsOnly",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "string value1"
+            }
+          }, {
+            "name" : "c_int",
+            "optional" : false,
+            "kind" : {
+              "type" : "int",
+              "value" : "10"
+            }
+          }, {
+            "name" : "c_long",
+            "optional" : false,
+            "kind" : {
+              "type" : "long",
+              "value" : "13213213"
+            }
+          } ],
+          "instances" : [ "default", "test1" ],
+          "overrides" : {
+            "c_string" : "overridden1",
+            "c_int" : "0",
+            "c_long" : "12"
+          },
+          "selectedInstance" : "test1"
+        }
+      }
+    },
+    "ZdIFMqC5VCuvHPPd7cGL2" : {
+      "id" : "ZdIFMqC5VCuvHPPd7cGL2",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline_0",
+        "x" : -293.6000061035156,
+        "y" : 5.199999809265137
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "out"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "645/pipelines/PythonInsideProjectDatasetsOnly",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : [ "default" ],
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "-wOXp74KT0JyvaGf_wQey",
+    "source" : "ZdIFMqC5VCuvHPPd7cGL2",
+    "target" : "X7jpgiPw4UkkwUWBeEazT$$LjJX2baGhb9yRTRKp4Nlq",
+    "sourcePort" : "out",
+    "targetPort" : "2FrX5nSX79rann9LpSq7A$$vY14FlKbwwHDnwcXlPYWv"
+  }, {
+    "id" : "JnY7EHhEs4TMxGXtBOxgy",
+    "source" : "ZdIFMqC5VCuvHPPd7cGL2",
+    "target" : "efq_fR0hm8W4pVStRNtM-$$RJy2UJjlQ_RFkgF7_sjNR",
+    "sourcePort" : "out",
+    "targetPort" : "raaXQCVbkNjQYpiunkm1o$$MV2KPzgSWgwyMLS_0RGkw"
+  } ]
+}

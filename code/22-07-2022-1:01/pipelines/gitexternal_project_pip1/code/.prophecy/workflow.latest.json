@@ -1,0 +1,153 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "1007",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : {
+        "fabricAdvancedJson" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "jobSize-databricksBasic.New" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "dev_ebs_ssd" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "livy" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "sharedFabric" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "ebs_ssd" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "dev" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "captain_livy" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "dev_ebs_hdd" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "dev_new" : {
+          "type" : "record",
+          "fields" : [ ]
+        },
+        "another-AdvSharedFabric" : {
+          "type" : "record",
+          "fields" : [ ]
+        }
+      }
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    }
+  },
+  "connections" : [ {
+    "id" : "xTJjc-JrR4driSxdZ4EAL",
+    "source" : "HdJ-tUqj25klGVOiC3QYt$$CLGdbJbVBjHoG02dfdStz",
+    "sourcePort" : "FmsKaD2M70rGEtPMNjCJC$$NVAEktHKU7nbdwugMIeca",
+    "target" : "_6PC8c2uDKPSWeBCj_lfP$$CEaw8ohIu5AfD-oRfWBfK",
+    "targetPort" : "enmCfYVSq6ZrSD5PEXdSZ$$cCS4aNeUWf-i1HJHNXDkM"
+  } ],
+  "processes" : {
+    "HdJ-tUqj25klGVOiC3QYt$$CLGdbJbVBjHoG02dfdStz" : {
+      "id" : "HdJ-tUqj25klGVOiC3QYt$$CLGdbJbVBjHoG02dfdStz",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_0",
+        "slug" : "Source_0",
+        "x" : 404,
+        "y" : 266,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "FmsKaD2M70rGEtPMNjCJC$$NVAEktHKU7nbdwugMIeca",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
+    "_6PC8c2uDKPSWeBCj_lfP$$CEaw8ohIu5AfD-oRfWBfK" : {
+      "id" : "_6PC8c2uDKPSWeBCj_lfP$$CEaw8ohIu5AfD-oRfWBfK",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 855,
+        "y" : 275,
+        "language" : "python",
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "enmCfYVSq6ZrSD5PEXdSZ$$cCS4aNeUWf-i1HJHNXDkM",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "-CpCyu1ocba2WR5evoUFK$$boNs4rbYQngFvExOMHmrX",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "ihMUc0a-uqDDP-KyX9Rm_$$sGhSjM58OmYDdo24nhHoU" : {
+        "values" : [ [ "Ades", "Baryram", "1", "1" ], [ "Alston", "Violet", "1", "1" ], [ "Amies", "Barrett", "1", "1" ], [ "Armer", "Mariana", "1", "1" ], [ "Basire", "Queenie", "1", "1" ], [ "Beach", "Alina", "1", "1" ], [ "Bickmore", "Tony", "1", "1" ], [ "Bigly", "Jonis", "1", "1" ], [ "Bilsford", "Jamaal", "1", "1" ], [ "Birdsall", "Balduin", "1", "1" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "last_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "firstname",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id_account_flags",
+            "type" : "integer",
+            "nullable" : false,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id_account_open_date",
+            "type" : "integer",
+            "nullable" : false,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "Ahg7jWiys9rqxRg8AVaOw$$N0z5pNWrRM-ucJ_M2MDv5" : {
+        "values" : [ [ "Ades", "Baryram", "1", "1" ], [ "Alston", "Violet", "1", "1" ], [ "Amies", "Barrett", "1", "1" ], [ "Armer", "Mariana", "1", "1" ], [ "Basire", "Queenie", "1", "1" ], [ "Beach", "Alina", "1", "1" ], [ "Bickmore", "Tony", "1", "1" ], [ "Bigly", "Jonis", "1", "1" ], [ "Bilsford", "Jamaal", "1", "1" ], [ "Birdsall", "Balduin", "1", "1" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "last_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "firstname",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id_account_flags",
+            "type" : "integer",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "customer_id_account_open_date",
+            "type" : "integer",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 0",
+    "testType" : "outputRow",
+    "language" : "python"
+  } ],
+  "language" : "python"
+}
