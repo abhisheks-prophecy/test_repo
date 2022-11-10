@@ -1,0 +1,81 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "29",
+    "jobId" : "jobs/python_externalgit_JOB",
+    "name" : "python_externalgit_JOB",
+    "schedule" : "0 0 * ? * * 2050",
+    "enabled" : false,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "29",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "30",
+      "name" : "dev_prophecy",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "Ssg-5bj39gcpAnTtWEFZu" : {
+      "id" : "Ssg-5bj39gcpAnTtWEFZu",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "python_externalgit_pipeline",
+        "slug" : "python_externalgit_pipeline",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "out"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/python_externalgit_pipeline",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : [ "default", "dev", "dev_prophecy" ],
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    }
+  },
+  "connections" : [ ]
+}
