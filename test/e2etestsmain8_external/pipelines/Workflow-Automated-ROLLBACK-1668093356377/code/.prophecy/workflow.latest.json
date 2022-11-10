@@ -39,6 +39,30 @@
   },
   "connections" : [ ],
   "processes" : {
+    "kIDWHNTkiw6Tn7SoPjCGP$$BDERqo0BAn6W0cp75aZ0J" : {
+      "id" : "kIDWHNTkiw6Tn7SoPjCGP$$BDERqo0BAn6W0cp75aZ0J",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : 280,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "naTmA73cH9Uu9GpepKlbS$$cvFv5_XliWCkvQZj-Y3YH",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
     "bDnHHwEhuKP0mWbg_1-si$$za6b9mDVxvfypBj92i25A" : {
       "id" : "bDnHHwEhuKP0mWbg_1-si$$za6b9mDVxvfypBj92i25A",
       "component" : "Source",
