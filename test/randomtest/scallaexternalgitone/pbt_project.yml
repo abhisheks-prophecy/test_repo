@@ -15,6 +15,7 @@ pipelines:
     datasets:
       inputs:
       - datasets/csv_special_char
+      - gitUri=http://gitserver:3000/Z9fNRzJ4_team_1793/u3P9c5gI_project_8172.git&subPath=&tag=HelloWorld/0.0.4&projectSubscriptionProjectId=8172&path=datasets/customers_orders
       outputs: []
     dependencies: {}
 datasets:
@@ -67,5 +68,12 @@ subgraphs:
 sqlModels: {}
 sqlPipeline: null
 dependencies: []
-projectDependencies: {}
+projectDependencies:
+  '8172':
+    projectUID: 8172
+    projectName: HelloWorld
+    repositoryPath: gitUri=http://gitserver:3000/Z9fNRzJ4_team_1793/u3P9c5gI_project_8172.git&subPath=
+    version: HelloWorld/0.0.4
+    author: null
+    createdAt: '2022-11-12 07:27:44'
 pipelineConfigurations: {}

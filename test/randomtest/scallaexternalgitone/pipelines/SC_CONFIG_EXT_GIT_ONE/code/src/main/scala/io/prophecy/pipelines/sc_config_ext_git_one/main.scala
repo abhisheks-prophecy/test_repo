@@ -26,6 +26,8 @@ object Main {
       Subgraph_1.apply(spark, df_csv_special_char, df_csv_special_char)
     val (df_testsubgraphmain1_1_out0, df_testsubgraphmain1_1_out1) =
       testsubgraphmain1_1.apply(spark, df_Subgraph_1_out0, df_Subgraph_1_out1)
+    val df_customers_orders = customers_orders(spark)
+    val df_Filter_1         = Filter_1(spark, df_customers_orders)
   }
 
   def main(args: Array[String]): Unit = {
