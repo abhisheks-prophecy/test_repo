@@ -7,7 +7,7 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.expressions._
 import java.time._
-package object Subgraph_1 {
+package object testsubgraphmain1_1 {
 
   def apply(spark: SparkSession, in0: DataFrame, in1: DataFrame): Subgraph2 = {
     val df_Reformat_2 = Reformat_2(spark, in0)

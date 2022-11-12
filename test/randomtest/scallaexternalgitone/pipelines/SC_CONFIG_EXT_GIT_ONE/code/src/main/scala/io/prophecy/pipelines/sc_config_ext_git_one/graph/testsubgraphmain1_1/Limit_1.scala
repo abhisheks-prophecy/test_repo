@@ -1,4 +1,4 @@
-package org.scala.testsubgraph1.pipelines.sc_config_ext_git_one.graph.Subgraph_1
+package io.prophecy.pipelines.sc_config_ext_git_one.graph.testsubgraphmain1_1
 
 import io.prophecy.libs._
 import io.prophecy.pipelines.sc_config_ext_git_one.config.ConfigStore._
@@ -12,5 +12,5 @@ import org.apache.spark.sql.expressions._
 import java.time._
 
 object Limit_1 {
-  def apply(spark: SparkSession, in: DataFrame): DataFrame = in.limit(10)
+  def apply(spark: SparkSession, in: DataFrame): DataFrame = in.limit(11)
 }

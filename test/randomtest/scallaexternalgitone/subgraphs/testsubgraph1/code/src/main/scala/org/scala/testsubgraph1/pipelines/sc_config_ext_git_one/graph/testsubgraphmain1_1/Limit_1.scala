@@ -1,4 +1,4 @@
-package io.prophecy.pipelines.sc_config_ext_git_one.graph.Subgraph_1
+package org.scala.testsubgraph1.pipelines.sc_config_ext_git_one.graph.testsubgraphmain1_1
 
 import io.prophecy.libs._
 import io.prophecy.pipelines.sc_config_ext_git_one.config.ConfigStore._
