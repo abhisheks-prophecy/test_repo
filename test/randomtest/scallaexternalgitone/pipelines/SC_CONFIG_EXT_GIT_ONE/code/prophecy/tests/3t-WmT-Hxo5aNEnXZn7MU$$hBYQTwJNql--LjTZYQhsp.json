@@ -1,0 +1,134 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "bK25VTRBP2G6agBBkyg8d$$0WxhTuXq615uGfFXi8peL" : {
+        "values" : [ [ "35", "-3123.123", "2015-06-06", "2015-08-07T10:20:44.000Z" ], [ "null", "null", "null", "null" ], [ "36", "-3123.123", "2016-07-07", "2016-09-08T10:20:44.000Z" ], [ "null", "null", "null", "null" ], [ "37", "-3123.123", "2017-08-08", "2017-10-09T10:20:44.000Z" ], [ "null", "null", "null", "null" ], [ "38", "-3123.123", "2018-01-09", "2018-03-10T10:20:44.000Z" ], [ "null", "null", "null", "null" ], [ "39", "-3123.123", "2019-02-10", "2019-04-11T10:20:44.000Z" ], [ "null", "null", "null", "null" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "c   short  --",
+            "type" : "short",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c  float",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c  date",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c_timestamp",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "WapMuuaSdqCZ5GI0Ca6rm$$c3jwQuiAtzBvtVoKRbQhC" : {
+        "values" : [ [ "stringhoonmain#@!%^&*2asda35", "false35", "-1231235", "231.1231235", "4.23423432412E1135", "2015-06-06-3123.123", "12321", "1225" ], [ "null", "null", "null", "null", "null", "nullnull", "null", "null" ], [ "stringhoonmain#@!%^&*2asda36", "false36", "-1231236", "231.1231236", "4.23423432412E1136", "2016-07-07-3123.123", "12321", "1296" ], [ "null", "null", "null", "null", "null", "nullnull", "null", "null" ], [ "stringhoonmain#@!%^&*2asda37", "false37", "-1231237", "231.1231237", "4.23423432412E1137", "2017-08-08-3123.123", "12321", "1369" ], [ "null", "null", "null", "null", "null", "nullnull", "null", "null" ], [ "stringhoonmain#@!%^&*2asda38", "false38", "-1231238", "231.1231238", "4.23423432412E1138", "2018-01-09-3123.123", "12321", "1444" ], [ "null", "null", "null", "null", "null", "nullnull", "null", "null" ], [ "stringhoonmain#@!%^&*2asda39", "false39", "-1231239", "231.1231239", "4.23423432412E1139", "2019-02-10-3123.123", "12321", "1521" ], [ "null", "null", "null", "null", "null", "nullnull", "null", "null" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "c_config_str",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c_config_bool",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c_config_int",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c_config_float",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c_config_double",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c_config_sparkexpression",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c_lookup",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "c_udf1",
+            "type" : "integer",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 0",
+    "testType" : "outputRow",
+    "language" : "scala"
+  } ],
+  "language" : "scala"
+}
