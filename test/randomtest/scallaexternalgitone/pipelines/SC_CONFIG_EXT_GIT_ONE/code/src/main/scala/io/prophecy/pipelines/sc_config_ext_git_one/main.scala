@@ -20,11 +20,12 @@ object Main {
   def apply(spark: SparkSession): Unit = {
     val df_csv_special_char = csv_special_char(spark)
     Lookup_1(spark, df_csv_special_char)
+    val df_Reformat_1 = Reformat_1(spark, df_csv_special_char)
+    val df_Reformat_3 = Reformat_3(spark, df_Reformat_1)
     val (df_Subgraph_1_out0, df_Subgraph_1_out1) =
       Subgraph_1.apply(spark, df_csv_special_char, df_csv_special_char)
     val (df_testsubgraphmain1_1_out0, df_testsubgraphmain1_1_out1) =
       testsubgraphmain1_1.apply(spark, df_Subgraph_1_out0, df_Subgraph_1_out1)
-    val df_Reformat_1 = Reformat_1(spark, df_csv_special_char)
   }
 
   def main(args: Array[String]): Unit = {
