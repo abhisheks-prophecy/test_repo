@@ -16,6 +16,17 @@ pipelines:
       inputs: []
       outputs: []
     dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1668362500855:
+    name: Workflow-Automated-GITHUB-1668362500855
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-11-13 18:02:12'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
@@ -25,3 +36,4 @@ sqlModels: {}
 sqlPipeline: null
 dependencies: '[]'
 projectDependencies: {}
+pipelineConfigurations: {}
