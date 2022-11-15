@@ -41,42 +41,10 @@
       "enabled" : false,
       "value" : 1000
     },
-    "topLevelPackage" : "io.prophecy.pipelines.automatedgithubupdatetokenpipeline"
+    "topLevelPackage" : "io.prophecy.pipelines.kiranpieee111"
   },
   "connections" : [ ],
-  "processes" : {
-    "NaeVZfiGqz8fsw7F24JCj$$VqVYeegZvsHHCQ0R7tjCS" : {
-      "id" : "NaeVZfiGqz8fsw7F24JCj$$VqVYeegZvsHHCQ0R7tjCS",
-      "component" : "Script",
-      "metadata" : {
-        "label" : "Script_0",
-        "slug" : "Script_0",
-        "x" : 140,
-        "y" : 160,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "s_qWoc___dsmV3CJ6yJtr$$7zLnAVWV8cjXjRewWUKjL",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "FJKovs1KQPxoYH25EYk8f$$YnqKA2sdLLGPSsc_l_ZhU",
-          "slug" : "out0"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "script" : "",
-        "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame) : Script = {",
-        "scriptMethodFooter" : "    out0\n}"
-      }
-    }
-  },
+  "processes" : { },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],

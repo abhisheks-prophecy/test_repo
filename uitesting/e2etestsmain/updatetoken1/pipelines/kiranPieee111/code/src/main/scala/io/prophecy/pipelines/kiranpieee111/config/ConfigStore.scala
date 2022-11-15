@@ -1,6 +1,6 @@
-package io.prophecy.pipelines.automatedgithubupdatetokenpipeline.config
+package io.prophecy.pipelines.kiranpieee111.config
 
-import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.config.ConfigStore._
+import io.prophecy.pipelines.kiranpieee111.config.ConfigStore._
 import pureconfig.ConfigReader.Result
 import pureconfig._
 import pureconfig.generic.ProductHint
