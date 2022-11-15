@@ -10,22 +10,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <scalaBaseVersion>2.12</scalaBaseVersion>
         <scalaVersion>2.12.15</scalaVersion>
         <sparkVersion>3.3.0</sparkVersion>
-        <prophecyLibsVersion>6.0.0-rc1</prophecyLibsVersion>
+        <prophecyLibsVersion>6.1.10</prophecyLibsVersion>
     </properties>
     <repositories>
         <repository>
             <id>central</id>
             <name>Central Repository</name>
             <url>https://repo.maven.apache.org/maven2</url>
-            <layout>default</layout>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>prophecy</id>
-            <name>Prophecy Repository</name>
-            <url>https://prophecyio.jfrog.io/artifactory/default-sbt-release/</url>
             <layout>default</layout>
             <snapshots>
                 <enabled>false</enabled>
