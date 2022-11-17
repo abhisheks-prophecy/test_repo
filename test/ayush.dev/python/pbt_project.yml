@@ -1,6 +1,6 @@
 name: PythonExternalGit
 description: ''
-version: '2.05'
+version: 2.05-SNAPSHOT
 author: abhisheks+e2etests@prophecy.io
 language: python
 buildSystem: wheel

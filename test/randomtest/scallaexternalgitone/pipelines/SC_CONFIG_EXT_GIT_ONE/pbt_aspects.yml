@@ -1,0 +1,6 @@
+version: 1
+dependencies: []
+configurations:
+- test_config1
+- default
+- test_config2
