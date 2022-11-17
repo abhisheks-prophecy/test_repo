@@ -1,0 +1,54 @@
+name: PyExternalGITProject
+description: ''
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/TEST_MAIN:
+    name: TEST_MAIN
+    description: TEST_MAIN
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-11-17 04:55:35'
+    datasets:
+      inputs:
+      - datasets/src_csv_test
+      - datasets/src_parquet
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/src_csv_test:
+    name: src_csv_test
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-11-17 05:03:55'
+    physicalDatasets:
+      dev:
+        fabricId: 97
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-11-17 05:03:55'
+  datasets/src_parquet:
+    name: src_parquet
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-11-17 05:05:36'
+    physicalDatasets:
+      dev:
+        fabricId: 97
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-11-17 05:05:36'
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}
