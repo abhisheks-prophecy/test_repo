@@ -1,0 +1,54 @@
+name: MainNotMain
+description: ''
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/TEST_PIP:
+    name: TEST_PIP
+    description: TEST_PIP
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-11-17 04:55:10'
+    datasets:
+      inputs:
+      - datasets/src_test_csv
+      - datasets/src_parquet
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/src_test_csv:
+    name: src_test_csv
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-11-17 04:56:22'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-11-17 04:56:22'
+  datasets/src_parquet:
+    name: src_parquet
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-11-17 05:10:30'
+    physicalDatasets:
+      dev:
+        fabricId: 299
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-11-17 05:10:30'
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}
