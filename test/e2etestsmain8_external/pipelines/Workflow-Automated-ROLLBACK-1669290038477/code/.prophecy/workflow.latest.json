@@ -68,6 +68,30 @@
         "isCustomOutputSchema" : false
       },
       "properties" : { }
+    },
+    "rYSni4-75NNMLfRcsCC2U$$IY-dHiG4YTQ7rYokI4HF5" : {
+      "id" : "rYSni4-75NNMLfRcsCC2U$$IY-dHiG4YTQ7rYokI4HF5",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : 280,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "DbKi4julOMxzMIp-Cfbgj$$F9RpWBXLjNajjIyS3ZKYa",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
     }
   },
   "ports" : {
