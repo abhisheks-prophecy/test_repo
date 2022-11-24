@@ -1,0 +1,139 @@
+{
+  "id" : "SqjBvNO1wIUj6LHxSleoH",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "T3oH9ecI-8bHXJHTL3E1m",
+      "slug" : "in0"
+    } ],
+    "outputs" : [ {
+      "id" : "j5CGgOz0yOoTHd71FqbX7",
+      "slug" : "out0"
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  },
+  "properties" : {
+    "packageName" : "org.Automated-ExternalSG-Clone.subgraph"
+  },
+  "connections" : [ {
+    "id" : "CTL10093E3rVtr1CiR8Bp",
+    "source" : "SqjBvNO1wIUj6LHxSleoH",
+    "sourcePort" : "T3oH9ecI-8bHXJHTL3E1m",
+    "target" : "3kCFiy0dC4yYhij-KI7m8",
+    "targetPort" : "NB1vStOkrtNPfx9u8MFBG"
+  }, {
+    "id" : "VP_9jfpnCXTRa0EXeQRST",
+    "source" : "3kCFiy0dC4yYhij-KI7m8",
+    "sourcePort" : "wbaqp2MMXpJvulQ9zC2B_",
+    "target" : "SqjBvNO1wIUj6LHxSleoH",
+    "targetPort" : "j5CGgOz0yOoTHd71FqbX7"
+  } ],
+  "processes" : {
+    "3kCFiy0dC4yYhij-KI7m8" : {
+      "id" : "3kCFiy0dC4yYhij-KI7m8",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 140,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "NB1vStOkrtNPfx9u8MFBG",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "wbaqp2MMXpJvulQ9zC2B_",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "NB1vStOkrtNPfx9u8MFBG$$n9vqE38l6zghvJmHyBs1t##customer_id", "NB1vStOkrtNPfx9u8MFBG$$n9vqE38l6zghvJmHyBs1t##first_name", "NB1vStOkrtNPfx9u8MFBG$$n9vqE38l6zghvJmHyBs1t##last_name", "NB1vStOkrtNPfx9u8MFBG$$n9vqE38l6zghvJmHyBs1t##phone", "NB1vStOkrtNPfx9u8MFBG$$n9vqE38l6zghvJmHyBs1t##email", "NB1vStOkrtNPfx9u8MFBG$$n9vqE38l6zghvJmHyBs1t##country_code", "NB1vStOkrtNPfx9u8MFBG$$n9vqE38l6zghvJmHyBs1t##account_open_date", "NB1vStOkrtNPfx9u8MFBG$$n9vqE38l6zghvJmHyBs1t##account_flags" ],
+        "expressions" : [ {
+          "_row_id" : "1153142440",
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "409539640",
+          "target" : "first_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first_name"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "1043428055",
+          "target" : "last_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "last_name"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "1239902832",
+          "target" : "phone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "phone"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "2142134855",
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "227799829",
+          "target" : "country_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "country_code"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "1707915080",
+          "target" : "account_open_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_open_date"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "1195434280",
+          "target" : "account_flags",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_flags"
+          },
+          "description" : ""
+        } ],
+        "mdUsers" : null
+      }
+    }
+  }
+}
