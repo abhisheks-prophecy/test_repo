@@ -18,9 +18,15 @@
         "type" : "record",
         "fields" : [ ]
       },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
       "fabrics" : { },
       "instances" : { },
-      "selected" : "default"
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
     },
     "sparkConf" : [ ],
     "hadoopConf" : [ ],
@@ -39,8 +45,8 @@
   },
   "connections" : [ ],
   "processes" : {
-    "ezIP-3uPGAcKWOryjBMTw$$95M-1kPIZ98D1k9-YaJh6" : {
-      "id" : "ezIP-3uPGAcKWOryjBMTw$$95M-1kPIZ98D1k9-YaJh6",
+    "lIgsVg5RcjZ_8P0pJSGYS$$J6Q_VU7-wGxEeT_rLpnva" : {
+      "id" : "lIgsVg5RcjZ_8P0pJSGYS$$J6Q_VU7-wGxEeT_rLpnva",
       "component" : "Script",
       "metadata" : {
         "label" : "Script_0",
@@ -54,11 +60,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "G-SVoG7t8vcmbXsm8WKGg$$OfCzrD2rbp4-CsNuC03-2",
+          "id" : "gViJpnC86hAd_ynAv3i5y$$4RKp0hRHdMSdF0kJr4RTd",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "eRDli0fSlc4_uaaWqHIfw$$Xb9YZ68tPJdxW19WOTT86",
+          "id" : "L4tLtCD0Kp0TdCCpyWev2$$yMfzJms8byj5CHEgQRjWu",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ],

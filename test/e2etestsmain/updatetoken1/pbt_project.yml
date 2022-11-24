@@ -11,7 +11,7 @@ pipelines:
     author: abhisheks+e2etests@prophecy.io
     mode: batch
     language: scala
-    createdAt: '2022-11-10 18:59:14'
+    createdAt: '2022-11-24 11:48:41'
     datasets:
       inputs: []
       outputs: []
@@ -25,3 +25,4 @@ sqlModels: {}
 sqlPipeline: null
 dependencies: '[]'
 projectDependencies: {}
+pipelineConfigurations: {}
