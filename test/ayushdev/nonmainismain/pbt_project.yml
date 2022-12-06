@@ -1,0 +1,41 @@
+name: GITExternalWithDifferentMAIN
+description: ''
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/TESTPipelineNonMain:
+    name: TESTPipelineNonMain
+    description: TESTPipelineNonMain
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-12-06 10:58:37'
+    datasets:
+      inputs:
+      - datasets/testdataset
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/testdataset:
+    name: testdataset
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-12-06 11:00:00'
+    physicalDatasets:
+      dev_fabric1:
+        fabricId: 217
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-12-06 11:00:01'
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}
