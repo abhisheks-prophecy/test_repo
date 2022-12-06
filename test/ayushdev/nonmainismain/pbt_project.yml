@@ -1,6 +1,6 @@
 name: GITExternalWithDifferentMAIN
 description: ''
-version: 0.0.1-SNAPSHOT
+version: '1.0'
 author: abhisheks+e2etests@prophecy.io
 language: python
 buildSystem: wheel
