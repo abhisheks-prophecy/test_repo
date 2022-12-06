@@ -1,6 +1,6 @@
 name: GITExternalWithDifferentMAIN
 description: ''
-version: 0.0.1
+version: 0.0.1-SNAPSHOT
 author: abhisheks+e2etests@prophecy.io
 language: python
 buildSystem: wheel
@@ -37,5 +37,12 @@ subgraphs: {}
 sqlModels: {}
 sqlPipeline: null
 dependencies: '[]'
-projectDependencies: {}
+projectDependencies:
+  '452':
+    projectUID: 452
+    projectName: HelloWorld
+    repositoryPath: gitUri=http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git&subPath=
+    version: HelloWorld/1.0
+    author: null
+    createdAt: '2022-12-06 10:57:52'
 pipelineConfigurations: {}
