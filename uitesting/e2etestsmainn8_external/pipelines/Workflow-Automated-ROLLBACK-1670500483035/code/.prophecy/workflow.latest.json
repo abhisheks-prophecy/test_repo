@@ -45,30 +45,6 @@
   },
   "connections" : [ ],
   "processes" : {
-    "eRAv3BI6vn51NRYdswoGs$$VNc4DrlYtpk5xWcwYSSBx" : {
-      "id" : "eRAv3BI6vn51NRYdswoGs$$VNc4DrlYtpk5xWcwYSSBx",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_1",
-        "slug" : "Source_1",
-        "x" : 280,
-        "y" : 160,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "VBIrR1y5o7KiA2f8b_LQO$$6oqqFCaSjFnkqNaKUs-qA",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : { }
-    },
     "egGbAwkfTVVInWmxX8CRx$$peJS5FLoTuxqWCmD4rUGj" : {
       "id" : "egGbAwkfTVVInWmxX8CRx$$peJS5FLoTuxqWCmD4rUGj",
       "component" : "Source",
@@ -86,30 +62,6 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "_DTeiQOLDBQxMor1bJQC_$$SCKp4-6lsd5DcPgpl8MnV",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : { }
-    },
-    "54Hc9yjvE4-90N89ncDw1$$tk9fC7BkrP8j2Metp0taX" : {
-      "id" : "54Hc9yjvE4-90N89ncDw1$$tk9fC7BkrP8j2Metp0taX",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_2",
-        "slug" : "Source_2",
-        "x" : 420,
-        "y" : 160,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "D7icojugkFBFwSI3OvV7Q$$M-9GwdUuzLQ2QZqWM3U2F",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
