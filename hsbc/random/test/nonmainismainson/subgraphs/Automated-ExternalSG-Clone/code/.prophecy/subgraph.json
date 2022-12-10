@@ -1,0 +1,138 @@
+{
+  "id" : "mB-POEYOcZGsT2dT4rkIF",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "tCNWTGCgcgKjnbnH_grhg",
+      "slug" : "in0"
+    } ],
+    "outputs" : [ {
+      "id" : "jOBokzb87wx5kO_pLxxRC",
+      "slug" : "out0"
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  },
+  "properties" : {
+    "packageName" : "org.Automated-ExternalSG-Clone.subgraph"
+  },
+  "connections" : [ {
+    "id" : "494WW3eCG9Vsl5ynR_a4w",
+    "source" : "mB-POEYOcZGsT2dT4rkIF",
+    "sourcePort" : "tCNWTGCgcgKjnbnH_grhg",
+    "target" : "KpmDv8vn_fqWXc49aHUuU",
+    "targetPort" : "JKf5GSDIot9Fu3R3Q-4Di"
+  }, {
+    "id" : "lmJrp8Uz2M84h9mNsMmJY",
+    "source" : "KpmDv8vn_fqWXc49aHUuU",
+    "sourcePort" : "fqErvF2HvzggXHA03CSF1",
+    "target" : "mB-POEYOcZGsT2dT4rkIF",
+    "targetPort" : "jOBokzb87wx5kO_pLxxRC"
+  } ],
+  "processes" : {
+    "KpmDv8vn_fqWXc49aHUuU" : {
+      "id" : "KpmDv8vn_fqWXc49aHUuU",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 140,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "JKf5GSDIot9Fu3R3Q-4Di",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "fqErvF2HvzggXHA03CSF1",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "JKf5GSDIot9Fu3R3Q-4Di$$SXo1RkWgpMbQoaVVxfghS##customer_id", "JKf5GSDIot9Fu3R3Q-4Di$$SXo1RkWgpMbQoaVVxfghS##first_name", "JKf5GSDIot9Fu3R3Q-4Di$$SXo1RkWgpMbQoaVVxfghS##last_name", "JKf5GSDIot9Fu3R3Q-4Di$$SXo1RkWgpMbQoaVVxfghS##phone", "JKf5GSDIot9Fu3R3Q-4Di$$SXo1RkWgpMbQoaVVxfghS##email", "JKf5GSDIot9Fu3R3Q-4Di$$SXo1RkWgpMbQoaVVxfghS##country_code", "JKf5GSDIot9Fu3R3Q-4Di$$SXo1RkWgpMbQoaVVxfghS##account_open_date", "JKf5GSDIot9Fu3R3Q-4Di$$SXo1RkWgpMbQoaVVxfghS##account_flags" ],
+        "expressions" : [ {
+          "_row_id" : "617816026",
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "1451003154",
+          "target" : "first_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first_name"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "246953957",
+          "target" : "last_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "last_name"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "1722051609",
+          "target" : "phone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "phone"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "2111510921",
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "424140409",
+          "target" : "country_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "country_code"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "1554796743",
+          "target" : "account_open_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_open_date"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "1594511857",
+          "target" : "account_flags",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_flags"
+          },
+          "description" : ""
+        } ]
+      }
+    }
+  }
+}
