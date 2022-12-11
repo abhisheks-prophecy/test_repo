@@ -1,0 +1,261 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "scala",
+    "fabricId" : "2730",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "scala",
+      "udfs" : [ ]
+    },
+    "udafs" : {
+      "language" : "scala",
+      "code" : "package udfs\n\nimport org.apache.spark.sql.expressions._\nimport org.apache.spark.sql.types._\nimport org.apache.spark.sql._\n\n/**\n  * Here you can define your custom aggregate functions.\n  *\n  * Make sure to register your `udafs` in the register_udafs function below.\n  *\n  * Example:\n  *\n  * object GeometricMean extends UserDefinedAggregateFunction {\n  *   // This is the input fields for your aggregate function.\n  *   override def inputSchema: org.apache.spark.sql.types.StructType =\n  *     StructType(StructField(\"value\", DoubleType) :: Nil)\n  *\n  *   // This is the internal fields you keep for computing your aggregate.\n  *   override def bufferSchema: StructType = StructType(\n  *     StructField(\"count\", LongType) ::\n  *     StructField(\"product\", DoubleType) :: Nil\n  *   )\n  *\n  *   // This is the output type of your aggregatation function.\n  *   override def dataType: DataType = DoubleType\n  *\n  *   override def deterministic: Boolean = true\n  *\n  *   // This is the initial value for your buffer schema.\n  *   override def initialize(buffer: MutableAggregationBuffer): Unit = {\n  *     buffer(0) = 0L\n  *     buffer(1) = 1.0\n  *   }\n  *\n  *   // This is how to update your buffer schema given an input.\n  *   override def update(buffer: MutableAggregationBuffer, input: Row): Unit = {\n  *     buffer(0) = buffer.getAs[Long](0) + 1\n  *     buffer(1) = buffer.getAs[Double](1) * input.getAs[Double](0)\n  *   }\n  *\n  *   // This is how to merge two objects with the bufferSchema type.\n  *   override def merge(buffer1: MutableAggregationBuffer, buffer2: Row): Unit = {\n  *     buffer1(0) = buffer1.getAs[Long](0) + buffer2.getAs[Long](0)\n  *     buffer1(1) = buffer1.getAs[Double](1) * buffer2.getAs[Double](1)\n  *   }\n  *\n  *   // This is where you output the final value, given the final value of your bufferSchema.\n  *   override def evaluate(buffer: Row): Any = {\n  *     math.pow(buffer.getDouble(1), 1.toDouble / buffer.getLong(0))\n  *   }\n  * }\n  *\n  */\n\n\nobject UDAFs {\n  /**\n    * Registers UDAFs with Spark SQL\n    */\n  def registerUDAFs(spark: SparkSession): Unit = {\n    /**\n      * Example:\n      *\n      * spark.udf.register(\"gm\", GeometricMean)\n      *\n      */\n\n\n  }\n}\n"
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "io.prophecy.pipelines.automatedexternalpipclone"
+  },
+  "connections" : [ {
+    "id" : "2t5rDABABdYljKX2-FsL3",
+    "source" : "wXE1tfq_5WHcWsVpulBCf$$PNyfhB8iekUhW370JhOgU",
+    "sourcePort" : "_BRJyFKcWpv6JqfCQ_UJI$$clmdsMcogRmpP5IIcV_MN",
+    "target" : "Z5M8nXm4gc4Ryn39fRQuS$$CJ_ODnfUvjkjEabICGaP4",
+    "targetPort" : "wVbgem1GHlZgwSYxt3oIF$$HMLg_m-NSeUK_wm_oq81_"
+  }, {
+    "id" : "-9qvOcYAITXERMHfKMCRG",
+    "source" : "wXE1tfq_5WHcWsVpulBCf$$PNyfhB8iekUhW370JhOgU",
+    "sourcePort" : "_BRJyFKcWpv6JqfCQ_UJI$$clmdsMcogRmpP5IIcV_MN",
+    "target" : "Kz-kc0zIKOYAkrlLSplUw$$87yqh0M4Yl0-L3nXnJ2ZN",
+    "targetPort" : "K4qqYhpcLYdfVa36D7XEY$$kL7EhUQjkRwVEY6qNWw3I"
+  } ],
+  "processes" : {
+    "wXE1tfq_5WHcWsVpulBCf$$PNyfhB8iekUhW370JhOgU" : {
+      "id" : "wXE1tfq_5WHcWsVpulBCf$$PNyfhB8iekUhW370JhOgU",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Automated-ExternalDataset-Clone",
+        "slug" : "Automated_ExternalDataset_Clone",
+        "x" : 140,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "_BRJyFKcWpv6JqfCQ_UJI$$clmdsMcogRmpP5IIcV_MN",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Automated-ExternalDataset-Clone"
+      }
+    },
+    "Z5M8nXm4gc4Ryn39fRQuS$$CJ_ODnfUvjkjEabICGaP4" : {
+      "id" : "Z5M8nXm4gc4Ryn39fRQuS$$CJ_ODnfUvjkjEabICGaP4",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy_1",
+        "slug" : "OrderBy_1",
+        "x" : 280,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wVbgem1GHlZgwSYxt3oIF$$HMLg_m-NSeUK_wm_oq81_",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "K9TXKU6XqyBlE-VsuEi5k$$s5k_VT96b1SvTDZuZU3_6",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "wVbgem1GHlZgwSYxt3oIF$$HMLg_m-NSeUK_wm_oq81_##first_name", "wVbgem1GHlZgwSYxt3oIF$$HMLg_m-NSeUK_wm_oq81_##last_name" ],
+        "orders" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat(first_name,last_name)"
+          },
+          "sortType" : "asc"
+        } ]
+      }
+    },
+    "Kz-kc0zIKOYAkrlLSplUw$$87yqh0M4Yl0-L3nXnJ2ZN" : {
+      "id" : "Kz-kc0zIKOYAkrlLSplUw$$87yqh0M4Yl0-L3nXnJ2ZN",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_1",
+        "slug" : "Subgraph_1",
+        "x" : 420,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "K4qqYhpcLYdfVa36D7XEY$$kL7EhUQjkRwVEY6qNWw3I",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "nRtQqkLzjq_fjAq9vhiI2$$VOYOhpgtevU-cWC8PrPED",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "externalId" : "subgraphs/Automated-ExternalSG-Clone",
+        "name" : "Automated-ExternalSG-Clone",
+        "packageName" : "org.Automated-ExternalSG-Clone.subgraph"
+      },
+      "connections" : [ {
+        "id" : "eRHAtnx5fmoNUMHFea_K2",
+        "source" : "Kz-kc0zIKOYAkrlLSplUw$$87yqh0M4Yl0-L3nXnJ2ZN",
+        "sourcePort" : "K4qqYhpcLYdfVa36D7XEY$$kL7EhUQjkRwVEY6qNWw3I",
+        "target" : "XQtYQLHxs8s6yhsVs6PDL$$gdnV4gNWjQ4HiwuvWAVP3",
+        "targetPort" : "1Bay3PgLn4bGoiJY1nFTM$$WSWbfD2ugd6hXu3KsV83D"
+      }, {
+        "id" : "68KJuGLiSO2ygQmOnlK9l",
+        "source" : "XQtYQLHxs8s6yhsVs6PDL$$gdnV4gNWjQ4HiwuvWAVP3",
+        "sourcePort" : "pJTYgZTeFzSpad64HYOZ1$$bY2DiL9E5W0u7n6X41HNV",
+        "target" : "Kz-kc0zIKOYAkrlLSplUw$$87yqh0M4Yl0-L3nXnJ2ZN",
+        "targetPort" : "nRtQqkLzjq_fjAq9vhiI2$$VOYOhpgtevU-cWC8PrPED"
+      } ],
+      "processes" : {
+        "XQtYQLHxs8s6yhsVs6PDL$$gdnV4gNWjQ4HiwuvWAVP3" : {
+          "id" : "XQtYQLHxs8s6yhsVs6PDL$$gdnV4gNWjQ4HiwuvWAVP3",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "Reformat_1",
+            "slug" : "Reformat_1",
+            "x" : 140,
+            "y" : 160,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "1Bay3PgLn4bGoiJY1nFTM$$WSWbfD2ugd6hXu3KsV83D",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "pJTYgZTeFzSpad64HYOZ1$$bY2DiL9E5W0u7n6X41HNV",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false
+          },
+          "properties" : {
+            "columnsSelector" : [ "1Bay3PgLn4bGoiJY1nFTM$$WSWbfD2ugd6hXu3KsV83D##customer_id", "1Bay3PgLn4bGoiJY1nFTM$$WSWbfD2ugd6hXu3KsV83D##first_name", "1Bay3PgLn4bGoiJY1nFTM$$WSWbfD2ugd6hXu3KsV83D##last_name", "1Bay3PgLn4bGoiJY1nFTM$$WSWbfD2ugd6hXu3KsV83D##phone", "1Bay3PgLn4bGoiJY1nFTM$$WSWbfD2ugd6hXu3KsV83D##email", "1Bay3PgLn4bGoiJY1nFTM$$WSWbfD2ugd6hXu3KsV83D##country_code", "1Bay3PgLn4bGoiJY1nFTM$$WSWbfD2ugd6hXu3KsV83D##account_open_date", "1Bay3PgLn4bGoiJY1nFTM$$WSWbfD2ugd6hXu3KsV83D##account_flags" ],
+            "expressions" : [ {
+              "target" : "customer_id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "customer_id"
+              },
+              "description" : ""
+            }, {
+              "target" : "first_name",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "first_name"
+              },
+              "description" : ""
+            }, {
+              "target" : "last_name",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "last_name"
+              },
+              "description" : ""
+            }, {
+              "target" : "phone",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "phone"
+              },
+              "description" : ""
+            }, {
+              "target" : "email",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "email"
+              },
+              "description" : ""
+            }, {
+              "target" : "country_code",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "country_code"
+              },
+              "description" : ""
+            }, {
+              "target" : "account_open_date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "account_open_date"
+              },
+              "description" : ""
+            }, {
+              "target" : "account_flags",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "account_flags"
+              },
+              "description" : ""
+            } ]
+          }
+        }
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}
