@@ -4,7 +4,18 @@ version: 0.0.1-SNAPSHOT
 author: abhisheks+e2etests@prophecy.io
 language: scala
 buildSystem: maven
-pipelines: {}
+pipelines:
+  pipelines/Workflow-Automated-GITHUB-1670960000180:
+    name: Workflow-Automated-GITHUB-1670960000180
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-12-13 19:33:57'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
