@@ -1,12 +1,13 @@
 package io.prophecy.pipelines.sc_config_ext_git_one.config
 
 import io.prophecy.pipelines.sc_config_ext_git_one.config.ConfigStore._
+import io.prophecy.pipelines.sc_config_ext_git_one.config.Context
 import pureconfig.ConfigReader.Result
 import pureconfig._
 import pureconfig.generic.ProductHint
 import pureconfig.generic.auto._
 import io.prophecy.libs._
-object ConfigStore { implicit var Config: Config = _ }
+object ConfigStore
 
 object ConfigurationFactoryImpl extends ConfigurationFactory[Config] {
 

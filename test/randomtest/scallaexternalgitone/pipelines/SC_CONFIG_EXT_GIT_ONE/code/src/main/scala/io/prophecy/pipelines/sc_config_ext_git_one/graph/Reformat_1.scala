@@ -2,6 +2,7 @@ package io.prophecy.pipelines.sc_config_ext_git_one.graph
 
 import io.prophecy.libs._
 import io.prophecy.pipelines.sc_config_ext_git_one.config.ConfigStore._
+import io.prophecy.pipelines.sc_config_ext_git_one.config.Context
 import io.prophecy.pipelines.sc_config_ext_git_one.udfs.UDFs._
 import io.prophecy.pipelines.sc_config_ext_git_one.udfs._
 import org.apache.spark._
@@ -13,7 +14,8 @@ import java.time._
 
 object Reformat_1 {
 
-  def apply(spark: SparkSession, in: DataFrame): DataFrame =
+  def apply(context: Context, in: DataFrame): DataFrame = {
+    val Config = context.config
     in.select(
       concat(lit(Config.c_string),  col("`c   short  --`")).as("c_config_str"),
       concat(lit(Config.c_boolean), col("`c   short  --`")).as("c_config_bool"),
@@ -27,5 +29,6 @@ object Reformat_1 {
         .as("c_lookup"),
       int_udf(col("`c   short  --`")).as("c_udf1")
     )
+  }
 
 }

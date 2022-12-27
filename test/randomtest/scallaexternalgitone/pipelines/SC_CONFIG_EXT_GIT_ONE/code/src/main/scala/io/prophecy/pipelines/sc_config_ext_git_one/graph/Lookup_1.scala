@@ -2,6 +2,7 @@ package io.prophecy.pipelines.sc_config_ext_git_one.graph
 
 import io.prophecy.libs._
 import io.prophecy.pipelines.sc_config_ext_git_one.config.ConfigStore._
+import io.prophecy.pipelines.sc_config_ext_git_one.config.Context
 import io.prophecy.pipelines.sc_config_ext_git_one.udfs.UDFs._
 import io.prophecy.pipelines.sc_config_ext_git_one.udfs._
 import org.apache.spark._
@@ -13,7 +14,12 @@ import java.time._
 
 object Lookup_1 {
 
-  def apply(spark: SparkSession, in0: DataFrame): Unit =
-    createLookup("TestLookup", in0, spark, List("c_timestamp"), "c-decimal")
+  def apply(context: Context, in0: DataFrame): Unit =
+    createLookup("TestLookup",
+                 in0,
+                 context.spark,
+                 List("c_timestamp"),
+                 "c-decimal"
+    )
 
 }

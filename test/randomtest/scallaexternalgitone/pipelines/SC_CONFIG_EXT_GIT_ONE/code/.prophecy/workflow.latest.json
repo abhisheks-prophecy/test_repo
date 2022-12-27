@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "scala",
-    "fabricId" : "674",
+    "fabricId" : "1770",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -153,12 +153,6 @@
     "sourcePort" : "WapMuuaSdqCZ5GI0Ca6rm$$c3jwQuiAtzBvtVoKRbQhC",
     "target" : "TDdZpPEL9lDq9zCJzt1fA$$eLXvuUPjXtKOBJmrBNIar",
     "targetPort" : "5rzQEvym9vEdCL79vtb1J$$o9Af_5ay4NV88FoSSsdQn"
-  }, {
-    "id" : "XKevId4gHvnmzhMLAPdLQ",
-    "source" : "fM0tDKx_v2YsthcW-e652$$w3MZKXQFTOg8UTBc4-ibI",
-    "sourcePort" : "OwkvQbAR2QnZY3LH-HSFt$$X_k_H7DVPeDf9y3kL5fBS",
-    "target" : "m4Ff_cTRTkWKZPyvOekq2$$XyrSEKN-3j6lPxMMElPU0",
-    "targetPort" : "wpY3N5RCKqTnMvebRpeC6$$Zv7u49oRvBdqF9r2dyDQK"
   } ],
   "processes" : {
     "TDdZpPEL9lDq9zCJzt1fA$$eLXvuUPjXtKOBJmrBNIar" : {
@@ -468,39 +462,6 @@
         }
       }
     },
-    "m4Ff_cTRTkWKZPyvOekq2$$XyrSEKN-3j6lPxMMElPU0" : {
-      "id" : "m4Ff_cTRTkWKZPyvOekq2$$XyrSEKN-3j6lPxMMElPU0",
-      "component" : "Filter",
-      "metadata" : {
-        "label" : "Filter_1",
-        "slug" : "Filter_1",
-        "x" : 99.97500000000012,
-        "y" : 246.60000000000002,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "wpY3N5RCKqTnMvebRpeC6$$Zv7u49oRvBdqF9r2dyDQK",
-          "slug" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "WcvjNck1sEXLiy7Y-XoaH$$xczsXyw_yDWswmrTlpvNM",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "condition" : {
-          "format" : "sql",
-          "expression" : "true"
-        }
-      }
-    },
     "3t-WmT-Hxo5aNEnXZn7MU$$hBYQTwJNql--LjTZYQhsp" : {
       "id" : "3t-WmT-Hxo5aNEnXZn7MU$$hBYQTwJNql--LjTZYQhsp",
       "component" : "Reformat",
@@ -780,32 +741,6 @@
             "limit" : "11"
           }
         }
-      }
-    },
-    "fM0tDKx_v2YsthcW-e652$$w3MZKXQFTOg8UTBc4-ibI" : {
-      "id" : "fM0tDKx_v2YsthcW-e652$$w3MZKXQFTOg8UTBc4-ibI",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "customers_orders",
-        "slug" : "customers_orders",
-        "x" : -141.22499999999994,
-        "y" : 252.60000000000002,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "OwkvQbAR2QnZY3LH-HSFt$$X_k_H7DVPeDf9y3kL5fBS",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "datasetId" : "gitUri=http://gitserver:3000/Z9fNRzJ4_team_1793/u3P9c5gI_project_8172.git&subPath=&tag=HelloWorld/0.0.4&projectSubscriptionProjectId=8172&path=datasets/customers_orders"
       }
     },
     "sSULoCK8GTo9lZer8_M8I$$MnGKMVToN0c-HYMXQaa-N" : {

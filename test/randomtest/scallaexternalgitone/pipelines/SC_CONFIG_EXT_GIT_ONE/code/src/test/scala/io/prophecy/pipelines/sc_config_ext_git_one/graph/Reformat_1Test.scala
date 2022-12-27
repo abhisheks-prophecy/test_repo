@@ -19,6 +19,7 @@ import java.math.BigDecimal
 @RunWith(classOf[JUnitRunner])
 class Reformat_1Test extends FunSuite with DataFrameSuiteBase {
   import sqlContext.implicits._
+  var context: Context = null
 
   test("Unit Test 0") {
 
@@ -35,8 +36,8 @@ class Reformat_1Test extends FunSuite with DataFrameSuiteBase {
       "out"
     )
 
-    val dfOutComputed =
-      io.prophecy.pipelines.sc_config_ext_git_one.graph.Reformat_1(spark, dfIn)
+    val dfOutComputed = io.prophecy.pipelines.sc_config_ext_git_one.graph
+      .Reformat_1(context, dfIn)
     val res = assertDFEquals(
       dfOut.select("c_config_str",
                    "c_config_bool",
@@ -69,11 +70,13 @@ class Reformat_1Test extends FunSuite with DataFrameSuiteBase {
 
     val fabricName = System.getProperty("fabric")
 
-    ConfigStore.Config = ConfigurationFactoryImpl.fromCLI(
+    val config = ConfigurationFactoryImpl.fromCLI(
       Array("--confFile",
             getClass.getResource(s"/config/${fabricName}.json").getPath
       )
     )
+
+    context = Context(spark, config)
 
     val dfProphecy_pipelines_sc_config_ext_git_one_graph_Lookup_1 =
       createDfFromResourceFiles(
@@ -83,7 +86,7 @@ class Reformat_1Test extends FunSuite with DataFrameSuiteBase {
         port = "in"
       )
     io.prophecy.pipelines.sc_config_ext_git_one.graph.Lookup_1(
-      spark,
+      context,
       dfProphecy_pipelines_sc_config_ext_git_one_graph_Lookup_1
     )
   }
