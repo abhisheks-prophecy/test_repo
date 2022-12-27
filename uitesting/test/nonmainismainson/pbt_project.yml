@@ -1,0 +1,17 @@
+name: Automated-ExternalP-Clone
+description: ''
+version: 0.0.1-SNAPSHOT
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: maven
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}
