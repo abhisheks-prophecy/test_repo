@@ -82,6 +82,17 @@ pipelines:
       inputs: []
       outputs: []
     dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1672127665049:
+    name: Workflow-Automated-GITHUB-1672127665049
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-12-27 07:55:39'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672096257910:
     name: Workflow-Automated-GITHUB-1672096257910
     description: automation workflow
