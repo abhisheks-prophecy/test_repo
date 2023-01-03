@@ -45,6 +45,30 @@
   },
   "connections" : [ ],
   "processes" : {
+    "kYbaZIK9yrPIzpW6U5lpc$$sQMA4S5HfTzocdMcWnliA" : {
+      "id" : "kYbaZIK9yrPIzpW6U5lpc$$sQMA4S5HfTzocdMcWnliA",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : 280,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "7QySFh51aYeD3EHrZUajb$$-zfHBp8_O0DxUH7Kprjr1",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
+    },
     "QHtzAlrhLIb7zH-ytHMlD$$2dUDyzAuUTQmxF7hPamex" : {
       "id" : "QHtzAlrhLIb7zH-ytHMlD$$2dUDyzAuUTQmxF7hPamex",
       "component" : "Source",
