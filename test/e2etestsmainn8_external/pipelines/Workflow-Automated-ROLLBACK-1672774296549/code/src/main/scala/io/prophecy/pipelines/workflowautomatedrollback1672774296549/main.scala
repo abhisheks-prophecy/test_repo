@@ -19,6 +19,7 @@ object Main {
   def apply(context: Context): Unit = {
     val df_Source_1 = Source_1(context)
     val df_Source_0 = Source_0(context)
+    val df_Source_2 = Source_2(context)
   }
 
   def main(args: Array[String]): Unit = {
