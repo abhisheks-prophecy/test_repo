@@ -34,11 +34,8 @@ object Main {
     spark.conf.set("prophecy.metadata.pipeline.uri",
                    "pipelines/Automated-Github-UpdateToken-Pipeline"
     )
-    MetricsCollector.start(
-      spark,
-      spark.conf.get(
-        "prophecy.project.id"
-      ) + "/" + "pipelines/Automated-Github-UpdateToken-Pipeline"
+    MetricsCollector.start(spark,
+                           "pipelines/Automated-Github-UpdateToken-Pipeline"
     )
     apply(context)
     MetricsCollector.end(spark)
