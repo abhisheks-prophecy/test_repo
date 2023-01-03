@@ -5,6 +5,17 @@ author: abhisheks+e2etests@prophecy.io
 language: scala
 buildSystem: maven
 pipelines:
+  pipelines/Workflow-Automated-GITHUB-1672712485345:
+    name: Workflow-Automated-GITHUB-1672712485345
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2023-01-03 02:21:59'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672691588848:
     name: Workflow-Automated-GITHUB-1672691588848
     description: automation workflow
