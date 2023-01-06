@@ -45,54 +45,6 @@
   },
   "connections" : [ ],
   "processes" : {
-    "x3ns_RTrOFfydC0F0EpVs$$e8sZAzQfv5saQkkdgJmf6" : {
-      "id" : "x3ns_RTrOFfydC0F0EpVs$$e8sZAzQfv5saQkkdgJmf6",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_2",
-        "slug" : "Source_2",
-        "x" : 420,
-        "y" : 160,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "Tkhk-_ExupndXKam4VN44$$KRRwKebOjAOgsnhCFPXJj",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : { }
-    },
-    "rDTeuYz_waNbOphL_Qnea$$jnkWa9TJqV4SYU9gUu34A" : {
-      "id" : "rDTeuYz_waNbOphL_Qnea$$jnkWa9TJqV4SYU9gUu34A",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_1",
-        "slug" : "Source_1",
-        "x" : 280,
-        "y" : 160,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "3nQZlsszvXnMF09qfKk7P$$sM98NnFK4Jmk6t-fBuLOd",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : { }
-    },
     "wXnzE8QlgIbRlqkYKV5nd$$AYJp0EBHogODxeWs9OoY0" : {
       "id" : "wXnzE8QlgIbRlqkYKV5nd$$AYJp0EBHogODxeWs9OoY0",
       "component" : "Source",
