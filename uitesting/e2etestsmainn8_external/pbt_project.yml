@@ -38,17 +38,6 @@ pipelines:
       inputs: []
       outputs: []
     dependencies: {}
-  pipelines/Workflow-Automated-ROLLBACK-1670500483035:
-    name: Workflow-Automated-ROLLBACK-1670500483035
-    description: automation workflow
-    author: abhisheks+e2etests@prophecy.io
-    mode: batch
-    language: scala
-    createdAt: '2022-12-08 11:55:29'
-    datasets:
-      inputs: []
-      outputs: []
-    dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1673001476069:
     name: Workflow-Automated-ROLLBACK-1673001476069
     description: automation workflow
@@ -67,6 +56,28 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2022-12-11 07:22:14'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
+  pipelines/Workflow-Automated-ROLLBACK-1673079424579:
+    name: Workflow-Automated-ROLLBACK-1673079424579
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2023-01-07 08:17:45'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
+  pipelines/Workflow-Automated-ROLLBACK-1670500483035:
+    name: Workflow-Automated-ROLLBACK-1670500483035
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2022-12-08 11:55:29'
     datasets:
       inputs: []
       outputs: []
