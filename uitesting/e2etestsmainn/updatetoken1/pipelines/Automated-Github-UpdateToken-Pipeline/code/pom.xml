@@ -10,7 +10,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <scalaBaseVersion>2.12</scalaBaseVersion>
         <scalaVersion>2.12.15</scalaVersion>
         <sparkVersion>3.3.0</sparkVersion>
-        <prophecyLibsVersion>6.2.14</prophecyLibsVersion>
+        <prophecyLibsVersion>6.3.12</prophecyLibsVersion>
     </properties>
     <repositories>
         <repository>
@@ -20,6 +20,15 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <layout>default</layout>
             <snapshots>
                 <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>snapshots</id>
+            <name>Central Snapshots</name>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
@@ -100,7 +109,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <dependency>
             <groupId>io.prophecy</groupId>
             <artifactId>prophecy-libs_${scalaBaseVersion}</artifactId>
-            <version>${prophecyLibsVersion}-${sparkVersion}</version>
+            <version>${sparkVersion}-${prophecyLibsVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.scalatest</groupId>
