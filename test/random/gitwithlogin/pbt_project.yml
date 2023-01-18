@@ -1,0 +1,31 @@
+name: TestGitWithLogin
+description: ''
+version: 0.0.1-SNAPSHOT
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: wheel
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies:
+  '799':
+    projectUID: 799
+    projectName: EnterpriseProjectPy
+    repositoryPath: gitUri=https://ec2-18-212-252-151.compute-1.amazonaws.com/ayush/def&subPath=/test/ayushdev/pythontest
+    version: EnterpriseProjectPy/1.0
+    author: null
+    createdAt: '2023-01-18 07:28:10'
+  '801':
+    projectUID: 801
+    projectName: EnterpriseForked
+    repositoryPath: gitUri=https://ec2-18-212-252-151.compute-1.amazonaws.com/ayush/def&subPath=/test/ayushdev/forked/parent
+    version: EnterpriseForked/1.0
+    author: null
+    createdAt: '2023-01-18 07:28:10'
+pipelineConfigurations: {}
