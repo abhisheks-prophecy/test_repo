@@ -7,11 +7,11 @@ buildSystem: maven
 pipelines:
   pipelines/Automated-Github-UpdateToken-Pipeline:
     name: Automated-Github-UpdateToken-Pipeline
-    description: automation workflow
+    description: null
     author: abhisheks+e2etests@prophecy.io
     mode: batch
     language: scala
-    createdAt: '2023-01-25 03:50:26'
+    createdAt: '2023-01-25 12:24:21'
     datasets:
       inputs: []
       outputs: []
