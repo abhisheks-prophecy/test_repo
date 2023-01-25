@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "scala",
-    "fabricId" : "3461",
+    "fabricId" : "1654",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -45,8 +45,8 @@
   },
   "connections" : [ ],
   "processes" : {
-    "4CYGXdd98v_XDcfO2fO2R$$gs0ZEZK2P93iiZVFIfS_T" : {
-      "id" : "4CYGXdd98v_XDcfO2fO2R$$gs0ZEZK2P93iiZVFIfS_T",
+    "iuuss2LyBy8sRLNTqPE67$$EFgMZxlUkKpEgV_y0jHFS" : {
+      "id" : "iuuss2LyBy8sRLNTqPE67$$EFgMZxlUkKpEgV_y0jHFS",
       "component" : "Script",
       "metadata" : {
         "label" : "Script_0",
@@ -60,11 +60,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "T0NevoaSRNYoaPyM9XNkj$$19RC9v1BOR-GB5Ce4pVnM",
+          "id" : "mT8HSqVm6zSExb8QQNFDK$$dgYE2UZuxH546FuSE9Osb",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "Gy-UJ8y_9xdoYhyXRRIRn$$xv2KkBRChv6WdVP5CHSQ4",
+          "id" : "tIHOZSHE8L-C1n5hRZM4j$$M66C3B-ACjduGKpH6a9sB",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ],
