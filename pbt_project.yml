@@ -1,5 +1,5 @@
 name: PY_DEL_GIT_PROJ
-description: ''
+description: cadsdaf
 version: 2.04-SNAPSHOT
 author: abhisheks+e2etests@prophecy.io
 language: python
@@ -77,3 +77,4 @@ projectDependencies:
     version: python_project/1.0
     author: null
     createdAt: '2022-10-18 06:28:17'
+pipelineConfigurations: {}
