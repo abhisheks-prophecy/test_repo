@@ -94,6 +94,31 @@
         "isCustomOutputSchema" : false
       },
       "properties" : { }
+    },
+    "q3GmrkITPA_vwSVTQIdfJ$$5PNmFyVMWLVSaS3XpmLhz" : {
+      "id" : "q3GmrkITPA_vwSVTQIdfJ$$5PNmFyVMWLVSaS3XpmLhz",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_2",
+        "slug" : "Source_2",
+        "x" : 420,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ZP42P_nvl5u6wNFPJ9yOM$$ATzyuMbhFlV7W3kelXcT5",
+          "slug" : "out",
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : { }
     }
   },
   "ports" : {
