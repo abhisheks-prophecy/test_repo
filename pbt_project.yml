@@ -1,5 +1,5 @@
 name: PY_DEL_GIT_PROJ
-description: bnbnbn
+description: ''
 version: 2.04-SNAPSHOT
 author: abhisheks+e2etests@prophecy.io
 language: python
@@ -55,5 +55,25 @@ dependencies:
   id: GVwSz
   type: pypi
   enabled: false
-projectDependencies: {}
-pipelineConfigurations: {}
+projectDependencies:
+  '6154':
+    projectUID: 6154
+    projectName: PythonMainProject
+    repositoryPath: http://gitserver:3000/Z9fNRzJ4_team_1793/4huAEWx3_project_6154.git/
+    version: PythonMainProject/1.1665768126954
+    author: null
+    createdAt: '2022-10-18 05:01:01'
+  '9890':
+    projectUID: 9890
+    projectName: ConflictProject
+    repositoryPath: http://gitserver:3000/Z9fNRzJ4_team_1793/cQhq54Wz_project_9890.git/
+    version: ConflictProject/1.2
+    author: null
+    createdAt: '2022-10-18 06:28:16'
+  '5690':
+    projectUID: 5690
+    projectName: python_project
+    repositoryPath: http://gitserver:3000/Z9fNRzJ4_team_1793/lFGcnlOe_project_5690.git/
+    version: python_project/1.0
+    author: null
+    createdAt: '2022-10-18 06:28:17'
