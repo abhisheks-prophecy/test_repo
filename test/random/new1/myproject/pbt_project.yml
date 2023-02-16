@@ -4,7 +4,18 @@ version: 0.0.1
 author: abhisheks+e2etests@prophecy.io
 language: python
 buildSystem: wheel
-pipelines: {}
+pipelines:
+  pipelines/test1:
+    name: test1
+    description: test1
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2023-02-16 07:37:47'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
