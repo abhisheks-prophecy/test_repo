@@ -45,8 +45,8 @@
   },
   "connections" : [ ],
   "processes" : {
-    "-xhk4j-zNUBARaFzmVux-$$wpaiCmbRJK1HICQSrQI19" : {
-      "id" : "-xhk4j-zNUBARaFzmVux-$$wpaiCmbRJK1HICQSrQI19",
+    "gFBGquM07z_tqJKZGI8Gq$$zjay_l6x4dlYKh2JGOrIw" : {
+      "id" : "gFBGquM07z_tqJKZGI8Gq$$zjay_l6x4dlYKh2JGOrIw",
       "component" : "Script",
       "metadata" : {
         "label" : "Script_0",
@@ -60,11 +60,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "JJyl7Atx2BtJvC4mQLKjp$$dlVZmi3JoQqtSTpoN1JYn",
+          "id" : "deNXWqBkLXdxxctk_waxH$$a5y0wbHW2O28NJGVe1Vq8",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "7Ni5MyqDxC5oaZd-cnHJU$$6Sbk4J-tA2qynO3d8j18U",
+          "id" : "65vDVCif-n2s-EzoDqzKk$$N9JXucw_fUrZz5cwRtZS-",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ],
@@ -82,5 +82,38 @@
     "outputs" : [ ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.gFBGquM07z_tqJKZGI8Gq$$zjay_l6x4dlYKh2JGOrIw",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Please connect input port in0",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.gFBGquM07z_tqJKZGI8Gq$$zjay_l6x4dlYKh2JGOrIw.properties.script",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Code cannot be empty.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
 }
