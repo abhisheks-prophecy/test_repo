@@ -12,6 +12,7 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2022-12-17 04:50:35'
+    modifiedAt: '2022-12-17 04:50:35'
     datasets:
       inputs: []
       outputs: []
@@ -23,6 +24,7 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2022-12-26 23:27:52'
+    modifiedAt: '2022-12-26 23:27:52'
     datasets:
       inputs: []
       outputs: []
@@ -34,6 +36,7 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2023-01-02 20:43:10'
+    modifiedAt: '2023-01-02 20:43:10'
     datasets:
       inputs: []
       outputs: []
@@ -45,6 +48,7 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2023-01-03 02:28:03'
+    modifiedAt: '2023-01-03 02:28:03'
     datasets:
       inputs: []
       outputs: []
@@ -56,6 +60,7 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2023-01-03 19:32:10'
+    modifiedAt: '2023-01-03 19:32:10'
     datasets:
       inputs: []
       outputs: []
@@ -67,6 +72,7 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2023-01-13 21:19:10'
+    modifiedAt: '2023-01-13 21:19:10'
     datasets:
       inputs: []
       outputs: []
@@ -78,6 +84,7 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2023-01-15 09:14:52'
+    modifiedAt: '2023-01-15 09:14:52'
     datasets:
       inputs: []
       outputs: []
@@ -89,6 +96,7 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2023-01-24 16:43:41'
+    modifiedAt: '2023-01-24 16:43:41'
     datasets:
       inputs: []
       outputs: []
@@ -100,6 +108,7 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2023-01-24 16:51:05'
+    modifiedAt: '2023-01-24 16:51:05'
     datasets:
       inputs: []
       outputs: []
@@ -111,6 +120,7 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2023-01-25 20:23:53'
+    modifiedAt: '2023-01-25 20:23:53'
     datasets:
       inputs: []
       outputs: []
@@ -122,6 +132,19 @@ pipelines:
     mode: batch
     language: scala
     createdAt: '2023-02-22 22:45:09'
+    modifiedAt: '2023-02-22 22:45:09'
+    datasets:
+      inputs: []
+      outputs: []
+    dependencies: {}
+  pipelines/Workflow-Automated-ROLLBACK-1677355247396:
+    name: Workflow-Automated-ROLLBACK-1677355247396
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: scala
+    createdAt: '2023-02-25 20:01:37'
+    modifiedAt: '2023-02-25 20:02:07'
     datasets:
       inputs: []
       outputs: []
