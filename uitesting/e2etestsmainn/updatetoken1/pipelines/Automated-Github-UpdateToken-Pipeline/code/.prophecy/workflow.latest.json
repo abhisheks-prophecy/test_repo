@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "scala",
-    "fabricId" : "1654",
+    "fabricId" : "4766",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -45,8 +45,8 @@
   },
   "connections" : [ ],
   "processes" : {
-    "iNQPwBFVTMQTUlUmvUYtF$$OXR8EVLv95D4Q32JbIZY8" : {
-      "id" : "iNQPwBFVTMQTUlUmvUYtF$$OXR8EVLv95D4Q32JbIZY8",
+    "sEql4dFeqv4vuzED-LCDt$$HP6Z-JB6F-XhqoJrSxTSa" : {
+      "id" : "sEql4dFeqv4vuzED-LCDt$$HP6Z-JB6F-XhqoJrSxTSa",
       "component" : "Script",
       "metadata" : {
         "label" : "Script_0",
@@ -60,11 +60,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "CeiSMe3JwDMPCI5WwnSLo$$mBo8SDlhe39GNKNp0s8cr",
+          "id" : "DkoCVOk5bhiqbDIfc3hc-$$JSUr-M47_9HxMzOHO2A_s",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "8CWlI7TypXCrkJTbRfw5V$$uf5rsx8pKI_BjXBPhLsxZ",
+          "id" : "cCJR5_mvsoLCUHk24osPY$$39329T45M9MeuDhDCtFKG",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ],
@@ -82,5 +82,38 @@
     "outputs" : [ ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.sEql4dFeqv4vuzED-LCDt$$HP6Z-JB6F-XhqoJrSxTSa",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Please connect input port in0",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.sEql4dFeqv4vuzED-LCDt$$HP6Z-JB6F-XhqoJrSxTSa.properties.script",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Code cannot be empty.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
 }
