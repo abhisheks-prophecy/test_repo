@@ -3,456 +3,558 @@ description: ''
 version: 0.0.1
 author: abhisheks+e2etests@prophecy.io
 language: scala
-buildSystem: maven
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomatedprrollback
+  parentArtefactID: abhishekse2etestsprophecy.io_team
+  buildSystem: maven
+  author: null
+  createdAt: '2023-03-14 02:22:30'
+  modifiedAt: '2023-03-14 02:22:30'
 pipelines:
   pipelines/Workflow-Automated-ROLLBACK-1673095143989:
     name: Workflow-Automated-ROLLBACK-1673095143989
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-07 12:39:49'
     modifiedAt: '2023-01-07 12:39:49'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1673610163327:
     name: Workflow-Automated-ROLLBACK-1673610163327
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-13 11:43:18'
     modifiedAt: '2023-01-13 11:43:18'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1673014119109:
     name: Workflow-Automated-ROLLBACK-1673014119109
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-06 14:09:25'
     modifiedAt: '2023-01-06 14:09:25'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1673950221399:
     name: Workflow-Automated-ROLLBACK-1673950221399
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-17 10:11:05'
     modifiedAt: '2023-01-17 10:11:05'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1670650853699:
     name: Workflow-Automated-ROLLBACK-1670650853699
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-10 05:41:34'
     modifiedAt: '2022-12-10 05:41:34'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1673001476069:
     name: Workflow-Automated-ROLLBACK-1673001476069
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-06 10:38:37'
     modifiedAt: '2023-01-06 10:38:37'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1670743289546:
     name: Workflow-Automated-ROLLBACK-1670743289546
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-11 07:22:14'
     modifiedAt: '2022-12-11 07:22:14'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1673014309766:
     name: Workflow-Automated-ROLLBACK-1673014309766
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-06 14:12:34'
     modifiedAt: '2023-01-06 14:12:34'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1673263320861:
     name: Workflow-Automated-ROLLBACK-1673263320861
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-09 11:22:46'
     modifiedAt: '2023-01-09 11:22:46'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1673079424579:
     name: Workflow-Automated-ROLLBACK-1673079424579
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-07 08:17:45'
     modifiedAt: '2023-01-07 08:17:45'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1670500483035:
     name: Workflow-Automated-ROLLBACK-1670500483035
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-08 11:55:29'
     modifiedAt: '2022-12-08 11:55:29'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1674067625057:
     name: Workflow-Automated-ROLLBACK-1674067625057
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-18 18:47:45'
     modifiedAt: '2023-01-18 18:47:45'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1674079975668:
     name: Workflow-Automated-ROLLBACK-1674079975668
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-18 22:13:34'
     modifiedAt: '2023-01-18 22:13:34'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1674240839176:
     name: Workflow-Automated-ROLLBACK-1674240839176
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-20 18:54:42'
     modifiedAt: '2023-01-20 18:54:42'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1674253889528:
     name: Workflow-Automated-ROLLBACK-1674253889528
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-20 22:32:06'
     modifiedAt: '2023-01-20 22:32:06'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1674618117499:
     name: Workflow-Automated-ROLLBACK-1674618117499
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-25 03:42:39'
     modifiedAt: '2023-01-25 03:42:39'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1674648953218:
     name: Workflow-Automated-ROLLBACK-1674648953218
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-25 12:16:40'
     modifiedAt: '2023-01-25 12:16:40'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1675325924509:
     name: Workflow-Automated-ROLLBACK-1675325924509
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-02 08:19:32'
     modifiedAt: '2023-02-02 08:19:32'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1675369255463:
     name: Workflow-Automated-ROLLBACK-1675369255463
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-02 20:21:41'
     modifiedAt: '2023-02-02 20:21:41'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1675369449896:
     name: Workflow-Automated-ROLLBACK-1675369449896
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-02 20:24:54'
     modifiedAt: '2023-02-02 20:24:54'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1675658794748:
     name: Workflow-Automated-ROLLBACK-1675658794748
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-06 04:47:31'
     modifiedAt: '2023-02-06 04:47:31'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1675691207206:
     name: Workflow-Automated-ROLLBACK-1675691207206
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-06 13:47:37'
     modifiedAt: '2023-02-06 13:47:37'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1675887386664:
     name: Workflow-Automated-ROLLBACK-1675887386664
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-08 20:17:52'
     modifiedAt: '2023-02-08 20:17:52'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1675887689403:
     name: Workflow-Automated-ROLLBACK-1675887689403
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-08 20:23:26'
     modifiedAt: '2023-02-08 20:23:26'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1675934659252:
     name: Workflow-Automated-ROLLBACK-1675934659252
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-09 09:25:08'
     modifiedAt: '2023-02-09 09:25:08'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1676127627490:
     name: Workflow-Automated-ROLLBACK-1676127627490
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-11 15:01:32'
     modifiedAt: '2023-02-11 15:01:32'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1676327110287:
     name: Workflow-Automated-ROLLBACK-1676327110287
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-13 22:27:02'
     modifiedAt: '2023-02-13 22:27:02'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1676356931847:
     name: Workflow-Automated-ROLLBACK-1676356931847
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-14 06:43:07'
     modifiedAt: '2023-02-14 06:43:07'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1676406891298:
     name: Workflow-Automated-ROLLBACK-1676406891298
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-14 20:35:40'
     modifiedAt: '2023-02-14 20:35:40'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1676469260971:
     name: Workflow-Automated-ROLLBACK-1676469260971
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-15 13:55:37'
     modifiedAt: '2023-02-15 13:55:37'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1676469535147:
     name: Workflow-Automated-ROLLBACK-1676469535147
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-15 13:59:58'
     modifiedAt: '2023-02-15 13:59:58'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1677497426645:
     name: Workflow-Automated-ROLLBACK-1677497426645
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-27 11:31:21'
     modifiedAt: '2023-02-27 11:32:24'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1677497644185:
     name: Workflow-Automated-ROLLBACK-1677497644185
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-27 11:35:25'
     modifiedAt: '2023-02-27 11:35:59'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1677531775826:
     name: Workflow-Automated-ROLLBACK-1677531775826
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-27 21:03:47'
     modifiedAt: '2023-02-27 21:04:19'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1677612683298:
     name: Workflow-Automated-ROLLBACK-1677612683298
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-28 19:32:14'
     modifiedAt: '2023-02-28 19:32:33'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1677702092822:
     name: Workflow-Automated-ROLLBACK-1677702092822
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-03-01 20:22:31'
     modifiedAt: '2023-03-01 20:22:52'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-ROLLBACK-1677702316878:
     name: Workflow-Automated-ROLLBACK-1677702316878
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-03-01 20:26:06'
     modifiedAt: '2023-03-01 20:26:26'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/Workflow-Automated-ROLLBACK-1678760487302:
+    name: Workflow-Automated-ROLLBACK-1678760487302
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-03-14 02:22:30'
+    modifiedAt: '2023-03-14 02:23:01'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
     dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
-libraries: []
+functions:
+  author: null
+  createdAt: '2023-03-14 02:22:30'
+  modifiedAt: '2023-03-14 02:22:36'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
 subgraphs: {}
 sqlModels: {}
 sqlPipeline: null
