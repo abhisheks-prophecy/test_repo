@@ -614,6 +614,20 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
+  pipelines/Workflow-Automated-ROLLBACK-1679259003595:
+    name: Workflow-Automated-ROLLBACK-1679259003595
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-03-19 20:51:04'
+    modifiedAt: '2023-03-19 20:51:34'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
