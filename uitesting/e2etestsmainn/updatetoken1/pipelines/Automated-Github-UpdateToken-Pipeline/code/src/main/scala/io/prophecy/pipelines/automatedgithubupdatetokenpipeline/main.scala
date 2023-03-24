@@ -1,7 +1,6 @@
 package io.prophecy.pipelines.automatedgithubupdatetokenpipeline
 
 import io.prophecy.libs._
-import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.config.ConfigStore._
 import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.config.Context
 import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.config._
 import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.udfs.UDFs._
@@ -34,6 +33,7 @@ object Main {
     spark.conf.set("prophecy.metadata.pipeline.uri",
                    "pipelines/Automated-Github-UpdateToken-Pipeline"
     )
+    registerUDFs(spark)
     MetricsCollector.start(spark,
                            "pipelines/Automated-Github-UpdateToken-Pipeline"
     )
