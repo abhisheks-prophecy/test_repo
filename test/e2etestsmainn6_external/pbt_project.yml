@@ -3,528 +3,642 @@ description: ''
 version: 0.0.1
 author: abhisheks+e2etests@prophecy.io
 language: scala
-buildSystem: maven
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomatedgithub
+  parentArtefactID: abhishekse2etestsprophecy.io_team
+  buildSystem: maven
+  author: null
+  createdAt: '2023-04-01 08:57:27'
+  modifiedAt: '2023-04-01 08:57:27'
 pipelines:
   pipelines/Workflow-Automated-GITHUB-1672712485345:
     name: Workflow-Automated-GITHUB-1672712485345
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-03 02:21:59'
     modifiedAt: '2023-01-03 02:21:59'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672691588848:
     name: Workflow-Automated-GITHUB-1672691588848
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-02 20:33:39'
     modifiedAt: '2023-01-02 20:33:39'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672096434396:
     name: Workflow-Automated-GITHUB-1672096434396
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-26 23:14:39'
     modifiedAt: '2022-12-26 23:14:39'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672125716743:
     name: Workflow-Automated-GITHUB-1672125716743
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-27 07:22:36'
     modifiedAt: '2022-12-27 07:22:36'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672084786996:
     name: Workflow-Automated-GITHUB-1672084786996
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-26 20:01:11'
     modifiedAt: '2022-12-26 20:01:11'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1671252032524:
     name: Workflow-Automated-GITHUB-1671252032524
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-17 04:41:02'
     modifiedAt: '2022-12-17 04:41:02'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1671251826004:
     name: Workflow-Automated-GITHUB-1671251826004
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-17 04:37:40'
     modifiedAt: '2022-12-17 04:37:40'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1671252233785:
     name: Workflow-Automated-GITHUB-1671252233785
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-17 04:44:25'
     modifiedAt: '2022-12-17 04:44:25'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672127665049:
     name: Workflow-Automated-GITHUB-1672127665049
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-27 07:55:39'
     modifiedAt: '2022-12-27 07:55:39'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672712276340:
     name: Workflow-Automated-GITHUB-1672712276340
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-03 02:18:26'
     modifiedAt: '2023-01-03 02:18:26'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672691795397:
     name: Workflow-Automated-GITHUB-1672691795397
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-02 20:37:06'
     modifiedAt: '2023-01-02 20:37:06'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672127915843:
     name: Workflow-Automated-GITHUB-1672127915843
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-27 07:59:23'
     modifiedAt: '2022-12-27 07:59:23'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672126010651:
     name: Workflow-Automated-GITHUB-1672126010651
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-27 07:27:27'
     modifiedAt: '2022-12-27 07:27:27'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672096257910:
     name: Workflow-Automated-GITHUB-1672096257910
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-26 23:12:22'
     modifiedAt: '2022-12-26 23:12:22'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672127349838:
     name: Workflow-Automated-GITHUB-1672127349838
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-27 07:49:44'
     modifiedAt: '2022-12-27 07:49:44'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672084953296:
     name: Workflow-Automated-GITHUB-1672084953296
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-26 20:03:46'
     modifiedAt: '2022-12-26 20:03:46'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672691366244:
     name: Workflow-Automated-GITHUB-1672691366244
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-02 20:29:55'
     modifiedAt: '2023-01-02 20:29:55'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1671772356595:
     name: Workflow-Automated-GITHUB-1671772356595
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-23 05:13:21'
     modifiedAt: '2022-12-23 05:13:21'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1671772175739:
     name: Workflow-Automated-GITHUB-1671772175739
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-23 05:10:50'
     modifiedAt: '2022-12-23 05:10:50'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672127167751:
     name: Workflow-Automated-GITHUB-1672127167751
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2022-12-27 07:46:45'
     modifiedAt: '2022-12-27 07:46:45'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672773697141:
     name: Workflow-Automated-GITHUB-1672773697141
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-03 19:22:12'
     modifiedAt: '2023-01-03 19:22:12'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1672773917316:
     name: Workflow-Automated-GITHUB-1672773917316
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-03 19:25:50'
     modifiedAt: '2023-01-03 19:25:50'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1673643927340:
     name: Workflow-Automated-GITHUB-1673643927340
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-13 21:08:03'
     modifiedAt: '2023-01-13 21:08:03'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1673644298311:
     name: Workflow-Automated-GITHUB-1673644298311
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-13 21:12:32'
     modifiedAt: '2023-01-13 21:12:32'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1673773263687:
     name: Workflow-Automated-GITHUB-1673773263687
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-15 09:01:36'
     modifiedAt: '2023-01-15 09:01:36'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1673773473735:
     name: Workflow-Automated-GITHUB-1673773473735
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-15 09:05:06'
     modifiedAt: '2023-01-15 09:05:06'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1673773676942:
     name: Workflow-Automated-GITHUB-1673773676942
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-15 09:08:30'
     modifiedAt: '2023-01-15 09:08:30'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1674577686222:
     name: Workflow-Automated-GITHUB-1674577686222
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-24 16:28:42'
     modifiedAt: '2023-01-24 16:28:42'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1674577864239:
     name: Workflow-Automated-GITHUB-1674577864239
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-24 16:31:33'
     modifiedAt: '2023-01-24 16:31:33'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1674577975932:
     name: Workflow-Automated-GITHUB-1674577975932
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-24 16:33:30'
     modifiedAt: '2023-01-24 16:33:30'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1674578079075:
     name: Workflow-Automated-GITHUB-1674578079075
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-24 16:35:14'
     modifiedAt: '2023-01-24 16:35:14'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1674578160296:
     name: Workflow-Automated-GITHUB-1674578160296
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-24 16:36:38'
     modifiedAt: '2023-01-24 16:36:38'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1674578336546:
     name: Workflow-Automated-GITHUB-1674578336546
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-24 16:39:37'
     modifiedAt: '2023-01-24 16:39:37'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1674677468834:
     name: Workflow-Automated-GITHUB-1674677468834
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-25 20:11:53'
     modifiedAt: '2023-01-25 20:11:53'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1674677702161:
     name: Workflow-Automated-GITHUB-1674677702161
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-01-25 20:15:36'
     modifiedAt: '2023-01-25 20:15:36'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1677104870215:
     name: Workflow-Automated-GITHUB-1677104870215
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-22 22:29:05'
     modifiedAt: '2023-02-22 22:29:05'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1677105093553:
     name: Workflow-Automated-GITHUB-1677105093553
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-22 22:32:48'
     modifiedAt: '2023-02-22 22:32:48'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1677105383111:
     name: Workflow-Automated-GITHUB-1677105383111
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-22 22:37:38'
     modifiedAt: '2023-02-22 22:37:38'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1677354468469:
     name: Workflow-Automated-GITHUB-1677354468469
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-25 19:49:13'
     modifiedAt: '2023-02-25 19:49:43'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1677354758881:
     name: Workflow-Automated-GITHUB-1677354758881
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-02-25 19:53:57'
     modifiedAt: '2023-02-25 19:54:16'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1677765371022:
     name: Workflow-Automated-GITHUB-1677765371022
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-03-02 13:57:58'
     modifiedAt: '2023-03-02 13:58:20'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1677765715138:
     name: Workflow-Automated-GITHUB-1677765715138
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-03-02 14:03:39'
     modifiedAt: '2023-03-02 14:04:06'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/Workflow-Automated-GITHUB-1677766037279:
     name: Workflow-Automated-GITHUB-1677766037279
     description: automation workflow
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: scala
     createdAt: '2023-03-02 14:09:09'
     modifiedAt: '2023-03-02 14:09:41'
     datasets:
       inputs: []
       outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1680339339168:
+    name: Workflow-Automated-GITHUB-1680339339168
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-04-01 08:57:27'
+    modifiedAt: '2023-04-01 08:57:56'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
     dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
-libraries: []
+functions:
+  author: null
+  createdAt: '2023-04-01 08:57:27'
+  modifiedAt: '2023-04-01 08:57:27'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
 subgraphs: {}
 sqlModels: {}
 sqlPipeline: null
