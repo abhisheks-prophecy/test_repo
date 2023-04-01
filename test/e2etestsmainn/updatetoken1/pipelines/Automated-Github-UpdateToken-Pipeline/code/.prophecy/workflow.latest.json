@@ -7,7 +7,9 @@
     "mode" : "batch",
     "udfs" : {
       "language" : "scala",
-      "udfs" : [ ]
+      "udfs" : [ ],
+      "functionPackageName" : "abhishekse2etestsprophecy.io_team.automatedgithubupdatetoken.functions",
+      "sharedFunctionPackageNames" : [ ]
     },
     "udafs" : {
       "language" : "scala",
@@ -33,6 +35,7 @@
     "codeMode" : "sparse",
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
     "isImported" : false,
     "interimMode" : "Full",
     "interimModeEnabled" : true,
@@ -41,12 +44,13 @@
       "enabled" : false,
       "value" : 1000
     },
-    "topLevelPackage" : "io.prophecy.pipelines.automatedgithubupdatetokenpipeline"
+    "topLevelPackage" : "io.prophecy.pipelines.automatedgithubupdatetokenpipeline",
+    "configurationVersion" : "v1"
   },
   "connections" : [ ],
   "processes" : {
-    "5NbZR4yVBf-xMKS0w63ud$$FoMeO45_7SauXbL-NDrJr" : {
-      "id" : "5NbZR4yVBf-xMKS0w63ud$$FoMeO45_7SauXbL-NDrJr",
+    "7EmRkPnZNAI3_xz04M_xP$$xfM19BUfXzNRsLsWEWNgf" : {
+      "id" : "7EmRkPnZNAI3_xz04M_xP$$xfM19BUfXzNRsLsWEWNgf",
       "component" : "Script",
       "metadata" : {
         "label" : "Script_0",
@@ -60,11 +64,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "F3YIQen9EwU1fK2hV_4Ui$$l2wB13qZfoTq9NmY16C_e",
+          "id" : "PFYH8e40gHU1bXiSDayvi$$HEmQTp3vf-NbO6kLPcnQ5",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "SWvfBo-zf5pLIHhM0vXXO$$g9fONqvhmlV0yfjqim1fO",
+          "id" : "3HiWYooDrw-0Eo6O0k_4J$$Kp1zg282U05R8_MifEbFP",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ],
@@ -84,7 +88,7 @@
     "isCustomOutputSchema" : false
   },
   "diagnostics" : [ {
-    "property" : "$.workflow.processes.5NbZR4yVBf-xMKS0w63ud$$FoMeO45_7SauXbL-NDrJr",
+    "property" : "$.workflow.processes.7EmRkPnZNAI3_xz04M_xP$$xfM19BUfXzNRsLsWEWNgf",
     "range" : {
       "start" : {
         "line" : 0,
@@ -100,7 +104,7 @@
     "tags" : [ ],
     "relatedInformation" : [ ]
   }, {
-    "property" : "$.workflow.processes.5NbZR4yVBf-xMKS0w63ud$$FoMeO45_7SauXbL-NDrJr.properties.script",
+    "property" : "$.workflow.processes.7EmRkPnZNAI3_xz04M_xP$$xfM19BUfXzNRsLsWEWNgf.properties.script",
     "range" : {
       "start" : {
         "line" : 0,
