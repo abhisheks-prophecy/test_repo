@@ -49,6 +49,15 @@ sqlMacros:
     - macros/gems/language_specific_deduplicate_base.sql
     createdAt: '2023-04-13 07:39:22'
     modifiedAt: '2023-04-13 07:39:22'
+  .prophecy/metadata/sqlmacros/_qa_concat_string_cols:
+    name: _qa_concat_string_cols
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/functions/qa_concat_param_type_base.sql
+    createdAt: '2023-04-15 15:28:11'
+    modifiedAt: '2023-04-15 15:28:11'
   .prophecy/metadata/sqlmacros/redshift__language_specific_deduplicate_base:
     name: redshift__language_specific_deduplicate_base
     macroType: expression
