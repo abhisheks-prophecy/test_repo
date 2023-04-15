@@ -182,6 +182,7 @@ sqlMacros:
     author: abhisheks+e2etests@prophecy.io
     files:
     - macros/functions/qa_test_relationship_base.sql
+    - macros/functions/functions.yml
     createdAt: '2023-04-13 07:51:46'
     modifiedAt: '2023-04-13 07:51:46'
   .prophecy/metadata/sqlmacros/_round_function_base:
