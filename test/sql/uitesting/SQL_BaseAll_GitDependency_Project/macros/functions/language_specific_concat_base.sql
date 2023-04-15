@@ -1,5 +1,5 @@
 {%- macro language_specific_concat_base() -%}
-  {{ return(adapter.dispatch('language_specific_concat', 'dbt_utils')()) }}
+  {{ return(adapter.dispatch('language_specific_concat_base', 'dbt_utils')()) }}
 {%- endmacro -%}
 
 {% macro default__language_specific_concat_base() %}
