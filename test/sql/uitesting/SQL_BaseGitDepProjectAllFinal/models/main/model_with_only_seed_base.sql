@@ -27,6 +27,12 @@ Join_1 AS (
   INNER JOIN service_classification AS in1
      ON in0.country_code != in1.code_1
 
+),
+
+_qa_all_null_base_1 AS (
+
+  {{ SQL_BaseGitDepProjectAllFinal._qa_all_null_base() }}
+
 )
 
 SELECT *
