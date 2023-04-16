@@ -325,14 +325,6 @@ sqlSeeds:
     - seeds/others/business_financial_data.csv
     createdAt: '2023-04-16 04:42:22'
     modifiedAt: '2023-04-16 04:42:22'
-  .prophecy/metadata/sqlseeds/annual_enterprise:
-    name: annual_enterprise
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - seeds/annual_enterprise.csv
-    createdAt: '2023-04-16 04:41:15'
-    modifiedAt: '2023-04-16 04:41:15'
   .prophecy/metadata/sqlseeds/country_classification:
     name: country_classification
     description: null
