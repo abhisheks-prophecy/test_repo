@@ -1,6 +1,6 @@
 name: SQL_BaseGitDepBasicProjectAllFinal
 description: ''
-version: 0.0.1
+version: 3.0.0-1
 author: null
 language: sql
 buildSystem: ''
@@ -18,62 +18,9 @@ functions:
   udafs: {}
   expressions: {}
 subgraphs: {}
-sqlModels:
-  .prophecy/metadata/sqlmodels/env_uitesting_basic_project_model_1:
-    name: env_uitesting_basic_project_model_1
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - models/basic/env_uitesting_basic_project_model_1.sql
-    sqlDependencies:
-      models: []
-      datasets: []
-    createdAt: '2023-04-17 16:00:05'
-    modifiedAt: '2023-04-17 16:00:05'
-sqlMacros:
-  .prophecy/metadata/sqlmacros/qa_basic_concat_function_base:
-    name: qa_basic_concat_function_base
-    macroType: expression
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - macros/functions/qa_basic_concat_function_base.sql
-    createdAt: '2023-04-17 15:59:02'
-    modifiedAt: '2023-04-17 15:59:02'
-  .prophecy/metadata/sqlmacros/qa_basic_not_null_gem_simple_base:
-    name: qa_basic_not_null_gem_simple_base
-    macroType: query
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - macros/gems/qa_basic_not_null_gem_simple_base.sql
-    createdAt: '2023-04-17 15:59:29'
-    modifiedAt: '2023-04-17 15:59:29'
-sqlSeeds:
-  .prophecy/metadata/sqlseeds/basic_customers:
-    name: basic_customers
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - seeds/basic/basic_customers.csv
-    createdAt: '2023-04-17 15:57:46'
-    modifiedAt: '2023-04-17 15:57:46'
-  .prophecy/metadata/sqlseeds/basic_orders:
-    name: basic_orders
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - seeds/basic/basic_orders.csv
-    createdAt: '2023-04-17 15:58:18'
-    modifiedAt: '2023-04-17 15:58:18'
-  .prophecy/metadata/sqlseeds/basic_payments:
-    name: basic_payments
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - seeds/basic/basic_payments.csv
-    createdAt: '2023-04-17 15:58:03'
-    modifiedAt: '2023-04-17 15:58:03'
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline:
