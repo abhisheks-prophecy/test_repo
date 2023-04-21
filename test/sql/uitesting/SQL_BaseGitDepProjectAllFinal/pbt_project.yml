@@ -25,6 +25,7 @@ sqlModels:
     author: abhisheks+e2etests@prophecy.io
     files:
     - models/main/model_with_only_seed_base.sql
+    - .prophecy/ide/models/model_with_only_seed_base.json
     sqlDependencies:
       models: []
       datasets: []
@@ -47,6 +48,7 @@ sqlMacros:
     author: abhisheks+e2etests@prophecy.io
     files:
     - macros/gems/language_specific_deduplicate_base.sql
+    - .prophecy/ide/macros/language_specific_deduplicate_base.json
     createdAt: '2023-04-16 04:43:50'
     modifiedAt: '2023-04-16 04:43:50'
   .prophecy/metadata/sqlmacros/_qa_concat_string_cols:
@@ -110,6 +112,7 @@ sqlMacros:
     author: abhisheks+e2etests@prophecy.io
     files:
     - macros/gems/qa_test_relationship_base.sql
+    - .prophecy/ide/macros/qa_test_relationship_base.json
     createdAt: '2023-04-16 04:45:11'
     modifiedAt: '2023-04-16 04:45:11'
   .prophecy/metadata/sqlmacros/qa_concat_macro_base_column:
@@ -227,6 +230,7 @@ sqlMacros:
     author: abhisheks+e2etests@prophecy.io
     files:
     - macros/functions/language_specific_concat_base.sql
+    - .prophecy/ide/macros/language_specific_concat_base.json
     createdAt: '2023-04-16 04:43:08'
     modifiedAt: '2023-04-16 04:43:08'
   .prophecy/metadata/sqlmacros/databricks__language_specific_concat_base:
@@ -272,6 +276,7 @@ sqlMacros:
     author: abhisheks+e2etests@prophecy.io
     files:
     - macros/functions/qa_concat_macro_base.sql
+    - .prophecy/ide/macros/qa_concat_macro_base.json
     createdAt: '2023-04-16 04:44:33'
     modifiedAt: '2023-04-16 04:44:33'
   .prophecy/metadata/sqlmacros/_qa_concat_param_type_base:

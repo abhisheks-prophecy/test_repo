@@ -1,0 +1,194 @@
+{
+  "macro_sGXGrsUk" : {
+    "name" : "bigquery__language_specific_deduplicate_base",
+    "macroId" : "macro_sGXGrsUk",
+    "macroType" : "query",
+    "definition" : "\n\n    select unique.*\n    from (\n        select\n            array_agg (\n                original\n                order by {{ order_by }}\n                limit 1\n            )[offset(0)] unique\n        from {{ relation }} original\n        group by {{ partition_by }}\n    )",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "relation",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "partition_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "order_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      } ]
+    },
+    "staleState" : "none"
+  },
+  "macro_jgsljlFk" : {
+    "name" : "language_specific_deduplicate_base",
+    "macroId" : "macro_jgsljlFk",
+    "macroType" : "expression",
+    "definition" : "{{ return(adapter.dispatch('language_specific_deduplicate_base', 'SQL_BaseGitDepProjectAllFinal')(relation, partition_by, order_by)) }}",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "relation",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "partition_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "order_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      } ]
+    },
+    "staleState" : "none"
+  },
+  "macro_AuMYv0zG" : {
+    "name" : "redshift__language_specific_deduplicate_base",
+    "macroId" : "macro_AuMYv0zG",
+    "macroType" : "expression",
+    "definition" : "{{ return(dbt_utils.default__language_specific_deduplicate_base(relation, partition_by, order_by = order_by)) }}",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "relation",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "partition_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "order_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      } ]
+    },
+    "staleState" : "none"
+  },
+  "macro_KtT9iXyj" : {
+    "name" : "postgres__language_specific_deduplicate_base",
+    "macroId" : "macro_KtT9iXyj",
+    "macroType" : "query",
+    "definition" : "\n\n    select\n        distinct on ({{ partition_by }}) *\n    from {{ relation }}\n    order by {{ partition_by }}{{ ',' ~ order_by }}",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "relation",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "partition_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "order_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      } ]
+    },
+    "staleState" : "none"
+  },
+  "macro_R7soXr8K" : {
+    "name" : "default__language_specific_deduplicate_base",
+    "macroId" : "macro_R7soXr8K",
+    "macroType" : "query",
+    "definition" : "\n\n    with row_numbered as (\n        select\n            _inner.*,\n            row_number() over (\n                partition by {{ partition_by }}\n                order by {{ order_by }}\n            ) as rn\n        from {{ relation }} as _inner\n    )\n\n    select\n        distinct data.*\n    from {{ relation }} as data\n    \n    natural join row_numbered\n    where row_numbered.rn = 1",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "relation",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "partition_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "order_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      } ]
+    },
+    "staleState" : "none"
+  },
+  "macro_mEt2lx90" : {
+    "name" : "snowflake__language_specific_deduplicate_base",
+    "macroId" : "macro_mEt2lx90",
+    "macroType" : "query",
+    "definition" : "\n\n    select *\n    from {{ relation }}\n    qualify\n        row_number() over (\n            partition by {{ partition_by }}\n            order by {{ order_by }}\n        ) = 1",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "relation",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "partition_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      }, {
+        "name" : "order_by",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false
+      } ]
+    },
+    "staleState" : "none"
+  }
+}
