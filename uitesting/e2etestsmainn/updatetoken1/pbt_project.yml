@@ -19,8 +19,8 @@ pipelines:
     mode: batch
     artefactID: ''
     language: scala
-    createdAt: '2023-03-30 21:55:26'
-    modifiedAt: '2023-03-30 21:55:59'
+    createdAt: '2023-04-25 16:00:45'
+    modifiedAt: '2023-04-25 16:01:18'
     datasets:
       inputs: []
       outputs: []
@@ -39,6 +39,10 @@ functions:
   expressions: {}
 subgraphs: {}
 sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies: '[]'
 projectDependencies: {}
