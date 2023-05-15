@@ -796,6 +796,20 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1684181980565:
+    name: Workflow-Automated-GITHUB-1684181980565
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-05-15 20:22:01'
+    modifiedAt: '2023-05-15 20:22:28'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
