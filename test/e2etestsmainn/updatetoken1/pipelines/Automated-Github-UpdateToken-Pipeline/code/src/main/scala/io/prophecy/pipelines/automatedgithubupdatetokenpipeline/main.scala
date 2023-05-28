@@ -20,7 +20,7 @@ object Main {
   }
 
   def main(args: Array[String]): Unit = {
-    val config = ConfigurationFactoryImpl.fromCLI(args)
+    val config = ConfigurationFactoryImpl.getConfig(args)
     val spark: SparkSession = SparkSession
       .builder()
       .appName("Prophecy Pipeline")
