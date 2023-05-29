@@ -5,6 +5,7 @@ import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.config.Context
 import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.config._
 import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.udfs.UDFs._
 import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.udfs._
+import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.udfs.PipelineInitCode._
 import io.prophecy.pipelines.automatedgithubupdatetokenpipeline.graph._
 import org.apache.spark._
 import org.apache.spark.sql._
@@ -20,7 +21,7 @@ object Main {
   }
 
   def main(args: Array[String]): Unit = {
-    val config = ConfigurationFactoryImpl.fromCLI(args)
+    val config = ConfigurationFactoryImpl.getConfig(args)
     val spark: SparkSession = SparkSession
       .builder()
       .appName("Prophecy Pipeline")
