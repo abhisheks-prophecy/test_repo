@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "scala",
-    "fabricId" : "6976",
+    "fabricId" : "1654",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -49,8 +49,8 @@
   },
   "connections" : [ ],
   "processes" : {
-    "50w_EnyR92O972V62RtGY$$mxebW1yfMPxmUJQNCaFPk" : {
-      "id" : "50w_EnyR92O972V62RtGY$$mxebW1yfMPxmUJQNCaFPk",
+    "wJXUQg2MkeRUbtvH3QJXY$$sHwD7kz_BieljkDSpCXGM" : {
+      "id" : "wJXUQg2MkeRUbtvH3QJXY$$sHwD7kz_BieljkDSpCXGM",
       "component" : "Script",
       "metadata" : {
         "label" : "Script_0",
@@ -64,11 +64,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "ZMAARjWF4OHVGLumBYKHO$$CY47UEJq5NpraC9lniKk_",
+          "id" : "nInETBNSKM6NZinxaLZ6Q$$NU7SYXbUVHg04_AQMw5is",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "PbolXyx9idDQKbLUoJ1wc$$9_2CTICfN0EUhM73xCfQE",
+          "id" : "H9zQ8AFzNjTIEzhDT-hF6$$iZe0kYNyYvJZJPt3DbkFG",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ],
@@ -88,7 +88,7 @@
     "isCustomOutputSchema" : false
   },
   "diagnostics" : [ {
-    "property" : "$.workflow.processes.50w_EnyR92O972V62RtGY$$mxebW1yfMPxmUJQNCaFPk",
+    "property" : "$.workflow.processes.wJXUQg2MkeRUbtvH3QJXY$$sHwD7kz_BieljkDSpCXGM",
     "range" : {
       "start" : {
         "line" : 0,
@@ -104,7 +104,7 @@
     "tags" : [ ],
     "relatedInformation" : [ ]
   }, {
-    "property" : "$.workflow.processes.50w_EnyR92O972V62RtGY$$mxebW1yfMPxmUJQNCaFPk.properties.script",
+    "property" : "$.workflow.processes.wJXUQg2MkeRUbtvH3QJXY$$sHwD7kz_BieljkDSpCXGM.properties.script",
     "range" : {
       "start" : {
         "line" : 0,
