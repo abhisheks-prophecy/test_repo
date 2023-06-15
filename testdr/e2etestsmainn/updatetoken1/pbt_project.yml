@@ -1,0 +1,49 @@
+name: Automated-GITHUB-UPDATETOKEN
+description: Project name Automated-GITHUB-UPDATETOKEN
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: automatedgithubupdatetoken
+  parentArtefactID: abhishekse2etestsprophecy.io_team
+  buildSystem: maven
+  author: null
+  createdAt: '2023-06-15 11:04:45'
+  modifiedAt: '2023-06-15 11:04:45'
+pipelines:
+  pipelines/Automated-Github-UpdateToken-Pipeline:
+    name: Automated-Github-UpdateToken-Pipeline
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-06-15 11:05:23'
+    modifiedAt: '2023-06-15 11:05:50'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+functions:
+  author: null
+  createdAt: '2023-06-15 11:04:45'
+  modifiedAt: '2023-06-15 11:04:45'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}
