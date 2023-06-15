@@ -19,8 +19,8 @@ pipelines:
     mode: batch
     artefactID: ''
     language: scala
-    createdAt: '2023-06-12 21:04:09'
-    modifiedAt: '2023-06-12 21:04:35'
+    createdAt: '2023-06-15 01:04:33'
+    modifiedAt: '2023-06-15 01:04:57'
     datasets:
       inputs: []
       outputs: []
