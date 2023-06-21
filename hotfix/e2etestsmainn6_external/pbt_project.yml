@@ -1,0 +1,46 @@
+name: Project-Automated-GITHUB
+description: Project name Project-Automated-GITHUB
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomatedgithub
+  parentArtefactID: abhishekse2etestsprophecy.io_team
+  buildSystem: maven
+  author: null
+  createdAt: '2023-06-21 00:03:16'
+pipelines:
+  pipelines/Workflow-Automated-GITHUB-1687305717645:
+    name: Workflow-Automated-GITHUB-1687305717645
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-06-21 00:03:16'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+functions:
+  author: null
+  createdAt: '2023-06-21 00:03:16'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}
