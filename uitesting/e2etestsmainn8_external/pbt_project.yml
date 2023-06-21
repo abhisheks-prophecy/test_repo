@@ -10,7 +10,6 @@ buildSystemDetails:
   buildSystem: maven
   author: null
   createdAt: '2023-03-14 02:22:30'
-  modifiedAt: '2023-03-14 02:22:30'
 pipelines:
   pipelines/Workflow-Automated-ROLLBACK-1673095143989:
     name: Workflow-Automated-ROLLBACK-1673095143989
@@ -20,7 +19,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-07 12:39:49'
-    modifiedAt: '2023-01-07 12:39:49'
     datasets:
       inputs: []
       outputs: []
@@ -34,7 +32,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-13 11:43:18'
-    modifiedAt: '2023-01-13 11:43:18'
     datasets:
       inputs: []
       outputs: []
@@ -48,7 +45,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-06 14:09:25'
-    modifiedAt: '2023-01-06 14:09:25'
     datasets:
       inputs: []
       outputs: []
@@ -62,7 +58,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-17 10:11:05'
-    modifiedAt: '2023-01-17 10:11:05'
     datasets:
       inputs: []
       outputs: []
@@ -76,7 +71,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2022-12-10 05:41:34'
-    modifiedAt: '2022-12-10 05:41:34'
     datasets:
       inputs: []
       outputs: []
@@ -90,7 +84,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-06 10:38:37'
-    modifiedAt: '2023-01-06 10:38:37'
     datasets:
       inputs: []
       outputs: []
@@ -104,7 +97,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2022-12-11 07:22:14'
-    modifiedAt: '2022-12-11 07:22:14'
     datasets:
       inputs: []
       outputs: []
@@ -118,7 +110,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-06 14:12:34'
-    modifiedAt: '2023-01-06 14:12:34'
     datasets:
       inputs: []
       outputs: []
@@ -132,7 +123,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-09 11:22:46'
-    modifiedAt: '2023-01-09 11:22:46'
     datasets:
       inputs: []
       outputs: []
@@ -146,7 +136,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-07 08:17:45'
-    modifiedAt: '2023-01-07 08:17:45'
     datasets:
       inputs: []
       outputs: []
@@ -160,7 +149,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2022-12-08 11:55:29'
-    modifiedAt: '2022-12-08 11:55:29'
     datasets:
       inputs: []
       outputs: []
@@ -174,7 +162,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-18 18:47:45'
-    modifiedAt: '2023-01-18 18:47:45'
     datasets:
       inputs: []
       outputs: []
@@ -188,7 +175,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-18 22:13:34'
-    modifiedAt: '2023-01-18 22:13:34'
     datasets:
       inputs: []
       outputs: []
@@ -202,7 +188,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-20 18:54:42'
-    modifiedAt: '2023-01-20 18:54:42'
     datasets:
       inputs: []
       outputs: []
@@ -216,7 +201,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-20 22:32:06'
-    modifiedAt: '2023-01-20 22:32:06'
     datasets:
       inputs: []
       outputs: []
@@ -230,7 +214,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-25 03:42:39'
-    modifiedAt: '2023-01-25 03:42:39'
     datasets:
       inputs: []
       outputs: []
@@ -244,7 +227,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-01-25 12:16:40'
-    modifiedAt: '2023-01-25 12:16:40'
     datasets:
       inputs: []
       outputs: []
@@ -258,7 +240,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-02 08:19:32'
-    modifiedAt: '2023-02-02 08:19:32'
     datasets:
       inputs: []
       outputs: []
@@ -272,7 +253,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-02 20:21:41'
-    modifiedAt: '2023-02-02 20:21:41'
     datasets:
       inputs: []
       outputs: []
@@ -286,7 +266,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-02 20:24:54'
-    modifiedAt: '2023-02-02 20:24:54'
     datasets:
       inputs: []
       outputs: []
@@ -300,7 +279,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-06 04:47:31'
-    modifiedAt: '2023-02-06 04:47:31'
     datasets:
       inputs: []
       outputs: []
@@ -314,7 +292,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-06 13:47:37'
-    modifiedAt: '2023-02-06 13:47:37'
     datasets:
       inputs: []
       outputs: []
@@ -328,7 +305,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-08 20:17:52'
-    modifiedAt: '2023-02-08 20:17:52'
     datasets:
       inputs: []
       outputs: []
@@ -342,7 +318,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-08 20:23:26'
-    modifiedAt: '2023-02-08 20:23:26'
     datasets:
       inputs: []
       outputs: []
@@ -356,7 +331,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-09 09:25:08'
-    modifiedAt: '2023-02-09 09:25:08'
     datasets:
       inputs: []
       outputs: []
@@ -370,7 +344,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-11 15:01:32'
-    modifiedAt: '2023-02-11 15:01:32'
     datasets:
       inputs: []
       outputs: []
@@ -384,7 +357,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-13 22:27:02'
-    modifiedAt: '2023-02-13 22:27:02'
     datasets:
       inputs: []
       outputs: []
@@ -398,7 +370,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-14 06:43:07'
-    modifiedAt: '2023-02-14 06:43:07'
     datasets:
       inputs: []
       outputs: []
@@ -412,7 +383,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-14 20:35:40'
-    modifiedAt: '2023-02-14 20:35:40'
     datasets:
       inputs: []
       outputs: []
@@ -426,7 +396,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-15 13:55:37'
-    modifiedAt: '2023-02-15 13:55:37'
     datasets:
       inputs: []
       outputs: []
@@ -440,7 +409,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-15 13:59:58'
-    modifiedAt: '2023-02-15 13:59:58'
     datasets:
       inputs: []
       outputs: []
@@ -454,7 +422,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-27 11:31:21'
-    modifiedAt: '2023-02-27 11:32:24'
     datasets:
       inputs: []
       outputs: []
@@ -468,7 +435,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-27 11:35:25'
-    modifiedAt: '2023-02-27 11:35:59'
     datasets:
       inputs: []
       outputs: []
@@ -482,7 +448,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-27 21:03:47'
-    modifiedAt: '2023-02-27 21:04:19'
     datasets:
       inputs: []
       outputs: []
@@ -496,7 +461,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-02-28 19:32:14'
-    modifiedAt: '2023-02-28 19:32:33'
     datasets:
       inputs: []
       outputs: []
@@ -510,7 +474,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-01 20:22:31'
-    modifiedAt: '2023-03-01 20:22:52'
     datasets:
       inputs: []
       outputs: []
@@ -524,7 +487,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-01 20:26:06'
-    modifiedAt: '2023-03-01 20:26:26'
     datasets:
       inputs: []
       outputs: []
@@ -538,7 +500,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-14 02:22:30'
-    modifiedAt: '2023-03-14 02:23:31'
     datasets:
       inputs: []
       outputs: []
@@ -552,7 +513,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-14 02:25:46'
-    modifiedAt: '2023-03-14 02:26:45'
     datasets:
       inputs: []
       outputs: []
@@ -566,7 +526,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-14 02:28:48'
-    modifiedAt: '2023-03-14 02:29:48'
     datasets:
       inputs: []
       outputs: []
@@ -580,7 +539,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-14 21:06:52'
-    modifiedAt: '2023-03-14 21:08:01'
     datasets:
       inputs: []
       outputs: []
@@ -594,7 +552,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-14 21:10:08'
-    modifiedAt: '2023-03-14 21:11:04'
     datasets:
       inputs: []
       outputs: []
@@ -608,7 +565,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-19 20:48:11'
-    modifiedAt: '2023-03-19 20:49:10'
     datasets:
       inputs: []
       outputs: []
@@ -622,7 +578,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-19 20:51:04'
-    modifiedAt: '2023-03-19 20:52:20'
     datasets:
       inputs: []
       outputs: []
@@ -636,7 +591,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-19 20:53:57'
-    modifiedAt: '2023-03-19 20:55:11'
     datasets:
       inputs: []
       outputs: []
@@ -650,7 +604,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-28 20:59:36'
-    modifiedAt: '2023-03-28 21:00:39'
     datasets:
       inputs: []
       outputs: []
@@ -664,7 +617,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-28 21:02:28'
-    modifiedAt: '2023-03-28 21:03:44'
     datasets:
       inputs: []
       outputs: []
@@ -678,7 +630,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-03-30 21:46:29'
-    modifiedAt: '2023-03-30 21:47:15'
     datasets:
       inputs: []
       outputs: []
@@ -692,7 +643,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-04-17 20:25:49'
-    modifiedAt: '2023-04-17 20:26:55'
     datasets:
       inputs: []
       outputs: []
@@ -706,7 +656,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-04-18 22:53:03'
-    modifiedAt: '2023-04-18 22:53:53'
     datasets:
       inputs: []
       outputs: []
@@ -720,7 +669,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-04-18 22:55:52'
-    modifiedAt: '2023-04-18 22:56:34'
     datasets:
       inputs: []
       outputs: []
@@ -734,7 +682,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-04-18 22:58:25'
-    modifiedAt: '2023-04-18 22:59:33'
     datasets:
       inputs: []
       outputs: []
@@ -748,7 +695,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-04-23 08:39:42'
-    modifiedAt: '2023-04-23 08:40:38'
     datasets:
       inputs: []
       outputs: []
@@ -762,7 +708,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-04-23 20:13:02'
-    modifiedAt: '2023-04-23 20:14:04'
     datasets:
       inputs: []
       outputs: []
@@ -776,7 +721,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-04-23 20:16:18'
-    modifiedAt: '2023-04-23 20:17:12'
     datasets:
       inputs: []
       outputs: []
@@ -790,7 +734,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-04-24 21:21:54'
-    modifiedAt: '2023-04-24 21:22:27'
     datasets:
       inputs: []
       outputs: []
@@ -804,7 +747,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-04-24 21:26:29'
-    modifiedAt: '2023-04-24 21:26:48'
     datasets:
       inputs: []
       outputs: []
@@ -818,7 +760,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-04-25 06:52:41'
-    modifiedAt: '2023-04-25 06:53:12'
     datasets:
       inputs: []
       outputs: []
@@ -832,7 +773,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-08 20:50:47'
-    modifiedAt: '2023-05-08 20:51:17'
     datasets:
       inputs: []
       outputs: []
@@ -846,7 +786,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-08 20:53:43'
-    modifiedAt: '2023-05-08 20:54:21'
     datasets:
       inputs: []
       outputs: []
@@ -860,7 +799,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-08 20:57:55'
-    modifiedAt: '2023-05-08 20:58:27'
     datasets:
       inputs: []
       outputs: []
@@ -874,7 +812,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-15 20:33:20'
-    modifiedAt: '2023-05-15 20:33:43'
     datasets:
       inputs: []
       outputs: []
@@ -888,7 +825,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-15 23:50:47'
-    modifiedAt: '2023-05-15 23:51:21'
     datasets:
       inputs: []
       outputs: []
@@ -902,7 +838,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-16 21:24:31'
-    modifiedAt: '2023-05-16 21:24:57'
     datasets:
       inputs: []
       outputs: []
@@ -916,7 +851,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-16 21:28:38'
-    modifiedAt: '2023-05-16 21:28:58'
     datasets:
       inputs: []
       outputs: []
@@ -930,7 +864,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-17 21:57:50'
-    modifiedAt: '2023-05-17 21:58:14'
     datasets:
       inputs: []
       outputs: []
@@ -944,7 +877,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-17 22:01:31'
-    modifiedAt: '2023-05-17 22:02:16'
     datasets:
       inputs: []
       outputs: []
@@ -958,7 +890,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-17 22:04:36'
-    modifiedAt: '2023-05-17 22:05:02'
     datasets:
       inputs: []
       outputs: []
@@ -972,7 +903,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-18 21:32:00'
-    modifiedAt: '2023-05-18 21:32:30'
     datasets:
       inputs: []
       outputs: []
@@ -986,7 +916,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-18 21:35:55'
-    modifiedAt: '2023-05-18 21:36:34'
     datasets:
       inputs: []
       outputs: []
@@ -1000,7 +929,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-18 21:40:08'
-    modifiedAt: '2023-05-18 21:40:30'
     datasets:
       inputs: []
       outputs: []
@@ -1014,7 +942,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-29 22:16:31'
-    modifiedAt: '2023-05-29 22:16:53'
     datasets:
       inputs: []
       outputs: []
@@ -1028,7 +955,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-29 22:20:16'
-    modifiedAt: '2023-05-29 22:20:39'
     datasets:
       inputs: []
       outputs: []
@@ -1042,7 +968,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-30 02:40:15'
-    modifiedAt: '2023-05-30 02:41:03'
     datasets:
       inputs: []
       outputs: []
@@ -1056,7 +981,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-05-30 21:24:43'
-    modifiedAt: '2023-05-30 21:25:15'
     datasets:
       inputs: []
       outputs: []
@@ -1070,7 +994,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-01 21:37:04'
-    modifiedAt: '2023-06-01 21:37:27'
     datasets:
       inputs: []
       outputs: []
@@ -1084,7 +1007,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-12 20:46:28'
-    modifiedAt: '2023-06-12 20:46:48'
     datasets:
       inputs: []
       outputs: []
@@ -1098,7 +1020,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-15 00:45:08'
-    modifiedAt: '2023-06-15 00:45:54'
     datasets:
       inputs: []
       outputs: []
@@ -1112,7 +1033,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-15 21:50:35'
-    modifiedAt: '2023-06-15 21:50:56'
     datasets:
       inputs: []
       outputs: []
@@ -1126,7 +1046,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-15 21:55:22'
-    modifiedAt: '2023-06-15 21:56:01'
     datasets:
       inputs: []
       outputs: []
@@ -1140,7 +1059,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-16 21:53:13'
-    modifiedAt: '2023-06-16 21:53:41'
     datasets:
       inputs: []
       outputs: []
@@ -1154,7 +1072,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-16 21:57:36'
-    modifiedAt: '2023-06-16 21:58:08'
     datasets:
       inputs: []
       outputs: []
@@ -1168,7 +1085,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-20 08:26:26'
-    modifiedAt: '2023-06-20 08:27:04'
     datasets:
       inputs: []
       outputs: []
@@ -1182,7 +1098,19 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-20 08:31:52'
-    modifiedAt: '2023-06-20 08:32:40'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/Workflow-Automated-ROLLBACK-1687369389277:
+    name: Workflow-Automated-ROLLBACK-1687369389277
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-06-21 17:44:13'
     datasets:
       inputs: []
       outputs: []
@@ -1194,7 +1122,6 @@ jobs: {}
 functions:
   author: null
   createdAt: '2023-03-14 02:22:30'
-  modifiedAt: '2023-03-14 02:22:36'
   gems: {}
   udfs: {}
   udafs: {}
