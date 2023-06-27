@@ -11,3 +11,7 @@
 *** Release notes for version: 1.11 ***
 
 1.11
+
+*** Release notes for version: 1.12 ***
+
+1.12
