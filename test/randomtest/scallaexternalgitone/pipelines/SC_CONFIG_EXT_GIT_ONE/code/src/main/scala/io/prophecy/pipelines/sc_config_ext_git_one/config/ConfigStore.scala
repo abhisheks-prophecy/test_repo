@@ -1,6 +1,5 @@
 package io.prophecy.pipelines.sc_config_ext_git_one.config
 
-import io.prophecy.pipelines.sc_config_ext_git_one.config.ConfigStore._
 import io.prophecy.pipelines.sc_config_ext_git_one.config.Context
 import pureconfig.ConfigReader.Result
 import pureconfig._

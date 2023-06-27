@@ -2,6 +2,7 @@ package io.prophecy.pipelines.sc_config_ext_git_one.graph.Subgraph_1
 
 import com.holdenkarau.spark.testing.DataFrameSuiteBase
 import io.prophecy.pipelines.sc_config_ext_git_one.config._
+import io.prophecy.libs.registerAllUDFs
 import io.prophecy.libs.SparkTestingUtils._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.{Column, DataFrame}
@@ -37,8 +38,11 @@ class Reformat_2Test extends FunSuite with DataFrameSuiteBase {
     )
 
     val dfOutComputed =
-      io.prophecy.pipelines.sc_config_ext_git_one.graph.Subgraph_1
-        .Reformat_2(context, dfIn)
+      io.prophecy.pipelines.sc_config_ext_git_one.graph.Subgraph_1.Reformat_2(
+        io.prophecy.pipelines.sc_config_ext_git_one.graph.Subgraph_1.config
+          .Context(context.spark, context.config.Subgraph_1),
+        dfIn
+      )
     val res = assertDFEquals(
       dfOut.select("c   short  --",
                    "c-int-column type",
@@ -72,6 +76,7 @@ class Reformat_2Test extends FunSuite with DataFrameSuiteBase {
   override def beforeAll() = {
     super.beforeAll()
     spark.conf.set("spark.sql.legacy.allowUntypedScalaUDF", "true")
+    registerAllUDFs(spark)
 
     val fabricName = System.getProperty("fabric")
 

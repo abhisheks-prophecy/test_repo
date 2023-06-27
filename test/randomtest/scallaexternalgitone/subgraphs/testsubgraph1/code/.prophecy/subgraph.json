@@ -9,22 +9,104 @@
     "phase" : 0,
     "cache" : false,
     "detailedStats" : false,
-    "isImported" : false
+    "isImported" : false,
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "c_string",
+          "kind" : {
+            "type" : "string",
+            "value" : "stringhoonmain#@!%^&*2asda"
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false
+        }, {
+          "name" : "c_int",
+          "kind" : {
+            "type" : "int",
+            "value" : -12312
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false
+        }, {
+          "name" : "c_float",
+          "kind" : {
+            "type" : "float",
+            "value" : 231.12312
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false
+        }, {
+          "name" : "c_double",
+          "kind" : {
+            "type" : "double",
+            "value" : 423423432412
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false
+        }, {
+          "name" : "c_short",
+          "kind" : {
+            "type" : "short",
+            "value" : 123
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false
+        }, {
+          "name" : "c_databricks_secrets",
+          "kind" : {
+            "type" : "databricks_secret",
+            "value" : "qasecrets_mysql:username"
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false
+        }, {
+          "name" : "c_spark_expression",
+          "kind" : {
+            "type" : "spark_expression",
+            "value" : "concat(`c  date`, `c  float`)"
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false
+        }, {
+          "name" : "c_boolean",
+          "kind" : {
+            "type" : "boolean",
+            "value" : false
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false
+        }, {
+          "name" : "c-ancient-config",
+          "kind" : {
+            "type" : "string",
+            "value" : "arent i"
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false
+        } ]
+      }
+    }
   },
   "ports" : {
     "inputs" : [ {
       "id" : "fEcsJEfkL3OC56ihzUner",
-      "slug" : "in0"
+      "slug" : "in0",
+      "isStreaming" : false
     }, {
       "id" : "HApavll30LwNR-SnuWqra",
-      "slug" : "in1"
+      "slug" : "in1",
+      "isStreaming" : false
     } ],
     "outputs" : [ {
       "id" : "K_XPAPPaj0-GWi3ta3G4N",
-      "slug" : "out0"
+      "slug" : "out0",
+      "isStreaming" : false
     }, {
       "id" : "6pa602eHFInnZGrJtBTOR",
-      "slug" : "out1"
+      "slug" : "out1",
+      "isStreaming" : false
     } ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false
@@ -610,5 +692,6 @@
         "language" : "scala"
       }
     }
-  }
+  },
+  "externalDependencies" : [ ]
 }

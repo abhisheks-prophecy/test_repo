@@ -1,13 +1,15 @@
-package io.prophecy.pipelines.sc_config_ext_git_one.config
+package io.prophecy.pipelines.sc_config_ext_git_one.graph.Subgraph_1.config
 
+import io.prophecy.libs._
 import pureconfig._
 import pureconfig.generic.ProductHint
-import io.prophecy.libs._
-import io.prophecy.pipelines.sc_config_ext_git_one.graph.Subgraph_1.config.{
-  Config => Subgraph_1_Config
-}
-import io.prophecy.pipelines.sc_config_ext_git_one.graph.testsubgraphmain1_1.config.{
-  Config => testsubgraphmain1_1_Config
+import org.apache.spark.sql.SparkSession
+
+object Config {
+
+  implicit val confHint: ProductHint[Config] =
+    ProductHint[Config](ConfigFieldMapping(CamelCase, CamelCase))
+
 }
 
 case class Config(
@@ -18,11 +20,9 @@ case class Config(
   c_short:  Short = 123,
   c_databricks_secrets: DatabricksSecret =
     DatabricksSecret(scope = "qasecrets_mysql", key = "username"),
-  c_spark_expression:  String = "concat(`c  date`, `c  float`)",
-  c_boolean:           Boolean = false,
-  `c-ancient-config`:  String = "arent i",
-  Subgraph_1:          Subgraph_1_Config = Subgraph_1_Config(),
-  testsubgraphmain1_1: testsubgraphmain1_1_Config = testsubgraphmain1_1_Config()
+  c_spark_expression: String = "concat(`c  date`, `c  float`)",
+  c_boolean:          Boolean = false,
+  `c-ancient-config`: String = "arent i"
 ) extends ConfigBase
 
 object DatabricksSecret {
@@ -43,3 +43,5 @@ case class DatabricksSecret(scope: String, key: String) {
   }
 
 }
+
+case class Context(spark: SparkSession, config: Config)
