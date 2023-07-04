@@ -10,7 +10,6 @@ buildSystemDetails:
   buildSystem: maven
   author: null
   createdAt: '2023-04-01 09:19:46'
-  modifiedAt: '2023-04-01 09:19:46'
 pipelines:
   pipelines/Automated-Github-UpdateToken-Pipeline:
     name: Automated-Github-UpdateToken-Pipeline
@@ -19,8 +18,7 @@ pipelines:
     mode: batch
     artefactID: ''
     language: scala
-    createdAt: '2023-06-11 19:56:36'
-    modifiedAt: '2023-06-11 19:57:03'
+    createdAt: '2023-07-04 10:44:04'
     datasets:
       inputs: []
       outputs: []
@@ -32,7 +30,6 @@ jobs: {}
 functions:
   author: null
   createdAt: '2023-04-01 09:19:46'
-  modifiedAt: '2023-04-01 09:19:46'
   gems: {}
   udfs: {}
   udafs: {}
