@@ -10,7 +10,6 @@ buildSystemDetails:
   buildSystem: maven
   author: null
   createdAt: '2023-06-13 01:33:09'
-  modifiedAt: '2023-06-13 01:33:09'
 pipelines:
   pipelines/Workflow-Automated-ROLLBACK-1686619917919:
     name: Workflow-Automated-ROLLBACK-1686619917919
@@ -20,7 +19,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-13 01:33:09'
-    modifiedAt: '2023-06-13 01:33:29'
     datasets:
       inputs: []
       outputs: []
@@ -34,7 +32,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-13 01:36:17'
-    modifiedAt: '2023-06-13 01:36:42'
     datasets:
       inputs: []
       outputs: []
@@ -48,7 +45,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-13 01:41:14'
-    modifiedAt: '2023-06-13 01:41:39'
     datasets:
       inputs: []
       outputs: []
@@ -62,7 +58,6 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-15 10:45:54'
-    modifiedAt: '2023-06-15 10:46:20'
     datasets:
       inputs: []
       outputs: []
@@ -76,7 +71,19 @@ pipelines:
     artefactID: ''
     language: scala
     createdAt: '2023-06-15 10:49:44'
-    modifiedAt: '2023-06-15 10:50:10'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+  pipelines/Workflow-Automated-ROLLBACK-1688584834335:
+    name: Workflow-Automated-ROLLBACK-1688584834335
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-07-05 19:21:29'
     datasets:
       inputs: []
       outputs: []
@@ -88,7 +95,6 @@ jobs: {}
 functions:
   author: null
   createdAt: '2023-06-13 01:33:09'
-  modifiedAt: '2023-06-13 01:33:09'
   gems: {}
   udfs: {}
   udafs: {}
