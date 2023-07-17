@@ -35,9 +35,17 @@ object Main {
                    "pipelines/Automated-Github-UpdateToken-Pipeline"
     )
     registerUDFs(spark)
-    MetricsCollector.start(spark,
-                           "pipelines/Automated-Github-UpdateToken-Pipeline"
+    try MetricsCollector.start(
+      spark,
+      "pipelines/Automated-Github-UpdateToken-Pipeline",
+      context.config
     )
+    catch {
+      case _: Throwable =>
+        MetricsCollector.start(spark,
+                               "pipelines/Automated-Github-UpdateToken-Pipeline"
+        )
+    }
     apply(context)
     MetricsCollector.end(spark)
   }
