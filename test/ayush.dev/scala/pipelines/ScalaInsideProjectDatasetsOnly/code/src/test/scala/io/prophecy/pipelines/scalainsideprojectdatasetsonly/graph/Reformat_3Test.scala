@@ -2,6 +2,7 @@ package io.prophecy.pipelines.scalainsideprojectdatasetsonly.graph
 
 import com.holdenkarau.spark.testing.DataFrameSuiteBase
 import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config._
+import io.prophecy.libs.registerAllUDFs
 import io.prophecy.libs.SparkTestingUtils._
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.{Column, DataFrame}
@@ -19,6 +20,7 @@ import java.math.BigDecimal
 @RunWith(classOf[JUnitRunner])
 class Reformat_3Test extends FunSuite with DataFrameSuiteBase {
   import sqlContext.implicits._
+  var context: Context = null
 
   test("Unit Test 0") {
 
@@ -37,7 +39,7 @@ class Reformat_3Test extends FunSuite with DataFrameSuiteBase {
 
     val dfOutComputed =
       io.prophecy.pipelines.scalainsideprojectdatasetsonly.graph
-        .Reformat_3(spark, dfIn)
+        .Reformat_3(context, dfIn)
     val res = assertDFEquals(dfOut.select("p_short", "p_int"),
                              dfOutComputed.select("p_short", "p_int"),
                              maxUnequalRowsToShow,
@@ -50,14 +52,17 @@ class Reformat_3Test extends FunSuite with DataFrameSuiteBase {
   override def beforeAll() = {
     super.beforeAll()
     spark.conf.set("spark.sql.legacy.allowUntypedScalaUDF", "true")
+    registerAllUDFs(spark)
 
     val fabricName = System.getProperty("fabric")
 
-    ConfigStore.Config = ConfigurationFactoryImpl.fromCLI(
+    val config = ConfigurationFactoryImpl.getConfig(
       Array("--confFile",
             getClass.getResource(s"/config/${fabricName}.json").getPath
       )
     )
+
+    context = Context(spark, config)
 
     val dfProphecy_pipelines_scalainsideprojectdatasetsonly_graph_Lookup_1 =
       createDfFromResourceFiles(
@@ -67,7 +72,7 @@ class Reformat_3Test extends FunSuite with DataFrameSuiteBase {
         port = "in"
       )
     io.prophecy.pipelines.scalainsideprojectdatasetsonly.graph.Lookup_1(
-      spark,
+      context,
       dfProphecy_pipelines_scalainsideprojectdatasetsonly_graph_Lookup_1
     )
   }

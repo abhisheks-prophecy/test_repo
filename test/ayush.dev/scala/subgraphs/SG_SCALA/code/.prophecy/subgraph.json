@@ -9,16 +9,150 @@
     "phase" : 0,
     "cache" : false,
     "detailedStats" : false,
-    "isImported" : false
+    "isImported" : false,
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "c_config_str",
+          "kind" : {
+            "type" : "string",
+            "value" : "test value"
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_config_boolean",
+          "kind" : {
+            "type" : "boolean",
+            "value" : true
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_config_float",
+          "kind" : {
+            "type" : "float",
+            "value" : 10.2
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_config_int",
+          "kind" : {
+            "type" : "int",
+            "value" : 12
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "Subgraph_2",
+          "kind" : {
+            "type" : "record",
+            "fields" : [ {
+              "name" : "c_config_str",
+              "kind" : {
+                "type" : "string",
+                "value" : "test value"
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            }, {
+              "name" : "c_config_boolean",
+              "kind" : {
+                "type" : "boolean",
+                "value" : true
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            }, {
+              "name" : "c_config_float",
+              "kind" : {
+                "type" : "float",
+                "value" : 10.2
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            }, {
+              "name" : "c_config_int",
+              "kind" : {
+                "type" : "int",
+                "value" : 12
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            }, {
+              "name" : "Subgraph_3",
+              "kind" : {
+                "type" : "record",
+                "fields" : [ {
+                  "name" : "c_config_str",
+                  "kind" : {
+                    "type" : "string",
+                    "value" : "test value"
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                }, {
+                  "name" : "c_config_boolean",
+                  "kind" : {
+                    "type" : "boolean",
+                    "value" : true
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                }, {
+                  "name" : "c_config_float",
+                  "kind" : {
+                    "type" : "float",
+                    "value" : 10.2
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                }, {
+                  "name" : "c_config_int",
+                  "kind" : {
+                    "type" : "int",
+                    "value" : 12
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                } ]
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : true,
+              "isReferenced" : false
+            } ]
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : true,
+          "isReferenced" : false
+        } ]
+      }
+    }
   },
   "ports" : {
     "inputs" : [ {
       "id" : "roeqYJR6CR8mC16Pf8afb",
-      "slug" : "in0"
+      "slug" : "in0",
+      "isStreaming" : false
     } ],
     "outputs" : [ {
       "id" : "Tns5GUU6AxLw04_0Kgu4w",
-      "slug" : "out0"
+      "slug" : "out0",
+      "isStreaming" : false
     } ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false
@@ -229,5 +363,13 @@
         "expressions" : [ ]
       }
     }
-  }
+  },
+  "externalDependencies" : [ {
+    "type" : "coordinates",
+    "coordinates" : "mysql:mysql-connector-java:8.0.29",
+    "name" : "mysql",
+    "enabled" : false,
+    "id" : "4Z206",
+    "exclusions" : [ ]
+  } ]
 }

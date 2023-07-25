@@ -1,9 +1,9 @@
 package io.prophecy.pipelines.scalainsideprojectdatasetsonly.graph
 
 import io.prophecy.libs._
-import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config.ConfigStore._
+import io.prophecy.pipelines.scalainsideprojectdatasetsonly.udfs.PipelineInitCode._
 import io.prophecy.pipelines.scalainsideprojectdatasetsonly.udfs.UDFs._
-import io.prophecy.pipelines.scalainsideprojectdatasetsonly.udfs._
+import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config.Context
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._
@@ -13,7 +13,7 @@ import java.time._
 
 object Reformat_3 {
 
-  def apply(spark: SparkSession, in: DataFrame): DataFrame =
+  def apply(context: Context, in: DataFrame): DataFrame =
     in.select(
       col("p_short"),
       col("p_int"),

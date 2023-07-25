@@ -7,10 +7,10 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql._
 
 object UDFs extends Serializable {
-  var int_val = 2
 
   def registerUDFs(spark: SparkSession) =
-    spark.udf.register("intudf", intudf)
+    registerAllUDFs(spark)
 
-  def intudf = udf((value: Int) => value * value / int_val)
 }
+
+object PipelineInitCode extends Serializable { var int_val = 2 }

@@ -1,9 +1,9 @@
 package io.prophecy.pipelines.scalainsideprojectdatasetsonly.graph
 
 import io.prophecy.libs._
-import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config.ConfigStore._
+import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config.Context
 import io.prophecy.pipelines.scalainsideprojectdatasetsonly.udfs.UDFs._
-import io.prophecy.pipelines.scalainsideprojectdatasetsonly.udfs._
+import io.prophecy.pipelines.scalainsideprojectdatasetsonly.udfs.PipelineInitCode._
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._
@@ -13,10 +13,10 @@ import java.time._
 
 object Lookup_1 {
 
-  def apply(spark: SparkSession, in0: DataFrame): Unit =
+  def apply(context: Context, in0: DataFrame): Unit =
     createLookup("LookupMain",
                  in0,
-                 spark,
+                 context.spark,
                  List("c_short", "c_int"),
                  "c_decimal",
                  "c_string"

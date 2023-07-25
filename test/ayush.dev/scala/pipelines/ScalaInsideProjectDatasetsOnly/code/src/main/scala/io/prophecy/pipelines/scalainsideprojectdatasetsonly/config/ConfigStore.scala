@@ -1,12 +1,12 @@
 package io.prophecy.pipelines.scalainsideprojectdatasetsonly.config
 
-import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config.ConfigStore._
+import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config.Context
 import pureconfig.ConfigReader.Result
 import pureconfig._
 import pureconfig.generic.ProductHint
 import pureconfig.generic.auto._
 import io.prophecy.libs._
-object ConfigStore { implicit var Config: Config = _ }
+object ConfigStore
 
 object ConfigurationFactoryImpl extends ConfigurationFactory[Config] {
 
@@ -17,5 +17,8 @@ object ConfigurationFactoryImpl extends ConfigurationFactory[Config] {
       ProductHint[Config](ConfigFieldMapping(CamelCase, CamelCase))
     fileConfig.load[Config]
   }
+
+  def getConfig(args: Array[String]) =
+    fromCLI(args)
 
 }

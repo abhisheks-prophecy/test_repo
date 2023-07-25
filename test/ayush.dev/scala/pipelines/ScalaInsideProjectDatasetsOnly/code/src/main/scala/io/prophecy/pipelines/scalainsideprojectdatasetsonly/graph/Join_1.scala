@@ -1,9 +1,9 @@
 package io.prophecy.pipelines.scalainsideprojectdatasetsonly.graph
 
 import io.prophecy.libs._
-import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config.ConfigStore._
+import io.prophecy.pipelines.scalainsideprojectdatasetsonly.udfs.PipelineInitCode._
 import io.prophecy.pipelines.scalainsideprojectdatasetsonly.udfs.UDFs._
-import io.prophecy.pipelines.scalainsideprojectdatasetsonly.udfs._
+import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config.Context
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._
@@ -13,7 +13,7 @@ import java.time._
 
 object Join_1 {
 
-  def apply(spark: SparkSession, in0: DataFrame, in1: DataFrame): DataFrame =
+  def apply(context: Context, in0: DataFrame, in1: DataFrame): DataFrame =
     in0
       .as("in0")
       .join(in1.as("in1"), col("in0.p_short") === col("in1.p_short"), "inner")

@@ -1,3 +1,21 @@
 {
-  "c_config_str" : "testvalue1"
+  "c_config_str" : "testvalue1",
+  "SG_SCALA_1" : {
+    "c_config_str" : "testvalue1",
+    "Subgraph_2" : {
+      "c_config_str" : "testvalue1",
+      "Subgraph_3" : {
+        "c_config_str" : "testvalue1"
+      }
+    }
+  },
+  "Subgraph_1" : {
+    "c_config_str" : "testvalue1",
+    "Subgraph_2" : {
+      "c_config_str" : "testvalue1",
+      "Subgraph_3" : {
+        "c_config_str" : "testvalue1"
+      }
+    }
+  }
 }

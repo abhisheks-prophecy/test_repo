@@ -1,7 +1,7 @@
 package io.prophecy.pipelines.scalainsideprojectdatasetsonly.graph
 
 import io.prophecy.libs._
-import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config.ConfigStore._
+import io.prophecy.pipelines.scalainsideprojectdatasetsonly.config.Context
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._
@@ -11,7 +11,7 @@ import java.time._
 
 object dest_scala {
 
-  def apply(spark: SparkSession, in: DataFrame): Unit =
+  def apply(context: Context, in: DataFrame): Unit =
     in.write
       .format("parquet")
       .mode("overwrite")
