@@ -73,54 +73,6 @@
         "isCustomOutputSchema" : false
       },
       "properties" : { }
-    },
-    "5SBi4SkADAnMdwAmdCtUK$$JJPFbNU4akWX0IFzjvYS4" : {
-      "id" : "5SBi4SkADAnMdwAmdCtUK$$JJPFbNU4akWX0IFzjvYS4",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_1",
-        "slug" : "Source_1",
-        "x" : 280,
-        "y" : 160,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "8WZfWyuPJEPML36WFP7vk$$EYnLl7lKhn8Lyh2MHJvYb",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : { }
-    },
-    "cBosSoXmeOR53fCQcHTRS$$yYSzHabz-rlgmj6nnrkBe" : {
-      "id" : "cBosSoXmeOR53fCQcHTRS$$yYSzHabz-rlgmj6nnrkBe",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_2",
-        "slug" : "Source_2",
-        "x" : 420,
-        "y" : 160,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "YoF2Y7xcA9NPCcsA9obJ9$$8l1FoT3OuB2ZWBK_NxXAN",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : { }
     }
   },
   "ports" : {
@@ -131,38 +83,6 @@
   },
   "diagnostics" : [ {
     "property" : "$.workflow.processes.Qoj0pJQdZxexguJkx1cX0$$E17aaqJsg_hTOF12fDERi.properties.datasetId",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "dataset id missing",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  }, {
-    "property" : "$.workflow.processes.5SBi4SkADAnMdwAmdCtUK$$JJPFbNU4akWX0IFzjvYS4.properties.datasetId",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "dataset id missing",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  }, {
-    "property" : "$.workflow.processes.cBosSoXmeOR53fCQcHTRS$$yYSzHabz-rlgmj6nnrkBe.properties.datasetId",
     "range" : {
       "start" : {
         "line" : 0,
