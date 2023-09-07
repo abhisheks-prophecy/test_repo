@@ -10,7 +10,7 @@
       "language" : "scala",
       "udfs" : [ ],
       "functionPackageName" : "abhishekse2etestsprophecy.io_team.automatedgithubupdatetoken.functions",
-      "sharedFunctionPackageNames" : [ ]
+      "sharedFunctionPackageNames" : [ "io.prophecy.warehousegems.functions", "io.prophecy.scalagems.functions" ]
     },
     "udafs" : {
       "language" : "scala",
@@ -36,7 +36,15 @@
     "codeMode" : "sparse",
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
-    "dependentProjectExternalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "34933",
+      "projectName" : "ProphecyWarehouseScala",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "34932",
+      "projectName" : "ProphecySparkBasicsScala",
+      "externalDependencies" : [ ]
+    } ],
     "isImported" : false,
     "interimMode" : "Full",
     "interimModeEnabled" : true,
@@ -50,8 +58,8 @@
   },
   "connections" : [ ],
   "processes" : {
-    "doR-__3I_en99T21YtVBw$$OrmU-zu0jtkHoyAO4tZ1l" : {
-      "id" : "doR-__3I_en99T21YtVBw$$OrmU-zu0jtkHoyAO4tZ1l",
+    "zfN5Iu6CgFnzQkS2Qmy6X$$g9ZNS2l7LWSmQi1WdIm7U" : {
+      "id" : "zfN5Iu6CgFnzQkS2Qmy6X$$g9ZNS2l7LWSmQi1WdIm7U",
       "component" : "Script",
       "metadata" : {
         "label" : "Script_0",
@@ -65,15 +73,16 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "2ayuKhZJbbdkJ8WJJKbtp$$Gr6S6go8Ttqn8SQeelEEm",
+          "id" : "D8rMR7aiZO5B8iMEzxNgu$$DnyL_lmKgvdn9UBtwOuIY",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "QpyLCjWlV_c1P9TU9EyLM$$_AWcUA7UJnJM441vKB2z5",
+          "id" : "ptfDE2309u_ea3kGtjd5Y$$J7570GSS9cw4-7t247ET0",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : true,
+        "autoSaveOnRun" : true
       },
       "properties" : {
         "script" : "",
@@ -86,10 +95,11 @@
     "inputs" : [ ],
     "outputs" : [ ],
     "selectedInputFields" : [ ],
-    "isCustomOutputSchema" : false
+    "isCustomOutputSchema" : false,
+    "autoSaveOnRun" : false
   },
   "diagnostics" : [ {
-    "property" : "$.workflow.processes.doR-__3I_en99T21YtVBw$$OrmU-zu0jtkHoyAO4tZ1l",
+    "property" : "$.workflow.processes.zfN5Iu6CgFnzQkS2Qmy6X$$g9ZNS2l7LWSmQi1WdIm7U",
     "range" : {
       "start" : {
         "line" : 0,
@@ -105,7 +115,7 @@
     "tags" : [ ],
     "relatedInformation" : [ ]
   }, {
-    "property" : "$.workflow.processes.doR-__3I_en99T21YtVBw$$OrmU-zu0jtkHoyAO4tZ1l.properties.script",
+    "property" : "$.workflow.processes.zfN5Iu6CgFnzQkS2Qmy6X$$g9ZNS2l7LWSmQi1WdIm7U.properties.script",
     "range" : {
       "start" : {
         "line" : 0,
