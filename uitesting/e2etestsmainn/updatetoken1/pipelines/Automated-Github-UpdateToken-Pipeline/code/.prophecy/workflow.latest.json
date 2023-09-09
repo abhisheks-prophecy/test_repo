@@ -1,10 +1,7 @@
 {
   "metainfo" : {
-    "migrationVersions" : {
-      "gemBuilderVersion" : "v1"
-    },
     "id" : "1",
-    "uri" : "pipelines/Automated-Github-UpdateToken-Pipeline",
+    "uri" : "pipelines/workflow",
     "language" : "scala",
     "fabricId" : "3461",
     "frontEndLanguage" : "sql",
@@ -61,8 +58,8 @@
   },
   "connections" : [ ],
   "processes" : {
-    "humW2fFKlFB9nAwg2hucQ$$PnsObw8LXBIALIJyJhKHN" : {
-      "id" : "humW2fFKlFB9nAwg2hucQ$$PnsObw8LXBIALIJyJhKHN",
+    "Ges5_gFwC3Njod_taKi6B$$_T8fD4BVWhvFdCslqw_94" : {
+      "id" : "Ges5_gFwC3Njod_taKi6B$$_T8fD4BVWhvFdCslqw_94",
       "component" : "Script",
       "metadata" : {
         "label" : "Script_0",
@@ -76,11 +73,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "YRiFWSJsCD7k1DmjmxX88$$KSeqVGAJgDQ__XYM1YieJ",
+          "id" : "JHOpIrIwgemvW6l6tNAXA$$26ExfqLr-wxHMhfPlwhU4",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "VbdEXJr6_ghhCPT729IAX$$if2RrwRbB1wb5Ho7WS5vn",
+          "id" : "wlci5vLve_sKeNgtyO_Zs$$Dj60-ZvoLTH05uLXy44j6",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ],
@@ -102,7 +99,7 @@
     "autoSaveOnRun" : false
   },
   "diagnostics" : [ {
-    "property" : "$.workflow.processes.humW2fFKlFB9nAwg2hucQ$$PnsObw8LXBIALIJyJhKHN",
+    "property" : "$.workflow.processes.Ges5_gFwC3Njod_taKi6B$$_T8fD4BVWhvFdCslqw_94",
     "range" : {
       "start" : {
         "line" : 0,
@@ -118,7 +115,7 @@
     "tags" : [ ],
     "relatedInformation" : [ ]
   }, {
-    "property" : "$.workflow.processes.humW2fFKlFB9nAwg2hucQ$$PnsObw8LXBIALIJyJhKHN.properties.script",
+    "property" : "$.workflow.processes.Ges5_gFwC3Njod_taKi6B$$_T8fD4BVWhvFdCslqw_94.properties.script",
     "range" : {
       "start" : {
         "line" : 0,
