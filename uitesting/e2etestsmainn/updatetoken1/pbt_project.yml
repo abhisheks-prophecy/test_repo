@@ -18,7 +18,7 @@ pipelines:
     mode: batch
     artefactID: ''
     language: scala
-    createdAt: '2023-09-11 23:51:13'
+    createdAt: '2023-09-12 23:02:20'
     datasets:
       inputs: []
       outputs: []
@@ -53,7 +53,7 @@ projectDependencies:
     version: 0.0.1
     isDefault: true
     author: null
-    createdAt: '2023-09-11 23:50:10'
+    createdAt: '2023-09-12 23:01:39'
   '34933':
     projectUID: 34933
     projectName: ProphecyWarehouseScala
@@ -61,5 +61,5 @@ projectDependencies:
     version: 0.0.1
     isDefault: true
     author: null
-    createdAt: '2023-09-11 23:50:10'
+    createdAt: '2023-09-12 23:01:39'
 pipelineConfigurations: {}
