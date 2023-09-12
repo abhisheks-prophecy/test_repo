@@ -1493,6 +1493,19 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
+  pipelines/Workflow-Automated-ROLLBACK-1694511197333:
+    name: Workflow-Automated-ROLLBACK-1694511197333
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-09-12 09:34:51'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
@@ -1522,7 +1535,7 @@ projectDependencies:
     version: 0.0.1
     isDefault: true
     author: null
-    createdAt: '2023-09-11 23:29:36'
+    createdAt: '2023-09-12 09:34:51'
   '34933':
     projectUID: 34933
     projectName: ProphecyWarehouseScala
@@ -1530,5 +1543,5 @@ projectDependencies:
     version: 0.0.1
     isDefault: true
     author: null
-    createdAt: '2023-09-11 23:29:36'
+    createdAt: '2023-09-12 09:34:51'
 pipelineConfigurations: {}
