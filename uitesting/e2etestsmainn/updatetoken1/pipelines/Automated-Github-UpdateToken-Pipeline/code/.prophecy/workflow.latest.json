@@ -58,8 +58,8 @@
   },
   "connections" : [ ],
   "processes" : {
-    "7cyAHilQUDeQxhGb08boQ$$z8727aU7a2WOSvBo4P714" : {
-      "id" : "7cyAHilQUDeQxhGb08boQ$$z8727aU7a2WOSvBo4P714",
+    "wW6JVVnOlWZiNULLlJdZq$$ha0HMa8IjQLCUZfHllwwx" : {
+      "id" : "wW6JVVnOlWZiNULLlJdZq$$ha0HMa8IjQLCUZfHllwwx",
       "component" : "Script",
       "metadata" : {
         "label" : "Script_0",
@@ -73,16 +73,16 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "bsluya0mA-ov6P8wFFGeX$$dG0z3H1KA36Jr-9ywTc3k",
+          "id" : "VIyyxg3neZ7Lm_05ArBzY$$lYkbpg7l8Wsbok9ixbvAi",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "lDeonR9u8BY1q0mV-CDB7$$FZVLsAlL-wwIGLYQ-Fe5W",
+          "id" : "-xaLyCW0vWOtpgUaC7GhR$$7fxcOsF3QQvkkULjGsFxI",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : true,
-        "autoSaveOnRun" : true
+        "autoUpdateOnRun" : true
       },
       "properties" : {
         "script" : "",
@@ -96,10 +96,10 @@
     "outputs" : [ ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
-    "autoSaveOnRun" : false
+    "autoUpdateOnRun" : false
   },
   "diagnostics" : [ {
-    "property" : "$.workflow.processes.7cyAHilQUDeQxhGb08boQ$$z8727aU7a2WOSvBo4P714",
+    "property" : "$.workflow.processes.wW6JVVnOlWZiNULLlJdZq$$ha0HMa8IjQLCUZfHllwwx",
     "range" : {
       "start" : {
         "line" : 0,
@@ -115,7 +115,7 @@
     "tags" : [ ],
     "relatedInformation" : [ ]
   }, {
-    "property" : "$.workflow.processes.7cyAHilQUDeQxhGb08boQ$$z8727aU7a2WOSvBo4P714.properties.script",
+    "property" : "$.workflow.processes.wW6JVVnOlWZiNULLlJdZq$$ha0HMa8IjQLCUZfHllwwx.properties.script",
     "range" : {
       "start" : {
         "line" : 0,
