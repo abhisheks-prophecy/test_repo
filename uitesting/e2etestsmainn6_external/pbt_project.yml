@@ -1610,6 +1610,19 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1694789271468:
+    name: Workflow-Automated-GITHUB-1694789271468
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-09-15 14:49:06'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
@@ -1639,7 +1652,7 @@ projectDependencies:
     version: 0.0.2
     isDefault: true
     author: null
-    createdAt: '2023-09-13 22:48:49'
+    createdAt: '2023-09-15 14:49:06'
   '34933':
     projectUID: 34933
     projectName: ProphecyWarehouseScala
@@ -1647,5 +1660,5 @@ projectDependencies:
     version: 0.0.2
     isDefault: true
     author: null
-    createdAt: '2023-09-13 22:48:49'
+    createdAt: '2023-09-15 14:49:06'
 pipelineConfigurations: {}
