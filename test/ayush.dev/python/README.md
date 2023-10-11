@@ -7,3 +7,7 @@
 *** Release notes for version: 1.1 ***
 
 new test release
+
+*** Release notes for version: test2 ***
+
+sadsadsad
