@@ -1,6 +1,6 @@
 name: PY_DEL_GIT_PROJ
 description: ''
-version: '2.03'
+version: 2.04-SNAPSHOT
 author: abhisheks+e2etests@prophecy.io
 language: python
 buildSystem: wheel
@@ -37,7 +37,6 @@ jobs:
       onSuccess: false
       onFailure: false
     pipelines:
-    - pipelines/PY_DEL_GIT_PIPELINE1
     - pipelines/PYTHON_DEP_MANAGEMENT_ALL
     jobClusterMode:
       clusterMode:

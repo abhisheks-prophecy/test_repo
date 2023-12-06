@@ -1,0 +1,10 @@
+---
+version: 2
+macros:
+- name: "qa_epl_data_macro_base"
+  arguments:
+  - name: "table_name"
+    type: "unknown"
+  - name: "football_clubs"
+    type: "unknown"
+  macroType: "query"

@@ -19,3 +19,7 @@ Changes
 *** Release notes for version: 2.03 ***
 
 changes
+
+*** Release notes for version: 2.04 ***
+
+Changes
