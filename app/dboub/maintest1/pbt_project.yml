@@ -32,6 +32,29 @@ jobs:
     enabled: true
     createdAt: '2023-12-06 15:30:25'
     author: abhisheks+e2etests@prophecy.io
+  jobs/SQLDbPub_PM:
+    name: SQLDbPub_PM
+    description: ''
+    fabricUID: 7648
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0/15 * * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Multi: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2023-12-06 15:54:46'
+    author: abhisheks+e2etests@prophecy.io
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
