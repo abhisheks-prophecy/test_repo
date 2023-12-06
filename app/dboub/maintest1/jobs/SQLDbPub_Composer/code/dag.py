@@ -13,9 +13,10 @@ PROPHECY_RELEASE_TAG = "__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLA
 with DAG(
     dag_id = "abhisheks_e2etests_SQL_DBPublic_SQLDbPub_Composer", 
     schedule_interval = "0/10 * * * *", 
-    default_args = {"owner" : "Prophecy", "ignore_first_depends_on_past" : True, "do_xcom_push" : True}, 
+    default_args = {"owner" : "Prophecy", "retries" : 0, "ignore_first_depends_on_past" : True, "do_xcom_push" : True}, 
     start_date = pendulum.today('UTC'), 
-    catchup = True
+    catchup = True, 
+    tags = []
 ) as dag:
     DBT_0_op = DBT_0()
     Script_1_op = Script_1()
