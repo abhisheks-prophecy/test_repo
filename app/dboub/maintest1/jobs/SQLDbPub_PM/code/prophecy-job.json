@@ -5,7 +5,7 @@
     "jobId" : "jobs/SQLDbPub_PM",
     "name" : "SQLDbPub_PM",
     "dagName" : "R0z_VPVRZDMoGMTsz_F2cA_",
-    "schedule" : "0/15 * * * *",
+    "schedule" : "0 0 * * 5",
     "enabled" : true,
     "alerting" : {
       "emails" : "",

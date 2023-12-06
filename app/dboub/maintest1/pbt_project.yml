@@ -17,7 +17,7 @@ jobs:
       Composer: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: 0/10 * * * *
+    scheduleCron: 0 0 * * 5
     timeout: null
     alerting:
       emails: ''
@@ -40,7 +40,7 @@ jobs:
       Prophecy: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: 0/15 * * * *
+    scheduleCron: 0 0 * * 5
     timeout: null
     alerting:
       emails: ''

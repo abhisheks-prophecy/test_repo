@@ -5,7 +5,7 @@
     "jobId" : "jobs/SQLDbPub_Composer",
     "name" : "SQLDbPub_Composer",
     "dagName" : "abhisheks_e2etests_SQL_DBPublic_SQLDbPub_Composer",
-    "schedule" : "0/10 * * * *",
+    "schedule" : "0 0 * * 5",
     "enabled" : true,
     "alerting" : {
       "emails" : "",
