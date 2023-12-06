@@ -6,7 +6,7 @@
     "name" : "SQLDbPub_Composer",
     "dagName" : "abhisheks_e2etests_SQL_DBPublic_SQLDbPub_Composer",
     "schedule" : "0/10 * * * *",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
