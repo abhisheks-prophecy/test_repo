@@ -93,7 +93,7 @@
         "noWriteJson" : false,
         "printerWidth" : null,
         "sqlFabricId" : "2608",
-        "gitEntityValue" : "dev/Abhishek1",
+        "gitEntityValue" : "main",
         "logFormat" : null,
         "runModelWithChildren" : false,
         "dbtProfileSecret" : null,
