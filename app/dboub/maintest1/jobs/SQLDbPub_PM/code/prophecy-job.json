@@ -6,7 +6,7 @@
     "name" : "SQLDbPub_PM",
     "dagName" : "R0z_VPVRZDMoGMTsz_F2cA_",
     "schedule" : "0/15 * * * *",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
