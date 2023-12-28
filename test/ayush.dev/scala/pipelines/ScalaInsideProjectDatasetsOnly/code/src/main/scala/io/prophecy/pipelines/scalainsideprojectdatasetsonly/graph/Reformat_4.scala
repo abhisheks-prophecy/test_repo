@@ -25,7 +25,6 @@ object Reformat_4 {
       col("c_string"),
       col("c_date"),
       col("c_timestamp"),
-      col("c_struct"),
       col("c_struct")
     )
 

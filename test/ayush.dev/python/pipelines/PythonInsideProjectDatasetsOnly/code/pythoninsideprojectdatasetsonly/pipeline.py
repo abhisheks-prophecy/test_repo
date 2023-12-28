@@ -25,6 +25,8 @@ def pipeline(spark: SparkSession) -> None:
     df_OrderBy_1 = OrderBy_1(spark, df_Reformat_1)
     df_Limit_1 = Limit_1(spark, df_OrderBy_1)
     df_Script_2 = Script_2(spark, df_Join_1)
+    df_Reformat_5 = Reformat_5(spark, df_src_json)
+    df_Reformat_6 = Reformat_6(spark, df_Reformat_5)
     df_src_orc = src_orc(spark)
     df_Subgraph_1 = Subgraph_1(spark, df_src_catalog)
     df_PythonSG_1 = PythonSG_1(spark, df_Subgraph_1)

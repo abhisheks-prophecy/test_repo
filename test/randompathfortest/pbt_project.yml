@@ -1,0 +1,39 @@
+name: ExtNEWProjectDiffTeam
+description: ''
+version: '1.0'
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: wheel
+pipelines:
+  pipelines/test1:
+    name: test1
+    description: test1
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    language: python
+    createdAt: '2022-10-06 07:31:39'
+    datasets:
+      inputs:
+      - datasets/TEST_SCNEARIO1
+      outputs: []
+    dependencies: {}
+datasets:
+  datasets/TEST_SCNEARIO1:
+    name: TEST_SCNEARIO1
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2022-10-06 07:32:40'
+    physicalDatasets:
+      dev_fabric1:
+        fabricId: 217
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2022-10-06 07:32:40'
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+sqlModels: {}
+sqlPipeline: null
+dependencies: '[]'

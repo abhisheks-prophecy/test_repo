@@ -3,6 +3,7 @@ from .test_subgraph_1 import *
 from .src_avro import *
 from .Reformat_1 import *
 from .SetOperation_1 import *
+from .Reformat_4 import *
 from .Subgraph_1 import *
 from .RowDistributor_1 import *
 from .Join_1 import *
