@@ -1,6 +1,6 @@
 name: ScalaExternalGitOne
 description: ''
-version: '1.12'
+version: s
 author: abhisheks+e2etests@prophecy.io
 language: scala
 buildSystem: ''
