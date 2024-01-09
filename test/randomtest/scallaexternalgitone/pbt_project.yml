@@ -28,8 +28,8 @@ pipelines:
     dependencies: {}
 datasets:
   datasets/csv_special_char:
-    name: csv_special_char_3297892
-    description: ''
+    name: csv_special_char_3297892hgyt
+    description: ugbyuhj
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2022-11-12 05:32:34'
     mode: batch

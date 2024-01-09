@@ -1,6 +1,7 @@
 package io.prophecy.pipelines.sc_config_ext_git_one.graph
 
 import io.prophecy.libs._
+import io.prophecy.pipelines.sc_config_ext_git_one.udfs.PipelineInitCode._
 import io.prophecy.pipelines.sc_config_ext_git_one.udfs.UDFs._
 import io.prophecy.pipelines.sc_config_ext_git_one.config.Context
 import org.apache.spark._

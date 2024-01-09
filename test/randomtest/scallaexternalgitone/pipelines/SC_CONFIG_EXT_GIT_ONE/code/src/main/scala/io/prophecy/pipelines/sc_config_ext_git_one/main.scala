@@ -5,6 +5,7 @@ import io.prophecy.pipelines.sc_config_ext_git_one.config.Context
 import io.prophecy.pipelines.sc_config_ext_git_one.config._
 import io.prophecy.pipelines.sc_config_ext_git_one.udfs.UDFs._
 import io.prophecy.pipelines.sc_config_ext_git_one.udfs._
+import io.prophecy.pipelines.sc_config_ext_git_one.udfs.PipelineInitCode._
 import io.prophecy.pipelines.sc_config_ext_git_one.graph._
 import io.prophecy.pipelines.sc_config_ext_git_one.graph.Subgraph_1
 import io.prophecy.pipelines.sc_config_ext_git_one.graph.testsubgraphmain1_1
@@ -44,7 +45,7 @@ object Main {
   }
 
   def main(args: Array[String]): Unit = {
-    val config = ConfigurationFactoryImpl.fromCLI(args)
+    val config = ConfigurationFactoryImpl.getConfig(args)
     val spark: SparkSession = SparkSession
       .builder()
       .appName("Prophecy Pipeline")
@@ -57,7 +58,14 @@ object Main {
     spark.conf
       .set("prophecy.metadata.pipeline.uri", "pipelines/SC_CONFIG_EXT_GIT_ONE")
     registerUDFs(spark)
-    MetricsCollector.start(spark, "pipelines/SC_CONFIG_EXT_GIT_ONE")
+    try MetricsCollector.start(spark,
+                               "pipelines/SC_CONFIG_EXT_GIT_ONE",
+                               context.config
+    )
+    catch {
+      case _: Throwable =>
+        MetricsCollector.start(spark, "pipelines/SC_CONFIG_EXT_GIT_ONE")
+    }
     apply(context)
     MetricsCollector.end(spark)
   }
