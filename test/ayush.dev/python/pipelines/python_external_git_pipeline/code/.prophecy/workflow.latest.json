@@ -878,7 +878,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers"
+        "datasetId" : "gitUri=http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git&subPath=&tag=HelloWorld/1.0&projectSubscriptionProjectId=452&path=datasets/customers"
       }
     },
     "0taQfI61WbsDEwLzL96-d$$sxnaIFhoScKhDpZt1pgmN" : {

@@ -1,27 +1,36 @@
 name: PythonExternalGit
 description: ''
-version: 2.05-SNAPSHOT
+version: test2
 author: abhisheks+e2etests@prophecy.io
 language: python
-buildSystem: wheel
+buildSystem: ''
+buildSystemDetails:
+  artefactID: pythonexternalgit
+  parentArtefactID: ''
+  buildSystem: wheel
+  author: null
+  createdAt: '2023-10-11 14:08:38'
 pipelines:
   pipelines/livy_python:
     name: livy_python
     description: livy_python
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: python
     createdAt: '2022-09-23 09:42:32'
     datasets:
       inputs:
       - datasets/src_livy
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/TestNew1:
     name: TestNew1
     description: TestNew1
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: python
     createdAt: '2022-10-06 07:45:00'
     datasets:
@@ -30,12 +39,14 @@ pipelines:
       - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers_orders
       - https://github.com/abhisheks-prophecy/test_repo.git//test/randompathfortest@ExtNEWProjectDiffTeam/1.0/734/datasets/TEST_SCNEARIO1
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/TestRevokedAccess:
     name: TestRevokedAccess
     description: TestRevokedAccess
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: python
     createdAt: '2022-10-06 17:39:45'
     datasets:
@@ -43,45 +54,51 @@ pipelines:
       - datasets/src_avro
       - https://github.com/MetadataGitTesting/DecouplingTesting.git//tmp/test@TestAyushProject/1.0/748/datasets/TEST_REVOKE_ACCESS
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/python_external_git_pipeline:
     name: python_external_git_pipeline
     description: python_external_git_pipeline
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: python
     createdAt: '2022-09-22 13:14:27'
     datasets:
       inputs:
+      - datasets/src_avro
       - datasets/src_parquet
       - datasets/src_orc
-      - datasets/src_parquet_complex
-      - datasets/src_avro
-      - datasets/src_json
       - datasets/src_csv
+      - https://github.com/abhisheks-prophecy/test_repo.git//test/helloworldtest@HelloWorld_CloneTest/1.0/733/datasets/customers_orders
+      - datasets/src_json
       - datasets/src_catalog
       - datasets/src_jdbc
-      - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers
-      - https://github.com/abhisheks-prophecy/test_repo.git//test/helloworldtest@HelloWorld_CloneTest/1.0/733/datasets/customers_orders
+      - datasets/src_parquet_complex
+      - gitUri=http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git&subPath=&tag=HelloWorld/1.0&projectSubscriptionProjectId=452&path=datasets/customers
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/PythonLivy:
     name: PythonLivy
     description: PythonLivy
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: python
     createdAt: '2022-09-27 06:12:09'
     datasets:
       inputs:
       - datasets/src_livy
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/PythonInsideProjectDatasetsOnly:
     name: PythonInsideProjectDatasetsOnly
     description: PythonInsideProjectDatasetsOnly
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: python
     createdAt: '2022-09-27 05:48:55'
     datasets:
@@ -91,12 +108,14 @@ pipelines:
       - datasets/src_catalog
       - datasets/src_orc
       outputs: []
+    subgraphs: []
     dependencies: {}
   pipelines/pipeline_dataset_different_account_teams:
     name: pipeline_dataset_different_account_teams
     description: pipeline_dataset_different_account_teams
     author: abhisheks+e2etests@prophecy.io
     mode: batch
+    artefactID: ''
     language: python
     createdAt: '2022-09-23 09:18:53'
     datasets:
@@ -104,6 +123,7 @@ pipelines:
       - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers
       - http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git/@HelloWorld/1.0/452/datasets/customers_orders
       outputs: []
+    subgraphs: []
     dependencies: {}
 datasets:
   datasets/src_avro:
@@ -111,6 +131,7 @@ datasets:
     description: ''
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2022-09-23 07:14:17'
+    mode: batch
     physicalDatasets:
       dev_fabric1:
         fabricId: 217
@@ -123,6 +144,7 @@ datasets:
     description: ''
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2022-09-23 07:08:31'
+    mode: batch
     physicalDatasets:
       dev_fabric1:
         fabricId: 217
@@ -135,6 +157,7 @@ datasets:
     description: ''
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2022-09-23 07:11:56'
+    mode: batch
     physicalDatasets:
       dev_fabric1:
         fabricId: 217
@@ -147,6 +170,7 @@ datasets:
     description: ''
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2022-09-23 07:15:39'
+    mode: batch
     physicalDatasets:
       dev_fabric1:
         fabricId: 217
@@ -159,6 +183,7 @@ datasets:
     description: ''
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2022-09-23 09:43:24'
+    mode: batch
     physicalDatasets:
       dev_livy:
         fabricId: 221
@@ -171,6 +196,7 @@ datasets:
     description: ''
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2022-09-23 07:15:07'
+    mode: batch
     physicalDatasets:
       dev_fabric1:
         fabricId: 217
@@ -183,6 +209,7 @@ datasets:
     description: ''
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2022-09-23 07:17:21'
+    mode: batch
     physicalDatasets:
       dev_fabric1:
         fabricId: 217
@@ -195,6 +222,7 @@ datasets:
     description: ''
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2022-09-23 07:22:34'
+    mode: batch
     physicalDatasets:
       dev_fabric1:
         fabricId: 217
@@ -207,6 +235,7 @@ datasets:
     description: ''
     author: abhisheks+e2etests@prophecy.io
     createdAt: '2022-09-23 07:13:34'
+    mode: batch
     physicalDatasets:
       dev_fabric1:
         fabricId: 217
@@ -265,27 +294,46 @@ jobs:
     enabled: true
     createdAt: '2022-10-06 09:17:37'
     author: abhisheks+shared@prophecy.io
-libraries: []
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems: {}
+functions:
+  author: null
+  createdAt: '2023-10-11 14:08:38'
+  udfs: {}
+  udafs: {}
+  expressions: {}
 subgraphs:
   subgraphs/test_subgraph:
     name: test_subgraph
     description: test_subgraph
     author: abhisheks+e2etests@prophecy.io
     language: python
+    artefactID: ''
+    mode: batch
     createdAt: '2022-09-23 07:36:31'
   subgraphs/PythonSG:
     name: PythonSG
     description: python subgraph
     author: abhisheks+e2etests@prophecy.io
     language: python
+    artefactID: ''
+    mode: batch
     createdAt: '2022-09-27 05:51:11'
   subgraphs/SG_LIVY:
     name: SG_LIVY
     description: org.python.SG_LIVY
     author: abhisheks+e2etests@prophecy.io
     language: python
+    artefactID: ''
+    mode: batch
     createdAt: '2022-09-27 06:13:47'
 sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
 - coordinates: mysql:mysql-connector-java:8.0.29
@@ -305,6 +353,7 @@ projectDependencies:
     projectName: HelloWorld
     repositoryPath: http://gitserver:3000/oGRHXK66_team_260/oGRHXK66_project_452.git//
     version: HelloWorld/1.0
+    isDefault: false
     author: ''
     createdAt: '2022-10-19 07:24:02'
   '734':
@@ -312,6 +361,7 @@ projectDependencies:
     projectName: ExtNEWProjectDiffTeam
     repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/randompathfortest
     version: ExtNEWProjectDiffTeam/1.0
+    isDefault: false
     author: ''
     createdAt: '2022-10-19 07:24:02'
   '748':
@@ -319,6 +369,7 @@ projectDependencies:
     projectName: TestAyushProject
     repositoryPath: https://github.com/MetadataGitTesting/DecouplingTesting.git//tmp/test
     version: TestAyushProject/1.0
+    isDefault: false
     author: ''
     createdAt: '2022-10-19 07:24:02'
   '733':
@@ -326,5 +377,7 @@ projectDependencies:
     projectName: HelloWorld_CloneTest
     repositoryPath: https://github.com/abhisheks-prophecy/test_repo.git//test/helloworldtest
     version: HelloWorld_CloneTest/1.0
+    isDefault: false
     author: ''
     createdAt: '2022-10-19 07:24:02'
+pipelineConfigurations: {}
