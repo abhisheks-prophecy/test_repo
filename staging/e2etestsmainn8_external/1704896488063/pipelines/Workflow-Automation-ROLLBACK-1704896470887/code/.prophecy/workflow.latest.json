@@ -80,56 +80,6 @@
         "autoUpdateOnRun" : false
       },
       "properties" : { }
-    },
-    "LkPVUP_Rt6lvWg_pnVBvK$$ssRPGQFLHtUD6xAZlihDe" : {
-      "id" : "LkPVUP_Rt6lvWg_pnVBvK$$ssRPGQFLHtUD6xAZlihDe",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_1",
-        "slug" : "Source_1",
-        "x" : -520,
-        "y" : -200,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "T09Ht-v4zIyZ8oqN946sQ$$T_k08ta9uCO4mIOoAfO5N",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : { }
-    },
-    "7lZdWJKkEso6Uazr5fswt$$V_zMR38RKgPiAuWS-ug6J" : {
-      "id" : "7lZdWJKkEso6Uazr5fswt$$V_zMR38RKgPiAuWS-ug6J",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_2",
-        "slug" : "Source_2",
-        "x" : -380,
-        "y" : -200,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "vBGc8510b1RtkQOvNhcWS$$T0w4m3iyNEhXWTdT4m-w8",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : { }
     }
   },
   "ports" : {
@@ -141,38 +91,6 @@
   },
   "diagnostics" : [ {
     "property" : "$.workflow.processes.SGsD6VtCxZY1ZBYQo8Ubx$$Fd1qCeZ_jqbniNs35oFGR.properties.datasetId",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "dataset id missing",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  }, {
-    "property" : "$.workflow.processes.LkPVUP_Rt6lvWg_pnVBvK$$ssRPGQFLHtUD6xAZlihDe.properties.datasetId",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "dataset id missing",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  }, {
-    "property" : "$.workflow.processes.7lZdWJKkEso6Uazr5fswt$$V_zMR38RKgPiAuWS-ug6J.properties.datasetId",
     "range" : {
       "start" : {
         "line" : 0,
