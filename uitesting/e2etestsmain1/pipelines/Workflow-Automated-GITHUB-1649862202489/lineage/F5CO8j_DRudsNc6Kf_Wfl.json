@@ -1,0 +1,8 @@
+{
+  "name" : "F5CO8j_DRudsNc6Kf_Wfl",
+  "component" : "Filter",
+  "transformations" : [ {
+    "sources" : [ ],
+    "transformation" : "Filter(((customer_id#1459 > 10) AND first_name#1460 LIKE %G%))"
+  } ]
+}

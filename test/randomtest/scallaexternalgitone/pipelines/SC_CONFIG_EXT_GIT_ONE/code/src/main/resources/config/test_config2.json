@@ -1,0 +1,9 @@
+{
+  "c_float" : 21,
+  "c_short" : 21,
+  "c_spark_expression" : "concat(`c  date`, `c  float`, `c  float`)",
+  "c_boolean" : true,
+  "c_double" : 21,
+  "c_int" : 21,
+  "c_string" : "teststr23123"
+}

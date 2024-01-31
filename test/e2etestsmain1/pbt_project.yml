@@ -1,0 +1,382 @@
+name: Project-Automated-GITHUB
+description: ''
+version: 0.0.1-SNAPSHOT
+author: abhisheks+e2etests@simpledatalabs.com
+pipelines:
+  pipelines/Workflow-Automated-GITHUB-1649483422639:
+    name: Workflow-Automated-GITHUB-1649483422639
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-09 05:50:35'
+    datasets:
+      inputs:
+      - 2703/datasets/dataset_cust_in
+      outputs:
+      - 2703/datasets/dataset_out_98394
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649366755894:
+    name: Workflow-Automated-GITHUB-1649366755894
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-07 21:26:08'
+    datasets:
+      inputs:
+      - 2581/datasets/dataset_cust_in
+      outputs:
+      - 2581/datasets/dataset_out_66179
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649885963361:
+    name: Workflow-Automated-GITHUB-1649885963361
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-13 21:39:36'
+    datasets:
+      inputs:
+      - 2984/datasets/dataset_cust_in
+      outputs:
+      - 2984/datasets/dataset_out_89018
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649177704053:
+    name: Workflow-Automated-GITHUB-1649177704053
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-05 16:55:18'
+    datasets:
+      inputs:
+      - 2407/datasets/dataset_cust_in
+      outputs:
+      - 2407/datasets/dataset_out_83228
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649193062993:
+    name: Workflow-Automated-GITHUB-1649193062993
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-05 21:11:16'
+    datasets:
+      inputs:
+      - 2456/datasets/dataset_cust_in
+      outputs:
+      - 2456/datasets/dataset_out_67334
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649799966826:
+    name: Workflow-Automated-GITHUB-1649799966826
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-12 21:46:19'
+    datasets:
+      inputs:
+      - 2941/datasets/dataset_cust_in
+      outputs:
+      - 2941/datasets/dataset_out_30997
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1650060812431:
+    name: Workflow-Automated-GITHUB-1650060812431
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-15 22:13:46'
+    datasets:
+      inputs:
+      - 3082/datasets/dataset_cust_in
+      outputs:
+      - 3082/datasets/dataset_out_97419
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1650321371063:
+    name: Workflow-Automated-GITHUB-1650321371063
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-18 22:36:23'
+    datasets:
+      inputs:
+      - 3211/datasets/dataset_cust_in_1
+      outputs:
+      - 3211/datasets/dataset_out_72596
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649737547757:
+    name: Workflow-Automated-GITHUB-1649737547757
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-12 04:26:03'
+    datasets:
+      inputs:
+      - 2887/datasets/dataset_cust_in
+      outputs:
+      - 2887/datasets/dataset_out_67854
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649971292029:
+    name: Workflow-Automated-GITHUB-1649971292029
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-14 21:21:44'
+    datasets:
+      inputs:
+      - 3038/datasets/dataset_cust_in
+      outputs:
+      - 3038/datasets/dataset_out_10102
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1650146551184:
+    name: Workflow-Automated-GITHUB-1650146551184
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-16 22:02:47'
+    datasets:
+      inputs:
+      - 3127/datasets/dataset_cust_in
+      outputs:
+      - 3127/datasets/dataset_out_61887
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649279880521:
+    name: Workflow-Automated-GITHUB-1649279880521
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-06 21:18:13'
+    datasets:
+      inputs:
+      - 2533/datasets/dataset_cust_in
+      outputs:
+      - 2533/datasets/dataset_out_29774
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649539038832:
+    name: Workflow-Automated-GITHUB-1649539038832
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-09 21:17:31'
+    datasets:
+      inputs:
+      - 2747/datasets/dataset_cust_in
+      outputs:
+      - 2747/datasets/dataset_out_80368
+    dependencies: {}
+  pipelines/Workflow-Automated-GITHUB-1649626359266:
+    name: Workflow-Automated-GITHUB-1649626359266
+    description: automation workflow
+    author: abhisheks+e2etests@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-04-10 21:32:52'
+    datasets:
+      inputs:
+      - 2798/datasets/dataset_cust_in
+      outputs:
+      - 2798/datasets/dataset_out_8004
+    dependencies: {}
+datasets:
+  datasets/dataset_cust_in_1:
+    name: dataset_cust_in_1
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-18 22:36:50'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-18 22:36:50'
+  datasets/dataset_out_67334:
+    name: dataset_out_67334
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-05 21:11:49'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-05 21:11:49'
+  datasets/dataset_out_8004:
+    name: dataset_out_8004
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-10 21:33:22'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-10 21:33:22'
+  datasets/dataset_out_98394:
+    name: dataset_out_98394
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-09 05:51:05'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-09 05:51:05'
+  datasets/dataset_out_89018:
+    name: dataset_out_89018
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-13 21:40:06'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-13 21:40:06'
+  datasets/dataset_out_10102:
+    name: dataset_out_10102
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-14 21:22:15'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-14 21:22:15'
+  datasets/dataset_out_61887:
+    name: dataset_out_61887
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-16 22:03:19'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-16 22:03:19'
+  datasets/dataset_out_67854:
+    name: dataset_out_67854
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-12 04:26:36'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-12 04:26:36'
+  datasets/dataset_out_72596:
+    name: dataset_out_72596
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-18 22:37:08'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-18 22:37:08'
+  datasets/dataset_cust_in:
+    name: dataset_cust_in
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-05 16:55:45'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-05 16:55:46'
+  datasets/dataset_out_29774:
+    name: dataset_out_29774
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-06 21:18:44'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-06 21:18:44'
+  datasets/dataset_out_30997:
+    name: dataset_out_30997
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-12 21:46:50'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-12 21:46:50'
+  datasets/dataset_out_80368:
+    name: dataset_out_80368
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-09 21:18:02'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-09 21:18:02'
+  datasets/dataset_out_83228:
+    name: dataset_out_83228
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-05 16:56:03'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-05 16:56:03'
+  datasets/dataset_out_66179:
+    name: dataset_out_66179
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-07 21:26:39'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-07 21:26:39'
+  datasets/dataset_out_97419:
+    name: dataset_out_97419
+    description: ''
+    author: abhisheks+e2etests@simpledatalabs.com
+    createdAt: '2022-04-15 22:14:17'
+    physicalDatasets:
+      dev:
+        fabricId: 510
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@simpledatalabs.com
+        createdAt: '2022-04-15 22:14:17'
+jobs: {}
+libraries: []

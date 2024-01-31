@@ -1,0 +1,12 @@
+name: GIT_EXTERNAL_PROJECT
+description: ''
+version: '1.1'
+author: abhisheks+test@simpledatalabs.com
+language: scala
+pipelines: {}
+datasets: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: '[]'
+template: '[]'

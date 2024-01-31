@@ -1,0 +1,12 @@
+name: master_PyGIT
+description: ''
+version: '1.0'
+author: null
+language: python
+pipelines: {}
+datasets: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: '[]'
+template: '[]'

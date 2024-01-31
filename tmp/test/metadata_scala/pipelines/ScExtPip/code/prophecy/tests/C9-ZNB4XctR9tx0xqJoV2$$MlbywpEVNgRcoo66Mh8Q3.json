@@ -1,0 +1,62 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "Q1LE7pvQz4PbIzVPIXmYW$$DqiROxBjdNpmRmu1ociH6" : {
+        "values" : [ [ "1", "a" ], [ "2", "b" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "customer_id",
+            "type" : "integer",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "orders",
+            "type" : "long",
+            "nullable" : false,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "-e8u4uCGVeiOnCmrtGwzz$$MwzAsBz3Yeyz9ZZN7H1lu" : {
+        "values" : [ [ "1", "a" ], [ "2", "b" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "customer_id",
+            "type" : "integer",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "orders",
+            "type" : "long",
+            "nullable" : false,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 0",
+    "testType" : "outputRow",
+    "language" : "scala"
+  } ],
+  "language" : "scala"
+}
