@@ -18,4 +18,7 @@ object ConfigurationFactoryImpl extends ConfigurationFactory[Config] {
     fileConfig.load[Config]
   }
 
+  def getConfig(args: Array[String]) =
+    fromCLI(args)
+
 }

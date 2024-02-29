@@ -1,15 +1,19 @@
 {
   "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
     "id" : "1",
+    "uri" : "pipelines/SC_CONFIG_EXT_GIT_ONE",
     "language" : "scala",
-    "fabricId" : "1770",
+    "fabricId" : "2016",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
       "language" : "scala",
       "udfs" : [ ],
       "functionPackageName" : "abhishekse2etestsprophecy.io_team.scalaexternalgitone.functions",
-      "sharedFunctionPackageNames" : [ "abhishekse2etestsprophecy.io_team.helloworld.functions" ],
+      "sharedFunctionPackageNames" : [ "io.prophecy.scalagems.functions", "io.prophecy.warehousegems.functions", "abhishekse2etestsprophecyioteam.helloworld.functions" ],
       "initialCode" : "var int_val=1"
     },
     "udafs" : {
@@ -26,7 +30,8 @@
             "value" : "stringhoonmain#@!%^&*2asda"
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : false
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
         }, {
           "name" : "c_int",
           "kind" : {
@@ -34,7 +39,8 @@
             "value" : -12312
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : false
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
         }, {
           "name" : "c_float",
           "kind" : {
@@ -42,7 +48,8 @@
             "value" : 231.12312
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : false
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
         }, {
           "name" : "c_double",
           "kind" : {
@@ -50,7 +57,8 @@
             "value" : 423423432412
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : false
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
         }, {
           "name" : "c_short",
           "kind" : {
@@ -58,7 +66,8 @@
             "value" : 123
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : false
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
         }, {
           "name" : "c_databricks_secrets",
           "kind" : {
@@ -66,7 +75,8 @@
             "value" : "qasecrets_mysql:username"
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : false
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
         }, {
           "name" : "c_spark_expression",
           "kind" : {
@@ -74,7 +84,8 @@
             "value" : "concat(`c  date`, `c  float`)"
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : false
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
         }, {
           "name" : "c_boolean",
           "kind" : {
@@ -82,7 +93,8 @@
             "value" : false
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : false
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
         }, {
           "name" : "c-ancient-config",
           "kind" : {
@@ -90,7 +102,8 @@
             "value" : "arent i"
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : false
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
         }, {
           "name" : "Subgraph_1",
           "kind" : {
@@ -102,7 +115,8 @@
                 "value" : "stringhoonmain#@!%^&*2asda"
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_int",
               "kind" : {
@@ -110,7 +124,8 @@
                 "value" : -12312
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_float",
               "kind" : {
@@ -118,7 +133,8 @@
                 "value" : 231.12312
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_double",
               "kind" : {
@@ -126,7 +142,8 @@
                 "value" : 423423432412
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_short",
               "kind" : {
@@ -134,7 +151,8 @@
                 "value" : 123
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_databricks_secrets",
               "kind" : {
@@ -142,7 +160,8 @@
                 "value" : "qasecrets_mysql:username"
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_spark_expression",
               "kind" : {
@@ -150,7 +169,8 @@
                 "value" : "concat(`c  date`, `c  float`)"
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_boolean",
               "kind" : {
@@ -158,7 +178,8 @@
                 "value" : false
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c-ancient-config",
               "kind" : {
@@ -166,11 +187,13 @@
                 "value" : "arent i"
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             } ]
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : true
+          "isWorkflowNodeConfiguration" : true,
+          "isReferenced" : false
         }, {
           "name" : "testsubgraphmain1_1",
           "kind" : {
@@ -182,7 +205,8 @@
                 "value" : "stringhoonmain#@!%^&*2asda"
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_int",
               "kind" : {
@@ -190,7 +214,8 @@
                 "value" : -12312
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_float",
               "kind" : {
@@ -198,7 +223,8 @@
                 "value" : 231.12312
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_double",
               "kind" : {
@@ -206,7 +232,8 @@
                 "value" : 423423432412
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_short",
               "kind" : {
@@ -214,7 +241,8 @@
                 "value" : 123
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_databricks_secrets",
               "kind" : {
@@ -222,7 +250,8 @@
                 "value" : "qasecrets_mysql:username"
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_spark_expression",
               "kind" : {
@@ -230,7 +259,8 @@
                 "value" : "concat(`c  date`, `c  float`)"
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c_boolean",
               "kind" : {
@@ -238,7 +268,8 @@
                 "value" : false
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             }, {
               "name" : "c-ancient-config",
               "kind" : {
@@ -246,11 +277,13 @@
                 "value" : "arent i"
               },
               "optional" : false,
-              "isWorkflowNodeConfiguration" : false
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
             } ]
           },
           "optional" : false,
-          "isWorkflowNodeConfiguration" : true
+          "isWorkflowNodeConfiguration" : true,
+          "isReferenced" : false
         } ]
       },
       "oldCommon" : {
@@ -269,6 +302,14 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
     "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "32194",
+      "projectName" : "ProphecySparkBasicsScala",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "32195",
+      "projectName" : "ProphecyWarehouseScala",
+      "externalDependencies" : [ ]
+    }, {
       "projectUID" : "8172",
       "projectName" : "HelloWorld",
       "externalDependencies" : [ ]
@@ -428,7 +469,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "columnsSelector" : [ "5rzQEvym9vEdCL79vtb1J$$o9Af_5ay4NV88FoSSsdQn##c_config_str", "5rzQEvym9vEdCL79vtb1J$$o9Af_5ay4NV88FoSSsdQn##c_config_bool", "5rzQEvym9vEdCL79vtb1J$$o9Af_5ay4NV88FoSSsdQn##c_config_int", "5rzQEvym9vEdCL79vtb1J$$o9Af_5ay4NV88FoSSsdQn##c_config_float", "5rzQEvym9vEdCL79vtb1J$$o9Af_5ay4NV88FoSSsdQn##c_config_double", "5rzQEvym9vEdCL79vtb1J$$o9Af_5ay4NV88FoSSsdQn##c_config_sparkexpression", "5rzQEvym9vEdCL79vtb1J$$o9Af_5ay4NV88FoSSsdQn##c_lookup", "5rzQEvym9vEdCL79vtb1J$$o9Af_5ay4NV88FoSSsdQn##c_udf1" ],
@@ -512,7 +554,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "datasetId" : "datasets/csv_special_char"
@@ -749,7 +792,8 @@
           "slug" : "out1"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "packageName" : "org.scala.testsubgraph1",
@@ -906,7 +950,8 @@
               "slug" : "out"
             } ],
             "selectedInputFields" : [ ],
-            "isCustomOutputSchema" : false
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
           },
           "properties" : {
             "columnsSelector" : [ "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c   short  --", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c-int-column type", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##-- c-long", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c-decimal", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c  float", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c--boolean", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c- - -double", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c___-- string", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c  date", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c_timestamp" ],
@@ -1108,10 +1153,15 @@
               "slug" : "out"
             } ],
             "selectedInputFields" : [ ],
-            "isCustomOutputSchema" : false
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
           },
           "properties" : {
             "limit" : "11"
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/W6rsF9cj_team_8976/W6rsF9cj_project_32194.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=32194&path=gems/Limit",
+            "projectName" : "ProphecySparkBasicsScala"
           }
         }
       },
@@ -1241,7 +1291,8 @@
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "columnsSelector" : [ "bK25VTRBP2G6agBBkyg8d$$0WxhTuXq615uGfFXi8peL##c   short  --" ],
@@ -1536,7 +1587,8 @@
           "slug" : "out1"
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "packageName" : "org.scala.testsubgraph1",
@@ -1693,7 +1745,8 @@
               "slug" : "out"
             } ],
             "selectedInputFields" : [ ],
-            "isCustomOutputSchema" : false
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
           },
           "properties" : {
             "columnsSelector" : [ "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c   short  --", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c-int-column type", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##-- c-long", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c-decimal", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c  float", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c--boolean", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c- - -double", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c___-- string", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c  date", "9WkuLaKGi9qmgUR3LFYF7$$XRBXSk1pv0wsbcwKpk5sf##c_timestamp" ],
@@ -1895,10 +1948,15 @@
               "slug" : "out"
             } ],
             "selectedInputFields" : [ ],
-            "isCustomOutputSchema" : false
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
           },
           "properties" : {
             "limit" : "11"
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/W6rsF9cj_team_8976/W6rsF9cj_project_32194.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=32194&path=gems/Limit",
+            "projectName" : "ProphecySparkBasicsScala"
           }
         }
       },
@@ -2025,7 +2083,8 @@
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
       },
       "properties" : {
         "isRange" : false,
@@ -2039,6 +2098,25 @@
     "inputs" : [ ],
     "outputs" : [ ],
     "selectedInputFields" : [ ],
-    "isCustomOutputSchema" : false
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "dependencies" : {
+    "projectDependencies" : [ ],
+    "pipelineDependencies" : [ ],
+    "gemDependencies" : [ ],
+    "packageDependencies" : [ {
+      "projectUID" : "32194",
+      "projectName" : "ProphecySparkBasicsScala",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "32195",
+      "projectName" : "ProphecyWarehouseScala",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "8172",
+      "projectName" : "HelloWorld",
+      "externalDependencies" : [ ]
+    } ]
   }
 }

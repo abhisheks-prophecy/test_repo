@@ -72,7 +72,7 @@ class Reformat_1Test extends FunSuite with DataFrameSuiteBase {
 
     val fabricName = System.getProperty("fabric")
 
-    val config = ConfigurationFactoryImpl.fromCLI(
+    val config = ConfigurationFactoryImpl.getConfig(
       Array("--confFile",
             getClass.getResource(s"/config/${fabricName}.json").getPath
       )
