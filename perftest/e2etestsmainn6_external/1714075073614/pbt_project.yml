@@ -1,0 +1,76 @@
+name: Project-Automation-GITHUB
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomationgithub
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2024-04-25 20:08:02'
+pipelines:
+  pipelines/Pipeline-Automation-GITHUB-1714075050613:
+    name: Pipeline-Automation-GITHUB-1714075050613
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2024-04-25 20:09:08'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.0.4
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-04-25 20:08:02'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2024-04-25T20:08:02.885139Z'
+  name: plibMaven
+  version: 7.1.93
+  id: '24246578'
+  createdAt: '2024-04-25T20:08:02.885139Z'
+  type: plibMaven
+projectDependencies:
+  '3':
+    projectUID: 3
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/P4JOEwcf_team_5/P4JOEwcf_project_3.git&subPath=
+    version: 0.1.6.dev
+    isDefault: true
+    author: null
+    createdAt: '2024-04-25 19:58:26'
+  '4':
+    projectUID: 4
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/P4JOEwcf_team_5/P4JOEwcf_project_4.git&subPath=
+    version: 0.0.3
+    isDefault: true
+    author: null
+    createdAt: '2024-04-25 19:58:26'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
