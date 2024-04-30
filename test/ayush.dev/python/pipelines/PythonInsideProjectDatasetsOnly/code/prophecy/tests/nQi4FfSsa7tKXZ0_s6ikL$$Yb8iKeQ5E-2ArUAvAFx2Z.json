@@ -1,0 +1,150 @@
+{
+  "unitTests" : [ {
+    "data" : {
+      "kLegTJnOM5p5YB6q4Uol5$$ExqiF2O9EZGUad8Kn2zRy" : {
+        "values" : [ [ "1", "a" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "customer_id",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "first_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      },
+      "UJmnMrfiuXvpzozUSYWNI$$gEnpYPPzMZboOAgdUfJoN" : {
+        "values" : [ [ "1", "a" ] ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "customer_id",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "first_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 0",
+    "testType" : "outputRow",
+    "language" : "python"
+  }, {
+    "data" : {
+      "kLegTJnOM5p5YB6q4Uol5$$ExqiF2O9EZGUad8Kn2zRy" : {
+        "values" : [ ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "customer_id",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "first_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "last_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ {
+          "name" : "p1",
+          "expression" : {
+            "predicate" : "customer_id not like '%a%'",
+            "format" : "sql"
+          }
+        }, {
+          "name" : "p1",
+          "expression" : {
+            "predicate" : "first_name not like '%1%'",
+            "format" : "sql"
+          }
+        } ]
+      },
+      "UJmnMrfiuXvpzozUSYWNI$$gEnpYPPzMZboOAgdUfJoN" : {
+        "values" : [ ],
+        "schema" : {
+          "type" : "struct",
+          "fields" : [ {
+            "name" : "customer_id",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "first_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          }, {
+            "name" : "last_name",
+            "type" : "string",
+            "nullable" : true,
+            "metadata" : {
+              "description" : "",
+              "mappings" : [ ],
+              "tags" : [ ]
+            }
+          } ]
+        },
+        "predicates" : [ ]
+      }
+    },
+    "name" : "Unit Test 1",
+    "testType" : "outputPredicate",
+    "language" : "python"
+  } ],
+  "language" : "python"
+}

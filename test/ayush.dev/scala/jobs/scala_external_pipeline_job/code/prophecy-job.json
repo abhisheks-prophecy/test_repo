@@ -1,0 +1,183 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "222",
+    "jobId" : "jobs/scala_external_pipeline_job",
+    "name" : "scala_external_pipeline_job",
+    "schedule" : "0 0 0 * * ? 2090",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : true,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "abhisheks@prophecy.io",
+      "onStart" : false,
+      "onSuccess" : true,
+      "onFailure" : false
+    },
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "222",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "225",
+      "name" : "managed",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
+      }
+    }, {
+      "id" : "227",
+      "name" : "dev_otherteam",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "VkintsxVRZO8sGet5KtP1$$C6EXXXLdpWMOlRPiY_PF-" : {
+      "id" : "VkintsxVRZO8sGet5KtP1$$C6EXXXLdpWMOlRPiY_PF-",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_1",
+        "slug" : "Pipeline_1",
+        "x" : 466.6000061035156,
+        "y" : -108
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "O-o4lNdxGG2SS5n-fvJuk$$y9NBns4_p7qOU1TbCWqRO"
+        } ],
+        "outputs" : [ {
+          "id" : "K1x7ZpsmPvqlEcqQUSFU8$$tMd3Ys75aL_gA73EnRh20"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/scala_external_pipeline",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "value"
+            }
+          } ],
+          "instances" : [ "default" ],
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    },
+    "ZaZAVEsb8dfX9vq75dEe6$$wOLI4OVuYe41e4mv8KM29" : {
+      "id" : "ZaZAVEsb8dfX9vq75dEe6$$wOLI4OVuYe41e4mv8KM29",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 722.2000122070312,
+        "y" : 56.400001525878906
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sO6fFvldpTz5bReVRkmoc$$bYckE35ZH8Shtxb2Vj3vP"
+        } ],
+        "outputs" : [ {
+          "id" : "cGyUw1q_uvKnNYyz6ytbp$$KKcPO0SBUCcXXVwUSibYv"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : "print(\"hello\")"
+      }
+    },
+    "wtxBmX3RH7fScM0b6lNhp" : {
+      "id" : "wtxBmX3RH7fScM0b6lNhp",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline_0",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "out"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/scala_external_pipeline",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "c_string",
+            "optional" : false,
+            "kind" : {
+              "type" : "string",
+              "value" : "value"
+            }
+          } ],
+          "instances" : [ "default" ],
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "oFh1IwVX2FHofMBluR4JF",
+    "source" : "wtxBmX3RH7fScM0b6lNhp",
+    "target" : "ZaZAVEsb8dfX9vq75dEe6$$wOLI4OVuYe41e4mv8KM29",
+    "sourcePort" : "out",
+    "targetPort" : "sO6fFvldpTz5bReVRkmoc$$bYckE35ZH8Shtxb2Vj3vP"
+  }, {
+    "id" : "7StVTGA_q2HinUuWQaKDP",
+    "source" : "wtxBmX3RH7fScM0b6lNhp",
+    "target" : "VkintsxVRZO8sGet5KtP1$$C6EXXXLdpWMOlRPiY_PF-",
+    "sourcePort" : "out",
+    "targetPort" : "O-o4lNdxGG2SS5n-fvJuk$$y9NBns4_p7qOU1TbCWqRO"
+  } ]
+}

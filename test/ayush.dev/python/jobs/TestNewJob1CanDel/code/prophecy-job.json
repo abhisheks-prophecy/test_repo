@@ -1,0 +1,81 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "222",
+    "jobId" : "jobs/TestNewJob1CanDel",
+    "name" : "TestNewJob1CanDel",
+    "schedule" : "0 0 0 * * ? 2090",
+    "enabled" : true,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "222",
+      "name" : "dev",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      }
+    }, {
+      "id" : "225",
+      "name" : "managed",
+      "clusterSizes" : {
+        "default" : "Small",
+        "availableClusterSizes" : [ "Small" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "CWmb-RuUGYoYJ-QeYUH8I" : {
+      "id" : "CWmb-RuUGYoYJ-QeYUH8I",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "TestNew1",
+        "slug" : "TestNew1",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "out"
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/TestNew1",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : [ "default" ],
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    }
+  },
+  "connections" : [ ]
+}
