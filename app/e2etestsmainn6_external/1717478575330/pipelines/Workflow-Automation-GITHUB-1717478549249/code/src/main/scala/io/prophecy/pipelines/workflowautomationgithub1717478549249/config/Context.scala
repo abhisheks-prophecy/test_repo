@@ -1,0 +1,4 @@
+package io.prophecy.pipelines.workflowautomationgithub1717478549249.config
+
+import org.apache.spark.sql.SparkSession
+case class Context(spark: SparkSession, config: Config)
