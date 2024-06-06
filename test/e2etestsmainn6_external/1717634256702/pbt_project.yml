@@ -1,0 +1,78 @@
+name: Project-Automation-GITHUB
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomationgithub
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2024-06-06 00:39:24'
+pipelines:
+  pipelines/Workflow-Automation-GITHUB-1717634238999:
+    name: Workflow-Automation-GITHUB-1717634238999
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2024-06-06 00:39:24'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.15
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-06-06 00:39:24'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2024-06-06T00:39:24.075Z'
+  name: plibMaven
+  version: 8.0.8
+  id: '1552802613'
+  createdAt: '2024-06-06T00:39:24.075Z'
+  type: plibMaven
+projectDependencies:
+  '35920':
+    projectUID: 35920
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/W6rsF9cj_team_8976/6ZqckTBq_project_35920.git&subPath=
+    version: 0.0.5.dev2
+    isDefault: true
+    author: null
+    createdAt: '2024-06-06 00:37:56'
+  '35919':
+    projectUID: 35919
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/W6rsF9cj_team_8976/6ZqckTBq_project_35919.git&subPath=
+    version: 0.2.4.dev
+    isDefault: true
+    author: null
+    createdAt: '2024-06-06 00:37:56'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
