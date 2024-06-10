@@ -24,19 +24,6 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
-  pipelines/Automation_RollbackChanges_Pipeline2:
-    name: Automation_RollbackChanges_Pipeline2
-    description: automation workflow
-    author: abhisheks+e2etests@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: scala
-    createdAt: '2024-06-10 19:57:45'
-    datasets:
-      inputs: []
-      outputs: []
-    subgraphs: []
-    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
