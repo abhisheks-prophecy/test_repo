@@ -1,0 +1,78 @@
+name: Project-Automation-GITHUB
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomationgithub
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2024-06-21 05:30:53'
+pipelines:
+  pipelines/Pipeline-Automation-GITHUB-1718947430617:
+    name: Pipeline-Automation-GITHUB-1718947430617
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2024-06-21 05:31:35'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.15
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-06-21 05:30:53'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2024-06-21T05:30:53.607439Z'
+  name: plibMaven
+  version: 8.0.11
+  id: '734772704'
+  createdAt: '2024-06-21T05:30:53.607439Z'
+  type: plibMaven
+projectDependencies:
+  '12652':
+    projectUID: 12652
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12652.git&subPath=
+    version: 0.0.5
+    isDefault: true
+    author: null
+    createdAt: '2024-06-21 05:24:28'
+  '12651':
+    projectUID: 12651
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=
+    version: 0.2.5
+    isDefault: true
+    author: null
+    createdAt: '2024-06-21 05:24:28'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
