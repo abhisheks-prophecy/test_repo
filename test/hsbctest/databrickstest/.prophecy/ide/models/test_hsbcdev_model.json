@@ -1,0 +1,1098 @@
+{
+  "id" : "test_hsbcdev_model",
+  "metainfo" : {
+    "label" : "test_hsbcdev_model",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "type" : "ModelConfig"
+      },
+      "userDefinedConfig" : {
+        "vars" : {
+          "TEST_PASSWORD_MODEL_VAR" : "\"TEST_PASSWORD_MODEL_VAR\"",
+          "C_MODEL_PASSWORD" : "\"C_MODEL_PASSWORD\""
+        }
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "iZgKo8h2aGlYdfSWVrM58" : {
+      "id" : "iZgKo8h2aGlYdfSWVrM58",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "raw_orders",
+        "slug" : "raw_orders",
+        "x" : -660,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "raw_orders",
+          "sourceType" : "Seed",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "cl7UyOB596VIPFRx4fGe_",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "rBRFPDcHRhhL4iJgD9bD7$$bmiUJsGE_nxmQiQ_Efi2b" : {
+      "id" : "rBRFPDcHRhhL4iJgD9bD7$$bmiUJsGE_nxmQiQ_Efi2b",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -520,
+        "y" : -80,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "Jp-GMcJX7fwuJqQS0kjPl$$ZVk1PuWp2mAoUXXuaVOwI##c_int", "Jp-GMcJX7fwuJqQS0kjPl$$ZVk1PuWp2mAoUXXuaVOwI##c_string", "Jp-GMcJX7fwuJqQS0kjPl$$ZVk1PuWp2mAoUXXuaVOwI##c_map_ts_int_int", "Jp-GMcJX7fwuJqQS0kjPl$$ZVk1PuWp2mAoUXXuaVOwI##c_map_ts_string_string", "Jp-GMcJX7fwuJqQS0kjPl$$ZVk1PuWp2mAoUXXuaVOwI##c_map_ts_timestamp_int", "Jp-GMcJX7fwuJqQS0kjPl$$ZVk1PuWp2mAoUXXuaVOwI##c_map_complex" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "c_int"
+          },
+          "alias" : "c_int"
+        }, {
+          "expression" : {
+            "expression" : "c_string"
+          },
+          "alias" : "c_string"
+        }, {
+          "expression" : {
+            "expression" : "c_map_ts_int_int"
+          },
+          "alias" : "c_map_ts_int_int"
+        }, {
+          "expression" : {
+            "expression" : "c_map_ts_string_string"
+          },
+          "alias" : "c_map_ts_string_string"
+        }, {
+          "expression" : {
+            "expression" : "c_map_ts_timestamp_int"
+          },
+          "alias" : "c_map_ts_timestamp_int"
+        }, {
+          "expression" : {
+            "expression" : "c_map_complex"
+          },
+          "alias" : "c_map_complex"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Jp-GMcJX7fwuJqQS0kjPl$$ZVk1PuWp2mAoUXXuaVOwI",
+          "schema" : {
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "c_int",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_map_ts_int_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Integer"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_string_string",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_timestamp_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Timestamp"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_complex",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "w1",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "w2",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  } ]
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            } ]
+          },
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "MfXWzwEx9nFgdgnu3pP3c$$Mi_DuH9B38CWPvok1tZK2",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "c_int",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_map_ts_int_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Integer"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_string_string",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_timestamp_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Timestamp"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_complex",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "w1",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "w2",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  } ]
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "3cRv9WA7QvWrnnYRrdzft$$2SsoaZ0FTwVa04ciskmrs" : {
+      "id" : "3cRv9WA7QvWrnnYRrdzft$$2SsoaZ0FTwVa04ciskmrs",
+      "component" : "Macro",
+      "metadata" : {
+        "label" : "qa_all_not_null_1",
+        "slug" : "qa_all_not_null_1",
+        "x" : -40,
+        "y" : 60,
+        "phase" : 0,
+        "macroDependencies" : [ "SQL_Databricks.qa_all_not_null" ]
+      },
+      "properties" : {
+        "macroName" : "qa_all_not_null",
+        "parameters" : [ {
+          "name" : "model_password",
+          "value" : "'Join_1'"
+        }, {
+          "name" : "column_name",
+          "value" : "'c_int'"
+        } ],
+        "projectName" : "SQL_Databricks"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XiIMoMzElDJ5ye7VMrymE",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "c_int",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_map_ts_int_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Integer"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_string_string",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_timestamp_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Timestamp"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_complex",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "w1",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "w2",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  } ]
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "Join_1"
+        } ],
+        "outputs" : [ {
+          "id" : "u9B0MifB7OUkmtFXpquae$$1ni7anwSZfdV5ThUTnqwu",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "c_int",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_map_ts_int_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Integer"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_string_string",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_timestamp_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Timestamp"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_complex",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "w1",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "w2",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  } ]
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "-0-Hra4B2CnZhvV2p3REh$$FajQAvHB2zv6CVvziwI_4" : {
+      "id" : "-0-Hra4B2CnZhvV2p3REh$$FajQAvHB2zv6CVvziwI_4",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "slug" : "Join_1",
+        "x" : -200,
+        "y" : 60,
+        "phase" : 0,
+        "macroDependencies" : [ "SQL_Databricks.qa_concat_macro_column" ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : "in0.c_int!=in1.id"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "in0.c_int"
+          },
+          "alias" : "c_int"
+        }, {
+          "expression" : {
+            "expression" : "concat(\n  in0.c_string, \n  {{ SQL_Databricks.qa_concat_macro_column('in0.c_string') }}, \n  'password', \n  '{{ C_MODEL_PASSWORD }}', \n  '{{ var(\"TEST_PASSWORD_PROJECT_VAR\") }}')"
+          },
+          "alias" : "c_string"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_map_ts_int_int"
+          },
+          "alias" : "c_map_ts_int_int"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_map_ts_string_string"
+          },
+          "alias" : "c_map_ts_string_string"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_map_ts_timestamp_int"
+          },
+          "alias" : "c_map_ts_timestamp_int"
+        }, {
+          "expression" : {
+            "expression" : "in0.c_map_complex"
+          },
+          "alias" : "c_map_complex"
+        }, {
+          "expression" : {
+            "expression" : "in1.id"
+          },
+          "alias" : "id"
+        }, {
+          "expression" : {
+            "expression" : "in1.user_id"
+          },
+          "alias" : "user_id"
+        }, {
+          "expression" : {
+            "expression" : "in1.order_date"
+          },
+          "alias" : "order_date"
+        }, {
+          "expression" : {
+            "expression" : "in1.status"
+          },
+          "alias" : "status"
+        } ],
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "fXJhMcglt_3xuaY0E-TMd$$ZniQKvKvYHWcT1TE7kTt4##c_int", "CkbMSXudoicUJIszQjpEN$$eZtgDnaDft41Yx2kg1moF##id", "fXJhMcglt_3xuaY0E-TMd$$ZniQKvKvYHWcT1TE7kTt4##c_int", "fXJhMcglt_3xuaY0E-TMd$$ZniQKvKvYHWcT1TE7kTt4##c_map_ts_int_int", "fXJhMcglt_3xuaY0E-TMd$$ZniQKvKvYHWcT1TE7kTt4##c_map_ts_string_string", "fXJhMcglt_3xuaY0E-TMd$$ZniQKvKvYHWcT1TE7kTt4##c_map_ts_timestamp_int", "fXJhMcglt_3xuaY0E-TMd$$ZniQKvKvYHWcT1TE7kTt4##c_map_complex", "CkbMSXudoicUJIszQjpEN$$eZtgDnaDft41Yx2kg1moF##id", "CkbMSXudoicUJIszQjpEN$$eZtgDnaDft41Yx2kg1moF##user_id", "CkbMSXudoicUJIszQjpEN$$eZtgDnaDft41Yx2kg1moF##order_date", "CkbMSXudoicUJIszQjpEN$$eZtgDnaDft41Yx2kg1moF##status" ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "fXJhMcglt_3xuaY0E-TMd$$ZniQKvKvYHWcT1TE7kTt4",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "c_int",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_map_ts_int_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Integer"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_string_string",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_timestamp_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Timestamp"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_complex",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "w1",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "w2",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  } ]
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            } ]
+          },
+          "slug" : "in0"
+        }, {
+          "id" : "CkbMSXudoicUJIszQjpEN$$eZtgDnaDft41Yx2kg1moF",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "s9ppuIOVHsmk-cuyjCNUH$$LQtW5P7qHge4CFFf0IE4F",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "c_int",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_map_ts_int_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Integer"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_string_string",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_timestamp_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Timestamp"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_complex",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "w1",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "w2",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  } ]
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "test_hsbcdev_model##oHxrkNOS" : {
+      "id" : "test_hsbcdev_model##oHxrkNOS",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "test_hsbcdev_model",
+        "x" : 260,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM qa_all_not_null_1\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "GhZB5ES0",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "c_int",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_map_ts_int_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Integer"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_string_string",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_timestamp_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Timestamp"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_complex",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "w1",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "w2",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  } ]
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "qa_all_not_null_1"
+        } ],
+        "outputs" : [ {
+          "id" : "BX4pXxIt",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "c_int",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_map_ts_int_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Integer"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_string_string",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_timestamp_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Timestamp"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_complex",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "w1",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "w2",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  } ]
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "user_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "nOEXi05IV2kwD7fdDMdcL" : {
+      "id" : "nOEXi05IV2kwD7fdDMdcL",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "all_map_type_table",
+        "slug" : "all_map_type_table",
+        "x" : -700,
+        "y" : -120,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "all_map_type_table",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.qa_database",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "zWFHm-jWueU-GyJ5uJHmn",
+          "schema" : {
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "c_int",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "c_string",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "c_map_ts_int_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Integer"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_string_string",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "c_map_ts_timestamp_int",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Timestamp"
+                },
+                "valueType" : {
+                  "type" : "Integer"
+                }
+              }
+            }, {
+              "name" : "c_map_complex",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "Struct",
+                  "fields" : [ {
+                    "name" : "w1",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  }, {
+                    "name" : "w2",
+                    "dataType" : {
+                      "type" : "String"
+                    }
+                  } ]
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "sOyNmtDydxIJe-qfTHpSh$$czSQ0vxi9EjHHDg1V5W43",
+    "source" : "nOEXi05IV2kwD7fdDMdcL",
+    "sourcePort" : "zWFHm-jWueU-GyJ5uJHmn",
+    "target" : "rBRFPDcHRhhL4iJgD9bD7$$bmiUJsGE_nxmQiQ_Efi2b",
+    "targetPort" : "Jp-GMcJX7fwuJqQS0kjPl$$ZVk1PuWp2mAoUXXuaVOwI"
+  }, {
+    "id" : "BC6cPx-3qK4o32F3hWfbi",
+    "source" : "rBRFPDcHRhhL4iJgD9bD7$$bmiUJsGE_nxmQiQ_Efi2b",
+    "sourcePort" : "MfXWzwEx9nFgdgnu3pP3c$$Mi_DuH9B38CWPvok1tZK2",
+    "target" : "-0-Hra4B2CnZhvV2p3REh$$FajQAvHB2zv6CVvziwI_4",
+    "targetPort" : "fXJhMcglt_3xuaY0E-TMd$$ZniQKvKvYHWcT1TE7kTt4"
+  }, {
+    "id" : "bUbesInsosPF1ADUhlvbu",
+    "source" : "iZgKo8h2aGlYdfSWVrM58",
+    "sourcePort" : "cl7UyOB596VIPFRx4fGe_",
+    "target" : "-0-Hra4B2CnZhvV2p3REh$$FajQAvHB2zv6CVvziwI_4",
+    "targetPort" : "CkbMSXudoicUJIszQjpEN$$eZtgDnaDft41Yx2kg1moF"
+  }, {
+    "id" : "ezzCdnCeSwPpa4oOducnj",
+    "source" : "-0-Hra4B2CnZhvV2p3REh$$FajQAvHB2zv6CVvziwI_4",
+    "sourcePort" : "s9ppuIOVHsmk-cuyjCNUH$$LQtW5P7qHge4CFFf0IE4F",
+    "target" : "3cRv9WA7QvWrnnYRrdzft$$2SsoaZ0FTwVa04ciskmrs",
+    "targetPort" : "XiIMoMzElDJ5ye7VMrymE"
+  }, {
+    "id" : "BzfvJuPbnsce2R0DuX-TR",
+    "source" : "3cRv9WA7QvWrnnYRrdzft$$2SsoaZ0FTwVa04ciskmrs",
+    "sourcePort" : "u9B0MifB7OUkmtFXpquae$$1ni7anwSZfdV5ThUTnqwu",
+    "target" : "test_hsbcdev_model##oHxrkNOS",
+    "targetPort" : "GhZB5ES0"
+  } ],
+  "component" : "Model"
+}

@@ -1,0 +1,52 @@
+---
+version: 2
+sources:
+- name: "hive_metastore.qa_database"
+  database: "hive_metastore"
+  schema: "qa_database"
+  config:
+    enabled: true
+  tables:
+  - name: "all_map_type_table"
+    columns:
+    - name: "c_int"
+      dataType:
+        type: "Integer"
+    - name: "c_string"
+      dataType:
+        type: "String"
+    - name: "c_map_ts_int_int"
+      dataType:
+        type: "Map"
+        keyType:
+          type: "Integer"
+        valueType:
+          type: "Integer"
+    - name: "c_map_ts_string_string"
+      dataType:
+        type: "Map"
+        keyType:
+          type: "String"
+        valueType:
+          type: "String"
+    - name: "c_map_ts_timestamp_int"
+      dataType:
+        type: "Map"
+        keyType:
+          type: "Timestamp"
+        valueType:
+          type: "Integer"
+    - name: "c_map_complex"
+      dataType:
+        type: "Map"
+        keyType:
+          type: "Struct"
+          fields:
+          - name: "w1"
+            dataType:
+              type: "String"
+          - name: "w2"
+            dataType:
+              type: "String"
+        valueType:
+          type: "String"

@@ -1,0 +1,311 @@
+name: SQL_Databricks
+description: ''
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-06-26 16:52:12'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/test_hsbcdev_model:
+    name: test_hsbcdev_model
+    schema:
+      providerType: Databricks
+      fields:
+      - name: c_int
+        dataType:
+          type: Integer
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_map_ts_int_int
+        dataType:
+          type: Map
+          keyType:
+            type: Integer
+          valueType:
+            type: Integer
+      - name: c_map_ts_string_string
+        dataType:
+          type: Map
+          keyType:
+            type: String
+          valueType:
+            type: String
+      - name: c_map_ts_timestamp_int
+        dataType:
+          type: Map
+          keyType:
+            type: Timestamp
+          valueType:
+            type: Integer
+      - name: c_map_complex
+        dataType:
+          type: Map
+          keyType:
+            type: Struct
+            fields:
+            - name: w1
+              dataType:
+                type: String
+            - name: w2
+              dataType:
+                type: String
+          valueType:
+            type: String
+      - name: id
+        dataType:
+          type: Integer
+      - name: user_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/test_hsbcdev_model.sql
+    - .prophecy/ide/models/test_hsbcdev_model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-06-26 17:01:51'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/qa_concat_macro_column:
+    name: qa_concat_macro_column
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    - .prophecy/ide/macros/qa_concat_macro_column.json
+    createdAt: '2024-06-26 17:04:48'
+  .prophecy/metadata/sqlmacros/qa_model_all_above_given_id:
+    name: qa_model_all_above_given_id
+    macroType: query
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:05:03'
+  .prophecy/metadata/sqlmacros/round_function:
+    name: round_function
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:04:57'
+  .prophecy/metadata/sqlmacros/qa_concat_macro:
+    name: qa_concat_macro
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:04:57'
+  .prophecy/metadata/sqlmacros/qa_concat_macro_calling_complex_concat:
+    name: qa_concat_macro_calling_complex_concat
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:04:57'
+  .prophecy/metadata/sqlmacros/qa_epl_data_macro:
+    name: qa_epl_data_macro
+    macroType: query
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:05:03'
+  .prophecy/metadata/sqlmacros/qa_all_not_null:
+    name: qa_all_not_null
+    macroType: query
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:05:03'
+  .prophecy/metadata/sqlmacros/qa_number_macro:
+    name: qa_number_macro
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:04:57'
+  .prophecy/metadata/sqlmacros/multi_macro_expressions:
+    name: multi_macro_expressions
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:04:57'
+  .prophecy/metadata/sqlmacros/qa_boolean_macro:
+    name: qa_boolean_macro
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:04:57'
+  .prophecy/metadata/sqlmacros/qa_get_unique_count:
+    name: qa_get_unique_count
+    macroType: query
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:05:03'
+  .prophecy/metadata/sqlmacros/qa_test_relationship:
+    name: qa_test_relationship
+    macroType: query
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:05:03'
+  .prophecy/metadata/sqlmacros/qa_complex_macro:
+    name: qa_complex_macro
+    macroType: query
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:05:03'
+  .prophecy/metadata/sqlmacros/qa_macro_call_another_macro_column:
+    name: qa_macro_call_another_macro_column
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:04:57'
+  .prophecy/metadata/sqlmacros/qa_all_null:
+    name: qa_all_null
+    macroType: query
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/qa_concat_macro_column.sql
+    createdAt: '2024-06-26 17:05:03'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/raw_orders:
+    name: raw_orders
+    schema:
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: user_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - seeds/raw_orders.csv
+    createdAt: '2024-06-26 17:04:00'
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_qa_database:
+    name: hive_metastore.qa_database
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-06-26 17:03:24'
+    tables:
+    - name: all_map_type_table
+      schema:
+        providerType: databricks
+        fields:
+        - name: c_int
+          dataType:
+            type: Integer
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_map_ts_int_int
+          dataType:
+            type: Map
+            keyType:
+              type: Integer
+            valueType:
+              type: Integer
+        - name: c_map_ts_string_string
+          dataType:
+            type: Map
+            keyType:
+              type: String
+            valueType:
+              type: String
+        - name: c_map_ts_timestamp_int
+          dataType:
+            type: Map
+            keyType:
+              type: Timestamp
+            valueType:
+              type: Integer
+        - name: c_map_complex
+          dataType:
+            type: Map
+            keyType:
+              type: Struct
+              fields:
+              - name: w1
+                dataType:
+                  type: String
+              - name: w2
+                dataType:
+                  type: String
+            valueType:
+              type: String
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-06-26 17:03:24'
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: abhisheks+e2etests@prophecy.io
+  createdAt: '2024-06-26 16:52:12'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
