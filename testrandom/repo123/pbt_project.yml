@@ -10,20 +10,7 @@ buildSystemDetails:
   buildSystem: maven
   author: null
   createdAt: '2024-06-28 09:40:48'
-pipelines:
-  pipelines/TestPip:
-    name: TestPip
-    description: ''
-    author: abhisheks+e2etests@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: scala
-    createdAt: '2024-06-28 09:40:48'
-    datasets:
-      inputs: []
-      outputs: []
-    subgraphs: []
-    dependencies: {}
+pipelines: {}
 datasets: {}
 templates: {}
 jobs: {}
