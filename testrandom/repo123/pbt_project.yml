@@ -10,7 +10,20 @@ buildSystemDetails:
   buildSystem: maven
   author: null
   createdAt: '2024-06-28 09:40:48'
-pipelines: {}
+pipelines:
+  pipelines/p0:
+    name: p0
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2024-06-28 10:36:17'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
