@@ -1,6 +1,6 @@
 name: TestScalaProject
 description: ''
-version: 2.4
+version: 0.0.1
 author: null
 language: scala
 buildSystem: ''
@@ -9,7 +9,7 @@ buildSystemDetails:
   parentArtefactID: abhishekse2etestsprophecyioteam
   buildSystem: maven
   author: null
-  createdAt: '2024-06-29 11:39:07'
+  createdAt: '2024-07-01 16:55:23'
 pipelines: {}
 datasets: {}
 templates: {}
@@ -18,6 +18,29 @@ gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
   gems:
+    gems/MyNewReformat:
+      name: MyNewReformat
+      category: Transform
+      subCategory: ''
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      mode: batch
+      files:
+      - src/main/scala/abhishekse2etestsprophecyioteam/testscalaproject/gems/MyNewReformat.scala
+      gemType: ComponentGem
+      dependencies: null
+      createdAt: '2024-07-01 16:55:23'
+    gems/SutomLimit:
+      name: SutomLimit
+      category: CustomCategory
+      subCategory: ''
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      mode: batch
+      files: []
+      gemType: ComponentGem
+      dependencies: []
+      createdAt: '2024-07-01 16:55:28'
     gems/CustomReformat:
       name: CustomReformat
       category: Transform
@@ -28,23 +51,11 @@ gemContainer:
       files: []
       gemType: ComponentGem
       dependencies: []
-      createdAt: '2024-06-29 11:39:52'
-    gems/SutomLimit:
-      name: SutomLimit
-      category: CustomCategory
-      subCategory: ''
-      description: null
-      author: abhisheks+e2etests@prophecy.io
-      mode: batch
-      files:
-      - src/main/scala/abhishekse2etestsprophecyioteam/testscalaproject/gems/CustomLimit.scala
-      gemType: ComponentGem
-      dependencies: []
-      createdAt: '2024-06-29 11:40:09'
+      createdAt: '2024-07-01 16:55:28'
   dependencies: null
 functions:
   author: null
-  createdAt: '2024-06-29 11:39:07'
+  createdAt: '2024-07-01 16:55:23'
   udfs: {}
   udafs: {}
   expressions: {}
@@ -60,11 +71,11 @@ sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
-- modifiedAt: '2024-06-29T11:39:07.063498Z'
+- modifiedAt: '2024-07-01T16:55:23.309413Z'
   name: plibMaven
   version: 8.0.17
-  id: '1431979219'
-  createdAt: '2024-06-29T11:39:07.063498Z'
+  id: '161974747'
+  createdAt: '2024-07-01T16:55:23.309413Z'
   type: plibMaven
 projectDependencies:
   '39':
@@ -74,7 +85,7 @@ projectDependencies:
     version: 0.2.4.dev5
     isDefault: true
     author: null
-    createdAt: '2024-06-29 11:39:07'
+    createdAt: '2024-07-01 16:55:28'
   '40':
     projectUID: 40
     projectName: ProphecyWarehouseScala
@@ -82,7 +93,7 @@ projectDependencies:
     version: 0.0.5
     isDefault: true
     author: null
-    createdAt: '2024-06-29 11:39:07'
+    createdAt: '2024-07-01 16:55:28'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
