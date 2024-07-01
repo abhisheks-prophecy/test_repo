@@ -1,15 +1,15 @@
 name: TestScalaProject
 description: ''
-version: 2.0
+version: 0.0.1
 author: null
 language: scala
 buildSystem: ''
 buildSystemDetails:
   artefactID: testscalaproject
-  parentArtefactID: abhishekse2etestsprophecyioteam
+  parentArtefactID: ''
   buildSystem: maven
   author: null
-  createdAt: '2024-06-29 11:39:07'
+  createdAt: '2024-07-01 13:13:53'
 pipelines: {}
 datasets: {}
 templates: {}
@@ -17,34 +17,11 @@ jobs: {}
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
-  gems:
-    gems/CustomReformat:
-      name: CustomReformat
-      category: Transform
-      subCategory: ''
-      description: null
-      author: abhisheks+e2etests@prophecy.io
-      mode: batch
-      files: []
-      gemType: ComponentGem
-      dependencies: []
-      createdAt: '2024-06-29 11:39:52'
-    gems/SutomLimit:
-      name: SutomLimit
-      category: CustomCategory
-      subCategory: ''
-      description: null
-      author: abhisheks+e2etests@prophecy.io
-      mode: batch
-      files:
-      - src/main/scala/abhishekse2etestsprophecyioteam/testscalaproject/gems/CustomLimit.scala
-      gemType: ComponentGem
-      dependencies: []
-      createdAt: '2024-06-29 11:40:09'
+  gems: {}
   dependencies: null
 functions:
   author: null
-  createdAt: '2024-06-29 11:39:07'
+  createdAt: '2024-07-01 13:13:53'
   udfs: {}
   udafs: {}
   expressions: {}
@@ -60,11 +37,11 @@ sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
-- modifiedAt: '2024-06-29T11:39:07.063498Z'
+- modifiedAt: '2024-07-01T13:13:53.760428Z'
   name: plibMaven
   version: 8.0.17
-  id: '1431979219'
-  createdAt: '2024-06-29T11:39:07.063498Z'
+  id: '535459661'
+  createdAt: '2024-07-01T13:13:53.760428Z'
   type: plibMaven
 projectDependencies:
   '39':
@@ -74,7 +51,7 @@ projectDependencies:
     version: 0.2.4.dev5
     isDefault: true
     author: null
-    createdAt: '2024-06-29 11:39:07'
+    createdAt: '2024-07-01 13:13:53'
   '40':
     projectUID: 40
     projectName: ProphecyWarehouseScala
@@ -82,7 +59,7 @@ projectDependencies:
     version: 0.0.5
     isDefault: true
     author: null
-    createdAt: '2024-06-29 11:39:07'
+    createdAt: '2024-07-01 13:13:53'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
