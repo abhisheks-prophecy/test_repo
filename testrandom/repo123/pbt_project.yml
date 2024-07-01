@@ -1,6 +1,6 @@
 name: TestScalaProject
 description: ''
-version: 2.3
+version: 2.4
 author: null
 language: scala
 buildSystem: ''
@@ -25,8 +25,7 @@ gemContainer:
       description: null
       author: abhisheks+e2etests@prophecy.io
       mode: batch
-      files:
-        - src/main/scala/abhishekse2etestsprophecyioteam/testscalaproject/gems/CustomReformat.scala
+      files: []
       gemType: ComponentGem
       dependencies: []
       createdAt: '2024-06-29 11:39:52'
