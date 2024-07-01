@@ -6,7 +6,7 @@ language: scala
 buildSystem: ''
 buildSystemDetails:
   artefactID: testscalaproject
-  parentArtefactID: ''
+  parentArtefactID: abhishekse2etestsprophecyioteam
   buildSystem: maven
   author: null
   createdAt: '2024-07-01 13:14:26'
@@ -15,9 +15,32 @@ datasets: {}
 templates: {}
 jobs: {}
 gemContainer:
-  languageVersion: ''
-  gemLibsVersion: ''
-  gems: {}
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.26
+  gems:
+    gems/CustomReformat:
+      name: CustomReformat
+      category: Transform
+      subCategory: ''
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      mode: batch
+      files: []
+      gemType: ComponentGem
+      dependencies: []
+      createdAt: '2024-07-01 13:22:41'
+    gems/limitest:
+      name: limitest
+      category: customisda2
+      subCategory: ''
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      mode: batch
+      files:
+      - src/main/scala/abhishekse2etestsprophecyioteam/testscalaproject/gems/customLimit1.scala
+      gemType: ComponentGem
+      dependencies: []
+      createdAt: '2024-07-01 13:22:50'
   dependencies: null
 functions:
   author: null
