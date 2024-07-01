@@ -1,5 +1,14 @@
 package abhishekse2etestsprophecyioteam.testscalaproject.gems
 
+import io.prophecy.gems._
+import io.prophecy.gems.componentSpec.{ColumnsUsage, ComponentSpec}
+import io.prophecy.gems.copilot.{ProjectionExpression, SelectStmt}
+import io.prophecy.gems.dataTypes._
+import io.prophecy.gems.diagnostics._
+import io.prophecy.gems.uiSpec._
+import org.apache.spark.sql.{DataFrame, SparkSession}
+import play.api.libs.json.{Json, OFormat}
+
 class Limit extends ComponentSpec {
 
   val name: String = "SutomLimit"
