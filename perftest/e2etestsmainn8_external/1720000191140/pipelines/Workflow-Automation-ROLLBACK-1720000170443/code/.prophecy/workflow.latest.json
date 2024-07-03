@@ -122,6 +122,31 @@
         "autoUpdateOnRun" : false
       },
       "properties" : { }
+    },
+    "YiFnFeRn6aEw4yGgFDFhc$$l7wGijiW412H-57edEVLw" : {
+      "id" : "YiFnFeRn6aEw4yGgFDFhc$$l7wGijiW412H-57edEVLw",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_2",
+        "slug" : "Source_2",
+        "x" : -500,
+        "y" : -200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "abnJldh-kbdTGGHpPVU_M$$gFFpyAOFwaFbjkJkPJcY9",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
     }
   },
   "ports" : {
@@ -149,6 +174,22 @@
     "relatedInformation" : [ ]
   }, {
     "property" : "$.workflow.processes.9O7C0KndRJmZT4n6FszNr$$fOrZFrznfEPD0gnqHXO3n.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.YiFnFeRn6aEw4yGgFDFhc$$l7wGijiW412H-57edEVLw.properties.datasetId",
     "range" : {
       "start" : {
         "line" : 0,
