@@ -1,0 +1,78 @@
+name: Automation_RollbackChanges
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: automationrollbackchanges
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2024-07-09 19:14:27'
+pipelines:
+  pipelines/Automation_RollbackChanges_Pipeline1:
+    name: Automation_RollbackChanges_Pipeline1
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2024-07-09 19:14:57'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.26
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-07-09 19:14:27'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2024-07-09T19:14:27.518584Z'
+  name: plibMaven
+  version: 8.0.23
+  id: '1672273959'
+  createdAt: '2024-07-09T19:14:27.518584Z'
+  type: plibMaven
+projectDependencies:
+  '3':
+    projectUID: 3
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/P4JOEwcf_team_5/P4JOEwcf_project_3.git&subPath=
+    version: 0.2.4.dev5
+    isDefault: true
+    author: null
+    createdAt: '2024-07-09 19:14:01'
+  '4':
+    projectUID: 4
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/P4JOEwcf_team_5/P4JOEwcf_project_4.git&subPath=
+    version: 0.0.5
+    isDefault: true
+    author: null
+    createdAt: '2024-07-09 19:14:01'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
