@@ -29,7 +29,7 @@ target-path: "target"
 # Variable Configs
 # ==================
 vars:
-  TEST_PASSWORD_PROJECT_VAR: "TEST_PASSWORD_PROJECT_VAR"
+  TEST_PROJECT_VAR: "Prophecy@123"
 
 # ============
 # Misc

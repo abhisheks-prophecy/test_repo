@@ -1,0 +1,92 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "5",
+    "jobId" : "jobs/databricksjobtest",
+    "name" : "databricksjobtest",
+    "schedule" : "0 0 0 1 1 ? *",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "5",
+      "name" : "dev_sql_databricks",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "QntSy9hLlWg2bi6Ds_25F$$6sSyZJzctCIluLQ4uSe1y" : {
+      "id" : "QntSy9hLlWg2bi6Ds_25F$$6sSyZJzctCIluLQ4uSe1y",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -780,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "hWeLWvylAn5Z6H8m5hPXK$$sBRMfO3dJrFeRZPh8Fplf",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "HBUywjBCJsq9R1lqe-tWn$$tXqdPYz1fD6yFKQhpyB_s",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "projectId" : "17",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "fullRefresh" : true,
+        "profile" : "run_profile",
+        "sqlFabricId" : "5",
+        "gitEntityValue" : "devhsbcdevtest",
+        "execDeps" : true,
+        "execTest" : false,
+        "currentProjectModels" : [ {
+          "label" : "test_hsbcdev_model",
+          "value" : "test_hsbcdev_model",
+          "id" : "17/.prophecy/metadata/sqlmodels/test_hsbcdev_model",
+          "name" : "test_hsbcdev_model"
+        } ]
+      }
+    }
+  },
+  "connections" : [ ]
+}

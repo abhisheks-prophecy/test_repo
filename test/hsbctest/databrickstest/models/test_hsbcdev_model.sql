@@ -1,18 +1,8 @@
+{% set TEST__MODEL_VAR = "TEST_Prophecy@123_MODEL_VAR" %}
+{% set C_MODEL_1 = "Prophecy@123" %}
 
 
-{% set TEST_PASSWORD_MODEL_VAR = "TEST_PASSWORD_MODEL_VAR" %}
-{% set C_MODEL_PASSWORD = "C_MODEL_PASSWORD" %}
-
-
-WITH raw_orders AS (
-
-  SELECT * 
-  
-  FROM {{ ref('raw_orders')}}
-
-),
-
-all_map_type_table AS (
+WITH all_map_type_table AS (
 
   SELECT * 
   
@@ -34,6 +24,14 @@ Reformat_1 AS (
 
 ),
 
+raw_orders AS (
+
+  SELECT * 
+  
+  FROM {{ ref('raw_orders')}}
+
+),
+
 Join_1 AS (
 
   SELECT 
@@ -41,9 +39,8 @@ Join_1 AS (
     concat(
       in0.c_string, 
       {{ SQL_Databricks.qa_concat_macro_column('in0.c_string') }}, 
-      'password', 
-      '{{ C_MODEL_PASSWORD }}', 
-      '{{ var("TEST_PASSWORD_PROJECT_VAR") }}') AS c_string,
+      '{{ C_MODEL_1 }}', 
+      '{{ var("TEST_PROJECT_VAR") }}') AS c_string,
     in0.c_map_ts_int_int AS c_map_ts_int_int,
     in0.c_map_ts_string_string AS c_map_ts_string_string,
     in0.c_map_ts_timestamp_int AS c_map_ts_timestamp_int,
