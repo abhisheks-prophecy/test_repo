@@ -1,0 +1,86 @@
+{
+  "fabric_id" : "1",
+  "components" : [ {
+    "PipelineComponent" : {
+      "path" : "dbfs:/FileStore/prophecy/artifacts/perftest/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Automation-ExternalPip-Clone.jar",
+      "nodeName" : "Automation-ExternalPip-Clone",
+      "id" : "G2GpqNLpLmRYB-q-sVRq7",
+      "language" : "scala",
+      "pipelineId" : "pipelines/Automation-ExternalPip-Clone"
+    }
+  } ],
+  "request" : {
+    "format" : "MULTI_TASK",
+    "name" : "Automation-ExternalJob-Clone",
+    "job_clusters" : [ {
+      "job_cluster_key" : "Automation-ExternalJob-Clone_default_small",
+      "new_cluster" : {
+        "ssh_public_keys" : [ "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCxlAktr6cYjM59lGOGP2+Inn7cqnzUqjwlrZK7zTpyQaavOnJYSk9Llr95v0yQE1ybCQA7FPnMVDlRh50iT0SSwbYpLe0bbNFAY8Fu6OtCJtCFKsEzLMSQoAAu3F5gPCGBpzMvtENUu7mMyIjOx1040pY6F7gGJc7Y2Ek67YkIqta41uzHwZMZYs7noN/2JyzvpIIJ/PJZzN78yfj9DFWPYRelcxQItiFKPN2UBuEgp178vtm1LdDzO+Sng21jxb/RbxlXmPMnNnPKCgaEETyXH0yOw2pg6iapDlfnO2xb92XT4FpnqnH+fUnTTUu7YtVGWTQvMZap1VPElf3tKWJAbYjraopMKAtRHvKI9sqgSK969SASXE2B+uZMz/FMEFICHaEjIYWT4zHmckXvlFyRc/UGoRrKGZG0Edn4L/fRQFgHL4v0pxFoibAcuMr0fI+XqLiGsTpj+mlZLDUahnQEweiW/XzOAcjrYp17WcpbfPOsugwXvm15Mholf1WLHrk= abhisheks@simpledatalabs.com" ],
+        "spark_version" : "14.3.x-scala2.12",
+        "node_type_id" : "i3.xlarge",
+        "num_workers" : 1,
+        "custom_tags" : {
+          "tag_main" : "Prophecy@123_Testvalue"
+        },
+        "init_scripts" : [ ],
+        "spark_conf" : {
+          "spark.andom_spark_config_variable" : "Prophecy@123_Testvalue",
+          "spark.prophecy.metadata.fabric.id" : "1",
+          "spark.prophecy.metadata.job.uri" : "__PROJECT_ID_PLACEHOLDER__/jobs/Automation-ExternalJob-Clone",
+          "spark.prophecy.metadata.is.interactive.run" : "false",
+          "spark.prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
+          "spark.prophecy.metadata.user.id" : "3",
+          "spark.prophecy.tasks" : "H4sIAAAAAAAAAKtWciwtyc9NLMnMz9N1rShJLcpLzAnILNB1zsnPS1WyUirILEjNycxLLdbHq7AWAI3F8rhJAAAA",
+          "spark.prophecy.metadata.job.branch" : "__PROJECT_RELEASE_VERSION_PLACEHOLDER__",
+          "spark.prophecy.metadata.url" : "__PROPHECY_URL_PLACEHOLDER__",
+          "spark.prophecy.execution.metrics.disabled" : "false",
+          "spark.prophecy.execution.service.url" : "wss://perftest.prophecy.io/execution/eventws",
+          "spark.databricks.isv.product" : "prophecy"
+        },
+        "spark_env_vars" : {
+          "PYSPARK_PYTHON" : "/databricks/python3/bin/python3",
+          "ENV_VARIABLE" : "Prophecy@123_Testvalue"
+        },
+        "runtime_engine" : "STANDARD",
+        "aws_attributes" : {
+          "first_on_demand" : 1,
+          "availability" : "SPOT_WITH_FALLBACK",
+          "zone_id" : "auto",
+          "spot_bid_price_percent" : 100
+        },
+        "data_security_mode" : "SINGLE_USER"
+      }
+    } ],
+    "email_notifications" : {
+      "on_start" : [ "abhisheks+e2etests@prophecy.io" ]
+    },
+    "tasks" : [ {
+      "task_key" : "Automation-ExternalPip-Clone",
+      "job_cluster_key" : "Automation-ExternalJob-Clone_default_small",
+      "spark_jar_task" : {
+        "main_class_name" : "io.prophecy.pipelines.automationexternalpipclone.Main",
+        "parameters" : [ "-i", "default", "-O", "{}" ]
+      },
+      "libraries" : [ {
+        "maven" : {
+          "coordinates" : "io.prophecy:prophecy-libs_2.12:3.5.0-8.0.28"
+        }
+      }, {
+        "jar" : "dbfs:/FileStore/prophecy/artifacts/perftest/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Automation-ExternalPip-Clone.jar"
+      } ],
+      "email_notifications" : { },
+      "max_retries" : 0
+    } ],
+    "max_concurrent_runs" : 1,
+    "schedule" : {
+      "quartz_cron_expression" : "0 0 0/1 * * ? 2080",
+      "timezone_id" : "UTC",
+      "pause_status" : "PAUSED"
+    }
+  },
+  "cluster_mode" : {
+    "clusterMode" : "Single"
+  },
+  "secret_scope" : "prophecy_jobs_3",
+  "sorted_processes" : [ "G2GpqNLpLmRYB-q-sVRq7" ]
+}
