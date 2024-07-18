@@ -1,0 +1,4 @@
+package io.prophecy.pipelines.pipelineautomationgithub1721262375877.config
+
+import org.apache.spark.sql.SparkSession
+case class Context(spark: SparkSession, config: Config)
