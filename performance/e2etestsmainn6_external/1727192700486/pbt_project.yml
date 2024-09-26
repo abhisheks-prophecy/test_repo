@@ -50,6 +50,19 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
+  pipelines/p4:
+    name: p4
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2024-09-26 06:37:21'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs:
