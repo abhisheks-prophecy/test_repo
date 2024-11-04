@@ -98,6 +98,31 @@
         "autoUpdateOnRun" : false
       },
       "properties" : { }
+    },
+    "VNHKpyxjuuwmxRpuiurkV$$02UaiV9LApUHHcPGjdl10" : {
+      "id" : "VNHKpyxjuuwmxRpuiurkV$$02UaiV9LApUHHcPGjdl10",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : -440,
+        "y" : -220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "rrPDiXsNxNDvUNYr6k9Ic$$uC6GeTvB5MTaU098t8bnF",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
     }
   },
   "ports" : {
@@ -109,6 +134,22 @@
   },
   "diagnostics" : [ {
     "property" : "$.workflow.processes.mC1XFiE2awyShCex32YEY$$FeDeRmtxnsP3i0PSzAWB_.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.VNHKpyxjuuwmxRpuiurkV$$02UaiV9LApUHHcPGjdl10.properties.datasetId",
     "range" : {
       "start" : {
         "line" : 0,
