@@ -10,7 +10,10 @@ object UDFs extends Serializable {
 
   def registerUDFs(spark: SparkSession) = {
     spark.udf.register("int_udf", int_udf)
-    registerAllUDFs(spark)
+    try registerAllUDFs(spark)
+    catch {
+      case _ => ()
+    }
   }
 
   def int_udf = {

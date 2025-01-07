@@ -18,30 +18,14 @@ case class Config(
   c_float:  Float = 231.12312f,
   c_double: Double = 4.23423432412e11d,
   c_short:  Short = 123,
-  c_databricks_secrets: DatabricksSecret =
-    DatabricksSecret(scope = "qasecrets_mysql", key = "username"),
+  c_databricks_secrets: SecretValue = SecretValue(
+    providerType = Some("Databricks"),
+    secretScope = Some("qasecrets_mysql"),
+    secretKey = Some("username")
+  ),
   c_spark_expression: String = "concat(`c  date`, `c  float`)",
   c_boolean:          Boolean = false,
   `c-ancient-config`: String = "arent i"
 ) extends ConfigBase
-
-object DatabricksSecret {
-
-  implicit val myIntReader: ConfigReader[DatabricksSecret] =
-    ConfigReader[String].map { s =>
-      val Array(scope, key) = s.split(":")
-      DatabricksSecret(scope, key)
-    }
-
-}
-
-case class DatabricksSecret(scope: String, key: String) {
-
-  override def toString: String = {
-    import com.databricks.dbutils_v1.DBUtilsHolder.dbutils
-    dbutils.secrets.get(scope = scope, key = key)
-  }
-
-}
 
 case class Context(spark: SparkSession, config: Config)

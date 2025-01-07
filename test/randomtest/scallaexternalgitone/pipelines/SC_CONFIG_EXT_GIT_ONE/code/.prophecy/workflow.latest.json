@@ -1,19 +1,30 @@
 {
   "metainfo" : {
     "migrationVersions" : {
-      "gemBuilderVersion" : "v1"
+      "gemBuilderVersion" : "v1",
+      "unitTestNullDataMigrated" : true
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : false,
+      "plibVersion" : {
+        "mavenVersion" : "8.6.0"
+      }
     },
     "id" : "1",
     "uri" : "pipelines/SC_CONFIG_EXT_GIT_ONE",
+    "pipelineSettingsInfo" : {
+      "isNullValuesInUnitTestsEnabled" : true
+    },
     "language" : "scala",
-    "fabricId" : "2016",
+    "fabricId" : "7347",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
       "language" : "scala",
       "udfs" : [ ],
       "functionPackageName" : "abhishekse2etestsprophecy.io_team.scalaexternalgitone.functions",
-      "sharedFunctionPackageNames" : [ "io.prophecy.scalagems.functions", "io.prophecy.warehousegems.functions", "abhishekse2etestsprophecyioteam.helloworld.functions" ],
+      "sharedFunctionPackageNames" : [ "io.prophecy.scalagems.functions", "io.prophecy.warehousegems.functions" ],
       "initialCode" : "var int_val=1"
     },
     "udafs" : {
@@ -71,8 +82,35 @@
         }, {
           "name" : "c_databricks_secrets",
           "kind" : {
-            "type" : "databricks_secret",
-            "value" : "qasecrets_mysql:username"
+            "type" : "secret",
+            "fields" : [ {
+              "name" : "secretScope",
+              "kind" : {
+                "type" : "string",
+                "value" : "qasecrets_mysql"
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            }, {
+              "name" : "secretKey",
+              "kind" : {
+                "type" : "string",
+                "value" : "username"
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            }, {
+              "name" : "providerType",
+              "kind" : {
+                "type" : "string",
+                "value" : "Databricks"
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            } ]
           },
           "optional" : false,
           "isWorkflowNodeConfiguration" : false,
@@ -156,8 +194,35 @@
             }, {
               "name" : "c_databricks_secrets",
               "kind" : {
-                "type" : "databricks_secret",
-                "value" : "qasecrets_mysql:username"
+                "type" : "secret",
+                "fields" : [ {
+                  "name" : "secretScope",
+                  "kind" : {
+                    "type" : "string",
+                    "value" : "qasecrets_mysql"
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                }, {
+                  "name" : "secretKey",
+                  "kind" : {
+                    "type" : "string",
+                    "value" : "username"
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                }, {
+                  "name" : "providerType",
+                  "kind" : {
+                    "type" : "string",
+                    "value" : "Databricks"
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                } ]
               },
               "optional" : false,
               "isWorkflowNodeConfiguration" : false,
@@ -246,8 +311,35 @@
             }, {
               "name" : "c_databricks_secrets",
               "kind" : {
-                "type" : "databricks_secret",
-                "value" : "qasecrets_mysql:username"
+                "type" : "secret",
+                "fields" : [ {
+                  "name" : "secretScope",
+                  "kind" : {
+                    "type" : "string",
+                    "value" : "qasecrets_mysql"
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                }, {
+                  "name" : "secretKey",
+                  "kind" : {
+                    "type" : "string",
+                    "value" : "username"
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                }, {
+                  "name" : "providerType",
+                  "kind" : {
+                    "type" : "string",
+                    "value" : "Databricks"
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                } ]
               },
               "optional" : false,
               "isWorkflowNodeConfiguration" : false,
@@ -302,16 +394,12 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
     "dependentProjectExternalDependencies" : [ {
-      "projectUID" : "32194",
+      "projectUID" : "12651",
       "projectName" : "ProphecySparkBasicsScala",
       "externalDependencies" : [ ]
     }, {
-      "projectUID" : "32195",
+      "projectUID" : "12652",
       "projectName" : "ProphecyWarehouseScala",
-      "externalDependencies" : [ ]
-    }, {
-      "projectUID" : "8172",
-      "projectName" : "HelloWorld",
       "externalDependencies" : [ ]
     } ],
     "isImported" : false,
@@ -323,7 +411,7 @@
       "value" : 1000
     },
     "topLevelPackage" : "io.prophecy.pipelines.sc_config_ext_git_one",
-    "configurationVersion" : "v1"
+    "configurationVersion" : "v2"
   },
   "connections" : [ {
     "id" : "rfv-VV2OofnSlPEf_lVnt",
@@ -532,6 +620,10 @@
           "description" : ""
         } ],
         "mdUsers" : null
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=&tag=0.2.6&projectSubscriptionProjectId=12651&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsScala"
       }
     },
     "FQS0je1zptJPgkDpez9bj$$VSobVcaNtN2TvFQBcSxii" : {
@@ -1027,6 +1119,10 @@
               "description" : ""
             } ],
             "mdUsers" : null
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=&tag=0.2.6&projectSubscriptionProjectId=12651&path=gems/Reformat",
+            "projectName" : "ProphecySparkBasicsScala"
           }
         },
         "3_jJ3bWn8JSg_AEts6is4$$G86qtfJK_Y1TnHsh3T8xb" : {
@@ -1160,12 +1256,11 @@
             "limit" : "11"
           },
           "componentInfo" : {
-            "gemId" : "gitUri=http://gitserver:3000/W6rsF9cj_team_8976/W6rsF9cj_project_32194.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=32194&path=gems/Limit",
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=&tag=0.2.6&projectSubscriptionProjectId=12651&path=gems/Limit",
             "projectName" : "ProphecySparkBasicsScala"
           }
         }
-      },
-      "externalDependencies" : [ ]
+      }
     },
     "3t-WmT-Hxo5aNEnXZn7MU$$hBYQTwJNql--LjTZYQhsp" : {
       "id" : "3t-WmT-Hxo5aNEnXZn7MU$$hBYQTwJNql--LjTZYQhsp",
@@ -1354,6 +1449,10 @@
           "description" : ""
         } ],
         "mdUsers" : null
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=&tag=0.2.6&projectSubscriptionProjectId=12651&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsScala"
       }
     },
     "llKl4y74uW0mXWQ_Bv-Cs$$cIDXi9Xn3zfphOTNWcjOE" : {
@@ -1822,6 +1921,10 @@
               "description" : ""
             } ],
             "mdUsers" : null
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=&tag=0.2.6&projectSubscriptionProjectId=12651&path=gems/Reformat",
+            "projectName" : "ProphecySparkBasicsScala"
           }
         },
         "3_jJ3bWn8JSg_AEts6is4$$OPmhjAO3s5EhaIrJj1Hse" : {
@@ -1955,12 +2058,11 @@
             "limit" : "11"
           },
           "componentInfo" : {
-            "gemId" : "gitUri=http://gitserver:3000/W6rsF9cj_team_8976/W6rsF9cj_project_32194.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=32194&path=gems/Limit",
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=&tag=0.2.6&projectSubscriptionProjectId=12651&path=gems/Limit",
             "projectName" : "ProphecySparkBasicsScala"
           }
         }
-      },
-      "externalDependencies" : [ ]
+      }
     },
     "sSULoCK8GTo9lZer8_M8I$$MnGKMVToN0c-HYMXQaa-N" : {
       "id" : "sSULoCK8GTo9lZer8_M8I$$MnGKMVToN0c-HYMXQaa-N",
@@ -2100,23 +2202,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "dependencies" : {
-    "projectDependencies" : [ ],
-    "pipelineDependencies" : [ ],
-    "gemDependencies" : [ ],
-    "packageDependencies" : [ {
-      "projectUID" : "32194",
-      "projectName" : "ProphecySparkBasicsScala",
-      "externalDependencies" : [ ]
-    }, {
-      "projectUID" : "32195",
-      "projectName" : "ProphecyWarehouseScala",
-      "externalDependencies" : [ ]
-    }, {
-      "projectUID" : "8172",
-      "projectName" : "HelloWorld",
-      "externalDependencies" : [ ]
-    } ]
   }
 }

@@ -1,9 +1,7 @@
 {
-  "c_string" : "asdasdasdasd",
   "c_float" : 1,
-  "c_double" : 1,
   "c_short" : 1,
-  "c_int" : 1,
+  "c_double" : 1,
   "testsubgraphmain1_1" : {
     "c_float" : 1,
     "c_short" : 1,
@@ -11,6 +9,8 @@
     "c_int" : 1,
     "c_string" : "asdasdasdasd"
   },
+  "c_int" : 1,
+  "c_string" : "asdasdasdasd",
   "Subgraph_1" : {
     "c_float" : 1,
     "c_short" : 1,

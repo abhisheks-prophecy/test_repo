@@ -4,3 +4,5 @@ configurations:
 - test_config1
 - default
 - test_config2
+pipelineVersion:
+  version: '2'

@@ -61,8 +61,35 @@
         }, {
           "name" : "c_databricks_secrets",
           "kind" : {
-            "type" : "databricks_secret",
-            "value" : "qasecrets_mysql:username"
+            "type" : "secret",
+            "fields" : [ {
+              "name" : "secretScope",
+              "kind" : {
+                "type" : "string",
+                "value" : "qasecrets_mysql"
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            }, {
+              "name" : "secretKey",
+              "kind" : {
+                "type" : "string",
+                "value" : "username"
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            }, {
+              "name" : "providerType",
+              "kind" : {
+                "type" : "string",
+                "value" : "Databricks"
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            } ]
           },
           "optional" : false,
           "isWorkflowNodeConfiguration" : false,
@@ -466,6 +493,12 @@
           "language" : "scala"
         } ],
         "language" : "scala"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=&tag=0.2.6&projectSubscriptionProjectId=12651&path=gems/Reformat",
+        "projectId" : "12651",
+        "projectName" : "ProphecySparkBasicsScala",
+        "version" : "0.2.6"
       }
     },
     "3_jJ3bWn8JSg_AEts6is4" : {
@@ -704,12 +737,11 @@
         "language" : "scala"
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/W6rsF9cj_team_8976/W6rsF9cj_project_32194.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=32194&path=gems/Limit",
-        "projectId" : "32194",
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12651.git&subPath=&tag=0.2.6&projectSubscriptionProjectId=12651&path=gems/Limit",
+        "projectId" : "12651",
         "projectName" : "ProphecySparkBasicsScala",
-        "version" : "0.0.5"
+        "version" : "0.2.6"
       }
     }
-  },
-  "externalDependencies" : [ ]
+  }
 }
