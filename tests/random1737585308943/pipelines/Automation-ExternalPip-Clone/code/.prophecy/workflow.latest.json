@@ -1,0 +1,558 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1",
+      "unitTestNullDataMigrated" : true
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.8.0-SNAPSHOT"
+      },
+      "sparkConfigJinjaEnabled" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/Automation-ExternalPip-Clone",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "Automation-ExternalPip-Clone",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true,
+      "isNullValuesInUnitTestsEnabled" : true,
+      "sparkConfigOptions" : {
+        "disableSparkCreationTimeConfigGeneration" : true
+      }
+    },
+    "language" : "scala",
+    "fabricId" : "3",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "scala",
+      "udfs" : [ ],
+      "functionPackageName" : "abhishekse2etestsprophecyioteam.automationexternalpclone.functions",
+      "sharedFunctionPackageNames" : [ "io.prophecy.scalagems.functions", "io.prophecy.warehousegems.functions" ]
+    },
+    "udafs" : {
+      "language" : "scala",
+      "code" : "package udfs\n\nimport org.apache.spark.sql.expressions._\nimport org.apache.spark.sql.types._\nimport org.apache.spark.sql._\n\n/**\n  * Here you can define your custom aggregate functions.\n  *\n  * Make sure to register your `udafs` in the register_udafs function below.\n  *\n  * Example:\n  *\n  * object GeometricMean extends UserDefinedAggregateFunction {\n  *   // This is the input fields for your aggregate function.\n  *   override def inputSchema: org.apache.spark.sql.types.StructType =\n  *     StructType(StructField(\"value\", DoubleType) :: Nil)\n  *\n  *   // This is the internal fields you keep for computing your aggregate.\n  *   override def bufferSchema: StructType = StructType(\n  *     StructField(\"count\", LongType) ::\n  *     StructField(\"product\", DoubleType) :: Nil\n  *   )\n  *\n  *   // This is the output type of your aggregatation function.\n  *   override def dataType: DataType = DoubleType\n  *\n  *   override def deterministic: Boolean = true\n  *\n  *   // This is the initial value for your buffer schema.\n  *   override def initialize(buffer: MutableAggregationBuffer): Unit = {\n  *     buffer(0) = 0L\n  *     buffer(1) = 1.0\n  *   }\n  *\n  *   // This is how to update your buffer schema given an input.\n  *   override def update(buffer: MutableAggregationBuffer, input: Row): Unit = {\n  *     buffer(0) = buffer.getAs[Long](0) + 1\n  *     buffer(1) = buffer.getAs[Double](1) * input.getAs[Double](0)\n  *   }\n  *\n  *   // This is how to merge two objects with the bufferSchema type.\n  *   override def merge(buffer1: MutableAggregationBuffer, buffer2: Row): Unit = {\n  *     buffer1(0) = buffer1.getAs[Long](0) + buffer2.getAs[Long](0)\n  *     buffer1(1) = buffer1.getAs[Double](1) * buffer2.getAs[Double](1)\n  *   }\n  *\n  *   // This is where you output the final value, given the final value of your bufferSchema.\n  *   override def evaluate(buffer: Row): Any = {\n  *     math.pow(buffer.getDouble(1), 1.toDouble / buffer.getLong(0))\n  *   }\n  * }\n  *\n  */\n\n\nobject UDAFs {\n  /**\n    * Registers UDAFs with Spark SQL\n    */\n  def registerUDAFs(spark: SparkSession): Unit = {\n    /**\n      * Example:\n      *\n      * spark.udf.register(\"gm\", GeometricMean)\n      *\n      */\n\n\n  }\n}\n"
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "Subgraph_1",
+          "kind" : {
+            "type" : "record",
+            "fields" : [ ]
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : true,
+          "isReferenced" : false
+        } ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ {
+      "name" : "spark.default.parallelism",
+      "value" : "4"
+    }, {
+      "name" : "spark.sql.legacy.allowUntypedScalaUDF",
+      "value" : "true"
+    } ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "1",
+      "projectName" : "ProphecySparkBasicsScala",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "2",
+      "projectName" : "ProphecyWarehouseScala",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "io.prophecy.pipelines.automationexternalpipclone",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "wbZru3YddduVh96dB5w3b",
+    "source" : "q98Vy-rEyyYCFbUKhHp9t$$iqW2sUwa74H-7_bnguQF0",
+    "sourcePort" : "4waEJ70OVfFkrqUdKwE7i$$5X1Qsnx_Vs5FfGPoEhenk",
+    "target" : "iuac8ZwotDJhk6aIKca6m$$Fmmqk5V7jTjR-rHs4RzNm",
+    "targetPort" : "oNXj6zrRe9OLFI-f23UrV$$sjbsjwR9kQJqsQolGOXJX"
+  }, {
+    "id" : "j-lRX5A9IOgvR9B_J7de9",
+    "source" : "q98Vy-rEyyYCFbUKhHp9t$$iqW2sUwa74H-7_bnguQF0",
+    "sourcePort" : "4waEJ70OVfFkrqUdKwE7i$$5X1Qsnx_Vs5FfGPoEhenk",
+    "target" : "LPj0YETOEbJvvC-w_1yay$$_9RymkrXANOWEvViXGfo4",
+    "targetPort" : "xEp797eAbiJOYuug_widx$$f0f0x5AyyIisP9UWi_CmE"
+  } ],
+  "processes" : {
+    "q98Vy-rEyyYCFbUKhHp9t$$iqW2sUwa74H-7_bnguQF0" : {
+      "id" : "q98Vy-rEyyYCFbUKhHp9t$$iqW2sUwa74H-7_bnguQF0",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Automation-ExternalDataset-Clone",
+        "slug" : "Automation_ExternalDataset_Clone",
+        "x" : 20,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "4waEJ70OVfFkrqUdKwE7i$$5X1Qsnx_Vs5FfGPoEhenk",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Automation-ExternalDataset-Clone"
+      }
+    },
+    "iuac8ZwotDJhk6aIKca6m$$Fmmqk5V7jTjR-rHs4RzNm" : {
+      "id" : "iuac8ZwotDJhk6aIKca6m$$Fmmqk5V7jTjR-rHs4RzNm",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "order_by_full_name_asc",
+        "slug" : "order_by_full_name_asc",
+        "x" : 220,
+        "y" : 220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Sorts customer records alphabetically by their full names.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "oNXj6zrRe9OLFI-f23UrV$$sjbsjwR9kQJqsQolGOXJX",
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "k5hGQKf0L5WHpmNNFl_bg$$E-qCRQ2cpLM62iBHbcSM3",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "oNXj6zrRe9OLFI-f23UrV$$sjbsjwR9kQJqsQolGOXJX##first_name", "oNXj6zrRe9OLFI-f23UrV$$sjbsjwR9kQJqsQolGOXJX##last_name" ],
+        "orders" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat(first_name,last_name)"
+          },
+          "sortType" : "asc_nulls_last"
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/aTbIAI3r_team_2/aTbIAI3r_project_1.git&subPath=&tag=0.2.6.1.dev3&projectSubscriptionProjectId=1&path=gems/OrderBy",
+        "projectName" : "ProphecySparkBasicsScala"
+      }
+    },
+    "LPj0YETOEbJvvC-w_1yay$$_9RymkrXANOWEvViXGfo4" : {
+      "id" : "LPj0YETOEbJvvC-w_1yay$$_9RymkrXANOWEvViXGfo4",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "Subgraph_1",
+        "slug" : "Subgraph_1",
+        "x" : 220,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xEp797eAbiJOYuug_widx$$f0f0x5AyyIisP9UWi_CmE",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "ViIo720TV-8cn78nhg8YK$$CDYnQCWHNNKUejbZdIGCC",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "externalId" : "subgraphs/Automation-ExternalSG-Clone",
+        "name" : "Automation-ExternalSG-Clone",
+        "packageName" : "org.Automation-ExternalSG-Clone.subgraph"
+      },
+      "connections" : [ {
+        "id" : "uaKvNDdVUvdZXRq2IiElR",
+        "source" : "LPj0YETOEbJvvC-w_1yay$$_9RymkrXANOWEvViXGfo4",
+        "sourcePort" : "xEp797eAbiJOYuug_widx$$f0f0x5AyyIisP9UWi_CmE",
+        "target" : "EmVZLISkKrt52qNSlchG8$$hSB39U3SQWDsM3fTgolOK",
+        "targetPort" : "-U9ggBoW4IWOKjwbrs-Rh$$VtxxvijMhIOt0BxJBItVe"
+      }, {
+        "id" : "DT1fZF5itNkNbI1jQ-Ebx",
+        "source" : "EmVZLISkKrt52qNSlchG8$$hSB39U3SQWDsM3fTgolOK",
+        "sourcePort" : "eFu_V3thqKYCFQFXo6fAT$$ujA2YNbCmP9LkEqadjY2A",
+        "target" : "LPj0YETOEbJvvC-w_1yay$$_9RymkrXANOWEvViXGfo4",
+        "targetPort" : "ViIo720TV-8cn78nhg8YK$$CDYnQCWHNNKUejbZdIGCC"
+      } ],
+      "processes" : {
+        "EmVZLISkKrt52qNSlchG8$$hSB39U3SQWDsM3fTgolOK" : {
+          "id" : "EmVZLISkKrt52qNSlchG8$$hSB39U3SQWDsM3fTgolOK",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "customer_details_projection",
+            "slug" : "customer_details_projection",
+            "x" : -580,
+            "y" : -200,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false,
+            "comment" : "Extracts essential customer information for further analysis or reporting.",
+            "autoUpdateComment" : true
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "-U9ggBoW4IWOKjwbrs-Rh$$VtxxvijMhIOt0BxJBItVe",
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "customer_id",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "first_name",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "last_name",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "phone",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "email",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "country_code",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "account_open_date",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "account_flags",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ {
+              "id" : "eFu_V3thqKYCFQFXo6fAT$$ujA2YNbCmP9LkEqadjY2A",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : {
+            "columnsSelector" : [ "-U9ggBoW4IWOKjwbrs-Rh$$VtxxvijMhIOt0BxJBItVe##customer_id", "-U9ggBoW4IWOKjwbrs-Rh$$VtxxvijMhIOt0BxJBItVe##first_name", "-U9ggBoW4IWOKjwbrs-Rh$$VtxxvijMhIOt0BxJBItVe##last_name", "-U9ggBoW4IWOKjwbrs-Rh$$VtxxvijMhIOt0BxJBItVe##phone", "-U9ggBoW4IWOKjwbrs-Rh$$VtxxvijMhIOt0BxJBItVe##email", "-U9ggBoW4IWOKjwbrs-Rh$$VtxxvijMhIOt0BxJBItVe##country_code", "-U9ggBoW4IWOKjwbrs-Rh$$VtxxvijMhIOt0BxJBItVe##account_open_date", "-U9ggBoW4IWOKjwbrs-Rh$$VtxxvijMhIOt0BxJBItVe##account_flags" ],
+            "expressions" : [ {
+              "target" : "customer_id",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "customer_id"
+              },
+              "description" : ""
+            }, {
+              "target" : "first_name",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "first_name"
+              },
+              "description" : ""
+            }, {
+              "target" : "last_name",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "last_name"
+              },
+              "description" : ""
+            }, {
+              "target" : "phone",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "phone"
+              },
+              "description" : ""
+            }, {
+              "target" : "email",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "email"
+              },
+              "description" : ""
+            }, {
+              "target" : "country_code",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "country_code"
+              },
+              "description" : ""
+            }, {
+              "target" : "account_open_date",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "account_open_date"
+              },
+              "description" : ""
+            }, {
+              "target" : "account_flags",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "account_flags"
+              },
+              "description" : ""
+            } ]
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/aTbIAI3r_team_2/aTbIAI3r_project_1.git&subPath=&tag=0.2.6.1.dev3&projectSubscriptionProjectId=1&path=gems/Reformat",
+            "projectName" : "ProphecySparkBasicsScala"
+          }
+        }
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}
