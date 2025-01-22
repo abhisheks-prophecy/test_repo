@@ -116,6 +116,41 @@
         "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame) : Script = {",
         "scriptMethodFooter" : "    out0\n}"
       }
+    },
+    "wC8T1HUQGvdpgkgnC9zmD$$fyGp2lPjOWuAJb1hfRjoA" : {
+      "id" : "wC8T1HUQGvdpgkgnC9zmD$$fyGp2lPjOWuAJb1hfRjoA",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -1120,
+        "y" : -400,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AoFsqReoaAsg3lHXtOwXp$$9VThyDgPzanM6bA9cY8vU",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "qzCh4spAchvJULCZmzdfZ$$L9uHWuTc-uij4Xi4pH-cx",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/aTbIAI3r_team_2/aTbIAI3r_project_1.git&subPath=&tag=0.2.6.1.dev3&projectSubscriptionProjectId=1&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsScala"
+      }
     }
   },
   "ports" : {
@@ -155,6 +190,22 @@
     },
     "severity" : 1,
     "message" : "Code cannot be empty.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.wC8T1HUQGvdpgkgnC9zmD$$fyGp2lPjOWuAJb1hfRjoA.ports.inputs[0]",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Please connect input port in",
     "tags" : [ ],
     "relatedInformation" : [ ]
   } ]
