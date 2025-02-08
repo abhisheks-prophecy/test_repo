@@ -1,0 +1,78 @@
+name: Automation_RollbackChanges
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: automationrollbackchanges
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2025-02-08 07:20:18'
+pipelines:
+  pipelines/Automation_RollbackChanges_Pipeline1:
+    name: Automation_RollbackChanges_Pipeline1
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2025-02-08 07:20:35'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.26
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-02-08 07:20:18'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2025-02-08T07:20:18.384491Z'
+  name: plibMaven
+  version: 8.8.1-SNAPSHOT
+  id: '1286282297'
+  createdAt: '2025-02-08T07:20:18.384491Z'
+  type: plibMaven
+projectDependencies:
+  '1':
+    projectUID: 1
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/aTbIAI3r_team_2/aTbIAI3r_project_1.git&subPath=
+    version: 0.2.6.1
+    isDefault: true
+    author: null
+    createdAt: '2025-02-08 07:19:14'
+  '2':
+    projectUID: 2
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/aTbIAI3r_team_2/aTbIAI3r_project_2.git&subPath=
+    version: 0.0.6
+    isDefault: true
+    author: null
+    createdAt: '2025-02-08 07:19:14'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
