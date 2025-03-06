@@ -1,0 +1,78 @@
+name: Project-Automation-GITHUB
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomationgithub
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2025-03-06 01:17:00'
+pipelines:
+  pipelines/Pipeline-Automation-GITHUB-1741223105625:
+    name: Pipeline-Automation-GITHUB-1741223105625
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2025-03-06 01:17:56'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.26
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-03-06 01:17:00'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2025-03-06T01:17:00.416988Z'
+  name: plibMaven
+  version: 8.9.0-SNAPSHOT
+  id: '410746382'
+  createdAt: '2025-03-06T01:17:00.416988Z'
+  type: plibMaven
+projectDependencies:
+  '35920':
+    projectUID: 35920
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/W6rsF9cj_team_8976/6ZqckTBq_project_35920.git&subPath=
+    version: 0.0.6
+    isDefault: true
+    author: null
+    createdAt: '2025-03-06 01:05:52'
+  '35919':
+    projectUID: 35919
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/W6rsF9cj_team_8976/6ZqckTBq_project_35919.git&subPath=
+    version: 0.2.6.2.dev1
+    isDefault: true
+    author: null
+    createdAt: '2025-03-06 01:05:52'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
