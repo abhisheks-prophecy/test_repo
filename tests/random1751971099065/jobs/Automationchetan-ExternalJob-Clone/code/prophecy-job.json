@@ -1,0 +1,90 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "3",
+    "jobId" : "jobs/Automationchetan-ExternalJob-Clone",
+    "name" : "Automationchetan-ExternalJob-Clone",
+    "schedule" : "0 0 0/1 * * ? 2080",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "abhisheks+e2etests@prophecy.io",
+      "onStart" : true,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "C4JWod9znas1_dNOgROUj" : {
+      "id" : "C4JWod9znas1_dNOgROUj",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Automationchetan-ExternalPip-Clone",
+        "slug" : "Automationchetan-ExternalPip-Clone",
+        "x" : 100,
+        "y" : 100
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        },
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/Automationchetan-ExternalPip-Clone",
+        "configurations" : {
+          "schema" : [ {
+            "name" : "Subgraph_1",
+            "optional" : false,
+            "kind" : {
+              "type" : "record",
+              "fields" : [ ]
+            },
+            "isReferenced" : false,
+            "isWorkflowNodeConfiguration" : true
+          } ],
+          "instances" : {
+            "Automationchetan-ExternalP-Clone" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    }
+  },
+  "connections" : [ ]
+}
