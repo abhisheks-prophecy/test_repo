@@ -1,0 +1,79 @@
+name: Project-Automation-GITHUB
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomationgithub
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2025-09-22 15:51:15'
+pipelines:
+  pipelines/Pipeline-Automation-GITHUB-1758555615868:
+    name: Pipeline-Automation-GITHUB-1758555615868
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2025-09-22 15:52:08'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.26
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-09-22 15:51:15'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2025-09-22T15:51:15.889232Z'
+  name: plibMaven
+  version: 8.13.0-SNAPSHOT
+  id: '988171159'
+  createdAt: '2025-09-22T15:51:15.889232Z'
+  type: plibMaven
+projectDependencies:
+  '1':
+    projectUID: 1
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/RgJINbmJ_team_2/RgJINbmJ_project_1.git&subPath=
+    version: 0.2.6.3
+    isDefault: true
+    author: null
+    createdAt: '2025-09-22 15:41:00'
+  '2':
+    projectUID: 2
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/RgJINbmJ_team_2/RgJINbmJ_project_2.git&subPath=
+    version: 0.0.6
+    isDefault: true
+    author: null
+    createdAt: '2025-09-22 15:41:00'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
+projectConfigurations: {}
