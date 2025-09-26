@@ -1,0 +1,154 @@
+{
+  "id" : "6Pid24R8yYGVY4jKKYP6E",
+  "component" : "Subgraph",
+  "metadata" : {
+    "label" : "",
+    "slug" : "",
+    "x" : 0,
+    "y" : 0,
+    "phase" : 0,
+    "cache" : false,
+    "detailedStats" : false,
+    "isImported" : false,
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ {
+      "id" : "gFoVr39G9KMgBhF2Dq4l-",
+      "slug" : "in0",
+      "isStreaming" : false
+    } ],
+    "outputs" : [ {
+      "id" : "uq_t0nLX44g00xPMPI8D3",
+      "slug" : "out0",
+      "isStreaming" : false
+    } ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "properties" : {
+    "packageName" : "org.Automation-ExternalSG-Clone.subgraph"
+  },
+  "connections" : [ {
+    "id" : "DomEhSHJI0Czh0ksfnwyW",
+    "source" : "6Pid24R8yYGVY4jKKYP6E",
+    "sourcePort" : "gFoVr39G9KMgBhF2Dq4l-",
+    "target" : "_H0TwDc_nT4Ff2SnlVSEV",
+    "targetPort" : "7yeOKGq0eGQDc5w1UQ4Hq"
+  }, {
+    "id" : "eM3dE6Vhof8nS00BmSfRA",
+    "source" : "_H0TwDc_nT4Ff2SnlVSEV",
+    "sourcePort" : "YG77MaQ_rF9nsZCZqKnvM",
+    "target" : "6Pid24R8yYGVY4jKKYP6E",
+    "targetPort" : "uq_t0nLX44g00xPMPI8D3"
+  } ],
+  "processes" : {
+    "_H0TwDc_nT4Ff2SnlVSEV" : {
+      "id" : "_H0TwDc_nT4Ff2SnlVSEV",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "select_customer_fields",
+        "slug" : "select_customer_fields",
+        "x" : -420,
+        "y" : -140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "7yeOKGq0eGQDc5w1UQ4Hq",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "YG77MaQ_rF9nsZCZqKnvM",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "7yeOKGq0eGQDc5w1UQ4Hq$$fzaVo0UtptP-BZkhz4CKr##customer_id", "7yeOKGq0eGQDc5w1UQ4Hq$$fzaVo0UtptP-BZkhz4CKr##first_name", "7yeOKGq0eGQDc5w1UQ4Hq$$fzaVo0UtptP-BZkhz4CKr##last_name", "7yeOKGq0eGQDc5w1UQ4Hq$$fzaVo0UtptP-BZkhz4CKr##phone", "7yeOKGq0eGQDc5w1UQ4Hq$$fzaVo0UtptP-BZkhz4CKr##email", "7yeOKGq0eGQDc5w1UQ4Hq$$fzaVo0UtptP-BZkhz4CKr##country_code", "7yeOKGq0eGQDc5w1UQ4Hq$$fzaVo0UtptP-BZkhz4CKr##account_open_date", "7yeOKGq0eGQDc5w1UQ4Hq$$fzaVo0UtptP-BZkhz4CKr##account_flags" ],
+        "expressions" : [ {
+          "_row_id" : "350515950",
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "486297666",
+          "target" : "first_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first_name"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "337612776",
+          "target" : "last_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "last_name"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "1407552850",
+          "target" : "phone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "phone"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "596842138",
+          "target" : "email",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "email"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "1346377483",
+          "target" : "country_code",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "country_code"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "464672129",
+          "target" : "account_open_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_open_date"
+          },
+          "description" : ""
+        }, {
+          "_row_id" : "970444362",
+          "target" : "account_flags",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "account_flags"
+          },
+          "description" : ""
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/aTbIAI3r_team_2/aTbIAI3r_project_1.git&subPath=&tag=0.2.6.3&projectSubscriptionProjectId=1&path=gems/Reformat",
+        "projectId" : "1",
+        "projectName" : "ProphecySparkBasicsScala",
+        "version" : "0.2.6.3"
+      }
+    }
+  }
+}
