@@ -118,6 +118,41 @@
         "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame) : Script = {",
         "scriptMethodFooter" : "    out0\n}"
       }
+    },
+    "nGeRsdx67nVITnsXOayWA$$lP-ObS5dpTMWm1wipImm_" : {
+      "id" : "nGeRsdx67nVITnsXOayWA$$lP-ObS5dpTMWm1wipImm_",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -980,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wp7uQsI6qRS7wR72KnHOS$$546IS_czKaOZ_g6z7cqQl",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "UAyyjvS_HYYc4ldY71khg$$NDWueIkCrW4h4Enb47hXm",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/oimECIpO_team_2/oimECIpO_project_1.git&subPath=&tag=0.2.6.3&projectSubscriptionProjectId=1&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsScala"
+      }
     }
   },
   "ports" : {
@@ -157,6 +192,22 @@
     },
     "severity" : 1,
     "message" : "Code cannot be empty.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.nGeRsdx67nVITnsXOayWA$$lP-ObS5dpTMWm1wipImm_.ports.inputs[0]",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Please connect input port in",
     "tags" : [ ],
     "relatedInformation" : [ ]
   } ]
