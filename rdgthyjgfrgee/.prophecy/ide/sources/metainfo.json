@@ -1,0 +1,339 @@
+{
+  "name" : "rdgthyjg",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "__databricks_internal",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "acxiom",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "ai_test_data",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "alaska",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "alaska_airlines_pov",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "alteryx_pov",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "analyst_samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "anderson",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "andre_dev",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "archer_pov",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "bobwelshmer",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "ccf",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "community_demo",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "convenience_store",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dais_2024_analytics_data_raw",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dais_2025",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "daiswt_sydney",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "damian",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "danyelle",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "databricks_cookies_dataset_dais_2024",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dataknobs_predictive_maintenance_and_asset_management",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dbx_sp_workspace_catalog",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "de_demos",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dev",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "evernorth",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "fhir_workshop",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "gen_ai",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "geospatial_docs",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "itai",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "jll",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "jpmc_cib_trial",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "kenpei",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "louis",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "maciej",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "mce",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "md_execution_metrics",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "michelin_poc",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "mmo",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "mockecy",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "nimble_domestic_international_online_supermarket_data_pipelines",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "ntong",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "nyc_taxi",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "omop",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "omop_cdm",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "optum",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "pipelinehub",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "pipelinehubdemo",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "poc_catalog",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "povs",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "product_dev",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "prophecy-demos",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "prophecy_data",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "prophecy_demos",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "prophecy_shared",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "prophecy_sql_workshop_clone",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rashmin",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rbc",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "redshift_foreign",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "rj",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "scsk",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "se_demo",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "shell",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "sigma_fins_demo",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "spectacles",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "toyota",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "trading",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "uc_enabled",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "vizient",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "vlaunir_demos",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "westpac",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "wetter_com_sample_solar_data_solar_energy_data_solar_radiation_20_years_historical_climate_data_for",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "williams",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : {
+      "https://github.com/prophecy-io/prophecy-basics" : "78064"
+    },
+    "dependenciesMetadata" : {
+      "https://github.com/prophecy-io/prophecy-basics" : {
+        "autoUpgrade" : true
+      }
+    }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql"
+}
