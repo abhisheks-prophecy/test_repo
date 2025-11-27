@@ -1,0 +1,123 @@
+{
+  "id" : "pipeline1",
+  "metainfo" : {
+    "label" : "pipeline1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    },
+    "sensorSchedule" : {
+      "enabled" : false,
+      "isDefaultView" : false,
+      "triggers" : { }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false
+  },
+  "processes" : {
+    "XPPxdEjqKNLOaE3VUQZOr" : {
+      "id" : "XPPxdEjqKNLOaE3VUQZOr",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "customer",
+        "x" : -900,
+        "y" : -240,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "customer",
+          "sourceType" : "Table",
+          "sourceName" : "samples.tpch",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "xHcUt8k-mo5fFkyAswPYU",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "mlVAEr9HrGP_bKzKgU1Mp",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "giTJ6sLnxxOzWqyQbbCmV$$mp9vQ1l4yqbG21J7kEZKM" : {
+      "id" : "giTJ6sLnxxOzWqyQbbCmV$$mp9vQ1l4yqbG21J7kEZKM",
+      "component" : "CountRecords",
+      "metadata" : {
+        "label" : "CountRecords_1",
+        "x" : -760,
+        "y" : -240,
+        "phase" : 0
+      },
+      "properties" : {
+        "relation_name" : [ "customer" ],
+        "_oldMacroProperties" : {
+          "macroName" : "CountRecords",
+          "projectName" : "prophecy_basics",
+          "parameters" : [ {
+            "name" : "relation_name",
+            "value" : "[\"customer\"]"
+          }, {
+            "name" : "schema",
+            "value" : "[{\"name\": \"c_custkey\", \"dataType\": \"Bigint\"}, {\"name\": \"c_name\", \"dataType\": \"String\"}, {\"name\": \"c_address\", \"dataType\": \"String\"}, {\"name\": \"c_nationkey\", \"dataType\": \"Bigint\"}, {\"name\": \"c_phone\", \"dataType\": \"String\"}, {\"name\": \"c_acctbal\", \"dataType\": \"Decimal\"}, {\"name\": \"c_mktsegment\", \"dataType\": \"String\"}, {\"name\": \"c_comment\", \"dataType\": \"String\"}]"
+          }, {
+            "name" : "column_names",
+            "value" : "[]"
+          }, {
+            "name" : "count_method",
+            "value" : "count_all_records"
+          } ]
+        },
+        "schema" : "[{\"name\": \"c_custkey\", \"dataType\": \"Bigint\"}, {\"name\": \"c_name\", \"dataType\": \"String\"}, {\"name\": \"c_address\", \"dataType\": \"String\"}, {\"name\": \"c_nationkey\", \"dataType\": \"Bigint\"}, {\"name\": \"c_phone\", \"dataType\": \"String\"}, {\"name\": \"c_acctbal\", \"dataType\": \"Decimal\"}, {\"name\": \"c_mktsegment\", \"dataType\": \"String\"}, {\"name\": \"c_comment\", \"dataType\": \"String\"}]",
+        "column_names" : [ ],
+        "count_method" : "count_all_records"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "uCr7qqVqJ0eQ3YSw7Ij6A$$V-qCSmPP0KQhmiW0mt1x7",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "FTYPEIFkNTceWMNuiocVF$$jv2HH2v9tzKFeCwI21Fr7",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      },
+      "componentInfo" : {
+        "gemId" : "CountRecords_prophecy_basics",
+        "name" : "CountRecords",
+        "projectName" : "prophecy_basics",
+        "sourceProjectName" : "prophecy_basics",
+        "sourceProjectVersion" : "1.0.3"
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "gr38G6pqQo7YTcG27liyC$$qzpKhV5BQwa9TFAl6Pb7a",
+    "source" : "XPPxdEjqKNLOaE3VUQZOr",
+    "sourcePort" : "mlVAEr9HrGP_bKzKgU1Mp",
+    "target" : "giTJ6sLnxxOzWqyQbbCmV$$mp9vQ1l4yqbG21J7kEZKM",
+    "targetPort" : "uCr7qqVqJ0eQ3YSw7Ij6A$$V-qCSmPP0KQhmiW0mt1x7"
+  } ],
+  "component" : "Pipeline"
+}

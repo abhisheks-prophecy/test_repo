@@ -1,0 +1,6 @@
+---
+version: 2
+models:
+- name: "pipeline1__CountRecords_1"
+  tags:
+  - "prophecy_temp"
