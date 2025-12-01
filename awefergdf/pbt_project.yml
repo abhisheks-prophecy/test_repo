@@ -1,6 +1,6 @@
 name: awefergdf
 description: ''
-version: '1'
+version: '2'
 author: abhisheks+e2etests@prophecy.io
 language: sql
 buildSystem: ''
@@ -23,7 +23,49 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/dadqwd:
+    name: dadqwd
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: c_custkey
+        dataType:
+          type: Bigint
+      - name: c_name
+        dataType:
+          type: String
+      - name: c_address
+        dataType:
+          type: String
+      - name: c_nationkey
+        dataType:
+          type: Bigint
+      - name: c_phone
+        dataType:
+          type: String
+      - name: c_acctbal
+        dataType:
+          type: Decimal
+      - name: c_mktsegment
+        dataType:
+          type: String
+      - name: c_comment
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/dadqwd.sql
+    - .prophecy/ide/models/dadqwd.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-12-01 09:03:30'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
