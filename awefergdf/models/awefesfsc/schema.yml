@@ -1,0 +1,6 @@
+---
+version: 2
+models:
+- name: "awefesfsc__CountRecords_1"
+  tags:
+  - "prophecy_temp"
