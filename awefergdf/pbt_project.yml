@@ -153,6 +153,6 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/awefesfsc.json
     - pipelines/awefesfsc.py
     - models/awefesfsc/schema.yml
-    - models/awefesfsc/awefesfsc__Pivot_1.sql
+    - models/awefesfsc/awefesfsc__CountRecords_2.sql
     createdAt: '2025-12-01 08:45:51'
 sqlBusinessApps: {}

@@ -111,53 +111,55 @@
         "sourceProjectVersion" : "1.0.4.dev3"
       }
     },
-    "K-0_FYJY6qjszT16IRP3_$$BlIjDwAuFdP03c5IDdlPF" : {
-      "id" : "K-0_FYJY6qjszT16IRP3_$$BlIjDwAuFdP03c5IDdlPF",
-      "component" : "DbPivot",
+    "jM0Y9E640z8mKl3Qr8XWV$$5zPhTHAWz_3-QQ4GDhYJJ" : {
+      "id" : "jM0Y9E640z8mKl3Qr8XWV$$5zPhTHAWz_3-QQ4GDhYJJ",
+      "component" : "CountRecords",
       "metadata" : {
-        "label" : "Pivot_1",
-        "x" : -320,
-        "y" : -780,
+        "label" : "CountRecords_2",
+        "x" : -240,
+        "y" : -560,
         "phase" : 0
       },
       "properties" : {
-        "columnGroups" : [ ],
-        "separator" : {
-          "expression" : {
-            "expression" : "', '"
-          },
-          "_row_id" : "755110388"
+        "relation_name" : [ "CountRecords_1" ],
+        "_oldMacroProperties" : {
+          "macroName" : "CountRecords",
+          "projectName" : "prophecy_basics",
+          "parameters" : [ {
+            "name" : "relation_name",
+            "value" : "[\"CountRecords_1\"]"
+          }, {
+            "name" : "schema",
+            "value" : "[{\"name\": \"total_records\", \"dataType\": \"Bigint\"}]"
+          }, {
+            "name" : "column_names",
+            "value" : "[]"
+          }, {
+            "name" : "count_method",
+            "value" : "count_all_records"
+          } ]
         },
-        "isConcatWsSelected" : false,
-        "inputAlias" : "in0",
-        "allowSelection" : false,
-        "pivotColumnValues" : [ ],
-        "pivotColumn" : {
-          "expression" : {
-            "expression" : ""
-          },
-          "_row_id" : "2015092045"
-        },
-        "isValueColumnString" : false,
-        "isPivotColumnString" : false,
-        "aggregateFunctions" : [ ],
-        "valueColumn" : {
-          "expression" : {
-            "expression" : ""
-          },
-          "_row_id" : "1537599897"
-        }
+        "schema" : "[{\"name\": \"total_records\", \"dataType\": \"Bigint\"}]",
+        "column_names" : [ ],
+        "count_method" : "count_all_records"
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "sQkjDCFiV_Cm9qcB2peHg$$FW5z_JybBZ3YRgiRt1ZDm",
+          "id" : "Tq8BLN8VzQUJPKyYZ2R8R$$uV-WWw-x9OB_2HPhZBtpX",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "YSg_0fYOQC1XoQDxaLgCt$$_kvHBe23BcDZFKVJQuIy1",
+          "id" : "e95bFjf-RO3kZWeN3cqJc$$5a14XqPD-KcS1y5aNdOP3",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
+      },
+      "componentInfo" : {
+        "gemId" : "CountRecords_prophecy_basics",
+        "name" : "CountRecords",
+        "projectName" : "prophecy_basics",
+        "sourceProjectName" : "prophecy_basics",
+        "sourceProjectVersion" : "1.0.4.dev3"
       }
     }
   },
@@ -168,11 +170,11 @@
     "target" : "Ue_HQ2Wm8GXDVzLWeu4N_$$MiTkyUdGHq1dpmmXEEmxl",
     "targetPort" : "QkIaKCto3kCC6QnqRXZ5t$$KPs3wQdkV9yW20l07d4Rk"
   }, {
-    "id" : "Q6Mv74RhlMwBdTf5cqVw2$$26dXkdKIcx-jLmUub65GW",
+    "id" : "z1bm5xOVmsQrtH_bY4qIU$$xQqgkMv7bWeKb12D9KYPq",
     "source" : "Ue_HQ2Wm8GXDVzLWeu4N_$$MiTkyUdGHq1dpmmXEEmxl",
     "sourcePort" : "qbsYYElqra1R7KHLdCktn$$yEdkgaS_4qsM-zsOT9ZpY",
-    "target" : "K-0_FYJY6qjszT16IRP3_$$BlIjDwAuFdP03c5IDdlPF",
-    "targetPort" : "sQkjDCFiV_Cm9qcB2peHg$$FW5z_JybBZ3YRgiRt1ZDm"
+    "target" : "jM0Y9E640z8mKl3Qr8XWV$$5zPhTHAWz_3-QQ4GDhYJJ",
+    "targetPort" : "Tq8BLN8VzQUJPKyYZ2R8R$$uV-WWw-x9OB_2HPhZBtpX"
   } ],
   "component" : "Pipeline"
 }
