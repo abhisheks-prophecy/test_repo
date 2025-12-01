@@ -110,6 +110,55 @@
         "sourceProjectName" : "prophecy_basics",
         "sourceProjectVersion" : "1.0.4.dev3"
       }
+    },
+    "K-0_FYJY6qjszT16IRP3_$$BlIjDwAuFdP03c5IDdlPF" : {
+      "id" : "K-0_FYJY6qjszT16IRP3_$$BlIjDwAuFdP03c5IDdlPF",
+      "component" : "DbPivot",
+      "metadata" : {
+        "label" : "Pivot_1",
+        "x" : -320,
+        "y" : -780,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnGroups" : [ ],
+        "separator" : {
+          "expression" : {
+            "expression" : "', '"
+          },
+          "_row_id" : "755110388"
+        },
+        "isConcatWsSelected" : false,
+        "inputAlias" : "in0",
+        "allowSelection" : false,
+        "pivotColumnValues" : [ ],
+        "pivotColumn" : {
+          "expression" : {
+            "expression" : ""
+          },
+          "_row_id" : "2015092045"
+        },
+        "isValueColumnString" : false,
+        "isPivotColumnString" : false,
+        "aggregateFunctions" : [ ],
+        "valueColumn" : {
+          "expression" : {
+            "expression" : ""
+          },
+          "_row_id" : "1537599897"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sQkjDCFiV_Cm9qcB2peHg$$FW5z_JybBZ3YRgiRt1ZDm",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "YSg_0fYOQC1XoQDxaLgCt$$_kvHBe23BcDZFKVJQuIy1",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ {
@@ -118,6 +167,12 @@
     "sourcePort" : "QpUDx6ek_Ltt6mj4bVj-C",
     "target" : "Ue_HQ2Wm8GXDVzLWeu4N_$$MiTkyUdGHq1dpmmXEEmxl",
     "targetPort" : "QkIaKCto3kCC6QnqRXZ5t$$KPs3wQdkV9yW20l07d4Rk"
+  }, {
+    "id" : "Q6Mv74RhlMwBdTf5cqVw2$$26dXkdKIcx-jLmUub65GW",
+    "source" : "Ue_HQ2Wm8GXDVzLWeu4N_$$MiTkyUdGHq1dpmmXEEmxl",
+    "sourcePort" : "qbsYYElqra1R7KHLdCktn$$yEdkgaS_4qsM-zsOT9ZpY",
+    "target" : "K-0_FYJY6qjszT16IRP3_$$BlIjDwAuFdP03c5IDdlPF",
+    "targetPort" : "sQkjDCFiV_Cm9qcB2peHg$$FW5z_JybBZ3YRgiRt1ZDm"
   } ],
   "component" : "Pipeline"
 }

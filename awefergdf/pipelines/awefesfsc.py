@@ -2,8 +2,4 @@ Schedule = Schedule(cron = "* 0 2 * * * *", timezone = "GMT", emails = ["email@g
 SensorSchedule = SensorSchedule(enabled = False)
 
 with DAG(Schedule = Schedule, SensorSchedule = SensorSchedule):
-    awefesfsc__CountRecords_1 = Task(
-        task_id = "awefesfsc__CountRecords_1", 
-        component = "Model", 
-        modelName = "awefesfsc__CountRecords_1"
-    )
+    awefesfsc__Pivot_1 = Task(task_id = "awefesfsc__Pivot_1", component = "Model", modelName = "awefesfsc__Pivot_1")

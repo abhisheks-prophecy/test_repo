@@ -18,8 +18,16 @@ CountRecords_1 AS (
 
   {{ prophecy_basics.CountRecords(['customer'], [], 'count_all_records') }}
 
+),
+
+Pivot_1 AS (
+
+  SELECT * 
+  
+  FROM CountRecords_1 AS in0
+
 )
 
 SELECT *
 
-FROM CountRecords_1
+FROM Pivot_1
