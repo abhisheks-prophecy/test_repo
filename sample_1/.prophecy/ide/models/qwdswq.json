@@ -1,0 +1,84 @@
+{
+  "id" : "qwdswq",
+  "metainfo" : {
+    "label" : "qwdswq",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "qwdswq##Ws5cgVrW" : {
+      "id" : "qwdswq##Ws5cgVrW",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "qwdswq",
+        "x" : -300,
+        "y" : -260,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM customer\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "c2Rz040V",
+          "slug" : "customer"
+        } ],
+        "outputs" : [ {
+          "id" : "z51rb2tk",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "X1s-oxzuvpwXFMjeuVFrN" : {
+      "id" : "X1s-oxzuvpwXFMjeuVFrN",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customer",
+        "slug" : "customer",
+        "x" : -420,
+        "y" : -260,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customer",
+          "sourceType" : "Table",
+          "sourceName" : "samples_tpch",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "BYdk2eZAY4prmxPt8Khaj",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "dWAqfmMvpgzbmGm-x--qi$$kdaMHyNiOxdWo5H2g4GJy",
+    "source" : "X1s-oxzuvpwXFMjeuVFrN",
+    "sourcePort" : "BYdk2eZAY4prmxPt8Khaj",
+    "target" : "qwdswq##Ws5cgVrW",
+    "targetPort" : "c2Rz040V"
+  } ],
+  "component" : "Model"
+}

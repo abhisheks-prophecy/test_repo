@@ -1,0 +1,158 @@
+name: sample_1
+description: ''
+version: '2'
+author: abhisheks+e2etests@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-12-01 08:30:07'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/qwdswq:
+    name: qwdswq
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: c_custkey
+        dataType:
+          type: Bigint
+      - name: c_name
+        dataType:
+          type: String
+      - name: c_address
+        dataType:
+          type: String
+      - name: c_nationkey
+        dataType:
+          type: Bigint
+      - name: c_phone
+        dataType:
+          type: String
+      - name: c_acctbal
+        dataType:
+          type: Decimal
+      - name: c_mktsegment
+        dataType:
+          type: String
+      - name: c_comment
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/qwdswq.sql
+    - .prophecy/ide/models/qwdswq.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-12-01 08:32:55'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2025-12-01 08:30:11'
+  .prophecy/metadata/sqlmacros/prophecy_tmp_source:
+    name: prophecy_tmp_source
+    macroType: expression
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - macros/prophecy_tmp_source.sql
+    - .prophecy/ide/macros/prophecy_tmp_source.json
+    createdAt: '2025-12-01 08:30:19'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/samples_tpch:
+    name: samples_tpch
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-12-01 08:31:11'
+    tables:
+    - name: customer
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: c_custkey
+          dataType:
+            type: Bigint
+        - name: c_name
+          dataType:
+            type: String
+        - name: c_address
+          dataType:
+            type: String
+        - name: c_nationkey
+          dataType:
+            type: Bigint
+        - name: c_phone
+          dataType:
+            type: String
+        - name: c_acctbal
+          dataType:
+            type: Decimal
+        - name: c_mktsegment
+          dataType:
+            type: String
+        - name: c_comment
+          dataType:
+            type: String
+      description: Customer information supporting segmentation, account management,
+        and market analysis.
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2025-12-01 08:31:11'
+      tableType: table
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: abhisheks+e2etests@prophecy.io
+  createdAt: '2025-12-01 08:30:07'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}
+projectConfigurations: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/qwdwd:
+    name: qwdwd
+    schema: null
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/qwdwd.json
+    - pipelines/qwdwd.py
+    - models/qwdwd/qwdwd__CountRecords_1.sql
+    - models/qwdwd/schema.yml
+    createdAt: '2025-12-01 08:30:19'
+sqlBusinessApps: {}
