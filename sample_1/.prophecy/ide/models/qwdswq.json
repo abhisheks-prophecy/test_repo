@@ -50,8 +50,8 @@
       "metadata" : {
         "label" : "customer",
         "slug" : "customer",
-        "x" : -420,
-        "y" : -260,
+        "x" : -560,
+        "y" : -580,
         "phase" : 0
       },
       "properties" : {
