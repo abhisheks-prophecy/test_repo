@@ -1,0 +1,47 @@
+---
+version: 2
+sources:
+- name: "samples_tpch"
+  database: "samples"
+  schema: "tpch"
+  tables:
+  - name: "customer"
+    description: "Customer information supporting segmentation, account management,\
+      \ and market analysis."
+    config:
+      tags:
+      - "pipeline:qwdwd"
+    columns:
+    - name: "c_custkey"
+      description: "Unique identifier assigned to each customer."
+      dataType:
+        type: "Bigint"
+    - name: "c_name"
+      description: "Full name of the customer."
+      dataType:
+        type: "String"
+    - name: "c_address"
+      description: "Mailing address of the customer."
+      dataType:
+        type: "String"
+    - name: "c_nationkey"
+      description: "Key representing the customer's country or region."
+      dataType:
+        type: "Bigint"
+    - name: "c_phone"
+      description: "Contact phone number of the customer."
+      dataType:
+        type: "String"
+    - name: "c_acctbal"
+      description: "Current account balance of the customer."
+      dataType:
+        type: "Decimal"
+    - name: "c_mktsegment"
+      description: "Market segment category assigned to the customer."
+      dataType:
+        type: "String"
+    - name: "c_comment"
+      description: "Remarks or notes related to the customer."
+      dataType:
+        type: "String"
+    type: "table"

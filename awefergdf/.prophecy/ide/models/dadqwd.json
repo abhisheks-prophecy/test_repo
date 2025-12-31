@@ -1,0 +1,84 @@
+{
+  "id" : "dadqwd",
+  "metainfo" : {
+    "label" : "dadqwd",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "dadqwd##sNFS9Mo8" : {
+      "id" : "dadqwd##sNFS9Mo8",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "dadqwd",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM customer\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "tZOSPH91",
+          "slug" : "customer"
+        } ],
+        "outputs" : [ {
+          "id" : "GpWAt100",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "oATmAx9nFSSvkBv9Xq9Bf" : {
+      "id" : "oATmAx9nFSSvkBv9Xq9Bf",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customer",
+        "slug" : "customer",
+        "x" : -160,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customer",
+          "sourceType" : "Table",
+          "sourceName" : "samples_tpch",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "4eJtVqwNQm-Ns0jrpovdJ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "9nzjzyqGVtwBEe8eb97sy$$CDlO8c_aGXUQ-DFp_jU2N",
+    "source" : "oATmAx9nFSSvkBv9Xq9Bf",
+    "sourcePort" : "4eJtVqwNQm-Ns0jrpovdJ",
+    "target" : "dadqwd##sNFS9Mo8",
+    "targetPort" : "tZOSPH91"
+  } ],
+  "component" : "Model"
+}

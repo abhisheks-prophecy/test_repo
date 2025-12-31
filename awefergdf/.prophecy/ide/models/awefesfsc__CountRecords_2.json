@@ -1,0 +1,192 @@
+{
+  "id" : "awefesfsc__CountRecords_2",
+  "metainfo" : {
+    "label" : "awefesfsc__CountRecords_2",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "materialized" : "ephemeral",
+        "database" : "\"qa_database\"",
+        "schema" : "\"qa_orchestration\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "CountRecords_2_e95bFjf-RO3kZWeN3cqJc$$5a14XqPD-KcS1y5aNdOP3" : {
+      "id" : "CountRecords_2_e95bFjf-RO3kZWeN3cqJc$$5a14XqPD-KcS1y5aNdOP3",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "CountRecords_2"
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM CountRecords_2\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0",
+          "slug" : "input_port_0"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0",
+          "slug" : "output_port_0"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "jM0Y9E640z8mKl3Qr8XWV$$5zPhTHAWz_3-QQ4GDhYJJ" : {
+      "id" : "jM0Y9E640z8mKl3Qr8XWV$$5zPhTHAWz_3-QQ4GDhYJJ",
+      "component" : "CountRecords",
+      "metadata" : {
+        "label" : "CountRecords_2",
+        "x" : -240,
+        "y" : -560,
+        "phase" : 0
+      },
+      "properties" : {
+        "relation_name" : [ "CountRecords_1" ],
+        "_oldMacroProperties" : {
+          "macroName" : "CountRecords",
+          "projectName" : "prophecy_basics",
+          "parameters" : [ {
+            "name" : "relation_name",
+            "value" : "[\"CountRecords_1\"]"
+          }, {
+            "name" : "schema",
+            "value" : "[{\"name\": \"total_records\", \"dataType\": \"Bigint\"}]"
+          }, {
+            "name" : "column_names",
+            "value" : "[]"
+          }, {
+            "name" : "count_method",
+            "value" : "count_all_records"
+          } ]
+        },
+        "schema" : "[{\"name\": \"total_records\", \"dataType\": \"Bigint\"}]",
+        "column_names" : [ ],
+        "count_method" : "count_all_records"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Tq8BLN8VzQUJPKyYZ2R8R$$uV-WWw-x9OB_2HPhZBtpX",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "e95bFjf-RO3kZWeN3cqJc$$5a14XqPD-KcS1y5aNdOP3",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "Ue_HQ2Wm8GXDVzLWeu4N_$$MiTkyUdGHq1dpmmXEEmxl" : {
+      "id" : "Ue_HQ2Wm8GXDVzLWeu4N_$$MiTkyUdGHq1dpmmXEEmxl",
+      "component" : "CountRecords",
+      "metadata" : {
+        "label" : "CountRecords_1",
+        "x" : -420,
+        "y" : -560,
+        "phase" : 0
+      },
+      "properties" : {
+        "relation_name" : [ "customer" ],
+        "_oldMacroProperties" : {
+          "macroName" : "CountRecords",
+          "projectName" : "prophecy_basics",
+          "parameters" : [ {
+            "name" : "relation_name",
+            "value" : "[\"customer\"]"
+          }, {
+            "name" : "schema",
+            "value" : "[{\"name\": \"c_custkey\", \"dataType\": \"Bigint\"}, {\"name\": \"c_name\", \"dataType\": \"String\"}, {\"name\": \"c_address\", \"dataType\": \"String\"}, {\"name\": \"c_nationkey\", \"dataType\": \"Bigint\"}, {\"name\": \"c_phone\", \"dataType\": \"String\"}, {\"name\": \"c_acctbal\", \"dataType\": \"Decimal\"}, {\"name\": \"c_mktsegment\", \"dataType\": \"String\"}, {\"name\": \"c_comment\", \"dataType\": \"String\"}]"
+          }, {
+            "name" : "column_names",
+            "value" : "[]"
+          }, {
+            "name" : "count_method",
+            "value" : "count_all_records"
+          } ]
+        },
+        "schema" : "[{\"name\": \"c_custkey\", \"dataType\": \"Bigint\"}, {\"name\": \"c_name\", \"dataType\": \"String\"}, {\"name\": \"c_address\", \"dataType\": \"String\"}, {\"name\": \"c_nationkey\", \"dataType\": \"Bigint\"}, {\"name\": \"c_phone\", \"dataType\": \"String\"}, {\"name\": \"c_acctbal\", \"dataType\": \"Decimal\"}, {\"name\": \"c_mktsegment\", \"dataType\": \"String\"}, {\"name\": \"c_comment\", \"dataType\": \"String\"}]",
+        "column_names" : [ ],
+        "count_method" : "count_all_records"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "QkIaKCto3kCC6QnqRXZ5t$$KPs3wQdkV9yW20l07d4Rk",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "qbsYYElqra1R7KHLdCktn$$yEdkgaS_4qsM-zsOT9ZpY",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "d3hktn5tDezE6NbnnJbtm" : {
+      "id" : "d3hktn5tDezE6NbnnJbtm",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customer",
+        "x" : -560,
+        "y" : -620,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "customer",
+          "sourceType" : "Table",
+          "sourceName" : "samples_tpch",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "QpUDx6ek_Ltt6mj4bVj-C",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_jM0Y9E640z8mKl3Qr8XWV$$5zPhTHAWz_3-QQ4GDhYJJ_e95bFjf-RO3kZWeN3cqJc$$5a14XqPD-KcS1y5aNdOP3_CountRecords_2_e95bFjf-RO3kZWeN3cqJc$$5a14XqPD-KcS1y5aNdOP3",
+    "source" : "jM0Y9E640z8mKl3Qr8XWV$$5zPhTHAWz_3-QQ4GDhYJJ",
+    "sourcePort" : "e95bFjf-RO3kZWeN3cqJc$$5a14XqPD-KcS1y5aNdOP3",
+    "target" : "CountRecords_2_e95bFjf-RO3kZWeN3cqJc$$5a14XqPD-KcS1y5aNdOP3",
+    "targetPort" : "input_port_0"
+  }, {
+    "id" : "z1bm5xOVmsQrtH_bY4qIU$$xQqgkMv7bWeKb12D9KYPq",
+    "source" : "Ue_HQ2Wm8GXDVzLWeu4N_$$MiTkyUdGHq1dpmmXEEmxl",
+    "sourcePort" : "qbsYYElqra1R7KHLdCktn$$yEdkgaS_4qsM-zsOT9ZpY",
+    "target" : "jM0Y9E640z8mKl3Qr8XWV$$5zPhTHAWz_3-QQ4GDhYJJ",
+    "targetPort" : "Tq8BLN8VzQUJPKyYZ2R8R$$uV-WWw-x9OB_2HPhZBtpX"
+  }, {
+    "id" : "fFEGLAPaEKX25OPZVheTN$$mijjVn7lGFgNt6u7aBFsj",
+    "source" : "d3hktn5tDezE6NbnnJbtm",
+    "sourcePort" : "QpUDx6ek_Ltt6mj4bVj-C",
+    "target" : "Ue_HQ2Wm8GXDVzLWeu4N_$$MiTkyUdGHq1dpmmXEEmxl",
+    "targetPort" : "QkIaKCto3kCC6QnqRXZ5t$$KPs3wQdkV9yW20l07d4Rk"
+  } ],
+  "component" : "Model"
+}
