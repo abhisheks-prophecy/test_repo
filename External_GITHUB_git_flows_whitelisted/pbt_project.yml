@@ -23,9 +23,69 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/mm:
+    name: mm
+    schema:
+      entityType: ''
+      providerType: Databricks
+      fields:
+      - name: c_custkey
+        dataType:
+          type: Bigint
+      - name: c_name
+        dataType:
+          type: String
+      - name: c_address
+        dataType:
+          type: String
+      - name: c_nationkey
+        dataType:
+          type: Bigint
+      - name: c_phone
+        dataType:
+          type: String
+      - name: c_acctbal
+        dataType:
+          type: Decimal
+      - name: c_mktsegment
+        dataType:
+          type: String
+      - name: c_comment
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/mm.sql
+    - .prophecy/ide/models/mm.json
+    - models/schema.yml
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-11-29 10:16:06'
 sqlSnapshots: {}
-sqlTests: {}
+sqlTests:
+  .prophecy/metadata/sqltests/sdf:
+    name: sdf
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - tests/generic/sdf.sql
+    testType: GenericDataTest
+    createdAt: '2025-12-29 07:00:34'
+  .prophecy/metadata/sqltests/czdvfbgnh:
+    name: czdvfbgnh
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - tests/czdvfbgnh.sql
+    - .prophecy/ide/tests/data/singular/czdvfbgnh.json
+    testType: SingularDataTest
+    createdAt: '2025-12-29 07:00:49'
 sqlMacros:
   .prophecy/metadata/sqlmacros/generate_schema_name:
     name: generate_schema_name

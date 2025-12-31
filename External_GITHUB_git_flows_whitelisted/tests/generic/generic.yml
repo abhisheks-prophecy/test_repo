@@ -1,0 +1,9 @@
+---
+version: 2
+dataTests:
+- name: "sdf"
+  arguments:
+  - name: "model"
+    type: "table"
+    description: "{\"ProphecyType\": \"table\"}"
+  type: "generic"

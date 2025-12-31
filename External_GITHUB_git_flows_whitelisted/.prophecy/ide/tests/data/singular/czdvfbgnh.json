@@ -1,0 +1,43 @@
+{
+  "id" : "czdvfbgnh",
+  "metainfo" : {
+    "label" : "czdvfbgnh",
+    "autoLayout" : false,
+    "staleState" : "file",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "czdvfbgnh##V6o1XAJf" : {
+      "id" : "czdvfbgnh##V6o1XAJf",
+      "component" : "TargetSingularDataTest",
+      "metadata" : {
+        "label" : "czdvfbgnh",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "query" : "",
+        "customQuery" : false,
+        "customQueryDisabled" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "FGh2m6g0",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "y2d1fNMQ",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "SingularDataTest"
+}

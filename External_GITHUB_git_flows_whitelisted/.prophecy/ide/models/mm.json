@@ -1,0 +1,94 @@
+{
+  "id" : "mm",
+  "metainfo" : {
+    "label" : "mm",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "type" : "ModelConfig"
+      },
+      "userDefinedConfig" : {
+        "vars" : {
+          "hgj" : "\"'asd'\""
+        }
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "mm##BlT1Sr5b" : {
+      "id" : "mm##BlT1Sr5b",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "mm",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM customer\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "BVkrTZez",
+          "slug" : "customer"
+        } ],
+        "outputs" : [ {
+          "id" : "QZvcIKcb",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "Ki_kgOWonXkyvVUpUkiwz" : {
+      "id" : "Ki_kgOWonXkyvVUpUkiwz",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customer",
+        "slug" : "customer",
+        "x" : -200,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customer",
+          "sourceType" : "Table",
+          "sourceName" : "samples.tpch",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "-U1BGujorNSh1NlHwRuHp",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "W154bqeifIcvQjl53j_dO$$jNB8F6pXwL9RptZ9jXrId",
+    "source" : "Ki_kgOWonXkyvVUpUkiwz",
+    "sourcePort" : "-U1BGujorNSh1NlHwRuHp",
+    "target" : "mm##BlT1Sr5b",
+    "targetPort" : "BVkrTZez"
+  } ],
+  "component" : "Model"
+}
