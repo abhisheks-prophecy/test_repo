@@ -189,7 +189,7 @@ Reformat_3 AS (
 
   SELECT * 
   
-  FROM Join_1 AS in0
+  FROM Join_1
 
 ),
 
@@ -197,7 +197,7 @@ Reformat_4 AS (
 
   SELECT * 
   
-  FROM Reformat_3 AS in0
+  FROM Reformat_3
 
 ),
 
@@ -219,7 +219,7 @@ Reformat_2 AS (
 
   SELECT * 
   
-  FROM Reformat_4 AS in0
+  FROM Reformat_4
 
 )
 
