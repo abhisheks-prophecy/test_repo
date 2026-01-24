@@ -1,0 +1,79 @@
+name: Project-Automation-PR-ROLLBACK
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomationprrollback
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2026-01-24 08:53:06'
+pipelines:
+  pipelines/Workflow-Automation-ROLLBACK-1769244652680:
+    name: Workflow-Automation-ROLLBACK-1769244652680
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2026-01-24 08:53:06'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.26
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2026-01-24 08:53:06'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2026-01-24T08:53:06.135811Z'
+  name: plibMaven
+  version: 9.0.0-SNAPSHOT
+  id: '1284453354'
+  createdAt: '2026-01-24T08:53:06.135811Z'
+  type: plibMaven
+projectDependencies:
+  '1':
+    projectUID: 1
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/aTbIAI3r_team_2/aTbIAI3r_project_1.git&subPath=
+    version: 0.2.6.6
+    isDefault: true
+    author: null
+    createdAt: '2026-01-24 08:52:31'
+  '2':
+    projectUID: 2
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/aTbIAI3r_team_2/aTbIAI3r_project_2.git&subPath=
+    version: 0.0.6
+    isDefault: true
+    author: null
+    createdAt: '2026-01-24 08:52:31'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
+projectConfigurations: {}
