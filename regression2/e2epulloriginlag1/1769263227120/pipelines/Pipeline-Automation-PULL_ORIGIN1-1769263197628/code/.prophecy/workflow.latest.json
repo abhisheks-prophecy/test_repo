@@ -118,6 +118,41 @@
         "scriptMethodHeader" : "def apply(spark: SparkSession, in0: DataFrame) : Script = {",
         "scriptMethodFooter" : "    out0\n}"
       }
+    },
+    "la7j8dQTSAVq9LEH2bv5o$$JsY63fL2KCu8UI3XA8CW4" : {
+      "id" : "la7j8dQTSAVq9LEH2bv5o$$JsY63fL2KCu8UI3XA8CW4",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -980,
+        "y" : -280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Ov0W6O7O7skO2lspxXaFR$$xTOiKc4O9k2kjm2LMqqTE",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "gfb8svL_T5yu11HcMyksI$$LSarWh7Yo4pXqhtDL1yf-",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/aTbIAI3r_team_2/aTbIAI3r_project_1.git&subPath=&tag=0.2.6.6&projectSubscriptionProjectId=1&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsScala"
+      }
     }
   },
   "ports" : {
@@ -157,6 +192,22 @@
     },
     "severity" : 1,
     "message" : "Code cannot be empty.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.la7j8dQTSAVq9LEH2bv5o$$JsY63fL2KCu8UI3XA8CW4.ports.inputs[0]",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Please connect input port in",
     "tags" : [ ],
     "relatedInformation" : [ ]
   } ]
