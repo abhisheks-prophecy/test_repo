@@ -1,0 +1,128 @@
+name: Automation-ExternalP-Clone
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: automationexternalpclone
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: maven
+  author: null
+  createdAt: '2026-01-27 18:54:23'
+pipelines:
+  pipelines/Automation-ExternalPip-Clone:
+    name: Automation-ExternalPip-Clone
+    description: automation workflow
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2026-01-27 18:54:23'
+    datasets:
+      inputs:
+      - datasets/Automation-ExternalDataset-Clone
+      outputs: []
+    subgraphs:
+    - subgraphs/Automation-ExternalSG-Clone
+    dependencies: {}
+datasets:
+  datasets/Automation-ExternalDataset-Clone:
+    name: Automation-ExternalDataset-Clone
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2026-01-27 18:56:12'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 1
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2026-01-27 18:56:12'
+templates: {}
+jobs:
+  jobs/Automation-ExternalJob-Clone:
+    name: Automation-ExternalJob-Clone
+    description: ''
+    fabricUID: 1
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0/1 * * ? 2080
+    timeout: null
+    alerting:
+      emails: abhisheks+e2etests@prophecy.io
+      onStart: true
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - pipelines/Automation-ExternalPip-Clone
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2026-01-27 18:57:50'
+    author: abhisheks+e2etests@prophecy.io
+    models: []
+    sqlProjects: []
+gemContainer:
+  languageVersion: 2.12.15
+  gemLibsVersion: 1.1.26
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2026-01-27 18:54:23'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs:
+  subgraphs/Automation-ExternalSG-Clone:
+    name: Automation-ExternalSG-Clone
+    description: test subgraph
+    author: abhisheks+e2etests@prophecy.io
+    language: scala
+    artefactID: ''
+    mode: batch
+    createdAt: '2026-01-27 18:57:26'
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2026-01-27T18:54:23.750534Z'
+  name: plibMaven
+  version: 9.0.0-SNAPSHOT
+  id: '1535625782'
+  createdAt: '2026-01-27T18:54:23.750534Z'
+  type: plibMaven
+projectDependencies:
+  '39':
+    projectUID: 39
+    projectName: ProphecySparkBasicsScala
+    repositoryPath: gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_39.git&subPath=
+    version: 0.2.6.6
+    isDefault: true
+    author: null
+    createdAt: '2026-01-27 18:54:09'
+  '40':
+    projectUID: 40
+    projectName: ProphecyWarehouseScala
+    repositoryPath: gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_40.git&subPath=
+    version: 0.0.6
+    isDefault: true
+    author: null
+    createdAt: '2026-01-27 18:54:09'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
+projectConfigurations: {}
